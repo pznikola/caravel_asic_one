@@ -59,7 +59,7 @@ set dircolor(devices$) red
 #### Start without a design if no filename given on command line:
 #### To avoid absolute paths, use a path that is relative to one of the
 #### XSCHEM_LIBRARY_PATH directories. Default: empty
-set XSCHEM_START_WINDOW {sky130_tests/top.sch}
+set XSCHEM_START_WINDOW $env(PDKPATH)/libs.tech/xschem/sky130_tests/top.sch
 
 ###########################################################################
 #### DIRECTORY WHERE SIMULATIONS, NETLIST AND SIMULATOR OUTPUTS ARE PLACED
