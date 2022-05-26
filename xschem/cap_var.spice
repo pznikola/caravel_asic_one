@@ -1,0 +1,10 @@
+** sch_path: /home/nikolap/Desktop/ASIC/caravel_asic_one/xschem/cap_var.sch
+**.subckt cap_var OUT_P OUT_N Vtune GND
+*.iopin OUT_P
+*.iopin OUT_N
+*.iopin Vtune
+*.iopin GND
+XC1 OUT_P Vtune GND sky130_fd_pr__cap_var_lvt W=4 L=0.6 VM=14 m=14
+XC2 OUT_N Vtune GND sky130_fd_pr__cap_var_lvt W=4 L=0.6 VM=14 m=14
+**.ends
+.end
