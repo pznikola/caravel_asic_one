@@ -1,4 +1,4 @@
-** sch_path: /home/nikolap/Desktop/ASIC/xschem_workdir/cell_unit.sch
+** sch_path: /home/nikolap/Desktop/ASIC/caravel_asic_one/xschem/cell_unit.sch
 **.subckt cell_unit OUT_N OUT_P GND ON V_bias
 *.iopin OUT_N
 *.iopin OUT_P
@@ -7,10 +7,8 @@
 *.ipin V_bias
 XC1 OUT_N net1 sky130_fd_pr__cap_mim_m3_1 W=3.3 L=3.3 MF=1 m=1
 XC2 OUT_P net2 sky130_fd_pr__cap_mim_m3_1 W=3.3 L=3.3 MF=1 m=1
-XM1 net2 ON net1 GND sky130_fd_pr__nfet_01v8 L=0.15 W=1.65 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=2 m=2
 XR1 net1 V_bias GND sky130_fd_pr__res_xhigh_po_0p35 L=1.5 mult=1 m=1
 XR2 net2 V_bias GND sky130_fd_pr__res_xhigh_po_0p35 L=1.5 mult=1 m=1
+X1 rf_nfet_01v8_aM02W1p65L0p15 net2 ON net1 GND
 **.ends
 .end
