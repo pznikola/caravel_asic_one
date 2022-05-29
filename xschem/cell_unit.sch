@@ -8,12 +8,8 @@ N 40 0 90 0 {
 lab=#net1}
 N -60 0 -20 0 {
 lab=OUT_N}
-N 170 0 230 -0 {
-lab=#net2}
 N 310 0 370 0 {
 lab=OUT_P}
-N 140 -80 140 -40 {
-lab=ON}
 N 70 -90 70 0 {
 lab=#net1}
 N 220 -90 220 0 {
@@ -42,6 +38,9 @@ N 200 -180 200 -150 {
 lab=GND}
 N 140 90 140 130 {
 lab=GND}
+N 140 -90 140 -40 {
+lab=ON}
+N 190 0 230 0 {}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 10 0 3 0 {name=C1 model=cap_mim_m3_1 W=3.3 L=3.3 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 280 0 1 0 {name=C2 model=cap_mim_m3_1 W=3.3 L=3.3 MF=1 spiceprefix=X}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 70 -150 0 0 {name=R1
@@ -63,4 +62,4 @@ C {devices/iopin.sym} 370 0 0 0 {name=p2 lab=OUT_P}
 C {devices/iopin.sym} 140 130 1 0 {name=p3 lab=GND}
 C {devices/ipin.sym} 140 -80 1 0 {name=p4 lab=ON}
 C {devices/ipin.sym} 140 -230 1 0 {name=p5 lab=V_bias}
-C {sky130_fd_pr__rf_nfet_01v8_aM02W1p65L0p15.sym} 110 -40 1 0 {}
+C {rf_nfet_01v8_aM02W1p65L0p15.sym} 70 -70 1 0 {name=X1}
