@@ -1,5 +1,6 @@
-** sch_path: /home/nikolap/Desktop/ASIC/caravel_asic_one/xschem/vco.sch
-**.subckt vco OUT_P OUT_N IND_CT VBIAS Vtune freq<0> freq<1> freq<2> freq<3> freq<4> freq<5> VDD GND
+** sch_path: /home/nikolap/Desktop/ASIC/caravel_asic_one/xschem/vco_wo_ind.sch
+**.subckt vco_wo_ind OUT_P OUT_N IND_CT VBIAS Vtune freq<0> freq<1> freq<2> freq<3> freq<4> freq<5>
+*+ VDD GND
 *.iopin OUT_P
 *.iopin OUT_N
 *.iopin IND_CT
