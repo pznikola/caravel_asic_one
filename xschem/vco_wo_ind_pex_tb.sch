@@ -122,7 +122,7 @@ C {devices/vsource.sym} 480 -30 0 0 {name=V8 value=0}
 C {devices/gnd.sym} 480 0 0 0 {name=l12 lab=GND}
 C {devices/lab_pin.sym} 130 -210 0 0 {name=l13 lab=OUTP}
 C {devices/lab_pin.sym} 430 -210 2 0 {name=l14 lab=OUTN}
-C {vco_wo_ind.sym} 170 -110 0 0 {name=X1}
+C {vco_wo_ind_pex.sym} 170 -110 0 0 {name=X1}
 C {devices/res.sym} 280 -410 1 0 {name=R1
 value=350
 footprint=1206
