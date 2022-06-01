@@ -1,0 +1,85 @@
+magic
+tech sky130B
+magscale 1 2
+timestamp 1654041558
+<< pwell >>
+rect -96 -34 814 1130
+<< metal1 >>
+rect 300 1080 420 1200
+rect -44 920 764 1080
+rect -54 16 -44 448
+rect 26 16 36 448
+rect 146 -106 180 172
+rect 259 0 461 20
+rect 259 -60 273 0
+rect 447 -60 461 0
+rect 540 -106 574 172
+rect 684 16 694 448
+rect 764 16 774 448
+rect 146 -140 574 -106
+<< via1 >>
+rect -44 16 26 448
+rect 273 -60 447 0
+rect 694 16 764 448
+<< metal2 >>
+rect -260 450 -196 460
+rect -44 448 26 458
+rect -196 282 -44 410
+rect -260 232 -196 242
+rect 694 448 764 458
+rect 26 282 108 410
+rect 612 104 694 232
+rect -44 6 26 16
+rect 914 272 978 282
+rect 764 104 914 232
+rect 914 54 978 64
+rect 273 0 447 10
+rect 694 6 764 16
+rect 273 -120 447 -60
+<< via2 >>
+rect -260 242 -196 450
+rect 914 64 978 272
+<< metal3 >>
+rect -270 450 -186 455
+rect -270 242 -260 450
+rect -196 242 -186 450
+rect -270 237 -186 242
+rect 904 272 988 277
+rect 904 64 914 272
+rect 978 64 988 272
+rect 904 59 988 64
+<< metal4 >>
+rect -1194 360 -995 510
+rect 1713 360 1912 510
+use rf_nfet_01v8_aM02W1p65L0p15  rf_nfet_01v8_aM02W1p65L0p15_0
+timestamp 1648127584
+transform 1 0 98 0 1 -10
+box 10 10 514 524
+use sky130_fd_pr__cap_mim_m3_1_V3VADT  sky130_fd_pr__cap_mim_m3_1_V3VADT_0
+timestamp 1654038913
+transform 1 0 -655 0 1 430
+box -480 -430 479 430
+use sky130_fd_pr__cap_mim_m3_1_V3VADT  sky130_fd_pr__cap_mim_m3_1_V3VADT_1
+timestamp 1654038913
+transform -1 0 1373 0 1 430
+box -480 -430 479 430
+use sky130_fd_pr__res_xhigh_po_0p35_WX6KG8  sky130_fd_pr__res_xhigh_po_0p35_WX6KG8_0
+timestamp 1654038913
+transform 1 0 -9 0 1 548
+box -37 -532 37 532
+use sky130_fd_pr__res_xhigh_po_0p35_WX6KG8  sky130_fd_pr__res_xhigh_po_0p35_WX6KG8_1
+timestamp 1654038913
+transform 1 0 729 0 1 548
+box -37 -532 37 532
+<< labels >>
+flabel metal2 354 -120 354 -120 0 FreeSans 320 0 0 0 ON
+port 0 nsew
+flabel metal1 360 1200 360 1200 0 FreeSans 320 0 0 0 V_bias
+port 1 nsew
+flabel metal1 194 -140 194 -140 0 FreeSans 320 0 0 0 GND
+port 3 nsew
+flabel metal4 -1194 434 -1194 434 0 FreeSans 320 0 0 0 OUT_P
+port 4 nsew
+flabel metal4 1912 434 1912 434 0 FreeSans 320 0 0 0 OUT_N
+port 5 nsew
+<< end >>
