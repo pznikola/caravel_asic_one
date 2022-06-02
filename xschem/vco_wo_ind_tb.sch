@@ -4,6 +4,60 @@ K {}
 V {}
 S {}
 E {}
+B 2 900 -760 1700 -360 {flags=graph
+
+
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=8.51682e-09
+x2=2.08622e-08
+divx=5
+subdivx=1
+node="i(@l1[i])
+i(@l2[i])"
+color="4 7"
+dataset=0
+unitx=n
+
+y2=0.0302736
+y1=-0.0304464}
+B 2 900 -1220 1700 -820 {flags=graph
+y1=-1.3
+y2=1.3
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=8.51682e-09
+x2=2.08622e-08
+divx=5
+subdivx=1
+node=vcoout
+color=4
+dataset=0
+unitx=u
+}
+B 2 1750 -1220 2550 -820 {flags=graph
+y1=-0.3
+y2=0.3
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=8.51682e-09
+x2=2.08622e-08
+divx=5
+subdivx=1
+node=bufout
+color=4
+dataset=0
+unitx=n
+}
 N 120 -90 120 -60 {
 lab=#net1}
 N 120 -90 220 -90 {
@@ -100,6 +154,10 @@ N 390 -170 430 -170 {
 lab=BUFN}
 N 130 -170 170 -170 {
 lab=BUFP}
+N 990 -200 990 -170 {
+lab=BUFOUT}
+N 1170 -200 1170 -170 {
+lab=VCOOUT}
 C {devices/gnd.sym} 20 -70 0 0 {name=l1 lab=GND}
 C {devices/vdd.sym} 20 -130 0 0 {name=l2 lab=VDD}
 C {devices/vsource.sym} 20 -100 0 0 {name=V1 value=1.8}
@@ -129,14 +187,18 @@ value=1.1n
 footprint=1206
 device=inductor}
 C {devices/code_shown.sym} 590 -630 0 0 {name=SPICE only_toplevel=false value="
+.save all
+.options savecurrents
+
 .control
 tran 0.005n 20n
 plot (outp-outn)
 plot (bufp-bufn)
+save @L1[i]
 save all
 .endc
 "}
-C {sky130_fd_pr/corner.sym} 590 -470 0 0 {name=CORNER only_toplevel=false corner=tt}
+C {sky130_fd_pr/corner.sym} 600 -380 0 0 {name=CORNER only_toplevel=false corner=tt}
 C {devices/vsource.sym} 480 -30 0 0 {name=V8 value=0}
 C {devices/gnd.sym} 480 0 0 0 {name=l12 lab=GND}
 C {devices/lab_pin.sym} 130 -210 0 0 {name=l13 lab=OUTP}
@@ -167,3 +229,13 @@ C {devices/lab_pin.sym} 130 -170 0 0 {name=l16 lab=BUFP}
 C {devices/lab_pin.sym} 430 -170 2 0 {name=l17 lab=BUFN}
 C {devices/lab_pin.sym} 770 -180 2 0 {name=l18 lab=BUFN}
 C {devices/lab_pin.sym} 580 -180 0 0 {name=l19 lab=BUFP}
+C {devices/vcvs.sym} 990 -140 0 0 {name=E1 value=1}
+C {devices/lab_pin.sym} 950 -120 0 0 {name=l20 lab=BUFN}
+C {devices/lab_pin.sym} 950 -160 0 0 {name=l21 lab=BUFP}
+C {devices/gnd.sym} 990 -110 0 0 {name=l22 lab=GND}
+C {devices/lab_pin.sym} 990 -200 2 0 {name=l23 lab=BUFOUT}
+C {devices/vcvs.sym} 1170 -140 0 0 {name=E2 value=1}
+C {devices/gnd.sym} 1170 -110 0 0 {name=l26 lab=GND}
+C {devices/lab_pin.sym} 1170 -200 2 0 {name=l27 lab=VCOOUT}
+C {devices/lab_pin.sym} 1130 -120 0 0 {name=l24 lab=OUTN}
+C {devices/lab_pin.sym} 1130 -160 0 0 {name=l25 lab=OUTP}
