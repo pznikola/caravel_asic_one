@@ -82,6 +82,24 @@ N 500 -410 500 -250 {
 lab=OUTN}
 N 430 -250 500 -250 {
 lab=OUTN}
+N 580 -180 650 -180 {
+lab=BUFP}
+N 610 -180 610 -170 {
+lab=BUFP}
+N 710 -180 770 -180 {
+lab=BUFN}
+N 750 -180 750 -170 {
+lab=BUFN}
+N 750 -110 750 -90 {
+lab=GND}
+N 610 -90 750 -90 {
+lab=GND}
+N 610 -110 610 -90 {
+lab=GND}
+N 390 -170 430 -170 {
+lab=BUFN}
+N 130 -170 170 -170 {
+lab=BUFP}
 C {devices/gnd.sym} 20 -70 0 0 {name=l1 lab=GND}
 C {devices/vdd.sym} 20 -130 0 0 {name=l2 lab=VDD}
 C {devices/vsource.sym} 20 -100 0 0 {name=V1 value=1.8}
@@ -110,14 +128,15 @@ m=1
 value=1.1n
 footprint=1206
 device=inductor}
-C {devices/code_shown.sym} 510 -330 0 0 {name=SPICE only_toplevel=false value="
+C {devices/code_shown.sym} 590 -630 0 0 {name=SPICE only_toplevel=false value="
 .control
 tran 0.005n 20n
 plot (outp-outn)
+plot (bufp-bufn)
 save all
 .endc
 "}
-C {sky130_fd_pr/corner.sym} 580 -180 0 0 {name=CORNER only_toplevel=false corner=tt}
+C {sky130_fd_pr/corner.sym} 590 -470 0 0 {name=CORNER only_toplevel=false corner=tt}
 C {devices/vsource.sym} 480 -30 0 0 {name=V8 value=0}
 C {devices/gnd.sym} 480 0 0 0 {name=l12 lab=GND}
 C {devices/lab_pin.sym} 130 -210 0 0 {name=l13 lab=OUTP}
@@ -128,3 +147,23 @@ value=350
 footprint=1206
 device=resistor
 m=1}
+C {devices/res.sym} 680 -180 1 0 {name=R2
+value=100
+footprint=1206
+device=resistor
+m=1}
+C {devices/gnd.sym} 680 -90 0 0 {name=l15 lab=GND}
+C {devices/capa.sym} 610 -140 0 0 {name=C1
+m=1
+value=50f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/capa.sym} 750 -140 0 0 {name=C2
+m=1
+value=50f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/lab_pin.sym} 130 -170 0 0 {name=l16 lab=BUFP}
+C {devices/lab_pin.sym} 430 -170 2 0 {name=l17 lab=BUFN}
+C {devices/lab_pin.sym} 770 -180 2 0 {name=l18 lab=BUFN}
+C {devices/lab_pin.sym} 580 -180 0 0 {name=l19 lab=BUFP}
