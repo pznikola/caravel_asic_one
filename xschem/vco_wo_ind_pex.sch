@@ -286,10 +286,29 @@ N 540 -40 540 70 {
 lab=OUT_P}
 N 540 70 1260 70 {
 lab=OUT_P}
+N 1360 -910 1360 -860 {
+lab=VDD}
+N 1360 -520 1360 -470 {
+lab=GND}
+N 290 -720 900 -720 {
+lab=OUT_P}
+N 600 -680 900 -680 {
+lab=OUT_N}
+N 900 -720 1210 -720 {
+lab=OUT_P}
+N 900 -680 1210 -680 {
+lab=OUT_N}
+N 1520 -720 1580 -720 {
+lab=BUF_P}
+N 1520 -680 1580 -680 {
+lab=BUF_N}
+N 1270 -920 1270 -860 {
+lab=#net1}
+N 1270 -1010 1270 -980 {
+lab=VBIAS_BUF}
 C {cap_var.sym} 330 -550 0 0 {name=X1}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 430 -800 3 0 {name=C1 model=cap_mim_m3_1 W=13.3 L=13.3 MF=1 spiceprefix=X}
 C {devices/iopin.sym} 290 -880 3 0 {name=p1 lab=OUT_P}
-C {devices/iopin.sym} 600 -880 3 0 {name=p2 lab=OUT_N}
 C {devices/lab_pin.sym} 430 -700 0 0 {name=l1 sig_type=std_logic lab=GND}
 C {sky130_fd_pr/res_high_po.sym} 120 -970 0 0 {name=R1
 W=3.5
@@ -298,42 +317,6 @@ model=res_high_po
 spiceprefix=X
 mult=1}
 C {devices/lab_pin.sym} 50 -970 0 0 {name=l2 sig_type=std_logic lab=GND}
-C {rf_pfet_01v8_aF02W3p00L0p15.sym} 360 -1040 0 0 {name=X17
-model=rf_pfet_01v8_aF02W3p00L0p15pfet_01v8
-spiceprefix=X
-}
-C {rf_pfet_01v8_aF02W3p00L0p15.sym} 190 -1040 0 1 {name=X25
-model=rf_pfet_01v8_aF02W3p00L0p15pfet_01v8
-spiceprefix=X
-}
-C {rf_pfet_01v8_aF02W3p00L0p15.sym} 470 -1040 0 0 {name=X18
-model=rf_pfet_01v8_aF02W3p00L0p15pfet_01v8
-spiceprefix=X
-}
-C {rf_pfet_01v8_aF02W3p00L0p15.sym} 580 -1040 0 0 {name=X19
-model=rf_pfet_01v8_aF02W3p00L0p15pfet_01v8
-spiceprefix=X
-}
-C {rf_pfet_01v8_aF02W3p00L0p15.sym} 670 -1040 0 0 {name=X20
-model=rf_pfet_01v8_aF02W3p00L0p15pfet_01v8
-spiceprefix=X
-}
-C {rf_pfet_01v8_aF02W3p00L0p15.sym} 750 -1040 0 0 {name=X21
-model=rf_pfet_01v8_aF02W3p00L0p15pfet_01v8
-spiceprefix=X
-}
-C {rf_pfet_01v8_aF02W3p00L0p15.sym} 840 -1040 0 0 {name=X22
-model=rf_pfet_01v8_aF02W3p00L0p15pfet_01v8
-spiceprefix=X
-}
-C {rf_pfet_01v8_aF02W3p00L0p15.sym} 930 -1040 0 0 {name=X23
-model=rf_pfet_01v8_aF02W3p00L0p15pfet_01v8
-spiceprefix=X
-}
-C {rf_pfet_01v8_aF02W3p00L0p15.sym} 1030 -1040 0 0 {name=X24
-model=rf_pfet_01v8_aF02W3p00L0p15pfet_01v8
-spiceprefix=X
-}
 C {devices/lab_pin.sym} 280 -1110 3 0 {name=l3 sig_type=std_logic lab=PG}
 C {devices/lab_pin.sym} 490 -1110 3 0 {name=l4 sig_type=std_logic lab=PG}
 C {devices/lab_pin.sym} 600 -1110 3 0 {name=l5 sig_type=std_logic lab=PG}
@@ -371,4 +354,25 @@ C {rf_nfet_01v8_aM02W5p00L0p15.sym} -20 30 0 0 {name=X14}
 C {rf_nfet_01v8_aM02W5p00L0p15.sym} 100 30 0 0 {name=X15}
 C {rf_nfet_01v8_aM02W5p00L0p15.sym} 220 30 0 0 {name=X16}
 C {devices/iopin.sym} 440 110 1 0 {name=p13 lab=GND}
+C {rf_pfet_01v8_aM02W3p00L0p15.sym} 190 -1040 0 1 {name=X25}
+C {rf_pfet_01v8_aM02W3p00L0p15.sym} 360 -1040 0 0 {name=X17}
+C {rf_pfet_01v8_aM02W3p00L0p15.sym} 470 -1040 0 0 {name=X18}
+C {rf_pfet_01v8_aM02W3p00L0p15.sym} 580 -1040 0 0 {name=X19}
+C {rf_pfet_01v8_aM02W3p00L0p15.sym} 670 -1040 0 0 {name=X20}
+C {rf_pfet_01v8_aM02W3p00L0p15.sym} 750 -1040 0 0 {name=X21}
+C {rf_pfet_01v8_aM02W3p00L0p15.sym} 840 -1040 0 0 {name=X22}
+C {rf_pfet_01v8_aM02W3p00L0p15.sym} 930 -1040 0 0 {name=X23}
+C {rf_pfet_01v8_aM02W3p00L0p15.sym} 1030 -1040 0 0 {name=X24}
+C {devices/lab_pin.sym} 1360 -910 1 0 {name=l23 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} 1360 -470 3 0 {name=l24 sig_type=std_logic lab=GND}
+C {devices/opin.sym} 1580 -720 0 0 {name=p14 lab=BUF_P}
+C {devices/opin.sym} 1580 -680 0 0 {name=p15 lab=BUF_N}
+C {devices/iopin.sym} 600 -880 3 0 {name=p16 lab=OUT_N}
+C {devices/iopin.sym} 1270 -1010 3 0 {name=p17 lab=VBIAS_BUF}
+C {buffer.sym} 1150 -500 0 0 {name=X26}
+C {sky130_fd_pr/res_generic_po.sym} 1270 -950 0 0 {name=R2
+W=1
+L=6
+model=res_generic_po
+mult=1}
 C {capbank_pex.sym} 360 -350 0 0 {name=X2}
