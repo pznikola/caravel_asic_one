@@ -157,7 +157,7 @@ C {devices/code_shown.sym} 590 -630 0 0 {name=SPICE only_toplevel=false value="
 .options savecurrents
 
 .control
-tran 0.005n 30n
+tran 0.01n 30n
 plot (outp-outn)
 plot (bufp-bufn)
 plot (@r.x1.r2[i])
