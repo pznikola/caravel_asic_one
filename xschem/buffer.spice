@@ -1,0 +1,56 @@
+** sch_path: /home/nikolap/Desktop/ASIC/caravel_asic_one/xschem/buffer.sch
+**.subckt buffer VBIAS VDD GND OUT_P OUT_N IN_P IN_N
+*.iopin VBIAS
+*.iopin VDD
+*.iopin GND
+*.opin OUT_P
+*.opin OUT_N
+*.ipin IN_P
+*.ipin IN_N
+X10 OUT_N IN_P W_D GND rf_nfet_01v8_lvt_aM04W5p00L0p15
+X11 OUT_P IN_N W_D GND rf_nfet_01v8_lvt_aM04W5p00L0p15
+X12 OUT_N IN_P W_D GND rf_nfet_01v8_lvt_aM04W5p00L0p15
+X13 OUT_P IN_N W_D GND rf_nfet_01v8_lvt_aM04W5p00L0p15
+R1 OUT_N VDD sky130_fd_pr__res_generic_po W=3.5 L=3.5 m=1
+R2 OUT_P VDD sky130_fd_pr__res_generic_po W=3.5 L=3.5 m=1
+X9 VBIAS VBIAS GND GND rf_nfet_01v8_lvt_aM04W5p00L0p15
+X1 W_D VBIAS GND GND rf_nfet_01v8_lvt_aM04W5p00L0p15
+X2 W_D VBIAS GND GND rf_nfet_01v8_lvt_aM04W5p00L0p15
+X3 W_D VBIAS GND GND rf_nfet_01v8_lvt_aM04W5p00L0p15
+X4 W_D VBIAS GND GND rf_nfet_01v8_lvt_aM04W5p00L0p15
+X5 W_D VBIAS GND GND rf_nfet_01v8_lvt_aM04W5p00L0p15
+X6 W_D VBIAS GND GND rf_nfet_01v8_lvt_aM04W5p00L0p15
+X7 W_D VBIAS GND GND rf_nfet_01v8_lvt_aM04W5p00L0p15
+X8 W_D VBIAS GND GND rf_nfet_01v8_lvt_aM04W5p00L0p15
+X14 GND GND GND GND rf_nfet_01v8_lvt_aM04W5p00L0p15
+X15 GND GND GND GND rf_nfet_01v8_lvt_aM04W5p00L0p15
+X16 GND GND GND GND rf_nfet_01v8_lvt_aM04W5p00L0p15
+X17 GND GND GND GND rf_nfet_01v8_lvt_aM04W5p00L0p15
+X18 GND GND GND GND rf_nfet_01v8_lvt_aM04W5p00L0p15
+X19 GND GND GND GND rf_nfet_01v8_lvt_aM04W5p00L0p15
+X20 GND GND GND GND rf_nfet_01v8_lvt_aM04W5p00L0p15
+X21 GND GND GND GND rf_nfet_01v8_lvt_aM04W5p00L0p15
+X22 GND GND GND GND rf_nfet_01v8_lvt_aM04W5p00L0p15
+**.ends
+
+* expanding   symbol:  rf_nfet_01v8_lvt_aM04W5p00L0p15.sym # of pins=4
+** sym_path: /home/nikolap/Desktop/ASIC/caravel_asic_one/xschem/rf_nfet_01v8_lvt_aM04W5p00L0p15.sym
+** sch_path: /home/nikolap/Desktop/ASIC/caravel_asic_one/xschem/rf_nfet_01v8_lvt_aM04W5p00L0p15.sch
+.subckt rf_nfet_01v8_lvt_aM04W5p00L0p15  DRAIN GATE SOURCE SUBSTRATE
+*.iopin SOURCE
+*.iopin DRAIN
+*.ipin GATE
+*.ipin SUBSTRATE
+**** begin user architecture code
+
+
+X0 DRAIN GATE SOURCE SUBSTRATE sky130_fd_pr__nfet_01v8_lvt w=5.05e+06u l=150000u
+X1 DRAIN GATE SOURCE SUBSTRATE sky130_fd_pr__nfet_01v8_lvt w=5.05e+06u l=150000u
+X2 SOURCE GATE DRAIN SUBSTRATE sky130_fd_pr__nfet_01v8_lvt w=5.05e+06u l=150000u
+X3 SOURCE GATE DRAIN SUBSTRATE sky130_fd_pr__nfet_01v8_lvt w=5.05e+06u l=150000u
+
+
+**** end user architecture code
+.ends
+
+.end
