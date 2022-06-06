@@ -1,0 +1,38 @@
+magic
+tech sky130B
+timestamp 1654464469
+<< metal5 >>
+rect 283 709 1321 869
+use rf_nfet_01v8_lvt_aM04W5p00L0p15  rf_nfet_01v8_lvt_aM04W5p00L0p15_0
+timestamp 1654372561
+transform 1 0 -69 0 1 -10
+box 0 0 338 597
+use rf_nfet_01v8_lvt_aM04W5p00L0p15  rf_nfet_01v8_lvt_aM04W5p00L0p15_1
+timestamp 1654372561
+transform 1 0 283 0 -1 587
+box 0 0 338 597
+use rf_nfet_01v8_lvt_aM04W5p00L0p15  rf_nfet_01v8_lvt_aM04W5p00L0p15_2
+timestamp 1654372561
+transform 1 0 635 0 -1 587
+box 0 0 338 597
+use rf_nfet_01v8_lvt_aM04W5p00L0p15  rf_nfet_01v8_lvt_aM04W5p00L0p15_3
+timestamp 1654372561
+transform 1 0 987 0 -1 587
+box 0 0 338 597
+use rf_nfet_01v8_lvt_aM04W5p00L0p15  rf_nfet_01v8_lvt_aM04W5p00L0p15_4
+timestamp 1654372561
+transform 1 0 -69 0 1 627
+box 0 0 338 597
+use rf_nfet_01v8_lvt_aM04W5p00L0p15  rf_nfet_01v8_lvt_aM04W5p00L0p15_5
+timestamp 1654372561
+transform 1 0 283 0 1 627
+box 0 0 338 597
+use rf_nfet_01v8_lvt_aM04W5p00L0p15  rf_nfet_01v8_lvt_aM04W5p00L0p15_6
+timestamp 1654372561
+transform 1 0 635 0 1 627
+box 0 0 338 597
+use rf_nfet_01v8_lvt_aM04W5p00L0p15  rf_nfet_01v8_lvt_aM04W5p00L0p15_7
+timestamp 1654372561
+transform 1 0 987 0 1 627
+box 0 0 338 597
+<< end >>

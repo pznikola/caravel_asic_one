@@ -1,0 +1,60 @@
+magic
+tech sky130B
+timestamp 1654373441
+use rf_nfet_01v8_lvt_aM04W5p00L0p15  rf_nfet_01v8_lvt_aM04W5p00L0p15_0
+timestamp 1654372561
+transform 1 0 -21 0 1 -4
+box 0 0 338 597
+use rf_nfet_01v8_lvt_aM04W5p00L0p15  rf_nfet_01v8_lvt_aM04W5p00L0p15_1
+timestamp 1654372561
+transform 1 0 331 0 1 -4
+box 0 0 338 597
+use rf_nfet_01v8_lvt_aM04W5p00L0p15  rf_nfet_01v8_lvt_aM04W5p00L0p15_2
+timestamp 1654372561
+transform 1 0 683 0 1 -4
+box 0 0 338 597
+use rf_nfet_01v8_lvt_aM04W5p00L0p15  rf_nfet_01v8_lvt_aM04W5p00L0p15_3
+timestamp 1654372561
+transform 1 0 1035 0 1 -4
+box 0 0 338 597
+use rf_nfet_01v8_lvt_aM04W5p00L0p15  rf_nfet_01v8_lvt_aM04W5p00L0p15_4
+timestamp 1654372561
+transform 1 0 1387 0 1 -4
+box 0 0 338 597
+use rf_nfet_01v8_lvt_aM04W5p00L0p15  rf_nfet_01v8_lvt_aM04W5p00L0p15_5
+timestamp 1654372561
+transform 1 0 -21 0 1 658
+box 0 0 338 597
+use rf_nfet_01v8_lvt_aM04W5p00L0p15  rf_nfet_01v8_lvt_aM04W5p00L0p15_6
+timestamp 1654372561
+transform 1 0 331 0 1 658
+box 0 0 338 597
+use rf_nfet_01v8_lvt_aM04W5p00L0p15  rf_nfet_01v8_lvt_aM04W5p00L0p15_7
+timestamp 1654372561
+transform 1 0 1035 0 1 658
+box 0 0 338 597
+use rf_nfet_01v8_lvt_aM04W5p00L0p15  rf_nfet_01v8_lvt_aM04W5p00L0p15_8
+timestamp 1654372561
+transform 1 0 1387 0 1 658
+box 0 0 338 597
+use rf_nfet_01v8_lvt_aM04W5p00L0p15  rf_nfet_01v8_lvt_aM04W5p00L0p15_9
+timestamp 1654372561
+transform 1 0 -373 0 1 658
+box 0 0 338 597
+use rf_nfet_01v8_lvt_aM04W5p00L0p15  rf_nfet_01v8_lvt_aM04W5p00L0p15_10
+timestamp 1654372561
+transform 1 0 683 0 1 658
+box 0 0 338 597
+use rf_nfet_01v8_lvt_aM04W5p00L0p15  rf_nfet_01v8_lvt_aM04W5p00L0p15_11
+timestamp 1654372561
+transform 1 0 1739 0 1 658
+box 0 0 338 597
+use rf_nfet_01v8_lvt_aM04W5p00L0p15  rf_nfet_01v8_lvt_aM04W5p00L0p15_12
+timestamp 1654372561
+transform 1 0 1739 0 1 -4
+box 0 0 338 597
+use rf_nfet_01v8_lvt_aM04W5p00L0p15  rf_nfet_01v8_lvt_aM04W5p00L0p15_13
+timestamp 1654372561
+transform 1 0 -373 0 1 -4
+box 0 0 338 597
+<< end >>
