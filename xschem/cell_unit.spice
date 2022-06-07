@@ -1,0 +1,26 @@
+* NGSPICE file created from cell_unit.ext - technology: sky130B
+
+.subckt sky130_fd_pr__res_xhigh_po_0p35_WX6KG8 a_n35_n532# a_n35_100# VSUBS
+X0 a_n35_n532# a_n35_100# VSUBS sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
+.ends
+
+.subckt rf_nfet_01v8_aM02W1p65L0p15 DRAIN GATE SOURCE SUBSTRATE
+X0 DRAIN GATE SOURCE SUBSTRATE sky130_fd_pr__nfet_01v8 ad=4.62e+11p pd=3.86e+06u as=9.24e+11p ps=7.72e+06u w=1.65e+06u l=150000u
+X1 SOURCE GATE DRAIN SUBSTRATE sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+.ends
+
+.subckt sky130_fd_pr__cap_mim_m3_1_V3VADT c1_n380_n330# m3_n480_n430#
+X0 c1_n380_n330# m3_n480_n430# sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
+.ends
+
+.subckt cell_unit ON V_bias OUT_P OUT_N GND
+Xsky130_fd_pr__res_xhigh_po_0p35_WX6KG8_0 rf_nfet_01v8_aM02W1p65L0p15_0/DRAIN V_bias
++ GND sky130_fd_pr__res_xhigh_po_0p35_WX6KG8
+Xsky130_fd_pr__res_xhigh_po_0p35_WX6KG8_1 rf_nfet_01v8_aM02W1p65L0p15_0/SOURCE V_bias
++ GND sky130_fd_pr__res_xhigh_po_0p35_WX6KG8
+Xrf_nfet_01v8_aM02W1p65L0p15_0 rf_nfet_01v8_aM02W1p65L0p15_0/DRAIN ON rf_nfet_01v8_aM02W1p65L0p15_0/SOURCE
++ GND rf_nfet_01v8_aM02W1p65L0p15
+Xsky130_fd_pr__cap_mim_m3_1_V3VADT_0 OUT_P rf_nfet_01v8_aM02W1p65L0p15_0/DRAIN sky130_fd_pr__cap_mim_m3_1_V3VADT
+Xsky130_fd_pr__cap_mim_m3_1_V3VADT_1 OUT_N rf_nfet_01v8_aM02W1p65L0p15_0/SOURCE sky130_fd_pr__cap_mim_m3_1_V3VADT
+.ends
+
