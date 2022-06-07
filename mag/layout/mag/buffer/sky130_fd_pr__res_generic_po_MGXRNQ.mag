@@ -1,0 +1,94 @@
+magic
+tech sky130B
+magscale 1 2
+timestamp 1654344248
+<< pwell >>
+rect -326 -694 326 694
+<< psubdiff >>
+rect -290 624 -194 658
+rect 194 624 290 658
+rect -290 562 -256 624
+rect 256 562 290 624
+rect -290 -624 -256 -562
+rect 256 -624 290 -562
+rect -290 -658 -194 -624
+rect 194 -658 290 -624
+<< psubdiffcont >>
+rect -194 624 194 658
+rect -290 -562 -256 562
+rect 256 -562 290 562
+rect -194 -658 194 -624
+<< poly >>
+rect -160 512 160 528
+rect -160 478 -144 512
+rect 144 478 160 512
+rect -160 455 160 478
+rect -160 102 160 125
+rect -160 68 -144 102
+rect 144 68 160 102
+rect -160 52 160 68
+rect -160 -68 160 -52
+rect -160 -102 -144 -68
+rect 144 -102 160 -68
+rect -160 -125 160 -102
+rect -160 -478 160 -455
+rect -160 -512 -144 -478
+rect 144 -512 160 -478
+rect -160 -528 160 -512
+<< polycont >>
+rect -144 478 144 512
+rect -144 68 144 102
+rect -144 -102 144 -68
+rect -144 -512 144 -478
+<< npolyres >>
+rect -160 125 160 455
+rect -160 -455 160 -125
+<< locali >>
+rect -290 624 -194 658
+rect 194 624 290 658
+rect -290 562 -256 624
+rect 256 562 290 624
+rect -160 478 -144 512
+rect 144 478 160 512
+rect -160 68 -144 102
+rect 144 68 160 102
+rect -160 -102 -144 -68
+rect 144 -102 160 -68
+rect -160 -512 -144 -478
+rect 144 -512 160 -478
+rect -290 -624 -256 -562
+rect 256 -624 290 -562
+rect -290 -658 -194 -624
+rect 194 -658 290 -624
+<< viali >>
+rect -144 478 144 512
+rect -144 472 144 478
+rect -144 102 144 108
+rect -144 68 144 102
+rect -144 -102 144 -68
+rect -144 -108 144 -102
+rect -144 -478 144 -472
+rect -144 -512 144 -478
+<< metal1 >>
+rect -156 512 156 518
+rect -156 472 -144 512
+rect 144 472 156 512
+rect -156 466 156 472
+rect -156 108 156 114
+rect -156 68 -144 108
+rect 144 68 156 108
+rect -156 62 156 68
+rect -156 -68 156 -62
+rect -156 -108 -144 -68
+rect 144 -108 156 -68
+rect -156 -114 156 -108
+rect -156 -472 156 -466
+rect -156 -512 -144 -472
+rect 144 -512 156 -472
+rect -156 -518 156 -512
+<< properties >>
+string FIXED_BBOX -273 -641 273 641
+string gencell sky130_fd_pr__res_generic_po
+string library sky130
+string parameters w 1.6 l 1.650 m 2 nx 1 wmin 0.330 lmin 1.650 rho 48.2 val 49.706 dummy 0 dw 0.0 term 0.0 sterm 0.0 caplen 0.4 snake 0 guard 1 glc 1 grc 1 gtc 1 gbc 1 roverlap 0 endcov 100 full_metal 1 hv_guard 0 n_guard 0 vias 1 viagb 0 viagt 0 viagl 0 viagr 0
+<< end >>

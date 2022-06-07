@@ -1,0 +1,42 @@
+**.subckt vco_pmirr IND_CT VBIAS VDD GND
+*.iopin IND_CT
+*.iopin VBIAS
+*.iopin VDD
+*.iopin GND
+X25 VDD net1 net1 VDD rf_pfet_01v8_aM02W3p00L0p15
+X17 VDD net1 IND_CT VDD rf_pfet_01v8_aM02W3p00L0p15
+X18 VDD net1 IND_CT VDD rf_pfet_01v8_aM02W3p00L0p15
+X19 VDD net1 IND_CT VDD rf_pfet_01v8_aM02W3p00L0p15
+X20 VDD net1 IND_CT VDD rf_pfet_01v8_aM02W3p00L0p15
+X21 VDD net1 IND_CT VDD rf_pfet_01v8_aM02W3p00L0p15
+X22 VDD net1 IND_CT VDD rf_pfet_01v8_aM02W3p00L0p15
+X23 VDD net1 IND_CT VDD rf_pfet_01v8_aM02W3p00L0p15
+X24 VDD net1 IND_CT VDD rf_pfet_01v8_aM02W3p00L0p15
+X1 VDD VDD VDD VDD rf_pfet_01v8_aM02W3p00L0p15
+X2 VDD VDD VDD VDD rf_pfet_01v8_aM02W3p00L0p15
+X3 VDD VDD VDD VDD rf_pfet_01v8_aM02W3p00L0p15
+X4 VDD VDD VDD VDD rf_pfet_01v8_aM02W3p00L0p15
+X5 VDD VDD VDD VDD rf_pfet_01v8_aM02W3p00L0p15
+XR1 VBIAS net1 GND sky130_fd_pr__res_high_po_2p85 L=3.5 mult=1 m=1
+**.ends
+
+* expanding   symbol:  rf_pfet_01v8_aM02W3p00L0p15.sym # of pins=4
+* sym_path: /home/student/magic_workdir/vco_pmirr/xschem/rf_pfet_01v8_aM02W3p00L0p15.sym
+* sch_path: /home/student/magic_workdir/vco_pmirr/xschem/rf_pfet_01v8_aM02W3p00L0p15.sch
+.subckt rf_pfet_01v8_aM02W3p00L0p15  SOURCE GATE DRAIN BULK
+*.iopin DRAIN
+*.iopin SOURCE
+*.ipin GATE
+*.ipin BULK
+**** begin user architecture code
+
+
+X0 SOURCE GATE DRAIN BULK sky130_fd_pr__pfet_01v8 w=3.01e+06u l=150000u
+X1 DRAIN GATE SOURCE BULK sky130_fd_pr__pfet_01v8 w=3.01e+06u l=150000u
+
+
+**** end user architecture code
+.ends
+
+** flattened .save nodes
+.end

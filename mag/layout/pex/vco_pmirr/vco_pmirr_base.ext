@@ -1,0 +1,70 @@
+timestamp 1654600796
+version 8.3
+tech sky130B
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use rf_pfet_01v8_aM02W3p00L0p15 rf_pfet_01v8_aM02W3p00L0p15_7 1 0 130 0 1 -936
+use rf_pfet_01v8_aM02W3p00L0p15 rf_pfet_01v8_aM02W3p00L0p15_8 1 0 524 0 1 -936
+use rf_pfet_01v8_aM02W3p00L0p15 rf_pfet_01v8_aM02W3p00L0p15_9 1 0 918 0 1 -936
+use rf_pfet_01v8_aM02W3p00L0p15 rf_pfet_01v8_aM02W3p00L0p15_10 1 0 1312 0 1 -936
+use rf_pfet_01v8_aM02W3p00L0p15 rf_pfet_01v8_aM02W3p00L0p15_11 1 0 1706 0 1 -936
+use rf_pfet_01v8_aM02W3p00L0p15 rf_pfet_01v8_aM02W3p00L0p15_12 1 0 2100 0 1 -936
+use rf_pfet_01v8_aM02W3p00L0p15 rf_pfet_01v8_aM02W3p00L0p15_13 1 0 2494 0 1 -936
+use rf_pfet_01v8_aM02W3p00L0p15 rf_pfet_01v8_aM02W3p00L0p15_0 1 0 130 0 1 0
+use rf_pfet_01v8_aM02W3p00L0p15 rf_pfet_01v8_aM02W3p00L0p15_1 1 0 524 0 1 0
+use rf_pfet_01v8_aM02W3p00L0p15 rf_pfet_01v8_aM02W3p00L0p15_2 1 0 918 0 1 0
+use rf_pfet_01v8_aM02W3p00L0p15 rf_pfet_01v8_aM02W3p00L0p15_3 1 0 1312 0 1 0
+use rf_pfet_01v8_aM02W3p00L0p15 rf_pfet_01v8_aM02W3p00L0p15_4 1 0 1706 0 1 0
+use rf_pfet_01v8_aM02W3p00L0p15 rf_pfet_01v8_aM02W3p00L0p15_5 1 0 2100 0 1 0
+use rf_pfet_01v8_aM02W3p00L0p15 rf_pfet_01v8_aM02W3p00L0p15_6 1 0 2494 0 1 0
+node "m1_2730_0#" 0 2.74662 2730 0 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8456 412 0 0 0 0 0 0 0 0 0 0
+node "w_130_n1058#" 30921 23763.4 130 -1058 nw 0 0 0 0 5726320 10836 0 0 602272 21928 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 390592 23656 986832 28172 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m1_2730_0#" "w_130_n1058#" 2210.95
+cap "rf_pfet_01v8_aM02W3p00L0p15_3/DRAIN" "rf_pfet_01v8_aM02W3p00L0p15_7/GATE" -3.33067e-15
+cap "rf_pfet_01v8_aM02W3p00L0p15_3/DRAIN" "rf_pfet_01v8_aM02W3p00L0p15_0/BULK" -5.55112e-17
+merge "rf_pfet_01v8_aM02W3p00L0p15_6/DRAIN" "rf_pfet_01v8_aM02W3p00L0p15_6/SOURCE" -26510.2 0 0 0 0 -5903568 -38328 0 0 -418992 -19552 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -221136 -16000 -524208 -27328 0 0 0 0 0 0 0 0 0 0
+merge "rf_pfet_01v8_aM02W3p00L0p15_6/SOURCE" "rf_pfet_01v8_aM02W3p00L0p15_6/GATE"
+merge "rf_pfet_01v8_aM02W3p00L0p15_6/GATE" "m1_2730_0#"
+merge "m1_2730_0#" "rf_pfet_01v8_aM02W3p00L0p15_6/BULK"
+merge "rf_pfet_01v8_aM02W3p00L0p15_6/BULK" "rf_pfet_01v8_aM02W3p00L0p15_5/BULK"
+merge "rf_pfet_01v8_aM02W3p00L0p15_5/BULK" "rf_pfet_01v8_aM02W3p00L0p15_4/BULK"
+merge "rf_pfet_01v8_aM02W3p00L0p15_4/BULK" "rf_pfet_01v8_aM02W3p00L0p15_3/DRAIN"
+merge "rf_pfet_01v8_aM02W3p00L0p15_3/DRAIN" "rf_pfet_01v8_aM02W3p00L0p15_3/SOURCE"
+merge "rf_pfet_01v8_aM02W3p00L0p15_3/SOURCE" "rf_pfet_01v8_aM02W3p00L0p15_3/GATE"
+merge "rf_pfet_01v8_aM02W3p00L0p15_3/GATE" "rf_pfet_01v8_aM02W3p00L0p15_3/BULK"
+merge "rf_pfet_01v8_aM02W3p00L0p15_3/BULK" "rf_pfet_01v8_aM02W3p00L0p15_2/BULK"
+merge "rf_pfet_01v8_aM02W3p00L0p15_2/BULK" "rf_pfet_01v8_aM02W3p00L0p15_1/BULK"
+merge "rf_pfet_01v8_aM02W3p00L0p15_1/BULK" "rf_pfet_01v8_aM02W3p00L0p15_0/DRAIN"
+merge "rf_pfet_01v8_aM02W3p00L0p15_0/DRAIN" "rf_pfet_01v8_aM02W3p00L0p15_0/SOURCE"
+merge "rf_pfet_01v8_aM02W3p00L0p15_0/SOURCE" "rf_pfet_01v8_aM02W3p00L0p15_0/GATE"
+merge "rf_pfet_01v8_aM02W3p00L0p15_0/GATE" "rf_pfet_01v8_aM02W3p00L0p15_0/BULK"
+merge "rf_pfet_01v8_aM02W3p00L0p15_0/BULK" "rf_pfet_01v8_aM02W3p00L0p15_13/DRAIN"
+merge "rf_pfet_01v8_aM02W3p00L0p15_13/DRAIN" "rf_pfet_01v8_aM02W3p00L0p15_13/SOURCE"
+merge "rf_pfet_01v8_aM02W3p00L0p15_13/SOURCE" "rf_pfet_01v8_aM02W3p00L0p15_13/GATE"
+merge "rf_pfet_01v8_aM02W3p00L0p15_13/GATE" "rf_pfet_01v8_aM02W3p00L0p15_13/BULK"
+merge "rf_pfet_01v8_aM02W3p00L0p15_13/BULK" "rf_pfet_01v8_aM02W3p00L0p15_12/BULK"
+merge "rf_pfet_01v8_aM02W3p00L0p15_12/BULK" "rf_pfet_01v8_aM02W3p00L0p15_11/BULK"
+merge "rf_pfet_01v8_aM02W3p00L0p15_11/BULK" "rf_pfet_01v8_aM02W3p00L0p15_10/BULK"
+merge "rf_pfet_01v8_aM02W3p00L0p15_10/BULK" "rf_pfet_01v8_aM02W3p00L0p15_9/BULK"
+merge "rf_pfet_01v8_aM02W3p00L0p15_9/BULK" "rf_pfet_01v8_aM02W3p00L0p15_8/BULK"
+merge "rf_pfet_01v8_aM02W3p00L0p15_8/BULK" "rf_pfet_01v8_aM02W3p00L0p15_7/DRAIN"
+merge "rf_pfet_01v8_aM02W3p00L0p15_7/DRAIN" "rf_pfet_01v8_aM02W3p00L0p15_7/SOURCE"
+merge "rf_pfet_01v8_aM02W3p00L0p15_7/SOURCE" "rf_pfet_01v8_aM02W3p00L0p15_7/GATE"
+merge "rf_pfet_01v8_aM02W3p00L0p15_7/GATE" "rf_pfet_01v8_aM02W3p00L0p15_7/BULK"
+merge "rf_pfet_01v8_aM02W3p00L0p15_7/BULK" "w_130_n1058#"
+merge "rf_pfet_01v8_aM02W3p00L0p15_6/VSUBS" "rf_pfet_01v8_aM02W3p00L0p15_5/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "rf_pfet_01v8_aM02W3p00L0p15_5/VSUBS" "rf_pfet_01v8_aM02W3p00L0p15_4/VSUBS"
+merge "rf_pfet_01v8_aM02W3p00L0p15_4/VSUBS" "rf_pfet_01v8_aM02W3p00L0p15_3/VSUBS"
+merge "rf_pfet_01v8_aM02W3p00L0p15_3/VSUBS" "rf_pfet_01v8_aM02W3p00L0p15_2/VSUBS"
+merge "rf_pfet_01v8_aM02W3p00L0p15_2/VSUBS" "rf_pfet_01v8_aM02W3p00L0p15_1/VSUBS"
+merge "rf_pfet_01v8_aM02W3p00L0p15_1/VSUBS" "rf_pfet_01v8_aM02W3p00L0p15_0/VSUBS"
+merge "rf_pfet_01v8_aM02W3p00L0p15_0/VSUBS" "rf_pfet_01v8_aM02W3p00L0p15_13/VSUBS"
+merge "rf_pfet_01v8_aM02W3p00L0p15_13/VSUBS" "rf_pfet_01v8_aM02W3p00L0p15_12/VSUBS"
+merge "rf_pfet_01v8_aM02W3p00L0p15_12/VSUBS" "rf_pfet_01v8_aM02W3p00L0p15_11/VSUBS"
+merge "rf_pfet_01v8_aM02W3p00L0p15_11/VSUBS" "rf_pfet_01v8_aM02W3p00L0p15_10/VSUBS"
+merge "rf_pfet_01v8_aM02W3p00L0p15_10/VSUBS" "rf_pfet_01v8_aM02W3p00L0p15_9/VSUBS"
+merge "rf_pfet_01v8_aM02W3p00L0p15_9/VSUBS" "rf_pfet_01v8_aM02W3p00L0p15_8/VSUBS"
+merge "rf_pfet_01v8_aM02W3p00L0p15_8/VSUBS" "rf_pfet_01v8_aM02W3p00L0p15_7/VSUBS"
+merge "rf_pfet_01v8_aM02W3p00L0p15_7/VSUBS" "VSUBS"
