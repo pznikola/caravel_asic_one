@@ -30,45 +30,7 @@ N 210 -520 430 -520 {
 lab=Vtune}
 N 430 -700 430 -670 {
 lab=GND}
-N 160 -1110 390 -1110 {
-lab=PG}
-N 120 -1190 120 -1140 {
-lab=VDD}
-N 120 -1190 430 -1190 {
-lab=VDD}
-N 430 -1190 430 -1140 {
-lab=VDD}
-N 120 -1140 120 -1110 {
-lab=VDD}
-N 120 -1060 170 -1060 {
-lab=PG}
-N 170 -1110 170 -1060 {
-lab=PG}
-N 120 -940 120 -890 {
-lab=VBIAS}
-N 50 -970 100 -970 {
-lab=GND}
-N 430 -1140 430 -1110 {
-lab=VDD}
-N 1100 -1170 1100 -1110 {
-lab=VDD}
-N 1000 -1170 1000 -1110 {
-lab=VDD}
-N 910 -1170 910 -1110 {
-lab=VDD}
-N 820 -1170 820 -1110 {
-lab=VDD}
-N 740 -1170 740 -1110 {
-lab=VDD}
-N 650 -1170 650 -1110 {
-lab=VDD}
-N 540 -1170 540 -1110 {
-lab=VDD}
-N 430 -1170 1100 -1170 {
-lab=VDD}
-N 430 -1040 1100 -1040 {
-lab=IND_CT}
-N 430 -1040 430 -990 {
+N 440 -1100 440 -1050 {
 lab=IND_CT}
 N 400 -350 400 -320 {
 lab=freq<0>}
@@ -127,8 +89,6 @@ lab=freq<0>}
 N 350 -490 410 -490 {
 lab=GND}
 N 440 -490 510 -490 {
-lab=VDD}
-N 280 -1250 280 -1190 {
 lab=VDD}
 N 600 -40 600 -10 {
 lab=GND}
@@ -204,24 +164,6 @@ N 290 20 600 20 {
 lab=GND}
 N 440 20 440 110 {
 lab=GND}
-N 120 -1060 120 -1000 {
-lab=PG}
-N 540 -1060 540 -1040 {
-lab=IND_CT}
-N 430 -1060 430 -1040 {
-lab=IND_CT}
-N 1100 -1060 1100 -1040 {
-lab=IND_CT}
-N 1000 -1060 1000 -1040 {
-lab=IND_CT}
-N 910 -1060 910 -1040 {
-lab=IND_CT}
-N 820 -1060 820 -1040 {
-lab=IND_CT}
-N 740 -1060 740 -1040 {
-lab=IND_CT}
-N 650 -1060 650 -1040 {
-lab=IND_CT}
 N -420 -110 -420 -90 {
 lab=OUT_P}
 N -480 -40 -470 -40 {
@@ -294,10 +236,6 @@ N 290 -720 900 -720 {
 lab=OUT_P}
 N 600 -680 900 -680 {
 lab=OUT_N}
-N 900 -720 1210 -720 {
-lab=OUT_P}
-N 900 -680 1210 -680 {
-lab=OUT_N}
 N 1520 -720 1580 -720 {
 lab=BUF_P}
 N 1520 -680 1580 -680 {
@@ -306,28 +244,20 @@ N 1270 -920 1270 -860 {
 lab=#net1}
 N 1270 -1010 1270 -980 {
 lab=VBIAS_BUF}
+N 900 -720 1210 -720 {
+lab=OUT_P}
+N 900 -680 1210 -680 {
+lab=OUT_N}
+N 380 -1360 380 -1350 {
+lab=VDD}
+N 320 -1100 320 -1090 {
+lab=VBIAS}
 C {cap_var.sym} 330 -550 0 0 {name=X1}
 C {capbank.sym} 360 -350 0 0 {name=X2}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 430 -800 3 0 {name=C1 model=cap_mim_m3_1 W=13.3 L=13.3 MF=1 spiceprefix=X}
 C {devices/iopin.sym} 290 -880 3 0 {name=p1 lab=OUT_P}
 C {devices/lab_pin.sym} 430 -700 0 0 {name=l1 sig_type=std_logic lab=GND}
-C {sky130_fd_pr/res_high_po.sym} 120 -970 0 0 {name=R1
-W=3.5
-L=3.5
-model=res_high_po
-spiceprefix=X
-mult=1}
-C {devices/lab_pin.sym} 50 -970 0 0 {name=l2 sig_type=std_logic lab=GND}
-C {devices/lab_pin.sym} 280 -1110 3 0 {name=l3 sig_type=std_logic lab=PG}
-C {devices/lab_pin.sym} 490 -1110 3 0 {name=l4 sig_type=std_logic lab=PG}
-C {devices/lab_pin.sym} 600 -1110 3 0 {name=l5 sig_type=std_logic lab=PG}
-C {devices/lab_pin.sym} 690 -1110 3 0 {name=l6 sig_type=std_logic lab=PG}
-C {devices/lab_pin.sym} 770 -1110 3 0 {name=l7 sig_type=std_logic lab=PG}
-C {devices/lab_pin.sym} 860 -1110 3 0 {name=l8 sig_type=std_logic lab=PG}
-C {devices/lab_pin.sym} 950 -1110 3 0 {name=l9 sig_type=std_logic lab=PG}
-C {devices/lab_pin.sym} 1050 -1110 3 0 {name=l10 sig_type=std_logic lab=PG}
-C {devices/iopin.sym} 430 -990 1 0 {name=p3 lab=IND_CT}
-C {devices/iopin.sym} 120 -890 1 0 {name=p4 lab=VBIAS}
+C {devices/iopin.sym} 440 -1050 1 0 {name=p3 lab=IND_CT}
 C {devices/iopin.sym} 210 -520 2 0 {name=p5 lab=Vtune}
 C {devices/ipin.sym} 360 -290 3 0 {name=p7 lab=freq\\<0\\>}
 C {devices/ipin.sym} 380 -290 3 0 {name=p6 lab=freq\\<1\\>}
@@ -337,7 +267,6 @@ C {devices/ipin.sym} 470 -290 3 0 {name=p10 lab=freq\\<4\\>}
 C {devices/ipin.sym} 490 -290 3 0 {name=p11 lab=freq\\<5\\>}
 C {devices/lab_pin.sym} 350 -490 0 0 {name=l11 sig_type=std_logic lab=GND}
 C {devices/lab_pin.sym} 510 -490 2 0 {name=l12 sig_type=std_logic lab=VDD}
-C {devices/iopin.sym} 280 -1250 3 0 {name=p12 lab=VDD}
 C {rf_nfet_01v8_aM02W5p00L0p15.sym} 530 30 0 0 {name=X3}
 C {devices/lab_pin.sym} 540 -40 0 0 {name=l13 sig_type=std_logic lab=OUT_P}
 C {rf_nfet_01v8_aM02W5p00L0p15.sym} 650 30 0 0 {name=X4}
@@ -355,15 +284,6 @@ C {rf_nfet_01v8_aM02W5p00L0p15.sym} -20 30 0 0 {name=X14}
 C {rf_nfet_01v8_aM02W5p00L0p15.sym} 100 30 0 0 {name=X15}
 C {rf_nfet_01v8_aM02W5p00L0p15.sym} 220 30 0 0 {name=X16}
 C {devices/iopin.sym} 440 110 1 0 {name=p13 lab=GND}
-C {rf_pfet_01v8_aM02W3p00L0p15.sym} 190 -1040 0 1 {name=X25}
-C {rf_pfet_01v8_aM02W3p00L0p15.sym} 360 -1040 0 0 {name=X17}
-C {rf_pfet_01v8_aM02W3p00L0p15.sym} 470 -1040 0 0 {name=X18}
-C {rf_pfet_01v8_aM02W3p00L0p15.sym} 580 -1040 0 0 {name=X19}
-C {rf_pfet_01v8_aM02W3p00L0p15.sym} 670 -1040 0 0 {name=X20}
-C {rf_pfet_01v8_aM02W3p00L0p15.sym} 750 -1040 0 0 {name=X21}
-C {rf_pfet_01v8_aM02W3p00L0p15.sym} 840 -1040 0 0 {name=X22}
-C {rf_pfet_01v8_aM02W3p00L0p15.sym} 930 -1040 0 0 {name=X23}
-C {rf_pfet_01v8_aM02W3p00L0p15.sym} 1030 -1040 0 0 {name=X24}
 C {devices/lab_pin.sym} 1360 -910 1 0 {name=l23 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 1360 -470 3 0 {name=l24 sig_type=std_logic lab=GND}
 C {devices/opin.sym} 1580 -720 0 0 {name=p14 lab=BUF_P}
@@ -376,3 +296,8 @@ W=1
 L=6
 model=res_generic_po
 mult=1}
+C {vco_pmirr.sym} 390 -1060 0 0 {name=x1}
+C {devices/iopin.sym} 380 -1360 3 0 {name=p2 lab=VDD
+}
+C {devices/lab_pin.sym} 380 -1100 3 0 {name=l2 sig_type=std_logic lab=GND}
+C {devices/iopin.sym} 320 -1090 1 0 {name=p4 lab=VBIAS}

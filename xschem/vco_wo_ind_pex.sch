@@ -369,10 +369,10 @@ C {devices/opin.sym} 1580 -720 0 0 {name=p14 lab=BUF_P}
 C {devices/opin.sym} 1580 -680 0 0 {name=p15 lab=BUF_N}
 C {devices/iopin.sym} 600 -880 3 0 {name=p16 lab=OUT_N}
 C {devices/iopin.sym} 1270 -1010 3 0 {name=p17 lab=VBIAS_BUF}
-C {buffer.sym} 1150 -500 0 0 {name=X26}
 C {sky130_fd_pr/res_generic_po.sym} 1270 -950 0 0 {name=R2
 W=1
 L=6
 model=res_generic_po
 mult=1}
 C {capbank_pex.sym} 360 -350 0 0 {name=X2}
+C {buffer_pex.sym} 1200 440 0 0 {}

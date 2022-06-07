@@ -14,7 +14,7 @@ C {devices/ipin.sym} 130 -4860 0 0 {name=p7 lab=bit4}
 C {devices/ipin.sym} 130 -4900 0 0 {name=p8 lab=bit5}
 C {devices/iopin.sym} 130 -4550 2 0 {name=p9 lab=OUT_P}
 C {devices/iopin.sym} 130 -4510 2 0 {name=p10 lab=OUT_N}
-C {devices/code_shown.sym} 430 -4700 0 0 {name=PEX only_toplevel=false value="
+C {devices/code.sym} 220 -4760 0 0 {name="PEX MODEL" only_toplevel=false value="
 X0 a_22576_45486.t1 bit4.t0 a_22866_45562.t2 GND.t96 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X1 OUT_P.t0 a_59376_45486.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X2 a_50176_5966.t2 bit5.t0 a_50466_6042.t1 GND.t161 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
