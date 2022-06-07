@@ -1,0 +1,46 @@
+| units: 500000 tech: sky130B format: MIT
+x OUT_P GND OUT_N GND l=30 w=1010 x=2162 y=1424 sky130_fd_pr__nfet_01v8
+x OUT_P GND OUT_N GND l=30 w=1010 x=980 y=96 sky130_fd_pr__nfet_01v8
+x OUT_P OUT_N GND GND l=30 w=1010 x=672 y=1424 sky130_fd_pr__nfet_01v8
+x GND GND GND GND l=30 w=1010 x=3036 y=1424 sky130_fd_pr__nfet_01v8
+x OUT_P OUT_N GND GND l=30 w=1010 x=2642 y=96 sky130_fd_pr__nfet_01v8
+x OUT_P OUT_N GND GND l=30 w=1010 x=1066 y=96 sky130_fd_pr__nfet_01v8
+x OUT_N GND OUT_P GND l=30 w=1010 x=1768 y=1424 sky130_fd_pr__nfet_01v8
+x GND GND GND GND l=30 w=1010 x=-115 y=96 sky130_fd_pr__nfet_01v8
+x OUT_P GND OUT_N GND l=30 w=1010 x=192 y=96 sky130_fd_pr__nfet_01v8
+x GND GND GND GND l=30 w=1010 x=-115 y=1424 sky130_fd_pr__nfet_01v8
+x OUT_N OUT_P GND GND l=30 w=1010 x=1854 y=1424 sky130_fd_pr__nfet_01v8
+x OUT_P GND OUT_N GND l=30 w=1010 x=1768 y=96 sky130_fd_pr__nfet_01v8
+x OUT_N OUT_P GND GND l=30 w=1010 x=1460 y=96 sky130_fd_pr__nfet_01v8
+x GND GND GND GND l=30 w=1010 x=-201 y=1424 sky130_fd_pr__nfet_01v8
+x OUT_N OUT_P GND GND l=30 w=1010 x=1066 y=1424 sky130_fd_pr__nfet_01v8
+x OUT_P OUT_N GND GND l=30 w=1010 x=278 y=96 sky130_fd_pr__nfet_01v8
+x OUT_N GND OUT_P GND l=30 w=1010 x=2556 y=1424 sky130_fd_pr__nfet_01v8
+x OUT_P GND OUT_N GND l=30 w=1010 x=2556 y=96 sky130_fd_pr__nfet_01v8
+x OUT_N OUT_P GND GND l=30 w=1010 x=2642 y=1424 sky130_fd_pr__nfet_01v8
+x OUT_N OUT_P GND GND l=30 w=1010 x=278 y=1424 sky130_fd_pr__nfet_01v8
+x GND GND GND GND l=30 w=1010 x=2950 y=96 sky130_fd_pr__nfet_01v8
+x OUT_N GND OUT_P GND l=30 w=1010 x=980 y=1424 sky130_fd_pr__nfet_01v8
+x OUT_N OUT_P GND GND l=30 w=1010 x=672 y=96 sky130_fd_pr__nfet_01v8
+x OUT_N GND OUT_P GND l=30 w=1010 x=1374 y=96 sky130_fd_pr__nfet_01v8
+x OUT_N GND OUT_P GND l=30 w=1010 x=192 y=1424 sky130_fd_pr__nfet_01v8
+x OUT_N GND OUT_P GND l=30 w=1010 x=2162 y=96 sky130_fd_pr__nfet_01v8
+x OUT_P GND OUT_N GND l=30 w=1010 x=1374 y=1424 sky130_fd_pr__nfet_01v8
+x OUT_N GND OUT_P GND l=30 w=1010 x=586 y=96 sky130_fd_pr__nfet_01v8
+x OUT_P OUT_N GND GND l=30 w=1010 x=2248 y=1424 sky130_fd_pr__nfet_01v8
+x OUT_N OUT_P GND GND l=30 w=1010 x=2248 y=96 sky130_fd_pr__nfet_01v8
+x OUT_P OUT_N GND GND l=30 w=1010 x=1460 y=1424 sky130_fd_pr__nfet_01v8
+x GND GND GND GND l=30 w=1010 x=-201 y=96 sky130_fd_pr__nfet_01v8
+x GND GND GND GND l=30 w=1010 x=2950 y=1424 sky130_fd_pr__nfet_01v8
+x OUT_P OUT_N GND GND l=30 w=1010 x=1854 y=96 sky130_fd_pr__nfet_01v8
+x GND GND GND GND l=30 w=1010 x=3036 y=96 sky130_fd_pr__nfet_01v8
+x OUT_P GND OUT_N GND l=30 w=1010 x=586 y=1424 sky130_fd_pr__nfet_01v8
+C OUT_N OUT_P 36.49
+C OUT_P GND 51.13
+R OUT_P 45633
+= OUT_P vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_6/DRAIN
+C OUT_N GND 52.60
+R OUT_N 45633
+= OUT_N vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_6/GATE
+R GND 248370
+= GND vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_14/SOURCE

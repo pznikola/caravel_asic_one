@@ -1,0 +1,166 @@
+timestamp 1654639816
+version 8.3
+tech sky130B
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use vco_pair_base vco_pair_base_0 1 0 -2 0 1 1332
+port "GND" 0 494 -484 506 -452 m5
+port "OUT_P" 1 3638 1792 3650 1824 m3
+port "OUT_N" 3 3652 1532 3664 1564 m3
+node "GND" 8 10566 494 -484 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1041408 7272 1513824 53496 2133568 23976 4037824 31256 5191056 23884 0 0
+node "OUT_P" 29 5001.69 3638 1792 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 197744 7664 639492 16080 1929468 34556 497160 5884 0 0 0 0
+node "OUT_N" 30 5405.51 3652 1532 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 197472 7664 638268 16052 2026052 36560 477000 5660 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "OUT_N" "GND" 9694.15
+cap "OUT_P" "GND" 8562.84
+cap "OUT_N" "OUT_P" 23707
+cap "GND" "vco_pair_base_0/rf_nfet_01v8_aM02W5p00L0p15_0/GATE" 5.35532
+cap "vco_pair_base_0/rf_nfet_01v8_aM02W5p00L0p15_0/DRAIN" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_12/DRAIN" 43.3779
+cap "GND" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_12/GATE" 23.4712
+cap "vco_pair_base_0/rf_nfet_01v8_aM02W5p00L0p15_0/GATE" "vco_pair_base_0/rf_nfet_01v8_aM02W5p00L0p15_0/DRAIN" 0.171948
+cap "vco_pair_base_0/rf_nfet_01v8_aM02W5p00L0p15_0/DRAIN" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_12/GATE" 0.07152
+cap "GND" "vco_pair_base_0/rf_nfet_01v8_aM02W5p00L0p15_0/DRAIN" 8.51351
+cap "GND" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_12/DRAIN" 0.036248
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_11/DRAIN" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_10/GATE" 0.14304
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_11/GATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_11/DRAIN" 0.196512
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_10/SOURCE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_8/DRAIN" 0.036248
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_10/SOURCE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_10/DRAIN" 0.036248
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_11/DRAIN" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_10/SOURCE" 1.66312
+cap "GND" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_11/DRAIN" 11.7815
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_11/DRAIN" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_8/DRAIN" 43.3779
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_11/DRAIN" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_10/DRAIN" 43.3779
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_10/SOURCE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_10/GATE" 0.05544
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_11/GATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_10/SOURCE" 0.044352
+cap "GND" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_10/GATE" 55.2285
+cap "GND" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_11/GATE" 8.70808
+cap "GND" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_10/SOURCE" 19.6623
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_7/SOURCE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_7/DRAIN" 0.70724
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_8/SUBSTRATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_7/DRAIN" 64.3934
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_8/SUBSTRATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_7/SOURCE" 4.76036
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_7/SOURCE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_7/GATE" 0.02772
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_7/GATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_7/DRAIN" 0.12282
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_8/SUBSTRATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_7/GATE" 22.4467
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_16/GATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_0/SOURCE" 198.544
+cap "vco_pair_base_0/rf_nfet_01v8_aM02W5p00L0p15_0/DRAIN" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_12/DRAIN" 161.141
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_11/SOURCE" "OUT_N" -32.62
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_0/DRAIN" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_1/DRAIN" 206.339
+cap "vco_pair_base_0/rf_nfet_01v8_aM02W5p00L0p15_0/SOURCE" "vco_pair_base_0/rf_nfet_01v8_aM02W5p00L0p15_0/DRAIN" 1.42109e-14
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_16/GATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_12/DRAIN" 14.0731
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_16/GATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_0/DRAIN" 14.0731
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_16/GATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_12/GATE" 24.1316
+cap "vco_pair_base_0/rf_nfet_01v8_aM02W5p00L0p15_0/GATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_1/DRAIN" 3.55271e-15
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_0/SOURCE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_0/DRAIN" 0.072496
+cap "vco_pair_base_0/rf_nfet_01v8_aM02W5p00L0p15_0/GATE" "vco_pair_base_0/rf_nfet_01v8_aM02W5p00L0p15_0/DRAIN" 4.71629
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_16/GATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_1/DRAIN" 14.0731
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_16/GATE" "vco_pair_base_0/rf_nfet_01v8_aM02W5p00L0p15_0/DRAIN" 6.88019
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_0/SOURCE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_12/GATE" 0.077616
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_16/GATE" "vco_pair_base_0/rf_nfet_01v8_aM02W5p00L0p15_0/GATE" 24.1316
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_12/GATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_12/DRAIN" 1.77636e-15
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_0/SOURCE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_1/DRAIN" 0.072496
+cap "vco_pair_base_0/rf_nfet_01v8_aM02W5p00L0p15_0/GATE" "OUT_N" -4.71629
+cap "vco_pair_base_0/rf_nfet_01v8_aM02W5p00L0p15_0/DRAIN" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_11/SOURCE" 32.62
+cap "vco_pair_base_0/rf_nfet_01v8_aM02W5p00L0p15_0/DRAIN" "vco_pair_base_0/rf_nfet_01v8_aM02W5p00L0p15_0/SOURCE" 7.10543e-15
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_12/DRAIN" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_12/SOURCE" -7.10543e-15
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_12/GATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_0/DRAIN" 6.21725e-15
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_0/SOURCE" "vco_pair_base_0/rf_nfet_01v8_aM02W5p00L0p15_0/GATE" 0.05544
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_10/DRAIN" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_8/SOURCE" -7.10543e-15
+cap "vco_pair_base_0/SUBSTRATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_10/GATE" 30.3964
+cap "OUT_P" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_3/SOURCE" 0.144992
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_10/GATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_3/SOURCE" 0.088704
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_10/GATE" "OUT_P" -1.77636e-15
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_11/DRAIN" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_10/DRAIN" 232.299
+cap "vco_pair_base_0/SUBSTRATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_10/DRAIN" 23.0508
+cap "vco_pair_base_0/SUBSTRATE" "OUT_N" 23.0508
+cap "vco_pair_base_0/SUBSTRATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_11/DRAIN" 11.2693
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_11/GATE" "OUT_N" 1.06581e-14
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_11/DRAIN" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_9/SOURCE" 1.42109e-14
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_11/GATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_11/DRAIN" 8.88178e-15
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_10/DRAIN" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_10/SOURCE" -7.10543e-15
+cap "vco_pair_base_0/SUBSTRATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_11/GATE" 48.2632
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_3/SOURCE" "OUT_N" 0.144992
+cap "vco_pair_base_0/SUBSTRATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_3/SOURCE" 6.83183
+cap "OUT_P" "OUT_N" 322.695
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_3/SOURCE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_11/GATE" 0.11088
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_11/DRAIN" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_9/SOURCE" 7.10543e-15
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_10/GATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_10/DRAIN" -3.55271e-15
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_11/DRAIN" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_11/SOURCE" 7.10543e-15
+cap "vco_pair_base_0/SUBSTRATE" "OUT_P" 23.0508
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_6/SOURCE" "OUT_P" 0.072496
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_6/SOURCE" "OUT_N" 0.05544
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_6/SOURCE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_15/GATE" 1.65402
+cap "OUT_N" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_7/SOURCE" 1.42109e-14
+cap "OUT_P" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_15/GATE" 235.721
+cap "OUT_N" "OUT_P" 176.862
+cap "OUT_N" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_7/SOURCE" 7.10543e-15
+cap "OUT_N" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_15/GATE" 197.881
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_1/SOURCE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_1/DRAIN" -3.55271e-15
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_0/GATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_0/SUBSTRATE" 5.31651
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_0/SOURCE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_0/DRAIN" -3.55271e-15
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_1/GATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_0/SUBSTRATE" 23.4435
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_0/SOURCE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_0/SUBSTRATE" 55.2266
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_0/GATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_0/SOURCE" 1.77636e-15
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_1/GATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_1/SOURCE" 1.77636e-15
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_5/SOURCE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_5/DRAIN" -3.55271e-15
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_2/DRAIN" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_2/SOURCE" -3.55271e-15
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_3/GATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_5/SOURCE" 1.77636e-15
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_2/SUBSTRATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_2/SOURCE" 12.8305
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_4/SOURCE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_4/DRAIN" -3.55271e-15
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_2/SUBSTRATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_3/GATE" 55.2285
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_2/GATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_4/SOURCE" 1.77636e-15
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_3/GATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_3/SOURCE" 1.77636e-15
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_2/GATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_2/SOURCE" 8.88178e-16
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_2/SUBSTRATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_2/GATE" 8.70808
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_3/SOURCE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_3/DRAIN" -3.55271e-15
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_5/SUBSTRATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_6/SOURCE" 3.10633
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_5/SUBSTRATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_6/GATE" 22.4467
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_5/SUBSTRATE" "OUT_P" 14.5449
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_6/SOURCE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_6/DRAIN" -3.55271e-15
+cap "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_6/GATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_6/SOURCE" 1.77636e-15
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_15/GATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_8/SUBSTRATE" -8980.63 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5472 -2752 -658560 -47040 0 0 0 0 0 0 0 0
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_8/SUBSTRATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_11/SUBSTRATE"
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_11/SUBSTRATE" "vco_pair_base_0/SUBSTRATE"
+merge "vco_pair_base_0/SUBSTRATE" "VSUBS"
+merge "VSUBS" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_7/SOURCE"
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_7/SOURCE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_8/SOURCE"
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_8/SOURCE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_9/SOURCE"
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_9/SOURCE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_10/SOURCE"
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_10/SOURCE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_11/SOURCE"
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_11/SOURCE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_12/SOURCE"
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_12/SOURCE" "vco_pair_base_0/rf_nfet_01v8_aM02W5p00L0p15_0/SOURCE"
+merge "vco_pair_base_0/rf_nfet_01v8_aM02W5p00L0p15_0/SOURCE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_6/SOURCE"
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_6/SOURCE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_5/SOURCE"
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_5/SOURCE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_4/SOURCE"
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_4/SOURCE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_3/SOURCE"
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_3/SOURCE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_2/SOURCE"
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_2/SOURCE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_1/SOURCE"
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_1/SOURCE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_0/SOURCE"
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_0/SOURCE" "GND"
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_7/DRAIN" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_9/DRAIN" -2885.81 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -185236 -7470 -278656 -5624 0 0 0 0 0 0 0 0
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_9/DRAIN" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_11/DRAIN"
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_11/DRAIN" "vco_pair_base_0/rf_nfet_01v8_aM02W5p00L0p15_0/DRAIN"
+merge "vco_pair_base_0/rf_nfet_01v8_aM02W5p00L0p15_0/DRAIN" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_5/DRAIN"
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_5/DRAIN" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_3/DRAIN"
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_3/DRAIN" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_1/DRAIN"
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_1/DRAIN" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_8/GATE"
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_8/GATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_6/GATE"
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_6/GATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_10/GATE"
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_10/GATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_4/GATE"
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_4/GATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_12/GATE"
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_12/GATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_2/GATE"
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_2/GATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_0/GATE"
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_0/GATE" "OUT_N"
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_8/DRAIN" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_10/DRAIN" -3621.99 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -185988 -7484 -282240 -5656 -90608 -2364 -117360 -1484 0 0 0 0
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_10/DRAIN" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_12/DRAIN"
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_12/DRAIN" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_6/DRAIN"
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_6/DRAIN" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_4/DRAIN"
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_4/DRAIN" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_2/DRAIN"
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_2/DRAIN" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_0/DRAIN"
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_0/DRAIN" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_7/GATE"
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_7/GATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_9/GATE"
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_9/GATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_5/GATE"
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_5/GATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_11/GATE"
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_11/GATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_3/GATE"
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_3/GATE" "vco_pair_base_0/rf_nfet_01v8_aM02W5p00L0p15_0/GATE"
+merge "vco_pair_base_0/rf_nfet_01v8_aM02W5p00L0p15_0/GATE" "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_1/GATE"
+merge "vco_pair_base_0/sky130_fd_pr__rf_nfet_01v8_aM02W5p00L0p15_1/GATE" "OUT_P"

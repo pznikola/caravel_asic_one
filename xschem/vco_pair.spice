@@ -1,0 +1,44 @@
+**.subckt vco_pair GND OUT_P OUT_N
+*.iopin GND
+*.iopin OUT_P
+*.iopin OUT_N
+X1 OUT_P OUT_N GND GND rf_nfet_01v8_aM02W5p00L0p15
+X2 OUT_P OUT_N GND GND rf_nfet_01v8_aM02W5p00L0p15
+X3 OUT_P OUT_N GND GND rf_nfet_01v8_aM02W5p00L0p15
+X4 OUT_P OUT_N GND GND rf_nfet_01v8_aM02W5p00L0p15
+X5 OUT_P OUT_N GND GND rf_nfet_01v8_aM02W5p00L0p15
+X6 OUT_P OUT_N GND GND rf_nfet_01v8_aM02W5p00L0p15
+X7 OUT_P OUT_N GND GND rf_nfet_01v8_aM02W5p00L0p15
+X8 OUT_N OUT_P GND GND rf_nfet_01v8_aM02W5p00L0p15
+X9 OUT_N OUT_P GND GND rf_nfet_01v8_aM02W5p00L0p15
+X10 OUT_N OUT_P GND GND rf_nfet_01v8_aM02W5p00L0p15
+X11 OUT_N OUT_P GND GND rf_nfet_01v8_aM02W5p00L0p15
+X12 OUT_N OUT_P GND GND rf_nfet_01v8_aM02W5p00L0p15
+X13 OUT_N OUT_P GND GND rf_nfet_01v8_aM02W5p00L0p15
+X14 OUT_N OUT_P GND GND rf_nfet_01v8_aM02W5p00L0p15
+X16 GND GND GND GND rf_nfet_01v8_aM02W5p00L0p15
+X17 GND GND GND GND rf_nfet_01v8_aM02W5p00L0p15
+X18 GND GND GND GND rf_nfet_01v8_aM02W5p00L0p15
+X19 GND GND GND GND rf_nfet_01v8_aM02W5p00L0p15
+**.ends
+
+* expanding   symbol:  rf_nfet_01v8_aM02W5p00L0p15.sym # of pins=4
+* sym_path: /home/student/magic_workdir/vco_pair/xschem/rf_nfet_01v8_aM02W5p00L0p15.sym
+* sch_path: /home/student/magic_workdir/vco_pair/xschem/rf_nfet_01v8_aM02W5p00L0p15.sch
+.subckt rf_nfet_01v8_aM02W5p00L0p15  DRAIN GATE SOURCE SUBSTRATE
+*.iopin SOURCE
+*.iopin DRAIN
+*.ipin GATE
+*.ipin SUBSTRATE
+**** begin user architecture code
+
+
+X0 SOURCE GATE DRAIN SUBSTRATE sky130_fd_pr__nfet_01v8 w=5.05e+06u l=150000u
+X1 DRAIN GATE SOURCE SUBSTRATE sky130_fd_pr__nfet_01v8 w=5.05e+06u l=150000u
+
+
+**** end user architecture code
+.ends
+
+** flattened .save nodes
+.end

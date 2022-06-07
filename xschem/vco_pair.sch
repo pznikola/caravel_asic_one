@@ -1,0 +1,80 @@
+v {xschem version=3.0.0 file_version=1.2 }
+G {}
+K {}
+V {}
+S {}
+E {}
+N 2210 -1560 2210 -1550 { lab=GND}
+N 2210 -1570 2210 -1560 { lab=GND}
+N 2210 -1570 3290 -1570 { lab=GND}
+N 3290 -1570 3290 -1550 { lab=GND}
+N 3210 -1570 3210 -1550 { lab=GND}
+N 3130 -1570 3130 -1550 { lab=GND}
+N 3050 -1570 3050 -1550 { lab=GND}
+N 2970 -1570 2970 -1550 { lab=GND}
+N 2890 -1570 2890 -1550 { lab=GND}
+N 2810 -1570 2810 -1550 { lab=GND}
+N 2690 -1570 2690 -1550 { lab=GND}
+N 2610 -1570 2610 -1550 { lab=GND}
+N 2530 -1570 2530 -1550 { lab=GND}
+N 2450 -1570 2450 -1550 { lab=GND}
+N 2370 -1570 2370 -1550 { lab=GND}
+N 2290 -1570 2290 -1550 { lab=GND}
+N 2210 -1500 3290 -1500 { lab=GND}
+N 2160 -1550 2160 -1530 { lab=OUT_N}
+N 2160 -1530 2720 -1530 { lab=OUT_N}
+N 2780 -1530 3340 -1530 { lab=OUT_P}
+N 3340 -1550 3340 -1530 { lab=OUT_P}
+N 3260 -1550 3260 -1530 { lab=OUT_P}
+N 3180 -1550 3180 -1530 { lab=OUT_P}
+N 3100 -1550 3100 -1530 { lab=OUT_P}
+N 3020 -1550 3020 -1530 { lab=OUT_P}
+N 2940 -1550 2940 -1530 { lab=OUT_P}
+N 2860 -1550 2860 -1530 { lab=OUT_P}
+N 2640 -1550 2640 -1530 { lab=OUT_N}
+N 2560 -1550 2560 -1530 { lab=OUT_N}
+N 2480 -1550 2480 -1530 { lab=OUT_N}
+N 2400 -1550 2400 -1530 { lab=OUT_N}
+N 2320 -1550 2320 -1530 { lab=OUT_N}
+N 2240 -1550 2240 -1530 { lab=OUT_N}
+N 2210 -1600 2690 -1600 { lab=OUT_P}
+N 2810 -1600 3290 -1600 { lab=OUT_N}
+N 2780 -1600 2810 -1600 { lab=OUT_N}
+N 2690 -1600 2720 -1600 { lab=OUT_P}
+N 2720 -1530 2780 -1600 { lab=OUT_N}
+N 2720 -1600 2780 -1530 { lab=OUT_P}
+N 2160 -1600 2210 -1600 { lab=OUT_P}
+N 3290 -1600 3340 -1600 { lab=OUT_N}
+N 2750 -1500 2750 -1460 { lab=GND}
+N 2140 -1570 2210 -1570 { lab=GND}
+N 2140 -1570 2140 -1500 { lab=GND}
+N 2140 -1500 2210 -1500 { lab=GND}
+N 2630 -1400 2660 -1400 { lab=GND}
+N 2660 -1500 2660 -1400 { lab=GND}
+N 2630 -1450 2660 -1450 { lab=GND}
+N 2630 -1350 2660 -1350 { lab=GND}
+N 2660 -1400 2660 -1350 { lab=GND}
+N 2340 -1400 2630 -1400 {}
+N 2390 -1450 2630 -1450 {}
+N 2390 -1350 2630 -1350 {}
+C {rf_nfet_01v8_aM02W5p00L0p15.sym} 2140 -1480 0 0 {name=X1}
+C {rf_nfet_01v8_aM02W5p00L0p15.sym} 2220 -1480 0 0 {name=X2}
+C {rf_nfet_01v8_aM02W5p00L0p15.sym} 2300 -1480 0 0 {name=X3}
+C {rf_nfet_01v8_aM02W5p00L0p15.sym} 2380 -1480 0 0 {name=X4}
+C {rf_nfet_01v8_aM02W5p00L0p15.sym} 2460 -1480 0 0 {name=X5}
+C {rf_nfet_01v8_aM02W5p00L0p15.sym} 2540 -1480 0 0 {name=X6}
+C {rf_nfet_01v8_aM02W5p00L0p15.sym} 2620 -1480 0 0 {name=X7}
+C {rf_nfet_01v8_aM02W5p00L0p15.sym} 2880 -1480 0 1 {name=X8}
+C {rf_nfet_01v8_aM02W5p00L0p15.sym} 2960 -1480 0 1 {name=X9}
+C {rf_nfet_01v8_aM02W5p00L0p15.sym} 3040 -1480 0 1 {name=X10}
+C {rf_nfet_01v8_aM02W5p00L0p15.sym} 3120 -1480 0 1 {name=X11}
+C {rf_nfet_01v8_aM02W5p00L0p15.sym} 3200 -1480 0 1 {name=X12}
+C {rf_nfet_01v8_aM02W5p00L0p15.sym} 3280 -1480 0 1 {name=X13}
+C {rf_nfet_01v8_aM02W5p00L0p15.sym} 3360 -1480 0 1 {name=X14}
+C {devices/iopin.sym} 2750 -1460 1 0 {name=p1 lab=GND}
+C {devices/iopin.sym} 2160 -1600 2 0 {name=p2 lab=OUT_P}
+C {devices/iopin.sym} 3340 -1600 0 0 {name=p3 lab=OUT_N}
+C {rf_nfet_01v8_aM02W5p00L0p15.sym} 2320 -1330 0 0 {name=X16}
+C {rf_nfet_01v8_aM02W5p00L0p15.sym} 2400 -1330 0 0 {name=X17}
+C {rf_nfet_01v8_aM02W5p00L0p15.sym} 2480 -1330 0 0 {name=X18}
+C {rf_nfet_01v8_aM02W5p00L0p15.sym} 2560 -1330 0 0 {name=X19}
