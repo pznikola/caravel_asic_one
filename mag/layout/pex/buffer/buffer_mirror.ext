@@ -1,0 +1,318 @@
+timestamp 1654467620
+version 8.3
+tech sky130B
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use buffer_mirror_base buffer_mirror_base_0 1 0 746 0 1 128
+node "m2_4446_n772#" 2 2197.82 4446 -772 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 741888 7072 0 0 0 0 0 0 0 0
+node "m2_842_878#" 8 15109 842 878 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1075200 11776 1075200 11776 1741864 16436 3044160 19472 0 0
+node "m2_226_n772#" 2 2513.76 226 -772 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 741440 7068 0 0 0 0 0 0 0 0
+node "m1_4622_186#" 0 99.3651 4622 186 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1768 172 0 0 0 0 0 0 0 0 0 0
+node "m1_4536_186#" 0 62.5189 4536 186 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1768 172 0 0 0 0 0 0 0 0 0 0
+node "m1_4450_186#" 0 99.4338 4450 186 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1768 172 0 0 0 0 0 0 0 0 0 0
+node "m1_2510_186#" 0 133.696 2510 186 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1768 172 0 0 0 0 0 0 0 0 0 0
+node "m1_2424_186#" 0 96.7958 2424 186 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1768 172 0 0 0 0 0 0 0 0 0 0
+node "m1_2338_186#" 0 131.577 2338 186 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1768 172 0 0 0 0 0 0 0 0 0 0
+node "m1_398_186#" 0 113.653 398 186 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1768 172 0 0 0 0 0 0 0 0 0 0
+node "m1_312_186#" 0 77.3769 312 186 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1768 172 0 0 0 0 0 0 0 0 0 0
+node "m1_226_186#" 0 115.122 226 186 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1768 172 0 0 0 0 0 0 0 0 0 0
+node "m1_4250_1210#" 4 581.281 4250 1210 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 124176 4040 0 0 0 0 0 0 0 0 0 0
+node "m1_4112_1212#" 1 100.221 4112 1212 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19256 780 0 0 0 0 0 0 0 0 0 0
+node "m1_3546_1210#" 1 101.169 3546 1210 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19372 784 0 0 0 0 0 0 0 0 0 0
+node "m1_3408_1212#" 1 102.077 3408 1212 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19372 784 0 0 0 0 0 0 0 0 0 0
+node "m1_2842_1210#" 1 102.021 2842 1210 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19372 784 0 0 0 0 0 0 0 0 0 0
+node "m1_2138_1210#" 3 541.638 2138 1210 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 81112 2792 0 0 0 0 0 0 0 0 0 0
+node "m1_2000_1212#" 1 101.927 2000 1212 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19372 784 0 0 0 0 0 0 0 0 0 0
+node "m1_1434_1210#" 1 103.505 1434 1210 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19372 784 0 0 0 0 0 0 0 0 0 0
+node "m1_1296_1212#" 1 105.109 1296 1212 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19372 784 0 0 0 0 0 0 0 0 0 0
+node "m1_730_1210#" 1 104.68 730 1210 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19372 784 0 0 0 0 0 0 0 0 0 0
+node "m1_26_1214#" 4 612.78 26 1214 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 115708 3864 0 0 0 0 0 0 0 0 0 0
+node "m1_866_2572#" 39 30986.3 866 2572 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 501120 15408 723216 17384 1061368 29852 937088 10612 908544 6080 0 0
+substrate "a_26_26#" 0 0 26 26 ppd 0 0 0 0 0 0 0 0 0 0 2595000 85564 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1494300 87152 1807680 34800 2256576 24836 2287612 25936 3521164 31640 6331520 29920 0 0
+cap "m1_2138_1210#" "m1_2842_1210#" 84.9842
+cap "m1_1296_1212#" "m2_226_n772#" 2.55772
+cap "m1_4622_186#" "m2_4446_n772#" 7.48591
+cap "m1_3546_1210#" "m2_4446_n772#" 2.56621
+cap "m2_4446_n772#" "m2_842_878#" 461.153
+cap "m1_3408_1212#" "m2_4446_n772#" 1.42119
+cap "m1_730_1210#" "m1_1296_1212#" 10.4598
+cap "m1_866_2572#" "m1_3546_1210#" 100.494
+cap "m1_2000_1212#" "m1_866_2572#" 72.5471
+cap "m1_866_2572#" "m2_842_878#" 14088.1
+cap "m1_4250_1210#" "m1_4536_186#" 1.93038
+cap "m1_866_2572#" "m1_3408_1212#" 68.4823
+cap "m2_4446_n772#" "m1_4450_186#" 8.08419
+cap "m1_866_2572#" "m1_398_186#" 0.461302
+cap "m2_4446_n772#" "m1_4112_1212#" 2.49206
+cap "m1_26_1214#" "m2_226_n772#" 123.157
+cap "m1_312_186#" "m1_26_1214#" 1.93038
+cap "m1_4622_186#" "m2_842_878#" 2.29602
+cap "m1_3546_1210#" "m2_842_878#" 12.2258
+cap "m1_2138_1210#" "m1_866_2572#" 372.927
+cap "m1_3546_1210#" "m1_3408_1212#" 153.135
+cap "m1_2000_1212#" "m2_842_878#" 6.53599
+cap "m1_866_2572#" "m1_2510_186#" 0.927325
+cap "m1_26_1214#" "m1_226_186#" 1.93038
+cap "m1_3408_1212#" "m2_842_878#" 10.001
+cap "m1_866_2572#" "m1_4112_1212#" 59.0303
+cap "m1_26_1214#" "m1_730_1210#" 84.87
+cap "m1_1296_1212#" "m1_866_2572#" 73.6175
+cap "m1_866_2572#" "m1_2424_186#" 0.927325
+cap "m1_2138_1210#" "m1_2000_1212#" 153.249
+cap "m1_2138_1210#" "m2_842_878#" 35.8134
+cap "m1_2138_1210#" "m1_3408_1212#" 0.114241
+cap "m2_842_878#" "m1_4450_186#" 0.708446
+cap "m1_3546_1210#" "m1_4112_1212#" 10.4598
+cap "m1_2510_186#" "m2_842_878#" 0.691498
+cap "m2_842_878#" "m1_4112_1212#" 14.3834
+cap "m1_1296_1212#" "m1_2000_1212#" 0.114241
+cap "m1_1296_1212#" "m2_842_878#" 6.43608
+cap "m1_2424_186#" "m2_842_878#" 0.691498
+cap "m1_2138_1210#" "m1_2510_186#" 1.93038
+cap "m1_26_1214#" "m1_866_2572#" 37.8634
+cap "m1_1434_1210#" "m2_226_n772#" 1.40667
+cap "m1_2138_1210#" "m1_2424_186#" 1.93038
+cap "m2_4446_n772#" "m1_4250_1210#" 124.481
+cap "m1_2510_186#" "m1_2424_186#" 36.9
+cap "m1_312_186#" "m2_226_n772#" 8.02734
+cap "m1_730_1210#" "m1_1434_1210#" 0.114241
+cap "m1_26_1214#" "m2_842_878#" 0.056122
+cap "m2_4446_n772#" "m1_4536_186#" 8.08426
+cap "m1_866_2572#" "m1_4250_1210#" 18.0486
+cap "m1_26_1214#" "m1_398_186#" 1.93038
+cap "m1_226_186#" "m2_226_n772#" 8.02726
+cap "m1_312_186#" "m1_226_186#" 36.9
+cap "m1_730_1210#" "m2_226_n772#" 2.54821
+cap "m1_4622_186#" "m1_4250_1210#" 1.93038
+cap "m1_3546_1210#" "m1_4250_1210#" 0.114241
+cap "m1_4250_1210#" "m2_842_878#" 111.212
+cap "m1_3408_1212#" "m1_4250_1210#" 0.0546667
+cap "m1_26_1214#" "m1_1296_1212#" 0.114241
+cap "m1_4622_186#" "m1_4536_186#" 36.9
+cap "m1_866_2572#" "m1_2338_186#" 0.930737
+cap "m1_1434_1210#" "m1_866_2572#" 105.293
+cap "m2_842_878#" "m1_4536_186#" 1.37732
+cap "m1_4250_1210#" "m1_4450_186#" 1.93038
+cap "m2_4446_n772#" "m1_2842_1210#" 0.0624563
+cap "m1_4250_1210#" "m1_4112_1212#" 153.135
+cap "m1_866_2572#" "m2_226_n772#" 183.806
+cap "m1_312_186#" "m1_866_2572#" 0.450543
+cap "m1_2338_186#" "m2_842_878#" 0.714297
+cap "m1_1434_1210#" "m1_2000_1212#" 10.4598
+cap "m1_1434_1210#" "m2_842_878#" 6.7722
+cap "m1_4450_186#" "m1_4536_186#" 36.9
+cap "m1_866_2572#" "m1_2842_1210#" 102.225
+cap "m1_866_2572#" "m1_226_186#" 0.436574
+cap "m1_730_1210#" "m1_866_2572#" 106.151
+cap "m1_2000_1212#" "m2_226_n772#" 0.0536824
+cap "m1_2138_1210#" "m1_2338_186#" 1.93038
+cap "m2_226_n772#" "m2_842_878#" 201.678
+cap "m1_2138_1210#" "m1_1434_1210#" 0.114241
+cap "m1_3546_1210#" "m1_2842_1210#" 0.114241
+cap "m2_226_n772#" "m1_398_186#" 8.02726
+cap "m1_312_186#" "m1_398_186#" 36.9
+cap "m1_2842_1210#" "m2_842_878#" 6.92152
+cap "m1_3408_1212#" "m1_2842_1210#" 10.4598
+cap "m1_2424_186#" "m1_2338_186#" 36.9
+cap "m1_1296_1212#" "m1_1434_1210#" 153.135
+cap "m1_730_1210#" "m2_842_878#" 6.63382
+cap "m1_866_2572#" "m2_4446_n772#" 46.1797
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/DRAIN" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SOURCE" 7.10543e-15
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/GATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SOURCE" 10.8927
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/DRAIN" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SOURCE" 1.42109e-14
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE" 7.10543e-15
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE" 1.42109e-14
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_2/GATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE" 33.7565
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_2/GATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/GATE" 0.938208
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SOURCE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/DRAIN" 7.10543e-15
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_4/DRAIN" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SOURCE" 1.42109e-14
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/DRAIN" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SOURCE" 1.42109e-14
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_4/DRAIN" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SOURCE" 7.10543e-15
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SOURCE" "a_26_26#" -9.29919
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SOURCE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/GATE" -1.42109e-14
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_4/SOURCE" "a_26_26#" 0.285768
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/GATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" 11.2154
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/GATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/DRAIN" 6.81697
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SOURCE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" 201.911
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SOURCE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN" 0.068617
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SOURCE" "a_26_26#" -2.12214
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SOURCE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/DRAIN" 7.10543e-15
+cap "a_26_26#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SOURCE" -2.12214
+cap "a_26_26#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SOURCE" -2.13493
+cap "a_26_26#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" -32.4214
+cap "a_26_26#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" -32.4214
+cap "a_26_26#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" -32.4214
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SOURCE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/DRAIN" 1.42109e-14
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SOURCE" "m2_226_n772#" -79.5977
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/DRAIN" -0.069283
+cap "a_26_26#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/DRAIN" -2.13493
+cap "a_26_26#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/DRAIN" -2.12214
+cap "m2_226_n772#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" -64.2515
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SOURCE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/GATE" 0.65056
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SOURCE" 0.068617
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SOURCE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/GATE" 7.19217
+cap "a_26_26#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN" -2.13493
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN" 7.10543e-15
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_10/DRAIN" 0.068617
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SUBSTRATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN" 64.2405
+cap "a_26_26#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SUBSTRATE" -32.4214
+cap "a_26_26#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE" -2.12214
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN" 0.068617
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE" 0.24564
+cap "a_26_26#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE" -2.13493
+cap "a_26_26#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN" -2.12214
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SUBSTRATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/GATE" -7.54952e-15
+cap "a_26_26#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE" -2.12214
+cap "a_26_26#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SUBSTRATE" -32.4214
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/GATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN" -7.10543e-15
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SUBSTRATE" 1.77636e-15
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_10/DRAIN" 0.068617
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SUBSTRATE" "a_26_26#" -0.44779
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SUBSTRATE" -0.050866
+cap "a_26_26#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SUBSTRATE" -32.4214
+cap "a_26_26#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN" -2.13493
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN" 0.068617
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN" "a_26_26#" -21.3373
+cap "a_26_26#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN" -2.12214
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE" 1.42109e-14
+cap "a_26_26#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SUBSTRATE" -32.4214
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE" "a_26_26#" -2.13493
+cap "a_26_26#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SUBSTRATE" -32.2272
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/GATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SOURCE" 0.24564
+cap "a_26_26#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SOURCE" -2.13493
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SUBSTRATE" "a_26_26#" -32.4214
+cap "a_26_26#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SOURCE" -2.12214
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/DRAIN" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SUBSTRATE" -0.152598
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/DRAIN" "a_26_26#" -2.12214
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/GATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/DRAIN" -2.84217e-14
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/DRAIN" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SOURCE" 0.068617
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/DRAIN" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_4/SOURCE" 7.10543e-15
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/DRAIN" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_4/SOURCE" 1.42109e-14
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/DRAIN" "a_26_26#" -2.12214
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_8/DRAIN" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SOURCE" 0.068617
+cap "a_26_26#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SUBSTRATE" -32.4214
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/GATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SUBSTRATE" 8.88178e-16
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/DRAIN" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SOURCE" 0.068617
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/DRAIN" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SOURCE" 1.42109e-14
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SUBSTRATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SOURCE" -0.025433
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/DRAIN" "a_26_26#" -2.13493
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_8/DRAIN" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SOURCE" 0.068617
+cap "a_26_26#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SUBSTRATE" -32.4214
+cap "a_26_26#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SOURCE" -2.13493
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SOURCE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/DRAIN" 7.10543e-15
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/DRAIN" "a_26_26#" -2.13493
+cap "a_26_26#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SOURCE" -2.13493
+cap "a_26_26#" "m2_842_878#" -2.12214
+cap "m2_842_878#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_12/GATE" 188.509
+cap "m2_4446_n772#" "m2_842_878#" -72.2174
+cap "a_26_26#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_8/SOURCE" 0.284067
+cap "a_26_26#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_12/GATE" -32.4214
+cap "m2_4446_n772#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_12/GATE" -63.8165
+cap "a_26_26#" "m2_842_878#" -7.25771
+cap "m2_842_878#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_4/DRAIN" 0.285768
+cap "a_26_26#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_12/GATE" -33.5862
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SUBSTRATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN" -4.43456
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN" 4.79788
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SOURCE" 1.42109e-14
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SUBSTRATE" 4.31809
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SOURCE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN" 7.10543e-15
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN" 1.42109e-14
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_10/SOURCE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_10/DRAIN" 0.144448
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN" 7.10543e-15
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SUBSTRATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN" -8.86913
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_10/SOURCE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_10/DRAIN" 0.144448
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_10/DRAIN" 1.14391
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SUBSTRATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_10/DRAIN" -2.13163e-14
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN" -7.10543e-15
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_10/SOURCE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_10/DRAIN" 0.144448
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_10/DRAIN" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN" 16.003
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_8/SOURCE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/DRAIN" 7.10543e-15
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/DRAIN" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SOURCE" 7.10543e-15
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_8/SOURCE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/DRAIN" 1.42109e-14
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SUBSTRATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/DRAIN" -8.86913
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/DRAIN" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SOURCE" 1.42109e-14
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/DRAIN" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/GATE" -2.84217e-14
+cap "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_12/SOURCE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_11/GATE" -0.486172
+cap "m2_842_878#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_11/GATE" 110.296
+cap "m2_842_878#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_8/DRAIN" 0.285768
+cap "m2_842_878#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_12/SOURCE" -38.494
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_12/DRAIN" "m1_4622_186#" -29356.1 0 0 0 0 0 0 0 0 0 0 -1740180 -62636 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -980696 -59456 -784028 -32488 -2563936 -30732 -451584 -5376 -633024 -5916 -1417920 -5570 0 0
+merge "m1_4622_186#" "m1_4536_186#"
+merge "m1_4536_186#" "m1_4450_186#"
+merge "m1_4450_186#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_11/DRAIN"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_11/DRAIN" "m2_4446_n772#"
+merge "m2_4446_n772#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_12/SOURCE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_12/SOURCE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_4/SOURCE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_4/SOURCE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_12/GATE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_12/GATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_11/GATE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_11/GATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_11/SOURCE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_11/SOURCE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_8/SOURCE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_8/SOURCE" "m1_4250_1210#"
+merge "m1_4250_1210#" "m1_4112_1212#"
+merge "m1_4112_1212#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_12/SUBSTRATE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_12/SUBSTRATE" "m1_3546_1210#"
+merge "m1_3546_1210#" "m1_3408_1212#"
+merge "m1_3408_1212#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_4/SUBSTRATE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_4/SUBSTRATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_11/SUBSTRATE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_11/SUBSTRATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_8/SUBSTRATE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_8/SUBSTRATE" "buffer_mirror_base_0/VSUBS"
+merge "buffer_mirror_base_0/VSUBS" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SOURCE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SOURCE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_2/DRAIN"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_2/DRAIN" "m1_2510_186#"
+merge "m1_2510_186#" "m1_2424_186#"
+merge "m1_2424_186#" "m1_2338_186#"
+merge "m1_2338_186#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_2/SOURCE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_2/SOURCE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SOURCE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SOURCE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_13/DRAIN"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_13/DRAIN" "m1_398_186#"
+merge "m1_398_186#" "m1_312_186#"
+merge "m1_312_186#" "m1_226_186#"
+merge "m1_226_186#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_13/SOURCE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_13/SOURCE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SOURCE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SOURCE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_10/SOURCE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_10/SOURCE" "m1_2842_1210#"
+merge "m1_2842_1210#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE" "m1_2000_1212#"
+merge "m1_2000_1212#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SOURCE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SOURCE" "m1_1434_1210#"
+merge "m1_1434_1210#" "m1_1296_1212#"
+merge "m1_1296_1212#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_9/DRAIN"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_9/DRAIN" "m1_730_1210#"
+merge "m1_730_1210#" "m2_226_n772#"
+merge "m2_226_n772#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_9/SOURCE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_9/SOURCE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_2/GATE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_2/GATE" "m1_2138_1210#"
+merge "m1_2138_1210#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_13/GATE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_13/GATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_9/GATE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_9/GATE" "m1_26_1214#"
+merge "m1_26_1214#" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SUBSTRATE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SUBSTRATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_2/SUBSTRATE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_2/SUBSTRATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SUBSTRATE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SUBSTRATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_13/SUBSTRATE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_13/SUBSTRATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SUBSTRATE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SUBSTRATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_10/SUBSTRATE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_10/SUBSTRATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SUBSTRATE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SUBSTRATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SUBSTRATE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SUBSTRATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_9/SUBSTRATE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_9/SUBSTRATE" "a_26_26#"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_4/GATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_8/GATE" -3595.52 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -407456 -14808 -134400 -1472 0 0 0 0 0 0 0 0
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_8/GATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_10/DRAIN"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_10/DRAIN" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/GATE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/GATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/GATE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/GATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/GATE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/GATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/GATE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/GATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_10/GATE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_10/GATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE" "m1_866_2572#"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_4/DRAIN" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_8/DRAIN" -4218.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1075200 -11776 0 0 -666664 -4660 -699552 -4844 0 0
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_8/DRAIN" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/DRAIN"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/DRAIN" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/DRAIN"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/DRAIN" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/DRAIN"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/DRAIN" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN" "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN"
+merge "buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN" "m2_842_878#"

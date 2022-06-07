@@ -1,0 +1,123 @@
+| units: 500000 tech: sky130B format: MIT
+x GND GND GND GND l=30 w=1010 x=201 y=1532 sky130_fd_pr__nfet_01v8_lvt
+x GND GND GND GND l=30 w=1010 x=2571 y=-3001 sky130_fd_pr__nfet_01v8_lvt
+x GND GND GND GND l=30 w=1010 x=287 y=1532 sky130_fd_pr__nfet_01v8_lvt
+x VBIAS buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND GND l=30 w=1010 x=1163 y=-3001 sky130_fd_pr__nfet_01v8_lvt
+x VBIAS GND buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND l=30 w=1010 x=3721 y=-3001 sky130_fd_pr__nfet_01v8_lvt
+x GND GND GND GND l=30 w=1010 x=4683 y=-3001 sky130_fd_pr__nfet_01v8_lvt
+x GND GND GND GND l=30 w=1010 x=2313 y=-3001 sky130_fd_pr__nfet_01v8_lvt
+x VBIAS buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND GND l=30 w=1010 x=3275 y=-3001 sky130_fd_pr__nfet_01v8_lvt
+x GND GND GND GND l=30 w=1010 x=4425 y=-3001 sky130_fd_pr__nfet_01v8_lvt
+x GND GND GND GND l=30 w=1010 x=373 y=1532 sky130_fd_pr__nfet_01v8_lvt
+x GND GND GND GND l=30 w=1010 x=2571 y=258 sky130_fd_pr__nfet_01v8_lvt
+x GND GND GND GND l=30 w=1010 x=201 y=-3001 sky130_fd_pr__nfet_01v8_lvt
+x VBIAS GND buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND l=30 w=1010 x=3017 y=-3001 sky130_fd_pr__nfet_01v8_lvt
+x IN_N OUT_N buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND l=30 w=1010 x=1163 y=258 sky130_fd_pr__nfet_01v8_lvt
+x VBIAS VBIAS GND GND l=30 w=1010 x=2571 y=-1677 sky130_fd_pr__nfet_01v8_lvt
+x VBIAS GND buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND l=30 w=1010 x=3721 y=-1677 sky130_fd_pr__nfet_01v8_lvt
+x VBIAS buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND GND l=30 w=1010 x=1163 y=-1677 sky130_fd_pr__nfet_01v8_lvt
+x VBIAS GND VBIAS GND l=30 w=1010 x=2313 y=-1677 sky130_fd_pr__nfet_01v8_lvt
+x GND GND GND GND l=30 w=1010 x=4683 y=-1677 sky130_fd_pr__nfet_01v8_lvt
+x GND GND GND GND l=30 w=1010 x=373 y=258 sky130_fd_pr__nfet_01v8_lvt
+x VBIAS buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND GND l=30 w=1010 x=3275 y=-1677 sky130_fd_pr__nfet_01v8_lvt
+x GND GND GND GND l=30 w=1010 x=4425 y=-1677 sky130_fd_pr__nfet_01v8_lvt
+x IN_P buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE OUT_P GND l=30 w=1010 x=905 y=1532 sky130_fd_pr__nfet_01v8_lvt
+x IN_P OUT_P buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND l=30 w=1010 x=1695 y=258 sky130_fd_pr__nfet_01v8_lvt
+x GND GND GND GND l=30 w=1010 x=201 y=-1677 sky130_fd_pr__nfet_01v8_lvt
+x VBIAS buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND GND l=30 w=1010 x=1867 y=-3001 sky130_fd_pr__nfet_01v8_lvt
+x VBIAS GND buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND l=30 w=1010 x=3017 y=-1677 sky130_fd_pr__nfet_01v8_lvt
+x VBIAS buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND GND l=30 w=1010 x=3979 y=-3001 sky130_fd_pr__nfet_01v8_lvt
+x IN_P buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE OUT_P GND l=30 w=1010 x=1609 y=258 sky130_fd_pr__nfet_01v8_lvt
+x VBIAS GND buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND l=30 w=1010 x=1609 y=-3001 sky130_fd_pr__nfet_01v8_lvt
+x VBIAS buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND GND l=30 w=1010 x=1695 y=-3001 sky130_fd_pr__nfet_01v8_lvt
+x VBIAS GND buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND l=30 w=1010 x=905 y=-3001 sky130_fd_pr__nfet_01v8_lvt
+x VBIAS buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND GND l=30 w=1010 x=991 y=-3001 sky130_fd_pr__nfet_01v8_lvt
+x GND GND GND GND l=30 w=1010 x=459 y=-3001 sky130_fd_pr__nfet_01v8_lvt
+x VBIAS buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND GND l=30 w=1010 x=1867 y=-1677 sky130_fd_pr__nfet_01v8_lvt
+x GND GND GND GND l=30 w=1010 x=2399 y=-3001 sky130_fd_pr__nfet_01v8_lvt
+x IN_P buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE OUT_P GND l=30 w=1010 x=1077 y=1532 sky130_fd_pr__nfet_01v8_lvt
+x GND GND GND GND l=30 w=1010 x=2313 y=1532 sky130_fd_pr__nfet_01v8_lvt
+x VBIAS GND buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND l=30 w=1010 x=1609 y=-1677 sky130_fd_pr__nfet_01v8_lvt
+x VBIAS buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND GND l=30 w=1010 x=3979 y=-1677 sky130_fd_pr__nfet_01v8_lvt
+x GND GND GND GND l=30 w=1010 x=287 y=-3001 sky130_fd_pr__nfet_01v8_lvt
+x VBIAS GND buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND l=30 w=1010 x=905 y=-1677 sky130_fd_pr__nfet_01v8_lvt
+x VBIAS buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND GND l=30 w=1010 x=991 y=-1677 sky130_fd_pr__nfet_01v8_lvt
+x VBIAS buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND GND l=30 w=1010 x=1695 y=-1677 sky130_fd_pr__nfet_01v8_lvt
+x VBIAS VBIAS GND GND l=30 w=1010 x=2399 y=-1677 sky130_fd_pr__nfet_01v8_lvt
+x IN_P OUT_P buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND l=30 w=1010 x=1163 y=1532 sky130_fd_pr__nfet_01v8_lvt
+x GND GND GND GND l=30 w=1010 x=2399 y=1532 sky130_fd_pr__nfet_01v8_lvt
+x GND GND GND GND l=30 w=1010 x=459 y=-1677 sky130_fd_pr__nfet_01v8_lvt
+x GND GND GND GND l=30 w=1010 x=4511 y=-3001 sky130_fd_pr__nfet_01v8_lvt
+x GND GND GND GND l=30 w=1010 x=459 y=258 sky130_fd_pr__nfet_01v8_lvt
+x IN_N buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE OUT_N GND l=30 w=1010 x=1609 y=1532 sky130_fd_pr__nfet_01v8_lvt
+x IN_P buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE OUT_P GND l=30 w=1010 x=1781 y=258 sky130_fd_pr__nfet_01v8_lvt
+x GND GND GND GND l=30 w=1010 x=287 y=-1677 sky130_fd_pr__nfet_01v8_lvt
+x VBIAS buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND GND l=30 w=1010 x=3103 y=-3001 sky130_fd_pr__nfet_01v8_lvt
+x GND GND GND GND l=30 w=1010 x=2485 y=1532 sky130_fd_pr__nfet_01v8_lvt
+x IN_N buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE OUT_N GND l=30 w=1010 x=905 y=258 sky130_fd_pr__nfet_01v8_lvt
+x IN_N OUT_N buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND l=30 w=1010 x=991 y=258 sky130_fd_pr__nfet_01v8_lvt
+x GND GND GND GND l=30 w=1010 x=4511 y=-1677 sky130_fd_pr__nfet_01v8_lvt
+x IN_P OUT_P buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND l=30 w=1010 x=991 y=1532 sky130_fd_pr__nfet_01v8_lvt
+x GND GND GND GND l=30 w=1010 x=2313 y=258 sky130_fd_pr__nfet_01v8_lvt
+x VBIAS buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND GND l=30 w=1010 x=3103 y=-1677 sky130_fd_pr__nfet_01v8_lvt
+x GND GND GND GND l=30 w=1010 x=2571 y=1532 sky130_fd_pr__nfet_01v8_lvt
+x GND GND GND GND l=30 w=1010 x=2399 y=258 sky130_fd_pr__nfet_01v8_lvt
+x VBIAS GND buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND l=30 w=1010 x=1781 y=-3001 sky130_fd_pr__nfet_01v8_lvt
+x VBIAS buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND GND l=30 w=1010 x=3807 y=-3001 sky130_fd_pr__nfet_01v8_lvt
+x VBIAS GND buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND l=30 w=1010 x=3893 y=-3001 sky130_fd_pr__nfet_01v8_lvt
+r OUT_N VDD 0.000000
+x GND GND GND GND l=30 w=1010 x=2485 y=-3001 sky130_fd_pr__nfet_01v8_lvt
+x VBIAS GND buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND l=30 w=1010 x=1077 y=-3001 sky130_fd_pr__nfet_01v8_lvt
+x GND GND GND GND l=30 w=1010 x=4597 y=-3001 sky130_fd_pr__nfet_01v8_lvt
+x IN_N OUT_N buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND l=30 w=1010 x=1867 y=1532 sky130_fd_pr__nfet_01v8_lvt
+r VDD OUT_P 0.000000
+x GND GND GND GND l=30 w=1010 x=373 y=-3001 sky130_fd_pr__nfet_01v8_lvt
+x VBIAS GND buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND l=30 w=1010 x=1781 y=-1677 sky130_fd_pr__nfet_01v8_lvt
+x VBIAS GND buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND l=30 w=1010 x=3189 y=-3001 sky130_fd_pr__nfet_01v8_lvt
+x VBIAS buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND GND l=30 w=1010 x=3807 y=-1677 sky130_fd_pr__nfet_01v8_lvt
+x IN_P OUT_P buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND l=30 w=1010 x=1867 y=258 sky130_fd_pr__nfet_01v8_lvt
+x VBIAS GND buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND l=30 w=1010 x=3893 y=-1677 sky130_fd_pr__nfet_01v8_lvt
+x VBIAS GND VBIAS GND l=30 w=1010 x=2485 y=-1677 sky130_fd_pr__nfet_01v8_lvt
+x GND GND GND GND l=30 w=1010 x=4597 y=-1677 sky130_fd_pr__nfet_01v8_lvt
+x IN_N OUT_N buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND l=30 w=1010 x=1695 y=1532 sky130_fd_pr__nfet_01v8_lvt
+x GND GND GND GND l=30 w=1010 x=373 y=-1677 sky130_fd_pr__nfet_01v8_lvt
+x VBIAS GND buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND l=30 w=1010 x=1077 y=-1677 sky130_fd_pr__nfet_01v8_lvt
+x VBIAS GND buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND l=30 w=1010 x=3189 y=-1677 sky130_fd_pr__nfet_01v8_lvt
+x GND GND GND GND l=30 w=1010 x=2485 y=258 sky130_fd_pr__nfet_01v8_lvt
+x GND GND GND GND l=30 w=1010 x=201 y=258 sky130_fd_pr__nfet_01v8_lvt
+x IN_N buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE OUT_N GND l=30 w=1010 x=1077 y=258 sky130_fd_pr__nfet_01v8_lvt
+x IN_N buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE OUT_N GND l=30 w=1010 x=1781 y=1532 sky130_fd_pr__nfet_01v8_lvt
+x GND GND GND GND l=30 w=1010 x=459 y=1532 sky130_fd_pr__nfet_01v8_lvt
+x GND GND GND GND l=30 w=1010 x=287 y=258 sky130_fd_pr__nfet_01v8_lvt
+C buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE IN_N 5.63
+C buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE OUT_P 17.63
+C buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE VBIAS 25.10
+C IN_P IN_N 6.75
+C IN_P OUT_P 4.08
+C IN_P buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE 4.53
+C IN_N OUT_N 3.36
+C OUT_P OUT_N 7.61
+C buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE OUT_N 19.70
+C VDD GND 5.92
+R VDD 1508
+C VBIAS GND 52.14
+R VBIAS 68313
+= VBIAS buffer_mirror_0/buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_8/GATE
+R a_4020_513# 48
+R a_4020_1585# 48
+C OUT_N GND 6.41
+R OUT_N 11736
+= OUT_N buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN
+C IN_N GND 5.45
+R IN_N 13890
+= IN_N buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/GATE
+C OUT_P GND 5.80
+R OUT_P 11736
+= OUT_P buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_2/DRAIN
+C buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE GND 92.27
+R buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE 78788
+C IN_P GND 4.83
+R IN_P 13888
+= IN_P buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_2/GATE
+R GND 553487
+= GND buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SOURCE

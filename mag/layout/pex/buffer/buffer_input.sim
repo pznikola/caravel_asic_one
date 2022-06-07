@@ -1,0 +1,84 @@
+| units: 500000 tech: sky130B format: MIT
+x GATE GATE GATE GATE l=30 w=1010 x=96 y=-28 sky130_fd_pr__nfet_01v8_lvt
+x GATE GATE GATE GATE l=30 w=1010 x=-76 y=-28 sky130_fd_pr__nfet_01v8_lvt
+x GATE GATE GATE GATE l=30 w=1010 x=10 y=-28 sky130_fd_pr__nfet_01v8_lvt
+x GATE GATE GATE GATE l=30 w=1010 x=-162 y=-28 sky130_fd_pr__nfet_01v8_lvt
+x buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE GATE l=30 w=1010 x=800 y=981 sky130_fd_pr__nfet_01v8_lvt
+x buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE GATE l=30 w=1010 x=628 y=981 sky130_fd_pr__nfet_01v8_lvt
+x buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN GATE l=30 w=1010 x=714 y=981 sky130_fd_pr__nfet_01v8_lvt
+x buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN GATE l=30 w=1010 x=542 y=981 sky130_fd_pr__nfet_01v8_lvt
+x buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE GATE l=30 w=1010 x=1504 y=981 sky130_fd_pr__nfet_01v8_lvt
+x buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE GATE l=30 w=1010 x=1332 y=981 sky130_fd_pr__nfet_01v8_lvt
+x buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN GATE l=30 w=1010 x=1418 y=981 sky130_fd_pr__nfet_01v8_lvt
+x buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN GATE l=30 w=1010 x=1246 y=981 sky130_fd_pr__nfet_01v8_lvt
+x GATE GATE GATE GATE l=30 w=1010 x=2208 y=981 sky130_fd_pr__nfet_01v8_lvt
+x GATE GATE GATE GATE l=30 w=1010 x=2036 y=981 sky130_fd_pr__nfet_01v8_lvt
+x GATE GATE GATE GATE l=30 w=1010 x=2122 y=981 sky130_fd_pr__nfet_01v8_lvt
+x GATE GATE GATE GATE l=30 w=1010 x=1950 y=981 sky130_fd_pr__nfet_01v8_lvt
+x GATE GATE GATE GATE l=30 w=1010 x=96 y=1246 sky130_fd_pr__nfet_01v8_lvt
+x GATE GATE GATE GATE l=30 w=1010 x=-76 y=1246 sky130_fd_pr__nfet_01v8_lvt
+x GATE GATE GATE GATE l=30 w=1010 x=10 y=1246 sky130_fd_pr__nfet_01v8_lvt
+x GATE GATE GATE GATE l=30 w=1010 x=-162 y=1246 sky130_fd_pr__nfet_01v8_lvt
+x buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE GATE l=30 w=1010 x=800 y=1246 sky130_fd_pr__nfet_01v8_lvt
+x buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE GATE l=30 w=1010 x=628 y=1246 sky130_fd_pr__nfet_01v8_lvt
+x buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN GATE l=30 w=1010 x=714 y=1246 sky130_fd_pr__nfet_01v8_lvt
+x buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN GATE l=30 w=1010 x=542 y=1246 sky130_fd_pr__nfet_01v8_lvt
+x buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE GATE l=30 w=1010 x=1504 y=1246 sky130_fd_pr__nfet_01v8_lvt
+x buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE GATE l=30 w=1010 x=1332 y=1246 sky130_fd_pr__nfet_01v8_lvt
+x buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN GATE l=30 w=1010 x=1418 y=1246 sky130_fd_pr__nfet_01v8_lvt
+x buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN GATE l=30 w=1010 x=1246 y=1246 sky130_fd_pr__nfet_01v8_lvt
+x GATE GATE GATE GATE l=30 w=1010 x=2208 y=1246 sky130_fd_pr__nfet_01v8_lvt
+x GATE GATE GATE GATE l=30 w=1010 x=2036 y=1246 sky130_fd_pr__nfet_01v8_lvt
+x GATE GATE GATE GATE l=30 w=1010 x=2122 y=1246 sky130_fd_pr__nfet_01v8_lvt
+x GATE GATE GATE GATE l=30 w=1010 x=1950 y=1246 sky130_fd_pr__nfet_01v8_lvt
+C buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN 2.04
+C buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN 5.73
+C buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE 18.11
+C buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE 4.11
+C buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE 6.22
+C buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN 16.23
+C buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN 3.89
+C buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE 2.91
+R GATE 177063
+= GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/DRAIN
+= GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SOURCE
+= GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/DRAIN
+= GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SOURCE
+= GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/DRAIN
+= GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SOURCE
+= GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_4/DRAIN
+= GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_4/SOURCE
+= GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/GATE
+= GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/GATE
+= GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/GATE
+= GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_4/GATE
+= GATE buffer_input_base_0/VSUBS
+= GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE
+= GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SUBSTRATE
+= GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_2/SUBSTRATE
+= GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SUBSTRATE
+= GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_4/SUBSTRATE
+= GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SUBSTRATE
+= GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SUBSTRATE
+= GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SUBSTRATE
+R buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN 11025
+= buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN
+= buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN m2_348_252#
+C buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE GND 4.08
+R buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE 13887
+= buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/GATE
+= buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE m1_512_n120#
+R buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN 11025
+= buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_2/DRAIN
+= buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN m2_348_2048#
+C buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE GND 10.37
+R buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE 33611
+= buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE buffer_input_base_0/m5_566_1418#
+= buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_2/SOURCE
+= buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE
+= buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SOURCE
+= buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE m2_374_590#
+C buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE GND 4.24
+R buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE 13886
+= buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_2/GATE
+= buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE m1_512_1154#

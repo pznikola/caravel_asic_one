@@ -1,0 +1,78 @@
+timestamp 1654523624
+version 8.3
+tech sky130B
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use sky130_fd_pr__res_generic_po_TC8HWG sky130_fd_pr__res_generic_po_TC8HWG_1 1 0 4370 0 1 863
+use sky130_fd_pr__res_generic_po_TC8HWG sky130_fd_pr__res_generic_po_TC8HWG_0 1 0 4370 0 1 1935
+use buffer_mirror buffer_mirror_0 1 0 7 0 1 -3214
+use buffer_input buffer_input_0 1 0 363 0 1 286
+port "GND" 2 54 -3670 62 -3642 m5
+port "IN_N" 6 16 1312 24 1340 m3
+port "IN_P" 5 16 1460 24 1488 m3
+port "VBIAS" 0 134 -190 142 -162 m5
+port "OUT_N" 4 4886 344 4894 372 m3
+port "VDD" 1 132 3160 140 3188 m5
+port "OUT_P" 3 4892 2414 4900 2442 m3
+node "GND" 0 0 54 -3670 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "IN_N" 0 0 16 1312 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "IN_P" 0 0 16 1460 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "VBIAS" 0 0 134 -190 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m4_3316_n348#" 0 1296.03 3316 -348 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 418168 3172 531728 3852 0 0
+node "OUT_N" 1 1738.91 4886 344 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 172200 1892 140000 1800 437200 4772 0 0 0 0 0 0
+node "VDD" 1 4538.63 132 3160 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 259000 2140 259000 2140 322640 2484 567120 5316 3276672 11096 0 0
+node "OUT_P" 2 2133.18 4892 2414 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 173600 1896 140000 1800 710200 7502 0 0 0 0 0 0
+node "li_4754_2454#" 13 39.7622 4754 2454 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1156 136 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "a_32_n482#" 0 0 32 -482 ppd 0 0 0 0 0 0 0 0 0 0 582072 18080 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 198128 16520 462744 14728 0 0 0 0 0 0 0 0 0 0
+cap "VDD" "m4_3316_n348#" 52.451
+cap "OUT_P" "VDD" 1271.54
+cap "OUT_N" "m4_3316_n348#" 611.857
+cap "OUT_P" "OUT_N" 30.0719
+cap "li_4754_2454#" "OUT_P" 6.73461
+cap "OUT_P" "m4_3316_n348#" 2.30085
+cap "VDD" "OUT_N" 362.615
+cap "li_4754_2454#" "VDD" 1.10802
+cap "VBIAS" "buffer_mirror_0/buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SUBSTRATE" 4.42008
+cap "sky130_fd_pr__res_generic_po_TC8HWG_1/a_n480_n553#" "VBIAS" 0.15373
+cap "buffer_mirror_0/m2_842_878#" "sky130_fd_pr__res_generic_po_TC8HWG_1/a_n480_n553#" 3.00277
+cap "OUT_N" "sky130_fd_pr__res_generic_po_TC8HWG_1/a_n480_n553#" 18.9243
+cap "buffer_input_0/m2_348_2048#" "OUT_N" 84.03
+cap "OUT_N" "buffer_input_0/m2_374_590#" -2.84217e-14
+cap "sky130_fd_pr__res_generic_po_TC8HWG_1/a_n350_350#" "sky130_fd_pr__res_generic_po_TC8HWG_1/a_n480_n553#" 18.9243
+cap "sky130_fd_pr__res_generic_po_TC8HWG_1/a_n480_n553#" "OUT_N" 51.9281
+cap "sky130_fd_pr__res_generic_po_TC8HWG_1/a_n480_n553#" "sky130_fd_pr__res_generic_po_TC8HWG_1/a_n350_350#" 50.4764
+cap "buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN" "buffer_input_0/m2_348_2048#" 5.68434e-14
+cap "buffer_input_0/m2_348_2048#" "sky130_fd_pr__res_generic_po_TC8HWG_1/a_n480_n553#" 5.68434e-14
+cap "OUT_P" "sky130_fd_pr__res_generic_po_TC8HWG_1/a_n480_n553#" 18.9243
+cap "OUT_P" "VDD" 0.006468
+cap "sky130_fd_pr__res_generic_po_TC8HWG_1/a_n480_n553#" "OUT_P" 51.4139
+merge "sky130_fd_pr__res_generic_po_TC8HWG_0/a_n350_350#" "buffer_input_0/m2_348_2048#" -1235.09 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -35984 -1488 0 0 -379600 -4196 0 0 0 0 0 0
+merge "buffer_input_0/m2_348_2048#" "buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN"
+merge "buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN" "OUT_P"
+merge "buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/GATE" "li_4754_2454#" -2998.28 0 0 0 0 0 0 0 0 0 0 -242972 -15052 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -66844 -13324 0 -736 0 0 0 0 0 0 0 0 0 0
+merge "li_4754_2454#" "buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_4/GATE"
+merge "buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_4/GATE" "buffer_mirror_0/buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_11/GATE"
+merge "buffer_mirror_0/buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_11/GATE" "buffer_mirror_0/buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SUBSTRATE"
+merge "buffer_mirror_0/buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SUBSTRATE" "buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/GATE"
+merge "buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/GATE" "buffer_mirror_0/buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SUBSTRATE"
+merge "buffer_mirror_0/buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SUBSTRATE" "sky130_fd_pr__res_generic_po_TC8HWG_0/a_n480_n553#"
+merge "sky130_fd_pr__res_generic_po_TC8HWG_0/a_n480_n553#" "buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/GATE"
+merge "buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/GATE" "buffer_mirror_0/buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SUBSTRATE"
+merge "buffer_mirror_0/buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SUBSTRATE" "buffer_mirror_0/buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_12/GATE"
+merge "buffer_mirror_0/buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_12/GATE" "buffer_mirror_0/buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_2/GATE"
+merge "buffer_mirror_0/buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_2/GATE" "sky130_fd_pr__res_generic_po_TC8HWG_1/a_n480_n553#"
+merge "sky130_fd_pr__res_generic_po_TC8HWG_1/a_n480_n553#" "buffer_input_0/GATE"
+merge "buffer_input_0/GATE" "buffer_input_0/a_n330_n214#"
+merge "buffer_input_0/a_n330_n214#" "buffer_mirror_0/buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_13/GATE"
+merge "buffer_mirror_0/buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_13/GATE" "buffer_mirror_0/a_26_26#"
+merge "buffer_mirror_0/a_26_26#" "a_32_n482#"
+merge "sky130_fd_pr__res_generic_po_TC8HWG_0/a_n350_n423#" "sky130_fd_pr__res_generic_po_TC8HWG_1/a_n350_350#" -2870.83 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -71968 -2976 0 0 0 0 -487120 -4316 -1660176 -6288 0 0
+merge "sky130_fd_pr__res_generic_po_TC8HWG_1/a_n350_350#" "VDD"
+merge "buffer_input_0/buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN" "sky130_fd_pr__res_generic_po_TC8HWG_1/a_n350_n423#" -426.056 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -35984 -1488 0 0 -200 -402 0 0 0 0 0 0
+merge "sky130_fd_pr__res_generic_po_TC8HWG_1/a_n350_n423#" "buffer_input_0/m2_348_252#"
+merge "buffer_input_0/m2_348_252#" "OUT_N"
+merge "buffer_input_0/m2_374_590#" "buffer_mirror_0/buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/DRAIN" -253.298 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9324 -722 -2672 -684 0 0
+merge "buffer_mirror_0/buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/DRAIN" "buffer_mirror_0/buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN"
+merge "buffer_mirror_0/buffer_mirror_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN" "buffer_mirror_0/m2_842_878#"
+merge "buffer_mirror_0/m2_842_878#" "m4_3316_n348#"

@@ -1,0 +1,314 @@
+timestamp 0
+version 8.3
+tech sky130B
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+parameters sky130_fd_pr__nfet_01v8_lvt l=l w=w a1=as p1=ps a2=ad p2=pd
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/S" 0 0 200 577 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/D" 0 0 286 577 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/S" 0 0 372 577 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/S" 0 0 28 577 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/S" 0 0 114 577 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/S" 0 0 200 577 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/S" 0 0 286 577 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/S" 0 0 28 577 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/D" 0 0 114 577 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/S" 0 0 904 577 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/D" 0 0 990 577 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/S" 0 0 1076 577 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/S" 0 0 732 577 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/S" 0 0 818 577 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/S" 0 0 904 577 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/S" 0 0 990 577 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/S" 0 0 732 577 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/D" 0 0 818 577 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/S" 0 0 1608 577 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/D" 0 0 1694 577 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/S" 0 0 1780 577 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/S" 0 0 1436 577 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/S" 0 0 1522 577 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/S" 0 0 1608 577 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/S" 0 0 1694 577 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/S" 0 0 1436 577 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/D" 0 0 1522 577 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/S" 0 0 2312 577 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/D" 0 0 2398 577 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/S" 0 0 2484 577 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/S" 0 0 2140 577 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/S" 0 0 2226 577 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/S" 0 0 2312 577 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/S" 0 0 2398 577 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/S" 0 0 2140 577 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/D" 0 0 2226 577 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/S" 0 0 200 1851 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/D" 0 0 286 1851 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/S" 0 0 372 1851 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/S" 0 0 28 1851 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/S" 0 0 114 1851 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/S" 0 0 200 1851 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/S" 0 0 286 1851 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/S" 0 0 28 1851 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/D" 0 0 114 1851 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/S" 0 0 904 1851 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/D" 0 0 990 1851 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/S" 0 0 1076 1851 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/S" 0 0 732 1851 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/S" 0 0 818 1851 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/S" 0 0 904 1851 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/S" 0 0 990 1851 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/S" 0 0 732 1851 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/D" 0 0 818 1851 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/S" 0 0 1608 1851 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/D" 0 0 1694 1851 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/S" 0 0 1780 1851 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/S" 0 0 1436 1851 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/S" 0 0 1522 1851 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/S" 0 0 1608 1851 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/S" 0 0 1694 1851 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/S" 0 0 1436 1851 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/D" 0 0 1522 1851 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/S" 0 0 2312 1851 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/D" 0 0 2398 1851 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/S" 0 0 2484 1851 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/S" 0 0 2140 1851 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/S" 0 0 2226 1851 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/S" 0 0 2312 1851 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/S" 0 0 2398 1851 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/S" 0 0 2140 1851 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/D" 0 0 2226 1851 comment 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "m5_566_1418#" 0 -250.93 566 1418 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 664320 4792 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/DRAIN" 5377 388.095 2198 72 ndif 0 0 0 0 0 0 0 0 113120 4264 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69224 4208 103376 4184 319072 2296 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SOURCE" 8201 2309.94 2112 72 ndif 0 0 0 0 0 0 0 0 169680 6396 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 103836 6312 155064 6276 319072 2296 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/DRAIN" 5377 315.096 1494 72 ndif 0 0 0 0 0 0 0 0 113120 4264 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69224 4208 103376 4184 319072 2296 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/SOURCE" 8201 2226.25 1408 72 ndif 0 0 0 0 0 0 0 0 169680 6396 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 103836 6312 155064 6276 319072 2296 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN" 5377 315.096 790 72 ndif 0 0 0 0 0 0 0 0 113120 4264 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69224 4208 103376 4184 319072 2296 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE" 8201 2226.25 704 72 ndif 0 0 0 0 0 0 0 0 169680 6396 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 103836 6312 155064 6276 319072 2296 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/DRAIN" 5377 289.336 86 72 ndif 0 0 0 0 0 0 0 0 113120 4264 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69224 4208 103376 4184 319072 2296 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SOURCE" 8201 2416.71 0 72 ndif 0 0 0 0 0 0 0 0 169680 6396 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 103836 6312 155064 6276 319072 2296 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/GATE" 6878 764.717 2143 -20 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 173800 9824 0 0 22984 1488 45672 1648 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/GATE" 6878 707.339 1439 -20 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 173800 9824 0 0 22984 1488 45672 1648 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/GATE" 6878 707.339 735 -20 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 173800 9824 0 0 22984 1488 45672 1648 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/GATE" 6878 764.717 31 -20 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 173800 9824 0 0 22984 1488 45672 1648 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/DRAIN" 5377 388.095 2198 1346 ndif 0 0 0 0 0 0 0 0 113120 4264 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69224 4208 103376 4184 319072 2296 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SOURCE" 8201 2317.49 2112 1346 ndif 0 0 0 0 0 0 0 0 169680 6396 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 103836 6312 155064 6276 319072 2296 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN" 5377 315.096 1494 1346 ndif 0 0 0 0 0 0 0 0 113120 4264 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69224 4208 103376 4184 319072 2296 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE" 8201 2233.79 1408 1346 ndif 0 0 0 0 0 0 0 0 169680 6396 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 103836 6312 155064 6276 319072 2296 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN" 5377 315.096 790 1346 ndif 0 0 0 0 0 0 0 0 113120 4264 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69224 4208 103376 4184 319072 2296 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SOURCE" 8201 2233.79 704 1346 ndif 0 0 0 0 0 0 0 0 169680 6396 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 103836 6312 155064 6276 319072 2296 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/DRAIN" 5377 388.095 86 1346 ndif 0 0 0 0 0 0 0 0 113120 4264 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69224 4208 103376 4184 319072 2296 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/SOURCE" 8201 2317.49 0 1346 ndif 0 0 0 0 0 0 0 0 169680 6396 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 103836 6312 155064 6276 319072 2296 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/GATE" 6878 764.717 2143 1254 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 173800 9824 0 0 22984 1488 45672 1648 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE" 6878 707.339 1439 1254 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 173800 9824 0 0 22984 1488 45672 1648 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE" 6878 707.339 735 1254 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 173800 9824 0 0 22984 1488 45672 1648 0 0 0 0 0 0 0 0 0 0
+node "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/GATE" 6878 764.717 31 1254 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 173800 9824 0 0 22984 1488 45672 1648 0 0 0 0 0 0 0 0 0 0
+substrate "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" 0 0 -112 72 ppd 0 0 0 0 0 0 0 0 0 0 937280 34176 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 527680 32128 922432 33664 0 0 0 0 0 0 0 0 0 0
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/DRAIN" 4.15978
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN" 30.5347
+cap "m5_566_1418#" "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN" 68.3163
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SOURCE" 30.5347
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN" 4.84271
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SOURCE" 11.0938
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/DRAIN" 0.00271041
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE" 2.35786
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/GATE" 8.03119
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SOURCE" 611.334
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/DRAIN" 9.40029
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/DRAIN" 678.764
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SOURCE" 160.128
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/GATE" "m5_566_1418#" 6.48638
+cap "m5_566_1418#" "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SOURCE" 137.064
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SOURCE" 7.56747
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN" 4.15978
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/GATE" 4.15978
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SOURCE" 14.8318
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN" 9.40029
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SOURCE" 0.00542082
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE" 9.40029
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE" 30.5347
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/GATE" 1.1702
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/GATE" 697.921
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SOURCE" 14.8318
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/GATE" 690.58
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/DRAIN" 4.15978
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/GATE" 342.011
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/GATE" 342.011
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE" 611.314
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SOURCE" 611.431
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN" 9.40029
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE" 7.56747
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE" 24.1929
+cap "m5_566_1418#" "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/GATE" 20.7733
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/GATE" 47.0482
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE" 342.011
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/GATE" 7.56747
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/GATE" 618.772
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/DRAIN" 5.67027
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/GATE" 13.9942
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SOURCE" 6895.83
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/SOURCE" "m5_566_1418#" 69.1464
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE" 30.5347
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/GATE" 4.15978
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN" 30.5347
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SOURCE" 709.371
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN" 13.9942
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE" 4.15978
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/DRAIN" "m5_566_1418#" 67.9178
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/DRAIN" 30.5347
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/DRAIN" 6895.83
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE" 2.35786
+cap "m5_566_1418#" "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/DRAIN" 16.0341
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE" 709.371
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE" 8.03119
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SOURCE" 30.5347
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN" 678.764
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SOURCE" 7.56747
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/GATE" 8.03119
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE" 611.411
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SOURCE" 7.56747
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/GATE" 24.0718
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/GATE" 611.411
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/GATE" "m5_566_1418#" 20.7733
+cap "m5_566_1418#" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE" 45.1809
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN" 4.84271
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SOURCE" 611.314
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN" 697.921
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN" 19.6493
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/GATE" 13.9942
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SOURCE" 30.5347
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/DRAIN" 13.9942
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/DRAIN" "m5_566_1418#" 68.3163
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/DRAIN" 6895.74
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/GATE" 8.03119
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/DRAIN" 24.4675
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN" 689.649
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SOURCE" 14.8318
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/DRAIN" 0.00271041
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SOURCE" 2.35786
+cap "m5_566_1418#" "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE" 115.987
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE" 14.8318
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE" 709.371
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/DRAIN" 4.84271
+cap "m5_566_1418#" "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/GATE" 20.7733
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/GATE" 7.56747
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/DRAIN" 6895.73
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SOURCE" 160.128
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN" 11.2394
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SOURCE" 24.0718
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN" 13.9942
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/GATE" 1.1702
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/SOURCE" 2.35786
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN" 1.1702
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SOURCE" 13.7197
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE" 9.40029
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN" 4.15978
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/DRAIN" 1.1702
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/DRAIN" 1.1702
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/GATE" 7.56747
+cap "m5_566_1418#" "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN" 102.66
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/GATE" 47.0482
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE" 7.56747
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN" 11.2394
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE" 24.0718
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SOURCE" 24.1929
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SOURCE" 30.5347
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN" 678.764
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SOURCE" 24.0718
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/GATE" 342.011
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE" 47.0482
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN" 5.67027
+cap "m5_566_1418#" "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/GATE" 45.1809
+cap "m5_566_1418#" "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SOURCE" 115.235
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SOURCE" 709.371
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SOURCE" 2.35786
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/DRAIN" 118.337
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN" 1.1702
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/SOURCE" 611.334
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/SOURCE" "m5_566_1418#" 115.987
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE" 11.0938
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SOURCE" 0.00542082
+cap "m5_566_1418#" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN" 101.812
+cap "m5_566_1418#" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SOURCE" 137.517
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/DRAIN" 13.0375
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN" 4.15978
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN" 13.9942
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN" 6895.74
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SOURCE" 11.0938
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/DRAIN" 13.9942
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/DRAIN" 697.921
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SOURCE" 0.00271041
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/SOURCE" 52.8843
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/DRAIN" 1.1702
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/DRAIN" 0.00271041
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/GATE" 2.35786
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE" 47.0482
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN" 678.764
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/DRAIN" 3.04467
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SOURCE" 2.35786
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/DRAIN" 678.764
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/GATE" 697.921
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/GATE" 2.35786
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/DRAIN" 5.67027
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE" 6895.74
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN" 6895.74
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN" 697.921
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/DRAIN" 697.921
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/DRAIN" 11.2394
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN" 697.921
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE" 7.56747
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/DRAIN" 689.649
+cap "m5_566_1418#" "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/DRAIN" 101.01
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/GATE" 47.0482
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/DRAIN" 4.15978
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/GATE" 47.0482
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SOURCE" 9.40029
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/DRAIN" 9.40029
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN" 5.67027
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/DRAIN" 6895.83
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE" 160.128
+cap "m5_566_1418#" "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE" 139.284
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE" 709.371
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN" 30.5347
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE" "m5_566_1418#" 45.1809
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE" 24.1929
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SOURCE" 7.56747
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN" 4.15978
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE" 7.56747
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE" 50.2564
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/GATE" 4.15978
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/GATE" 7.56747
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SOURCE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN" 9.40029
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/DRAIN" "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/GATE" 4.15978
+cap "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/GATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN" 1.1702
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2426 72 2427 73 l=30 w=1010 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/GATE" 60 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/DRAIN" 1010 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SOURCE" 1010 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2340 72 2341 73 l=30 w=1010 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/GATE" 60 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SOURCE" 1010 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/DRAIN" 1010 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2254 72 2255 73 l=30 w=1010 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/GATE" 60 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/DRAIN" 1010 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SOURCE" 1010 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2168 72 2169 73 l=30 w=1010 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/GATE" 60 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SOURCE" 1010 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/DRAIN" 1010 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1722 72 1723 73 l=30 w=1010 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/GATE" 60 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/DRAIN" 1010 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/SOURCE" 1010 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1636 72 1637 73 l=30 w=1010 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/GATE" 60 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/SOURCE" 1010 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/DRAIN" 1010 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1550 72 1551 73 l=30 w=1010 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/GATE" 60 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/DRAIN" 1010 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/SOURCE" 1010 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1464 72 1465 73 l=30 w=1010 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/GATE" 60 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/SOURCE" 1010 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/DRAIN" 1010 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1018 72 1019 73 l=30 w=1010 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/GATE" 60 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN" 1010 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE" 1010 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 932 72 933 73 l=30 w=1010 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/GATE" 60 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE" 1010 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN" 1010 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 846 72 847 73 l=30 w=1010 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/GATE" 60 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN" 1010 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE" 1010 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 760 72 761 73 l=30 w=1010 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/GATE" 60 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE" 1010 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN" 1010 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 314 72 315 73 l=30 w=1010 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/GATE" 60 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/DRAIN" 1010 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SOURCE" 1010 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 228 72 229 73 l=30 w=1010 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/GATE" 60 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SOURCE" 1010 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/DRAIN" 1010 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 142 72 143 73 l=30 w=1010 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/GATE" 60 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/DRAIN" 1010 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SOURCE" 1010 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 56 72 57 73 l=30 w=1010 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/GATE" 60 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SOURCE" 1010 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/DRAIN" 1010 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2426 1346 2427 1347 l=30 w=1010 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/GATE" 60 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/DRAIN" 1010 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SOURCE" 1010 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2340 1346 2341 1347 l=30 w=1010 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/GATE" 60 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SOURCE" 1010 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/DRAIN" 1010 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2254 1346 2255 1347 l=30 w=1010 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/GATE" 60 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/DRAIN" 1010 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SOURCE" 1010 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2168 1346 2169 1347 l=30 w=1010 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/GATE" 60 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SOURCE" 1010 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/DRAIN" 1010 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1722 1346 1723 1347 l=30 w=1010 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE" 60 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN" 1010 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE" 1010 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1636 1346 1637 1347 l=30 w=1010 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE" 60 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE" 1010 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN" 1010 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1550 1346 1551 1347 l=30 w=1010 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE" 60 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN" 1010 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE" 1010 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1464 1346 1465 1347 l=30 w=1010 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE" 60 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE" 1010 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN" 1010 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1018 1346 1019 1347 l=30 w=1010 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE" 60 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN" 1010 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SOURCE" 1010 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 932 1346 933 1347 l=30 w=1010 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE" 60 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SOURCE" 1010 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN" 1010 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 846 1346 847 1347 l=30 w=1010 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE" 60 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN" 1010 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SOURCE" 1010 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 760 1346 761 1347 l=30 w=1010 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE" 60 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SOURCE" 1010 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN" 1010 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 314 1346 315 1347 l=30 w=1010 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/GATE" 60 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/DRAIN" 1010 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/SOURCE" 1010 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 228 1346 229 1347 l=30 w=1010 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/GATE" 60 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/SOURCE" 1010 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/DRAIN" 1010 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 142 1346 143 1347 l=30 w=1010 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/GATE" 60 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/DRAIN" 1010 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/SOURCE" 1010 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 56 1346 57 1347 l=30 w=1010 "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/GATE" 60 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/SOURCE" 1010 0 "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/DRAIN" 1010 0

@@ -1,0 +1,95 @@
+timestamp 1654466164
+version 8.3
+tech sky130B
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use buffer_input_base buffer_input_base_0 1 0 -218 0 1 -100
+port "GATE" 2 -57 2299 25 2324 m1
+node "m4_1894_590#" 0 140.104 1894 590 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 128000 1440 0 0 0 0
+node "m2_374_590#" 4 3055.65 374 590 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 798720 7552 798720 7552 1148752 10316 1872000 12980 0 0
+node "m2_348_252#" 3 1854.07 348 252 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 270400 3504 913600 9936 344800 3848 0 0 0 0
+node "m2_348_2048#" 3 1507.38 348 2048 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 270400 3504 1017600 10976 453600 4936 0 0 0 0
+node "m1_512_n120#" 13 4242.88 512 -120 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 91872 3312 114144 3440 518560 14576 217524 6436 0 0 0 0
+node "m1_512_1154#" 12 3841.69 512 1154 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 91872 3312 146580 4308 309468 8300 209432 6072 0 0 0 0
+substrate "GATE" 0 0 -57 2299 m1 0 0 0 0 0 0 0 0 0 0 567784 20000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 343808 20904 1007528 26284 0 0 0 0 0 0 0 0 0 0
+cap "m2_348_252#" "m4_1894_590#" 218.178
+cap "m1_512_1154#" "m1_512_n120#" 6222.64
+cap "m2_348_2048#" "m4_1894_590#" 36.0232
+cap "m2_348_2048#" "m2_348_252#" 4568.22
+cap "m1_512_n120#" "m2_374_590#" 2870.87
+cap "m1_512_1154#" "m2_348_252#" 228.552
+cap "m2_374_590#" "m4_1894_590#" 402.33
+cap "m1_512_1154#" "m2_348_2048#" 2489.87
+cap "m2_348_252#" "m2_374_590#" 4317.57
+cap "m1_512_n120#" "m4_1894_590#" 33.2054
+cap "m2_348_2048#" "m2_374_590#" 2434.91
+cap "m1_512_n120#" "m2_348_252#" 639.205
+cap "m1_512_1154#" "m2_374_590#" 1677.06
+cap "m1_512_n120#" "m2_348_2048#" 1256.27
+cap "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN" -8.52651e-14
+cap "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SUBSTRATE" 1.42109e-14
+cap "m2_348_2048#" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SUBSTRATE" -0.362916
+cap "m1_512_1154#" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SUBSTRATE" 35.0634
+cap "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/GATE" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SUBSTRATE" 35.0181
+cap "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/GATE" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE" 3.55271e-15
+cap "m2_348_2048#" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN" 291.322
+cap "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SUBSTRATE" 1.42109e-14
+cap "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_2/SOURCE" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/GATE" 25.0387
+cap "m2_348_252#" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_2/DRAIN" 291.322
+cap "m2_348_252#" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/GATE" 291.322
+cap "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_2/GATE" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_2/DRAIN" -1.42109e-14
+cap "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_2/GATE" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/GATE" -3.55271e-15
+cap "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/GATE" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_2/DRAIN" 290.251
+cap "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/GATE" "m1_512_n120#" 3.55271e-15
+cap "m4_1894_590#" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/GATE" 65.056
+cap "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_2/GATE" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_2/SOURCE" 3.55271e-15
+cap "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_2/SOURCE" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_2/DRAIN" -6.82121e-13
+cap "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN" "m2_348_252#" 291.322
+cap "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN" 3.55271e-15
+cap "GATE" "m1_512_n120#" 34.6172
+cap "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN" "GATE" -1.13373
+cap "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SOURCE" "GATE" 5.68434e-14
+cap "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SOURCE" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN" -1.13687e-13
+cap "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE" "GATE" 35.0978
+cap "m2_348_2048#" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN" 291.322
+cap "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/GATE" 0.72576
+cap "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/GATE" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN" 291.322
+cap "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN" -1.42109e-14
+cap "m2_348_2048#" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/GATE" 290.309
+cap "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/GATE" 2.13163e-14
+cap "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN" -1.7053e-13
+merge "buffer_input_base_0/m5_566_1418#" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_2/SOURCE" -3757.49 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -798720 -7552 0 0 -350032 -2764 -1194880 -8748 0 0
+merge "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_2/SOURCE" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE"
+merge "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SOURCE" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE"
+merge "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SOURCE" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SOURCE"
+merge "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SOURCE" "m2_374_590#"
+merge "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_2/GATE" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE" -1784.3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -91344 -3296 -6996 -278 -80876 -2366 -104536 -3042 0 0 0 0
+merge "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/GATE" "m1_512_1154#"
+merge "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/DRAIN" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN" -2589.38 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -270400 -3504 -494400 -5544 -344800 -3848 0 0 0 0
+merge "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/DRAIN" "m2_348_252#"
+merge "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_2/DRAIN" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN" -3016.7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -270400 -3504 -598400 -6584 -453600 -4936 0 0 0 0
+merge "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/DRAIN" "m2_348_2048#"
+merge "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" "buffer_input_base_0/VSUBS" -3514.74 0 0 0 0 0 0 0 0 0 0 -5336 -3664 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -544 -2072 -184520 -14532 0 0 0 0 0 0 0 0 0 0
+merge "buffer_input_base_0/VSUBS" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/DRAIN"
+merge "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/DRAIN" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SOURCE"
+merge "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SOURCE" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/DRAIN"
+merge "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/DRAIN" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SOURCE"
+merge "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SOURCE" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/DRAIN"
+merge "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/DRAIN" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SOURCE"
+merge "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SOURCE" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_4/DRAIN"
+merge "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_4/DRAIN" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_4/SOURCE"
+merge "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_4/SOURCE" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SUBSTRATE"
+merge "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SUBSTRATE" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_2/SUBSTRATE"
+merge "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_2/SUBSTRATE" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/GATE"
+merge "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_3/GATE" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/GATE"
+merge "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_0/GATE" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SUBSTRATE"
+merge "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SUBSTRATE" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SUBSTRATE"
+merge "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SUBSTRATE" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SUBSTRATE"
+merge "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SUBSTRATE" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_4/SUBSTRATE"
+merge "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_4/SUBSTRATE" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/GATE"
+merge "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_7/GATE" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_4/GATE"
+merge "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_4/GATE" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SUBSTRATE"
+merge "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SUBSTRATE" "GATE"
+merge "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_1/GATE" "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE" -2344.07 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -91344 -3296 0 0 -186864 -5628 -104116 -3030 0 0 0 0
+merge "buffer_input_base_0/rf_nfet_01v8_lvt_aM04W5p00L0p15_6/GATE" "m1_512_n120#"
