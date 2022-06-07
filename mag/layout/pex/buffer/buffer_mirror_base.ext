@@ -1,0 +1,35 @@
+timestamp 1654373441
+version 8.3
+tech sky130B
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use rf_nfet_01v8_lvt_aM04W5p00L0p15 rf_nfet_01v8_lvt_aM04W5p00L0p15_0 1 0 -42 0 1 -8
+use rf_nfet_01v8_lvt_aM04W5p00L0p15 rf_nfet_01v8_lvt_aM04W5p00L0p15_13 1 0 -746 0 1 -8
+use rf_nfet_01v8_lvt_aM04W5p00L0p15 rf_nfet_01v8_lvt_aM04W5p00L0p15_1 1 0 662 0 1 -8
+use rf_nfet_01v8_lvt_aM04W5p00L0p15 rf_nfet_01v8_lvt_aM04W5p00L0p15_2 1 0 1366 0 1 -8
+use rf_nfet_01v8_lvt_aM04W5p00L0p15 rf_nfet_01v8_lvt_aM04W5p00L0p15_3 1 0 2070 0 1 -8
+use rf_nfet_01v8_lvt_aM04W5p00L0p15 rf_nfet_01v8_lvt_aM04W5p00L0p15_4 1 0 2774 0 1 -8
+use rf_nfet_01v8_lvt_aM04W5p00L0p15 rf_nfet_01v8_lvt_aM04W5p00L0p15_12 1 0 3478 0 1 -8
+use rf_nfet_01v8_lvt_aM04W5p00L0p15 rf_nfet_01v8_lvt_aM04W5p00L0p15_5 1 0 -42 0 1 1316
+use rf_nfet_01v8_lvt_aM04W5p00L0p15 rf_nfet_01v8_lvt_aM04W5p00L0p15_9 1 0 -746 0 1 1316
+use rf_nfet_01v8_lvt_aM04W5p00L0p15 rf_nfet_01v8_lvt_aM04W5p00L0p15_6 1 0 662 0 1 1316
+use rf_nfet_01v8_lvt_aM04W5p00L0p15 rf_nfet_01v8_lvt_aM04W5p00L0p15_10 1 0 1366 0 1 1316
+use rf_nfet_01v8_lvt_aM04W5p00L0p15 rf_nfet_01v8_lvt_aM04W5p00L0p15_7 1 0 2070 0 1 1316
+use rf_nfet_01v8_lvt_aM04W5p00L0p15 rf_nfet_01v8_lvt_aM04W5p00L0p15_8 1 0 2774 0 1 1316
+use rf_nfet_01v8_lvt_aM04W5p00L0p15 rf_nfet_01v8_lvt_aM04W5p00L0p15_11 1 0 3478 0 1 1316
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "rf_nfet_01v8_lvt_aM04W5p00L0p15_11/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_8/SUBSTRATE" -1.66438e-10 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "rf_nfet_01v8_lvt_aM04W5p00L0p15_8/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_12/SUBSTRATE"
+merge "rf_nfet_01v8_lvt_aM04W5p00L0p15_12/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/SUBSTRATE"
+merge "rf_nfet_01v8_lvt_aM04W5p00L0p15_4/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SUBSTRATE"
+merge "rf_nfet_01v8_lvt_aM04W5p00L0p15_7/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_10/SUBSTRATE"
+merge "rf_nfet_01v8_lvt_aM04W5p00L0p15_10/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SUBSTRATE"
+merge "rf_nfet_01v8_lvt_aM04W5p00L0p15_6/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_9/SUBSTRATE"
+merge "rf_nfet_01v8_lvt_aM04W5p00L0p15_9/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SUBSTRATE"
+merge "rf_nfet_01v8_lvt_aM04W5p00L0p15_5/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SUBSTRATE"
+merge "rf_nfet_01v8_lvt_aM04W5p00L0p15_3/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/SUBSTRATE"
+merge "rf_nfet_01v8_lvt_aM04W5p00L0p15_2/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SUBSTRATE"
+merge "rf_nfet_01v8_lvt_aM04W5p00L0p15_1/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_13/SUBSTRATE"
+merge "rf_nfet_01v8_lvt_aM04W5p00L0p15_13/SUBSTRATE" "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE"
+merge "rf_nfet_01v8_lvt_aM04W5p00L0p15_0/SUBSTRATE" "VSUBS"
