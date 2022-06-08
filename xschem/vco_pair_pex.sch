@@ -1,275 +1,49 @@
-**.subckt vco_wo_ind OUT_P IND_CT Vtune freq<0> freq<1> freq<2> freq<3> freq<4> freq<5> GND BUF_P
-*+ BUF_N OUT_N VBIAS_BUF VDD VBIAS
-*.iopin OUT_P
-*.iopin IND_CT
-*.iopin Vtune
-*.ipin freq<0>
-*.ipin freq<1>
-*.ipin freq<2>
-*.ipin freq<3>
-*.ipin freq<4>
-*.ipin freq<5>
-*.iopin GND
-*.opin BUF_P
-*.opin BUF_N
-*.iopin OUT_N
-*.iopin VBIAS_BUF
-*.iopin VDD
-*.iopin VBIAS
-X1 OUT_P OUT_N GND Vtune cap_var
-X2 OUT_P OUT_N VDD GND freq<0> freq<1> freq<2> freq<3> freq<4> freq<5> capbank
-XC1 OUT_P OUT_N sky130_fd_pr__cap_mim_m3_1 W=13.3 L=13.3 MF=1 m=1
-X26 net1 VDD GND BUF_N BUF_P OUT_P OUT_N buffer
-R2 net1 VBIAS_BUF sky130_fd_pr__res_generic_po W=1 L=6 m=1
-x1 VDD IND_CT GND VBIAS vco_pmirr
-x2 OUT_P OUT_N GND vco_pair_pex
-**.ends
-
-* expanding   symbol:  cap_var.sym # of pins=4
-* sym_path: /home/student/Downloads/caravel_asic_one/xschem/cap_var.sym
-* sch_path: /home/student/Downloads/caravel_asic_one/xschem/cap_var.sch
-.subckt cap_var  OUT_P OUT_N GND Vtune
-*.iopin OUT_P
-*.iopin OUT_N
-*.iopin Vtune
-*.iopin GND
-XC1 OUT_P Vtune GND sky130_fd_pr__cap_var_lvt W=4 L=0.6 VM=14 m=14
-XC2 OUT_N Vtune GND sky130_fd_pr__cap_var_lvt W=4 L=0.6 VM=14 m=14
-.ends
-
-
-* expanding   symbol:  capbank.sym # of pins=10
-* sym_path: /home/student/Downloads/caravel_asic_one/xschem/capbank.sym
-* sch_path: /home/student/Downloads/caravel_asic_one/xschem/capbank.sch
-.subckt capbank  OUT_P OUT_N VDD GND bit0 bit1 bit2 bit3 bit4 bit5
-*.iopin VDD
-*.iopin GND
-*.ipin bit0
-*.ipin bit1
-*.ipin bit2
-*.ipin bit3
-*.ipin bit4
-*.ipin bit5
-*.iopin OUT_P
-*.iopin OUT_N
-X1 w_inv5 bit5 OUT_P GND OUT_N cell_unit
-X2 w_inv5 bit5 OUT_P GND OUT_N cell_unit
-X3 w_inv5 bit5 OUT_P GND OUT_N cell_unit
-X4 w_inv5 bit5 OUT_P GND OUT_N cell_unit
-X5 w_inv5 bit5 OUT_P GND OUT_N cell_unit
-X6 w_inv5 bit5 OUT_P GND OUT_N cell_unit
-X7 w_inv5 bit5 OUT_P GND OUT_N cell_unit
-X8 w_inv5 bit5 OUT_P GND OUT_N cell_unit
-X9 w_inv5 bit5 OUT_P GND OUT_N cell_unit
-X10 w_inv5 bit5 OUT_P GND OUT_N cell_unit
-X11 w_inv5 bit5 OUT_P GND OUT_N cell_unit
-X12 w_inv5 bit5 OUT_P GND OUT_N cell_unit
-X13 w_inv5 bit5 OUT_P GND OUT_N cell_unit
-X14 w_inv5 bit5 OUT_P GND OUT_N cell_unit
-X15 w_inv5 bit5 OUT_P GND OUT_N cell_unit
-X16 w_inv5 bit5 OUT_P GND OUT_N cell_unit
-X17 w_inv5 bit5 OUT_P GND OUT_N cell_unit
-X18 w_inv5 bit5 OUT_P GND OUT_N cell_unit
-X19 w_inv5 bit5 OUT_P GND OUT_N cell_unit
-X20 w_inv5 bit5 OUT_P GND OUT_N cell_unit
-X21 w_inv5 bit5 OUT_P GND OUT_N cell_unit
-X22 w_inv5 bit5 OUT_P GND OUT_N cell_unit
-X23 w_inv5 bit5 OUT_P GND OUT_N cell_unit
-X24 w_inv5 bit5 OUT_P GND OUT_N cell_unit
-X25 w_inv5 bit5 OUT_P GND OUT_N cell_unit
-X26 w_inv5 bit5 OUT_P GND OUT_N cell_unit
-X27 w_inv5 bit5 OUT_P GND OUT_N cell_unit
-X28 w_inv5 bit5 OUT_P GND OUT_N cell_unit
-X29 w_inv5 bit5 OUT_P GND OUT_N cell_unit
-X30 w_inv5 bit5 OUT_P GND OUT_N cell_unit
-X31 w_inv5 bit5 OUT_P GND OUT_N cell_unit
-X32 w_inv5 bit5 OUT_P GND OUT_N cell_unit
-X33 w_inv4 bit4 OUT_P GND OUT_N cell_unit
-X34 w_inv4 bit4 OUT_P GND OUT_N cell_unit
-X35 w_inv4 bit4 OUT_P GND OUT_N cell_unit
-X36 w_inv4 bit4 OUT_P GND OUT_N cell_unit
-X37 w_inv4 bit4 OUT_P GND OUT_N cell_unit
-X38 w_inv4 bit4 OUT_P GND OUT_N cell_unit
-X39 w_inv4 bit4 OUT_P GND OUT_N cell_unit
-X40 w_inv4 bit4 OUT_P GND OUT_N cell_unit
-X41 w_inv4 bit4 OUT_P GND OUT_N cell_unit
-X42 w_inv4 bit4 OUT_P GND OUT_N cell_unit
-X43 w_inv4 bit4 OUT_P GND OUT_N cell_unit
-X44 w_inv4 bit4 OUT_P GND OUT_N cell_unit
-X45 w_inv4 bit4 OUT_P GND OUT_N cell_unit
-X46 w_inv4 bit4 OUT_P GND OUT_N cell_unit
-X47 w_inv4 bit4 OUT_P GND OUT_N cell_unit
-X48 w_inv4 bit4 OUT_P GND OUT_N cell_unit
-X49 w_inv3 bit3 OUT_P GND OUT_N cell_unit
-X50 w_inv3 bit3 OUT_P GND OUT_N cell_unit
-X51 w_inv3 bit3 OUT_P GND OUT_N cell_unit
-X52 w_inv3 bit3 OUT_P GND OUT_N cell_unit
-X53 w_inv3 bit3 OUT_P GND OUT_N cell_unit
-X54 w_inv3 bit3 OUT_P GND OUT_N cell_unit
-X55 w_inv3 bit3 OUT_P GND OUT_N cell_unit
-X56 w_inv3 bit3 OUT_P GND OUT_N cell_unit
-X57 w_inv2 bit2 OUT_P GND OUT_N cell_unit
-X58 w_inv2 bit2 OUT_P GND OUT_N cell_unit
-X59 w_inv2 bit2 OUT_P GND OUT_N cell_unit
-X60 w_inv2 bit2 OUT_P GND OUT_N cell_unit
-X61 w_inv1 bit1 OUT_P GND OUT_N cell_unit
-X62 w_inv1 bit1 OUT_P GND OUT_N cell_unit
-X63 w_inv0 bit0 OUT_P GND OUT_N cell_unit
-X64 bit0 w_inv0 VDD GND inv
-X65 bit1 w_inv1 VDD GND inv
-X66 bit2 w_inv2 VDD GND inv
-X67 bit3 w_inv3 VDD GND inv
-X68 bit4 w_inv4 VDD GND inv
-X69 bit5 w_inv5 VDD GND inv
-.ends
-
-
-* expanding   symbol:  buffer.sym # of pins=7
-* sym_path: /home/student/Downloads/caravel_asic_one/xschem/buffer.sym
-* sch_path: /home/student/Downloads/caravel_asic_one/xschem/buffer.sch
-.subckt buffer  VBIAS VDD GND OUT_N OUT_P IN_P IN_N
-*.iopin VBIAS
-*.iopin VDD
-*.iopin GND
-*.opin OUT_P
-*.opin OUT_N
-*.ipin IN_P
-*.ipin IN_N
-X10 OUT_N IN_P W_D GND rf_nfet_01v8_lvt_aM04W5p00L0p15
-X11 OUT_P IN_N W_D GND rf_nfet_01v8_lvt_aM04W5p00L0p15
-X12 OUT_N IN_P W_D GND rf_nfet_01v8_lvt_aM04W5p00L0p15
-X13 OUT_P IN_N W_D GND rf_nfet_01v8_lvt_aM04W5p00L0p15
-R1 OUT_N VDD sky130_fd_pr__res_generic_po W=3.5 L=3.5 m=1
-R2 OUT_P VDD sky130_fd_pr__res_generic_po W=3.5 L=3.5 m=1
-X9 VBIAS VBIAS GND GND rf_nfet_01v8_lvt_aM04W5p00L0p15
-X1 W_D VBIAS GND GND rf_nfet_01v8_lvt_aM04W5p00L0p15
-X2 W_D VBIAS GND GND rf_nfet_01v8_lvt_aM04W5p00L0p15
-X3 W_D VBIAS GND GND rf_nfet_01v8_lvt_aM04W5p00L0p15
-X4 W_D VBIAS GND GND rf_nfet_01v8_lvt_aM04W5p00L0p15
-X5 W_D VBIAS GND GND rf_nfet_01v8_lvt_aM04W5p00L0p15
-X6 W_D VBIAS GND GND rf_nfet_01v8_lvt_aM04W5p00L0p15
-X7 W_D VBIAS GND GND rf_nfet_01v8_lvt_aM04W5p00L0p15
-X8 W_D VBIAS GND GND rf_nfet_01v8_lvt_aM04W5p00L0p15
-X14 GND GND GND GND rf_nfet_01v8_lvt_aM04W5p00L0p15
-X15 GND GND GND GND rf_nfet_01v8_lvt_aM04W5p00L0p15
-X16 GND GND GND GND rf_nfet_01v8_lvt_aM04W5p00L0p15
-X17 GND GND GND GND rf_nfet_01v8_lvt_aM04W5p00L0p15
-X18 GND GND GND GND rf_nfet_01v8_lvt_aM04W5p00L0p15
-X19 GND GND GND GND rf_nfet_01v8_lvt_aM04W5p00L0p15
-X20 GND GND GND GND rf_nfet_01v8_lvt_aM04W5p00L0p15
-X21 GND GND GND GND rf_nfet_01v8_lvt_aM04W5p00L0p15
-X22 GND GND GND GND rf_nfet_01v8_lvt_aM04W5p00L0p15
-.ends
-
-
-* expanding   symbol:  vco_pmirr.sym # of pins=4
-* sym_path: /home/student/Downloads/caravel_asic_one/xschem/vco_pmirr.sym
-* sch_path: /home/student/Downloads/caravel_asic_one/xschem/vco_pmirr.sch
-.subckt vco_pmirr  VDD IND_CT GND VBIAS
-*.iopin IND_CT
-*.iopin VBIAS
-*.iopin VDD
-*.iopin GND
-X25 VDD net1 net1 VDD rf_pfet_01v8_aM02W3p00L0p15
-X17 VDD net1 IND_CT VDD rf_pfet_01v8_aM02W3p00L0p15
-X18 VDD net1 IND_CT VDD rf_pfet_01v8_aM02W3p00L0p15
-X19 VDD net1 IND_CT VDD rf_pfet_01v8_aM02W3p00L0p15
-X20 VDD net1 IND_CT VDD rf_pfet_01v8_aM02W3p00L0p15
-X21 VDD net1 IND_CT VDD rf_pfet_01v8_aM02W3p00L0p15
-X22 VDD net1 IND_CT VDD rf_pfet_01v8_aM02W3p00L0p15
-X23 VDD net1 IND_CT VDD rf_pfet_01v8_aM02W3p00L0p15
-X24 VDD net1 IND_CT VDD rf_pfet_01v8_aM02W3p00L0p15
-X1 VDD VDD VDD VDD rf_pfet_01v8_aM02W3p00L0p15
-X2 VDD VDD VDD VDD rf_pfet_01v8_aM02W3p00L0p15
-X3 VDD VDD VDD VDD rf_pfet_01v8_aM02W3p00L0p15
-X4 VDD VDD VDD VDD rf_pfet_01v8_aM02W3p00L0p15
-X5 VDD VDD VDD VDD rf_pfet_01v8_aM02W3p00L0p15
-XR1 VBIAS net1 GND sky130_fd_pr__res_high_po_2p85 L=3.5 mult=1 m=1
-.ends
-
-
-* expanding   symbol:  vco_pair_pex.sym # of pins=3
-* sym_path: /home/student/Downloads/caravel_asic_one/xschem/vco_pair_pex.sym
-* sch_path: /home/student/Downloads/caravel_asic_one/xschem/vco_pair_pex.sch
-.subckt vco_pair_pex  OUT_P OUT_N GND
-*.iopin OUT_P
-*.iopin OUT_N
-*.iopin GND
-**** begin user architecture code
-
-
+v {xschem version=3.0.0 file_version=1.2 }
+G {}
+K {}
+V {}
+S {}
+E {}
+C {devices/code.sym} 40 -40 0 0 {name="VCO_PAIR PEX MODEL" only_toplevel=false value="
 * NGSPICE file created from vco_pair_pex.ext - technology: sky130B
 
 .subckt vco_pair_pex OUT_P OUT_N GND
-X0 OUT_N.t13 OUT_P.t14 GND.t77 GND.t76 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u
-+ l=150000u
-X1 OUT_N.t12 OUT_P.t15 GND.t75 GND.t74 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u
-+ l=150000u
-X2 GND.t73 OUT_P.t16 OUT_N.t11 GND.t72 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u
-+ l=150000u
-X3 GND GND.t39 GND GND.t40 sky130_fd_pr__nfet_01v8 ad=5.656e+13p pd=4.264e+08u as=0p ps=0u
-+ w=5.05e+06u l=150000u
-X4 GND.t71 OUT_P.t17 OUT_N.t10 GND.t70 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u
-+ l=150000u
-X5 GND.t69 OUT_P.t18 OUT_N.t9 GND.t68 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u
-+ l=150000u
-X6 OUT_P.t6 OUT_N.t14 GND.t49 GND.t48 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u
-+ l=150000u
+X0 OUT_N.t13 OUT_P.t14 GND.t77 GND.t76 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u l=150000u
+X1 OUT_N.t12 OUT_P.t15 GND.t75 GND.t74 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u l=150000u
+X2 GND.t73 OUT_P.t16 OUT_N.t11 GND.t72 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u l=150000u
+X3 GND GND.t39 GND GND.t40 sky130_fd_pr__nfet_01v8 ad=5.656e+13p pd=4.264e+08u as=0p ps=0u w=5.05e+06u l=150000u
+X4 GND.t71 OUT_P.t17 OUT_N.t10 GND.t70 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u l=150000u
+X5 GND.t69 OUT_P.t18 OUT_N.t9 GND.t68 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u l=150000u
+X6 OUT_P.t6 OUT_N.t14 GND.t49 GND.t48 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u l=150000u
 X7 GND GND.t34 GND GND.t35 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u l=150000u
-X8 OUT_N.t8 OUT_P.t19 GND.t67 GND.t66 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u
-+ l=150000u
+X8 OUT_N.t8 OUT_P.t19 GND.t67 GND.t66 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u l=150000u
 X9 GND GND.t29 GND GND.t30 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u l=150000u
-X10 GND.t91 OUT_N.t15 OUT_P.t13 GND.t90 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u
-+ l=150000u
-X11 OUT_N.t7 OUT_P.t20 GND.t65 GND.t64 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u
-+ l=150000u
-X12 GND.t83 OUT_N.t16 OUT_P.t9 GND.t82 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u
-+ l=150000u
-X13 GND.t28 GND.t25 GND.t27 GND.t26 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u
-+ l=150000u
-X14 GND.t81 OUT_N.t17 OUT_P.t8 GND.t80 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u
-+ l=150000u
-X15 GND.t63 OUT_P.t21 OUT_N.t6 GND.t62 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u
-+ l=150000u
-X16 OUT_P.t7 OUT_N.t18 GND.t79 GND.t78 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u
-+ l=150000u
-X17 OUT_N.t5 OUT_P.t22 GND.t61 GND.t60 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u
-+ l=150000u
-X18 GND.t87 OUT_N.t19 OUT_P.t11 GND.t86 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u
-+ l=150000u
-X19 GND.t7 OUT_N.t20 OUT_P.t3 GND.t6 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u
-+ l=150000u
-X20 GND.t24 GND.t21 GND.t23 GND.t22 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u
-+ l=150000u
-X21 OUT_P.t10 OUT_N.t21 GND.t85 GND.t84 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u
-+ l=150000u
-X22 GND.t47 OUT_N.t22 OUT_P.t5 GND.t46 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u
-+ l=150000u
-X23 OUT_P.t4 OUT_N.t23 GND.t45 GND.t44 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u
-+ l=150000u
-X24 OUT_P.t1 OUT_N.t24 GND.t3 GND.t2 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u
-+ l=150000u
-X25 OUT_P.t2 OUT_N.t25 GND.t5 GND.t4 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u
-+ l=150000u
-X26 OUT_N.t4 OUT_P.t23 GND.t59 GND.t58 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u
-+ l=150000u
-X27 OUT_P.t0 OUT_N.t26 GND.t1 GND.t0 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u
-+ l=150000u
-X28 GND.t57 OUT_P.t24 OUT_N.t3 GND.t56 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u
-+ l=150000u
-X29 GND.t89 OUT_N.t27 OUT_P.t12 GND.t88 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u
-+ l=150000u
-X30 GND.t55 OUT_P.t25 OUT_N.t2 GND.t54 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u
-+ l=150000u
-X31 GND.t20 GND.t17 GND.t19 GND.t18 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u
-+ l=150000u
-X32 GND.t16 GND.t13 GND.t15 GND.t14 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u
-+ l=150000u
-X33 GND.t53 OUT_P.t26 OUT_N.t1 GND.t52 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u
-+ l=150000u
+X10 GND.t91 OUT_N.t15 OUT_P.t13 GND.t90 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u l=150000u
+X11 OUT_N.t7 OUT_P.t20 GND.t65 GND.t64 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u l=150000u
+X12 GND.t83 OUT_N.t16 OUT_P.t9 GND.t82 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u l=150000u
+X13 GND.t28 GND.t25 GND.t27 GND.t26 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u l=150000u
+X14 GND.t81 OUT_N.t17 OUT_P.t8 GND.t80 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u l=150000u
+X15 GND.t63 OUT_P.t21 OUT_N.t6 GND.t62 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u l=150000u
+X16 OUT_P.t7 OUT_N.t18 GND.t79 GND.t78 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u l=150000u
+X17 OUT_N.t5 OUT_P.t22 GND.t61 GND.t60 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u l=150000u
+X18 GND.t87 OUT_N.t19 OUT_P.t11 GND.t86 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u l=150000u
+X19 GND.t7 OUT_N.t20 OUT_P.t3 GND.t6 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u l=150000u
+X20 GND.t24 GND.t21 GND.t23 GND.t22 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u l=150000u
+X21 OUT_P.t10 OUT_N.t21 GND.t85 GND.t84 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u l=150000u
+X22 GND.t47 OUT_N.t22 OUT_P.t5 GND.t46 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u l=150000u
+X23 OUT_P.t4 OUT_N.t23 GND.t45 GND.t44 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u l=150000u
+X24 OUT_P.t1 OUT_N.t24 GND.t3 GND.t2 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u l=150000u
+X25 OUT_P.t2 OUT_N.t25 GND.t5 GND.t4 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u l=150000u
+X26 OUT_N.t4 OUT_P.t23 GND.t59 GND.t58 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u l=150000u
+X27 OUT_P.t0 OUT_N.t26 GND.t1 GND.t0 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u l=150000u
+X28 GND.t57 OUT_P.t24 OUT_N.t3 GND.t56 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u l=150000u
+X29 GND.t89 OUT_N.t27 OUT_P.t12 GND.t88 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u l=150000u
+X30 GND.t55 OUT_P.t25 OUT_N.t2 GND.t54 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u l=150000u
+X31 GND.t20 GND.t17 GND.t19 GND.t18 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u l=150000u
+X32 GND.t16 GND.t13 GND.t15 GND.t14 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u l=150000u
+X33 GND.t53 OUT_P.t26 OUT_N.t1 GND.t52 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u l=150000u
 X34 GND GND.t8 GND GND.t9 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u l=150000u
-X35 OUT_N.t0 OUT_P.t27 GND.t51 GND.t50 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u
-+ l=150000u
+X35 OUT_N.t0 OUT_P.t27 GND.t51 GND.t50 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=5.05e+06u l=150000u
 R0 OUT_P.n1266 OUT_P.t24 846.712
 R1 OUT_P.n1269 OUT_P.t14 846.712
 R2 OUT_P.n1195 OUT_P.t20 846.712
@@ -15179,103 +14953,7 @@ C2709 OUT_P.n1335 GND 0.01fF $ **FLOATING
 C2710 OUT_P.n1336 GND 0.02fF $ **FLOATING
 .ends
 
-
-
-**** end user architecture code
-.ends
-
-
-* expanding   symbol:  cell_unit.sym # of pins=5
-* sym_path: /home/student/Downloads/caravel_asic_one/xschem/cell_unit.sym
-* sch_path: /home/student/Downloads/caravel_asic_one/xschem/cell_unit.sch
-.subckt cell_unit  V_bias ON OUT_N GND OUT_P
-*.iopin OUT_N
-*.iopin OUT_P
-*.iopin GND
-*.ipin ON
-*.ipin V_bias
-XC1 OUT_N net1 sky130_fd_pr__cap_mim_m3_1 W=3.3 L=3.3 MF=1 m=1
-XC2 OUT_P net2 sky130_fd_pr__cap_mim_m3_1 W=3.3 L=3.3 MF=1 m=1
-XR1 net1 V_bias GND sky130_fd_pr__res_xhigh_po_0p35 L=1.5 mult=1 m=1
-XR2 net2 V_bias GND sky130_fd_pr__res_xhigh_po_0p35 L=1.5 mult=1 m=1
-X1 net2 ON net1 GND rf_nfet_01v8_aM02W1p65L0p15
-.ends
-
-
-* expanding   symbol:  inv.sym # of pins=4
-* sym_path: /home/student/Downloads/caravel_asic_one/xschem/inv.sym
-* sch_path: /home/student/Downloads/caravel_asic_one/xschem/inv.sch
-.subckt inv  IN OUT VDD GND
-*.ipin IN
-*.opin OUT
-*.iopin VDD
-*.iopin GND
-XM1 OUT IN GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=1 m=1 
-XM2 OUT IN VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=3 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=1 m=1 
-.ends
-
-
-* expanding   symbol:  rf_nfet_01v8_lvt_aM04W5p00L0p15.sym # of pins=4
-* sym_path: /home/student/Downloads/caravel_asic_one/xschem/rf_nfet_01v8_lvt_aM04W5p00L0p15.sym
-* sch_path: /home/student/Downloads/caravel_asic_one/xschem/rf_nfet_01v8_lvt_aM04W5p00L0p15.sch
-.subckt rf_nfet_01v8_lvt_aM04W5p00L0p15  DRAIN GATE SOURCE SUBSTRATE
-*.iopin SOURCE
-*.iopin DRAIN
-*.ipin GATE
-*.ipin SUBSTRATE
-**** begin user architecture code
-
-
-X0 DRAIN GATE SOURCE SUBSTRATE sky130_fd_pr__nfet_01v8_lvt w=5.05e+06u l=150000u
-X1 DRAIN GATE SOURCE SUBSTRATE sky130_fd_pr__nfet_01v8_lvt w=5.05e+06u l=150000u
-X2 SOURCE GATE DRAIN SUBSTRATE sky130_fd_pr__nfet_01v8_lvt w=5.05e+06u l=150000u
-X3 SOURCE GATE DRAIN SUBSTRATE sky130_fd_pr__nfet_01v8_lvt w=5.05e+06u l=150000u
-
-
-**** end user architecture code
-.ends
-
-
-* expanding   symbol:  rf_pfet_01v8_aM02W3p00L0p15.sym # of pins=4
-* sym_path: /home/student/Downloads/caravel_asic_one/xschem/rf_pfet_01v8_aM02W3p00L0p15.sym
-* sch_path: /home/student/Downloads/caravel_asic_one/xschem/rf_pfet_01v8_aM02W3p00L0p15.sch
-.subckt rf_pfet_01v8_aM02W3p00L0p15  SOURCE GATE DRAIN BULK
-*.iopin DRAIN
-*.iopin SOURCE
-*.ipin GATE
-*.ipin BULK
-**** begin user architecture code
-
-
-X0 SOURCE GATE DRAIN BULK sky130_fd_pr__pfet_01v8 w=3.01e+06u l=150000u
-X1 DRAIN GATE SOURCE BULK sky130_fd_pr__pfet_01v8 w=3.01e+06u l=150000u
-
-
-**** end user architecture code
-.ends
-
-
-* expanding   symbol:  rf_nfet_01v8_aM02W1p65L0p15.sym # of pins=4
-* sym_path: /home/student/Downloads/caravel_asic_one/xschem/rf_nfet_01v8_aM02W1p65L0p15.sym
-* sch_path: /home/student/Downloads/caravel_asic_one/xschem/rf_nfet_01v8_aM02W1p65L0p15.sch
-.subckt rf_nfet_01v8_aM02W1p65L0p15  DRAIN GATE SOURCE SUBSTRATE
-*.iopin SOURCE
-*.iopin DRAIN
-*.ipin GATE
-*.ipin SUBSTRATE
-**** begin user architecture code
-
-
-X0 SOURCE GATE DRAIN SUBSTRATE sky130_fd_pr__nfet_01v8 w=1.65e+06u l=150000u
-X1 DRAIN GATE SOURCE SUBSTRATE sky130_fd_pr__nfet_01v8 w=1.65e+06u l=150000u
-
-
-**** end user architecture code
-.ends
-
-** flattened .save nodes
-.end
+"}
+C {devices/iopin.sym} -40 -30 0 0 {name=p1 lab=OUT_P}
+C {devices/iopin.sym} -40 0 0 0 {name=p2 lab=OUT_N}
+C {devices/iopin.sym} -40 30 0 0 {name=p3 lab=GND}

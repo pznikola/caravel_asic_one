@@ -90,144 +90,6 @@ N 350 -490 410 -490 {
 lab=GND}
 N 440 -490 510 -490 {
 lab=VDD}
-N 600 -40 600 -10 {
-lab=GND}
-N 600 -10 600 20 {
-lab=GND}
-N 720 -40 720 -10 {
-lab=GND}
-N 720 -10 720 20 {
-lab=GND}
-N 840 -40 840 -10 {
-lab=GND}
-N 840 -10 840 20 {
-lab=GND}
-N 960 -40 960 -10 {
-lab=GND}
-N 960 -10 960 20 {
-lab=GND}
-N 1070 -40 1070 -10 {
-lab=GND}
-N 1070 -10 1070 20 {
-lab=GND}
-N 1190 -40 1190 -10 {
-lab=GND}
-N 1190 -10 1190 20 {
-lab=GND}
-N 1310 -40 1310 -10 {
-lab=GND}
-N 1310 -10 1310 20 {
-lab=GND}
-N 600 20 1310 20 {
-lab=GND}
-N 600 -110 1310 -110 {
-lab=OUT_N}
-N 600 -420 600 -120 {
-lab=OUT_N}
-N 600 -120 600 -110 {
-lab=OUT_N}
-N -420 -40 -420 -10 {
-lab=GND}
-N -420 -10 -420 20 {
-lab=GND}
-N -300 -40 -300 -10 {
-lab=GND}
-N -300 -10 -300 20 {
-lab=GND}
-N -180 -40 -180 -10 {
-lab=GND}
-N -180 -10 -180 20 {
-lab=GND}
-N -60 -40 -60 -10 {
-lab=GND}
-N -60 -10 -60 20 {
-lab=GND}
-N 50 -40 50 -10 {
-lab=GND}
-N 50 -10 50 20 {
-lab=GND}
-N 170 -40 170 -10 {
-lab=GND}
-N 170 -10 170 20 {
-lab=GND}
-N 290 -40 290 -10 {
-lab=GND}
-N 290 -10 290 20 {
-lab=GND}
-N -420 20 290 20 {
-lab=GND}
-N -420 -110 290 -110 {
-lab=OUT_P}
-N 290 -420 290 -110 {
-lab=OUT_P}
-N 290 20 600 20 {
-lab=GND}
-N 440 20 440 110 {
-lab=GND}
-N -420 -110 -420 -90 {
-lab=OUT_P}
-N -480 -40 -470 -40 {
-lab=OUT_N}
-N -300 -110 -300 -90 {
-lab=OUT_P}
-N -180 -110 -180 -90 {
-lab=OUT_P}
-N -350 -40 -350 70 {
-lab=OUT_N}
-N -230 -40 -230 70 {
-lab=OUT_N}
-N -110 -40 -110 70 {
-lab=OUT_N}
-N -60 -110 -60 -90 {
-lab=OUT_P}
-N 290 -110 290 -90 {
-lab=OUT_P}
-N 170 -110 170 -90 {
-lab=OUT_P}
-N 50 -110 50 -90 {
-lab=OUT_P}
-N -0 -40 -0 70 {
-lab=OUT_N}
-N 120 -40 120 70 {
-lab=OUT_N}
-N 240 -40 240 70 {
-lab=OUT_N}
-N -480 70 240 70 {
-lab=OUT_N}
-N -480 -40 -480 70 {
-lab=OUT_N}
-N 540 -40 550 -40 {
-lab=OUT_P}
-N 600 -110 600 -90 {
-lab=OUT_N}
-N 720 -110 720 -90 {
-lab=OUT_N}
-N 840 -110 840 -90 {
-lab=OUT_N}
-N 960 -110 960 -90 {
-lab=OUT_N}
-N 1070 -110 1070 -90 {
-lab=OUT_N}
-N 1190 -110 1190 -90 {
-lab=OUT_N}
-N 1310 -110 1310 -90 {
-lab=OUT_N}
-N 1260 -40 1260 70 {
-lab=OUT_P}
-N 1140 -40 1140 70 {
-lab=OUT_P}
-N 1020 -40 1020 70 {
-lab=OUT_P}
-N 910 -40 910 70 {
-lab=OUT_P}
-N 790 -40 790 70 {
-lab=OUT_P}
-N 670 -40 670 70 {
-lab=OUT_P}
-N 540 -40 540 70 {
-lab=OUT_P}
-N 540 70 1260 70 {
-lab=OUT_P}
 N 1360 -910 1360 -860 {
 lab=VDD}
 N 1360 -520 1360 -470 {
@@ -252,6 +114,11 @@ N 380 -1360 380 -1350 {
 lab=VDD}
 N 320 -1100 320 -1090 {
 lab=VBIAS}
+N 420 130 420 170 { lab=GND}
+N 290 -420 290 -130 { lab=OUT_P}
+N 290 -130 330 -130 { lab=OUT_P}
+N 510 -130 600 -130 { lab=OUT_N}
+N 600 -420 600 -130 { lab=OUT_N}
 C {cap_var.sym} 330 -550 0 0 {name=X1}
 C {capbank.sym} 360 -350 0 0 {name=X2}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 430 -800 3 0 {name=C1 model=cap_mim_m3_1 W=13.3 L=13.3 MF=1 spiceprefix=X}
@@ -267,37 +134,22 @@ C {devices/ipin.sym} 470 -290 3 0 {name=p10 lab=freq\\<4\\>}
 C {devices/ipin.sym} 490 -290 3 0 {name=p11 lab=freq\\<5\\>}
 C {devices/lab_pin.sym} 350 -490 0 0 {name=l11 sig_type=std_logic lab=GND}
 C {devices/lab_pin.sym} 510 -490 2 0 {name=l12 sig_type=std_logic lab=VDD}
-C {rf_nfet_01v8_aM02W5p00L0p15.sym} 530 30 0 0 {name=X3}
-C {devices/lab_pin.sym} 540 -40 0 0 {name=l13 sig_type=std_logic lab=OUT_P}
-C {rf_nfet_01v8_aM02W5p00L0p15.sym} 650 30 0 0 {name=X4}
-C {rf_nfet_01v8_aM02W5p00L0p15.sym} 770 30 0 0 {name=X5}
-C {rf_nfet_01v8_aM02W5p00L0p15.sym} 890 30 0 0 {name=X6}
-C {rf_nfet_01v8_aM02W5p00L0p15.sym} 1000 30 0 0 {name=X7}
-C {rf_nfet_01v8_aM02W5p00L0p15.sym} 1120 30 0 0 {name=X8}
-C {rf_nfet_01v8_aM02W5p00L0p15.sym} 1240 30 0 0 {name=X9}
-C {rf_nfet_01v8_aM02W5p00L0p15.sym} -490 30 0 0 {name=X10}
-C {devices/lab_pin.sym} -480 -40 0 0 {name=l20 sig_type=std_logic lab=OUT_N}
-C {rf_nfet_01v8_aM02W5p00L0p15.sym} -370 30 0 0 {name=X11}
-C {rf_nfet_01v8_aM02W5p00L0p15.sym} -250 30 0 0 {name=X12}
-C {rf_nfet_01v8_aM02W5p00L0p15.sym} -130 30 0 0 {name=X13}
-C {rf_nfet_01v8_aM02W5p00L0p15.sym} -20 30 0 0 {name=X14}
-C {rf_nfet_01v8_aM02W5p00L0p15.sym} 100 30 0 0 {name=X15}
-C {rf_nfet_01v8_aM02W5p00L0p15.sym} 220 30 0 0 {name=X16}
-C {devices/iopin.sym} 440 110 1 0 {name=p13 lab=GND}
+C {devices/iopin.sym} 420 170 1 0 {name=p13 lab=GND}
 C {devices/lab_pin.sym} 1360 -910 1 0 {name=l23 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 1360 -470 3 0 {name=l24 sig_type=std_logic lab=GND}
 C {devices/opin.sym} 1580 -720 0 0 {name=p14 lab=BUF_P}
 C {devices/opin.sym} 1580 -680 0 0 {name=p15 lab=BUF_N}
 C {devices/iopin.sym} 600 -880 3 0 {name=p16 lab=OUT_N}
 C {devices/iopin.sym} 1270 -1010 3 0 {name=p17 lab=VBIAS_BUF}
-C {buffer.sym} 1150 -500 0 0 {name=X26}
 C {sky130_fd_pr/res_generic_po.sym} 1270 -950 0 0 {name=R2
 W=1
 L=6
 model=res_generic_po
 mult=1}
-C {vco_pmirr.sym} 390 -1060 0 0 {name=x1}
 C {devices/iopin.sym} 380 -1360 3 0 {name=p2 lab=VDD
 }
 C {devices/lab_pin.sym} 380 -1100 3 0 {name=l2 sig_type=std_logic lab=GND}
 C {devices/iopin.sym} 320 -1090 1 0 {name=p4 lab=VBIAS}
+C {vco_pair_pex.sym} 540 90 0 0 {name=x2}
+C {buffer_pex.sym} 1150 -500 0 0 {name=X3}
+C {vco_pmirr_pex.sym} 390 -1060 0 0 {name=x3}
