@@ -5,15 +5,15 @@ V {}
 S {}
 E {}
 B 2 -220 -1260 580 -860 {flags=graph
-y1=-0.5
-y2=0.47
+y1=-1.082
+y2=-0.112
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=2e-08
+x1=-2e-09
+x2=1.8e-08
 divx=5
 subdivx=1
 node="bufout
@@ -30,8 +30,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=2e-08
+x1=-2e-09
+x2=1.8e-08
 divx=5
 subdivx=1
 node=i(@r.x1.r2[i])
@@ -99,8 +99,6 @@ N 250 -480 250 -310 {
 lab=OUTP}
 N 250 -310 300 -310 {
 lab=OUTP}
-N 560 -480 780 -480 {
-lab=OUTN}
 N 780 -480 780 -320 {
 lab=OUTN}
 N 710 -320 780 -320 {
@@ -137,8 +135,6 @@ N 430 -390 430 -370 {
 lab=GND}
 N 300 -420 470 -420 {
 lab=#net7}
-N 250 -480 500 -480 {
-lab=OUTP}
 N 300 -340 300 -310 {
 lab=OUTP}
 N 710 -340 710 -320 {
@@ -147,6 +143,10 @@ N 440 -720 470 -720 {
 lab=BUFP}
 N 570 -720 610 -720 {
 lab=BUFN}
+N 250 -480 500 -480 {
+lab=OUTP}
+N 560 -480 780 -480 {
+lab=OUTN}
 C {vco_wo_ind_pex.sym} 420 -180 0 0 {name=X1}
 C {devices/gnd.sym} 170 -140 0 0 {name=l29 lab=GND}
 C {devices/vdd.sym} 170 -200 0 0 {name=l30 lab=VDD}
