@@ -1,229 +1,138 @@
-v {xschem version=3.0.0 file_version=1.2 }
+v {xschem version=3.1.0 file_version=1.2 }
 G {}
 K {}
 V {}
 S {}
 E {}
-B 2 -220 -1260 580 -860 {flags=graph
-y1=-1.082
-y2=-0.112
+B 2 290 -890 1090 -490 {flags=graph
+y1=-1.3
+y2=1.3
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-2e-09
-x2=1.8e-08
+x1=5.00089e-08
+x2=5.1e-08
 divx=5
 subdivx=1
-node="bufout
-vcoout"
-color="7 4"
+
+
 dataset=0
-unitx=u
-}
-B 2 640 -1260 1440 -860 {flags=graph
-y1=-0.0038
-y2=-0.0037
-ypos1=0
-ypos2=2
-divy=5
-subdivy=1
-unity=1
-x1=-2e-09
-x2=1.8e-08
-divx=5
-subdivx=1
-node=i(@r.x1.r2[i])
-color=7
-dataset=0
-unitx=u
-}
-N 370 -160 370 -130 {
+unitx=p
+
+color=5
+node=out}
+N 280 -300 280 -290 {
+lab=outp}
+N 280 -290 290 -290 {
+lab=outp}
+N 280 -250 280 -240 {
+lab=outn}
+N 280 -250 290 -250 {
+lab=outn}
+N 600 -290 610 -290 {
+lab=buf_p}
+N 610 -300 610 -290 {
+lab=buf_p}
+N 610 -300 660 -300 {
+lab=buf_p}
+N 600 -250 610 -250 {
+lab=buf_n}
+N 610 -250 610 -240 {
+lab=buf_n}
+N 610 -240 660 -240 {
+lab=buf_n}
+N 660 -300 710 -300 {
+lab=buf_p}
+N 660 -240 710 -240 {
+lab=buf_n}
+N 350 -100 350 -60 {
+lab=tail}
+N 180 -300 200 -300 {
+lab=outp}
+N 260 -300 280 -300 {
+lab=outp}
+N 180 -240 200 -240 {
+lab=outn}
+N 260 -240 280 -240 {
+lab=outn}
+N 200 -240 260 -240 {
+lab=outn}
+N 200 -300 260 -300 {
+lab=outp}
+N 350 -60 350 -40 {
+lab=tail}
+N 230 -60 230 -50 {
 lab=#net1}
-N 370 -160 470 -160 {
-lab=#net1}
-N 430 -150 430 -130 {
+N 230 10 230 20 {
 lab=#net2}
-N 430 -150 490 -150 {
-lab=#net2}
-N 490 -140 490 -130 {
-lab=#net3}
-N 490 -140 510 -140 {
-lab=#net3}
-N 530 -140 550 -140 {
-lab=#net4}
-N 550 -140 550 -130 {
-lab=#net4}
-N 550 -150 610 -150 {
-lab=#net5}
-N 610 -150 610 -130 {
-lab=#net5}
-N 570 -160 670 -160 {
-lab=#net6}
-N 670 -160 670 -130 {
-lab=#net6}
-N 470 -420 470 -370 {
-lab=#net7}
-N 300 -280 390 -280 {
-lab=OUTP}
-N 670 -280 710 -280 {
-lab=OUTN}
-N 710 -320 710 -280 {
-lab=OUTN}
-N 300 -310 300 -280 {
-lab=OUTP}
-N 300 -420 300 -400 {
-lab=#net7}
-N 470 -420 710 -420 {
-lab=#net7}
-N 710 -420 710 -400 {
-lab=#net7}
-N 470 -180 470 -160 {
-lab=#net1}
-N 490 -180 490 -150 {
-lab=#net2}
-N 510 -180 510 -140 {
-lab=#net3}
-N 530 -180 530 -140 {
-lab=#net4}
-N 550 -180 550 -150 {
-lab=#net5}
-N 570 -180 570 -160 {
-lab=#net6}
-N 600 -180 730 -180 {
-lab=#net8}
-N 730 -180 730 -130 {
-lab=#net8}
-N 250 -480 250 -310 {
-lab=OUTP}
-N 250 -310 300 -310 {
-lab=OUTP}
-N 780 -480 780 -320 {
-lab=OUTN}
-N 710 -320 780 -320 {
-lab=OUTN}
-N 470 -720 510 -720 {
-lab=BUFP}
-N 470 -720 470 -710 {
-lab=BUFP}
-N 610 -720 630 -720 {
-lab=BUFN}
-N 610 -720 610 -710 {
-lab=BUFN}
-N 610 -650 610 -630 {
-lab=GND}
-N 470 -630 610 -630 {
-lab=GND}
-N 470 -650 470 -630 {
-lab=GND}
-N 670 -240 710 -240 {
-lab=BUFN}
-N 300 -240 390 -240 {
-lab=BUFP}
-N 1240 -270 1240 -240 {
-lab=BUFOUT}
-N 1420 -270 1420 -240 {
-lab=VCOOUT}
-N 580 -380 580 -370 {
+N -140 -270 -80 -270 {
+lab=outp}
+N -140 -270 -140 -250 {
+lab=outp}
+N -20 -270 40 -270 {
+lab=outn}
+N 40 -270 40 -250 {
+lab=outn}
+N -140 -330 -80 -330 {
+lab=outp}
+N -140 -330 -140 -270 {
+lab=outp}
+N -20 -330 40 -330 {
+lab=outn}
+N 40 -330 40 -270 {
+lab=outn}
+N -70 -400 -30 -400 {
+lab=ctap}
+N -140 -400 -130 -400 {
+lab=outp}
+N -140 -390 -140 -330 {
+lab=outp}
+N 30 -400 40 -400 {
+lab=outn}
+N -140 -400 -140 -390 {
+lab=outp}
+N 40 -400 40 -380 {
+lab=outn}
+N 40 -380 40 -330 {
+lab=outn}
+N -50 -440 -50 -400 {
+lab=ctap}
+N -50 -450 -50 -440 {
+lab=ctap}
+N -50 -520 -50 -510 {
 lab=VDD}
-N 620 -380 620 -370 {
-lab=VDD}
-N 510 -390 510 -370 {
-lab=GND}
-N 430 -390 430 -370 {
-lab=GND}
-N 300 -420 470 -420 {
-lab=#net7}
-N 300 -340 300 -310 {
-lab=OUTP}
-N 710 -340 710 -320 {
-lab=OUTN}
-N 440 -720 470 -720 {
-lab=BUFP}
-N 570 -720 610 -720 {
-lab=BUFN}
-N 250 -480 500 -480 {
-lab=OUTP}
-N 560 -480 780 -480 {
-lab=OUTN}
-C {vco_wo_ind_pex.sym} 420 -180 0 0 {name=X1}
-C {devices/gnd.sym} 170 -140 0 0 {name=l29 lab=GND}
-C {devices/vdd.sym} 170 -200 0 0 {name=l30 lab=VDD}
-C {devices/vsource.sym} 170 -170 0 0 {name=V9 value=1.8}
-C {devices/vdd.sym} 580 -380 0 0 {name=l31 lab=VDD}
-C {devices/gnd.sym} 370 -70 0 0 {name=l32 lab=GND}
-C {devices/vsource.sym} 370 -100 0 0 {name=Vbit0 value=0
-}
-C {devices/gnd.sym} 430 -70 0 0 {name=l33 lab=GND}
-C {devices/vsource.sym} 430 -100 0 0 {name=Vbit1 value=0}
-C {devices/gnd.sym} 490 -70 0 0 {name=l34 lab=GND}
-C {devices/vsource.sym} 490 -100 0 0 {name=Vbit2 value=0}
-C {devices/gnd.sym} 550 -70 0 0 {name=l35 lab=GND}
-C {devices/vsource.sym} 550 -100 0 0 {name=Vbit3 value=0}
-C {devices/gnd.sym} 610 -70 0 0 {name=l36 lab=GND}
-C {devices/vsource.sym} 610 -100 0 0 {name=Vbit4 value=0
-}
-C {devices/gnd.sym} 670 -70 0 0 {name=l37 lab=GND}
-C {devices/vsource.sym} 670 -100 0 0 {name=Vbit5 value=0}
-C {devices/gnd.sym} 430 -390 2 0 {name=l38 lab=GND}
-C {devices/gnd.sym} 510 -390 2 0 {name=l39 lab=GND}
-C {devices/ind.sym} 300 -370 0 0 {name=L3
-m=1
-value=1.1n
-footprint=1206
-device=inductor}
-C {devices/ind.sym} 710 -370 0 0 {name=L4
-m=1
-value=1.1n
-footprint=1206
-device=inductor}
-C {devices/code_shown.sym} 840 -700 0 0 {name="Trans plots" only_toplevel=false value="
-.tran 0.005n 50n
-.save BUFOUT VCOOUT @r.x1.r2[i]
-"}
-C {sky130_fd_pr/corner.sym} 850 -410 0 0 {name=CORNER1 only_toplevel=false corner=tt}
-C {devices/vsource.sym} 730 -100 0 0 {name=Vtune value=1.8}
-C {devices/gnd.sym} 730 -70 0 0 {name=l40 lab=GND}
-C {devices/lab_pin.sym} 300 -280 0 0 {name=l41 lab=OUTP}
-C {devices/lab_pin.sym} 710 -280 2 0 {name=l42 lab=OUTN}
-C {devices/res.sym} 530 -480 1 0 {name=R3
-value=350
-footprint=1206
-device=resistor
-m=1}
-C {devices/res.sym} 540 -720 1 0 {name=R4
+C {vco/parts/buffer.sym} 230 -70 0 0 {name=X1}
+C {devices/res.sym} 660 -270 0 0 {name=R1
 value=100
 footprint=1206
 device=resistor
 m=1}
-C {devices/gnd.sym} 540 -630 0 0 {name=l43 lab=GND}
-C {devices/capa.sym} 470 -680 0 0 {name=C3
+C {devices/capa.sym} 710 -270 0 0 {name=C1
 m=1
-value=50f
+value=100f
 footprint=1206
 device="ceramic capacitor"}
-C {devices/capa.sym} 610 -680 0 0 {name=C4
-m=1
-value=50f
-footprint=1206
-device="ceramic capacitor"}
-C {devices/lab_pin.sym} 300 -240 0 0 {name=l44 lab=BUFP}
-C {devices/lab_pin.sym} 710 -240 2 0 {name=l45 lab=BUFN}
-C {devices/lab_pin.sym} 630 -720 2 0 {name=l46 lab=BUFN}
-C {devices/lab_pin.sym} 440 -720 0 0 {name=l47 lab=BUFP}
-C {devices/vcvs.sym} 1240 -210 0 0 {name=E3 value=1}
-C {devices/lab_pin.sym} 1200 -190 0 0 {name=l48 lab=BUFN}
-C {devices/lab_pin.sym} 1200 -230 0 0 {name=l49 lab=BUFP}
-C {devices/gnd.sym} 1240 -180 0 0 {name=l50 lab=GND}
-C {devices/lab_pin.sym} 1240 -270 2 0 {name=l51 lab=BUFOUT}
-C {devices/vcvs.sym} 1420 -210 0 0 {name=E4 value=1}
-C {devices/gnd.sym} 1420 -180 0 0 {name=l52 lab=GND}
-C {devices/lab_pin.sym} 1420 -270 2 0 {name=l53 lab=VCOOUT}
-C {devices/lab_pin.sym} 1380 -190 0 0 {name=l54 lab=OUTN}
-C {devices/lab_pin.sym} 1380 -230 0 0 {name=l55 lab=OUTP}
-C {devices/vdd.sym} 620 -380 0 0 {name=l56 lab=VDD}
-C {devices/launcher.sym} -85 -715 0 0 {name=h5 
+C {devices/vdd.sym} 440 -430 0 0 {name=l1 lab=VDD}
+C {devices/gnd.sym} 440 -90 0 0 {name=l2 lab=GND}
+C {devices/lab_wire.sym} 625 -300 0 0 {name=l5 sig_type=std_logic lab=buf_p}
+C {devices/lab_wire.sym} 625 -240 2 1 {name=l6 sig_type=std_logic lab=buf_n
+}
+C {devices/lab_wire.sym} 350 -70 0 0 {name=l8 sig_type=std_logic lab=tail}
+C {devices/code_shown.sym} 780 -400 0 0 {name="Trans plots" only_toplevel=false value="
+.save tail outp outn buf_p buf_n
+.control
+    tran 10p 30n
+    let out = outp-outn
+    let bufout = buf_p-buf_n
+    settype voltage out
+    settype voltage bufout
+    write buffer_tb.raw
+.endc
+"}
+C {sky130_fd_pr/corner.sym} 610 -160 0 0 {name=CORNER only_toplevel=false corner=tt}
+C {devices/launcher.sym} 825 -165 0 0 {name=h5 
 descr=" Ctrl-Left-Click to load/unload
 embedded waveforms" 
 tclcommand="xschem raw_read_from_attr"
@@ -10388,7 +10297,7 @@ E9U+cbmvZJUT1T6IV1gdkeu8P3tnlh+R66w/bTNVHZHrrD+oef171cGVP2XnLIbVwYU/Hx37e9XBhT/2
 UMk9CMcwwAB8pD3NzMzMzMz8P2VmZmZmZgpAzczMzMzM/D8BAAAAAAAUQAAAAAAAACVAAAAAAAAAMEDNzMzMzMz8P83MzMzMzPw/AAAAAAAAAACYOokQD/51PzamGIsq
 k22/AAAZYIy4Qj8AIGeQM2pAPwBA8k5/hEI/AACmeNtsRD8AYG3+fV91P6jjfrW8H2s/mAiwtJjxUz/UM0FpXKNVPwAAAAAAAAAA2WaR84ZMgD+8Y2KEprcnQINlKZc3
 k+w/C9dMZBBy9z8="}
-C {devices/launcher.sym} -85 -635 0 0 {name=h4 
+C {devices/launcher.sym} 825 -85 0 0 {name=h4 
 descr="Select arrow and 
 Ctrl-Left-Click to load/unload
 simulation .raw file" 
@@ -10396,3 +10305,48 @@ tclcommand="
 xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
 "
 }
+C {devices/vsource.sym} 230 -440 0 0 {name=V1 value=1.8}
+C {devices/gnd.sym} 230 -410 0 0 {name=l14 lab=GND}
+C {devices/vdd.sym} 230 -470 0 0 {name=l15 lab=VDD}
+C {devices/lab_pin.sym} 180 -300 0 0 {name=l3 sig_type=std_logic lab=outp}
+C {devices/lab_pin.sym} 180 -240 0 0 {name=l4 sig_type=std_logic lab=outn
+}
+C {devices/ammeter.sym} 350 -10 0 0 {name=vout_curr}
+C {devices/ammeter.sym} 230 -20 0 0 {name=vref_curr}
+C {sky130_fd_pr/res_generic_po.sym} 230 -90 0 1 {name=R2
+W=1
+L=6
+model=res_generic_po
+mult=1}
+C {devices/vdd.sym} 230 -120 0 0 {name=l7 lab=VDD}
+C {devices/gnd.sym} 290 270 0 0 {name=l9 lab=GND}
+C {vco/parts/vco_pair.sym} 70 -30 0 0 {name=x1}
+C {devices/res.sym} -50 -270 1 0 {name=R3
+value=343.6
+footprint=1206
+device=resistor
+m=1}
+C {devices/capa.sym} -50 -330 3 0 {name=C2
+m=1
+value=609f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/ind.sym} -100 -400 3 1 {name=L1
+m=1
+value=1.093n
+footprint=1206
+device=inductor}
+C {devices/ind.sym} 0 -400 1 0 {name=L2
+m=1
+value=1.093n
+footprint=1206
+device=inductor}
+C {devices/isource.sym} -50 -480 0 0 {name=I0 value=5.55m}
+C {devices/vdd.sym} -50 -520 0 0 {name=l10 lab=VDD}
+C {devices/gnd.sym} -50 10 0 0 {name=l11 lab=GND}
+C {devices/lab_pin.sym} -140 -300 0 0 {name=l12 sig_type=std_logic lab=outp}
+C {devices/lab_pin.sym} 40 -300 0 1 {name=l13 sig_type=std_logic lab=outn
+}
+C {devices/lab_pin.sym} -50 -430 0 1 {name=l16 sig_type=std_logic lab=ctap
+}
+C {vco/parts/buff_nmirr.sym} 40 600 0 0 {name=x2}

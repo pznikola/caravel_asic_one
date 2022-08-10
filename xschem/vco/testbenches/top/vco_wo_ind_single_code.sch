@@ -1,11 +1,11 @@
-v {xschem version=3.0.0 file_version=1.2 }
+v {xschem version=3.1.0 file_version=1.2 }
 G {}
 K {}
 V {}
 S {}
 E {}
 B 2 -680 -930 120 -530 {flags=graph
-y1=-0.52
+y1=-0.53
 y2=0.53
 ypos1=0
 ypos2=2
@@ -20,16 +20,16 @@ node="bufout
 vcoout"
 color="7 4"
 dataset=0
-unitx=u
+unitx=n
 }
 B 2 180 -930 980 -530 {flags=graph
 y1=0.004
-y2=0.0056
+y2=0.0055
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
-unity=1
+unity=m
 x1=0
 x2=2e-08
 divx=5
@@ -37,9 +37,10 @@ subdivx=1
 
 
 dataset=0
-unitx=u
-color=4
-node=i(v.x1.vmeas)}
+unitx=n
+color="4 5"
+node="i(v.x1.vmeas)
+i(vmeas)"}
 N 537.5 -245 537.5 -215 {
 lab=BUFOUT}
 N 717.5 -245 717.5 -215 {
@@ -118,8 +119,8 @@ footprint=1206
 device=inductor}
 C {devices/code_shown.sym} 407.5 -440 0 0 {name="Trans plots" only_toplevel=false value="
 .control
-    save BUFOUT VCOOUT x1.x3.vmeas#branch Vmeas#branch
-    tran 0.005n 20n
+    save BUFOUT VCOOUT x1.x3.vmeas#branch Vmeas#branch x1.tail
+    tran 10p 20n
     write vco_wo_ind_single_code.raw
 .endc
 "}

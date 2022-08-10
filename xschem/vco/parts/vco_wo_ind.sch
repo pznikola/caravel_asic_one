@@ -1,4 +1,4 @@
-v {xschem version=3.0.0 file_version=1.2 }
+v {xschem version=3.1.0 file_version=1.2 }
 G {}
 K {}
 V {}
@@ -59,14 +59,16 @@ N 320 -945 320 -935 {
 lab=VBIAS}
 N 320 -1020 320 -1015 {
 lab=#net1}
-N 720 -420 720 -390 {
+N 720 -360 720 -330 {
 lab=VBIAS_BUF}
-N 720 -330 720 -320 {
+N 720 -270 720 -260 {
 lab=#net2}
-N 720 -340 720 -330 {
+N 720 -280 720 -270 {
 lab=#net2}
-N 840 -400 840 -390 {
-lab=#net3}
+N 840 -340 840 -330 {
+lab=tail}
+N 840 -400 840 -340 {
+lab=tail}
 C {cap_var.sym} 330 -360 0 0 {name=X1}
 C {capbank.sym} 340 -180 0 0 {name=X2}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 430 -680 3 0 {name=C1 model=cap_mim_m3_1 W=13.3 L=13.3 MF=1 spiceprefix=X}
@@ -81,10 +83,10 @@ C {devices/lab_pin.sym} 930 -390 3 0 {name=l24 sig_type=std_logic lab=GND}
 C {devices/opin.sym} 1150 -590 0 0 {name=p14 lab=BUF_P}
 C {devices/opin.sym} 1150 -550 0 0 {name=p15 lab=BUF_N}
 C {devices/iopin.sym} 570 -750 3 0 {name=p16 lab=OUT_N}
-C {devices/iopin.sym} 720 -412.5 3 0 {name=p17 lab=VBIAS_BUF}
-C {sky130_fd_pr/res_generic_po.sym} 720 -370 0 1 {name=R2
+C {devices/iopin.sym} 720 -352.5 3 0 {name=p17 lab=VBIAS_BUF}
+C {sky130_fd_pr/res_generic_po.sym} 720 -310 0 1 {name=R2
 W=1
-L=6
+L=3
 model=res_generic_po
 mult=1}
 C {devices/iopin.sym} 380 -1280 3 0 {name=p2 lab=VDD
@@ -96,8 +98,7 @@ C {buffer.sym} 720 -370 0 0 {name=X3}
 C {devices/ipin.sym} 250 -160 0 0 {name=p6 lab=freq[5:0]}
 C {devices/ipin.sym} 250 -350 0 0 {name=p5 lab=Vtune}
 C {devices/lab_wire.sym} 370 -160 0 0 {name=l3 sig_type=std_logic lab=freq[5:0]}
-C {vco/parts/buf_nmirr.sym} 530 250 0 0 {name=x3}
-C {devices/lab_pin.sym} 780 -80 3 0 {name=l4 sig_type=std_logic lab=GND}
+C {devices/lab_pin.sym} 780 -20 3 0 {name=l4 sig_type=std_logic lab=GND}
 C {sky130_fd_pr/res_high_po_2p85.sym} 320 -975 0 0 {name=R1
 W=2.85
 L=3.5
@@ -105,4 +106,6 @@ model=res_high_po_2p85
 spiceprefix=X
 mult=1}
 C {devices/lab_pin.sym} 300 -975 0 0 {name=l5 sig_type=std_logic lab=GND}
-C {devices/ammeter.sym} 840 -360 0 0 {name=Vmeas}
+C {devices/ammeter.sym} 840 -300 0 0 {name=Vmeas}
+C {devices/lab_pin.sym} 840 -360 0 0 {name=l2 sig_type=std_logic lab=tail}
+C {vco/parts/buff_nmirr.sym} 530 310 0 0 {name=x3}

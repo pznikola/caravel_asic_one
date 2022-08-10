@@ -4,69 +4,92 @@ K {}
 V {}
 S {}
 E {}
-B 2 -680 -700 120 -300 {flags=graph
-y1=0.0012
-y2=0.008
+B 2 290 -890 1090 -490 {flags=graph
+y1=-1.2
+y2=1.2
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-1e-08
-x2=4e-08
-divx=5
-subdivx=1
-node="i(vref_curr)
-i(vout_curr)"
-color="4 5"
-dataset=0
-unitx=u
-}
-B 2 140 -700 940 -300 {flags=graph
-y1=0.63
-y2=0.88
-ypos1=0
-ypos2=2
-divy=5
-subdivy=1
-unity=1
-x1=-1e-08
-x2=4e-08
+x1=6.46235e-27
+x2=1e-09
 divx=5
 subdivx=1
 
 
 dataset=0
-unitx=u
-color=4
-node=vco_out}
-N 150 60 150 80 {
-lab=VCO_OUT}
-C {vco/parts/vco_pmirr.sym} 100 40 0 0 {name=x1}
-C {devices/ammeter.sym} 150 30 0 0 {name=vout_curr}
-C {devices/gnd.sym} 150 140 0 0 {name=l1 lab=GND}
-C {devices/vdd.sym} 90 -250 0 0 {name=l3 lab=VDD}
-C {devices/vsource.sym} -60 -130 0 0 {name=V1 value=1.8}
-C {devices/gnd.sym} -60 -100 0 0 {name=l4 lab=GND}
-C {devices/vdd.sym} -60 -160 0 0 {name=l5 lab=VDD}
-C {devices/ammeter.sym} 30 30 0 1 {name=vref_curr}
-C {devices/gnd.sym} 30 60 0 0 {name=l6 lab=GND}
-C {sky130_fd_pr/corner.sym} 200 -130 0 0 {name=CORNER only_toplevel=false corner=tt}
-C {devices/vsource.sym} 150 110 0 0 {name=VCO value="SIN(752.5m 119.5m 4.1G)"}
-C {devices/lab_pin.sym} 150 70 2 0 {name=l17 lab=VCO_OUT
+unitx=p
+
+color="5 4"
+node="out
+bufout"}
+N 280 -300 280 -290 {
+lab=outp}
+N 280 -290 290 -290 {
+lab=outp}
+N 280 -250 280 -240 {
+lab=outn}
+N 280 -250 290 -250 {
+lab=outn}
+N 600 -290 610 -290 {
+lab=buf_p}
+N 610 -300 610 -290 {
+lab=buf_p}
+N 610 -300 660 -300 {
+lab=buf_p}
+N 600 -250 610 -250 {
+lab=buf_n}
+N 610 -250 610 -240 {
+lab=buf_n}
+N 610 -240 660 -240 {
+lab=buf_n}
+N 660 -300 710 -300 {
+lab=buf_p}
+N 660 -240 710 -240 {
+lab=buf_n}
+N 180 -300 200 -300 {
+lab=outp}
+N 260 -300 280 -300 {
+lab=outp}
+N 180 -240 200 -240 {
+lab=outn}
+N 260 -240 280 -240 {
+lab=outn}
+N 200 -240 260 -240 {
+lab=outn}
+N 200 -300 260 -300 {
+lab=outp}
+C {vco/parts/buffer.sym} 230 -70 0 0 {name=X1}
+C {devices/res.sym} 660 -270 0 0 {name=R1
+value=100
+footprint=1206
+device=resistor
+m=1}
+C {devices/capa.sym} 710 -270 0 0 {name=C1
+m=1
+value=100f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/vdd.sym} 440 -430 0 0 {name=l1 lab=VDD}
+C {devices/gnd.sym} 440 -90 0 0 {name=l2 lab=GND}
+C {devices/lab_wire.sym} 625 -300 0 0 {name=l5 sig_type=std_logic lab=buf_p}
+C {devices/lab_wire.sym} 625 -240 2 1 {name=l6 sig_type=std_logic lab=buf_n
 }
-C {devices/code_shown.sym} 320 -160 0 0 {name="Trans plots" only_toplevel=false value="
-.save vco_out
+C {devices/code_shown.sym} 780 -400 0 0 {name="Trans plots" only_toplevel=false value="
+.save tail outp outn buf_p buf_n
+.ic v(buf_p)=0.3 v(buf_n)=-0.3
 .control
-    tran 10p 5n
-    save vco_out vref_curr#branch vout#branch
-    write vco_pmirr_vco_tb.raw 
-    let i_out = mean(vout_curr#branch)
-    let i_ref = mean(vref_curr#branch)
-    print i_out/i_ref
+    tran 10p 1n
+    let out = outp-outn
+    let bufout = buf_p-buf_n
+    settype voltage out
+    settype voltage bufout
+    write buffer_tb.raw
 .endc
 "}
-C {devices/launcher.sym} -395 -185 0 0 {name=h5 
+C {sky130_fd_pr/corner.sym} 610 -160 0 0 {name=CORNER only_toplevel=false corner=tt}
+C {devices/launcher.sym} 815 -145 0 0 {name=h5 
 descr=" Ctrl-Left-Click to load/unload
 embedded waveforms" 
 tclcommand="xschem raw_read_from_attr"
@@ -10231,7 +10254,7 @@ E9U+cbmvZJUT1T6IV1gdkeu8P3tnlh+R66w/bTNVHZHrrD+oef171cGVP2XnLIbVwYU/Hx37e9XBhT/2
 UMk9CMcwwAB8pD3NzMzMzMz8P2VmZmZmZgpAzczMzMzM/D8BAAAAAAAUQAAAAAAAACVAAAAAAAAAMEDNzMzMzMz8P83MzMzMzPw/AAAAAAAAAACYOokQD/51PzamGIsq
 k22/AAAZYIy4Qj8AIGeQM2pAPwBA8k5/hEI/AACmeNtsRD8AYG3+fV91P6jjfrW8H2s/mAiwtJjxUz/UM0FpXKNVPwAAAAAAAAAA2WaR84ZMgD+8Y2KEprcnQINlKZc3
 k+w/C9dMZBBy9z8="}
-C {devices/launcher.sym} -395 -105 0 0 {name=h4 
+C {devices/launcher.sym} 815 -65 0 0 {name=h4 
 descr="Select arrow and 
 Ctrl-Left-Click to load/unload
 simulation .raw file" 
@@ -10239,3 +10262,12 @@ tclcommand="
 xschem raw_read $netlist_dir/[file tail [file rootname [xschem get current_name]]].raw
 "
 }
+C {devices/vsource.sym} 230 -440 0 0 {name=V1 value=1.8}
+C {devices/gnd.sym} 230 -410 0 0 {name=l14 lab=GND}
+C {devices/vdd.sym} 230 -470 0 0 {name=l15 lab=VDD}
+C {devices/lab_pin.sym} 180 -300 0 0 {name=l3 sig_type=std_logic lab=outp}
+C {devices/lab_pin.sym} 180 -240 0 0 {name=l4 sig_type=std_logic lab=outn
+}
+C {devices/isource.sym} 350 -70 0 0 {name=I0 value=8m}
+C {devices/gnd.sym} 350 -40 0 0 {name=l7 lab=GND}
+C {devices/vsource.sym} 180 -270 0 0 {name=VCO value="sin(0 1.2 4.1G)"}

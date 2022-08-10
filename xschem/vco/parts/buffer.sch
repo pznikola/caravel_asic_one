@@ -1,4 +1,4 @@
-v {xschem version=3.0.0 file_version=1.2 }
+v {xschem version=3.1.0 file_version=1.2 }
 G {}
 K {}
 V {}
@@ -211,9 +211,9 @@ lab=GND}
 N 2080 -860 2080 -850 {
 lab=GND}
 N 720 -770 1120 -770 {
-lab=BUF_BIAS}
+lab=GND}
 N 920 -850 920 -770 {
-lab=BUF_BIAS}
+lab=GND}
 N 720 -720 1120 -720 {
 lab=BUF_BIAS}
 C {rf_nfet_01v8_lvt_aM04W5p00L0p15.sym} 650 -700 0 0 {name=X12[1:0]}
@@ -224,12 +224,12 @@ C {devices/opin.sym} 1370 -840 0 0 {name=p4 lab=OUT_P}
 C {devices/opin.sym} 490 -850 2 0 {name=p5 lab=OUT_N}
 C {devices/ipin.sym} 590 -770 0 0 {name=p6 lab=IN_P}
 C {devices/ipin.sym} 1280 -770 2 0 {name=p7 lab=IN_N}
-C {sky130_fd_pr/res_generic_po.sym} 720 -910 0 0 {name=R1
+C {sky130_fd_pr/res_generic_po.sym} 1120 -900 0 0 {name=R1
 W=3.5
 L=3.5
 model=res_generic_po
 mult=1}
-C {sky130_fd_pr/res_generic_po.sym} 1120 -900 0 0 {name=R2
+C {sky130_fd_pr/res_generic_po.sym} 720 -910 0 1 {name=R2
 W=3.5
 L=3.5
 model=res_generic_po

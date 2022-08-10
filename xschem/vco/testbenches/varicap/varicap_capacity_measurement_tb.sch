@@ -1,4 +1,4 @@
-v {xschem version=3.0.0 file_version=1.2 }
+v {xschem version=3.1.0 file_version=1.2 }
 G {}
 K {}
 V {}
@@ -46,12 +46,12 @@ C {devices/lab_pin.sym} 160 50 0 0 {name=l2 sig_type=std_logic lab=GND
 }
 C {devices/lab_pin.sym} 160 -160 1 0 {name=l3 sig_type=std_logic lab=GND
 }
-C {devices/code_shown.sym} 460 -560 0 0 {name="Measure Capacitance" only_toplevel=false value="
+C {devices/code_shown.sym} 460 -560 0 0 {name="Measure capacitance and parallel resistance" only_toplevel=false value="
 .control
     *loop control variables
     let i = 0
-    let vtune_step = 0.1
-    let len = 19
+    let vtune_step = 0.025
+    let len = 73
     
     *results plot setup
     setplot new
@@ -66,7 +66,7 @@ C {devices/code_shown.sym} 460 -560 0 0 {name="Measure Capacitance" only_topleve
     *doing the sweep
     while i < len
         alter v2 vtune_step*i
-        ac dec 10000 100Meg 100G 
+        ac dec 10000 1G 10G 
         save v(outp) v(outn) v1#branch
         let Z = (v(outp)-v(outn))/v1#branch
         settype impedance Z
