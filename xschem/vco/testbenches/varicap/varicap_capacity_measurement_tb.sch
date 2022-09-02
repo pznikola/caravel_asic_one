@@ -4,41 +4,35 @@ K {}
 V {}
 S {}
 E {}
+L 4 850 -50 960 -50 {}
+L 4 850 -50 880 -70 {}
+L 4 850 -50 880 -30 {}
+T {this line can be replaced with "mag(Y)/(2*pi*frequency)" 
+as this part is basically an ideal capacitor at these frequencies} 970 -60 0 0 0.4 0.4 {}
 N 260 -100 280 -100 {
 lab=outn}
-N 40 -260 130 -260 {
-lab=outp}
 N 40 -100 60 -100 {
 lab=outp}
-N 190 -260 280 -260 {
+N 190 -280 280 -280 {
 lab=outn}
-N 40 -330 40 -260 {
-lab=outp}
-N 190 -330 280 -330 {
-lab=outn}
-N 280 -330 280 -100 {
-lab=outn}
-N 40 -260 40 -100 {
-lab=outp}
 N 160 -40 160 -20 {
 lab=#net1}
 N 160 40 160 50 {
 lab=GND}
 N 160 50 160 60 {
 lab=GND}
-N 120 -330 130 -330 {
+N 120 -280 130 -280 {
 lab=outp}
-N 40 -330 60 -330 {
+N 40 -280 60 -280 {
 lab=outp}
-N 60 -330 120 -330 {
+N 60 -280 120 -280 {
+lab=outp}
+N 280 -280 280 -100 {
+lab=outn}
+N 40 -280 40 -100 {
 lab=outp}
 C {vco/parts/cap_var.sym} 60 -40 0 0 {name=X1}
-C {devices/ind.sym} 160 -260 3 1 {name=L1
-m=1
-value=10n
-footprint=1206
-device=inductor}
-C {devices/vsource.sym} 160 -330 3 0 {name=V1 value="dc 0 ac 1 portnum 1 z0 50"}
+C {devices/vsource.sym} 160 -280 3 0 {name=V1 value="dc 0 ac 1"}
 C {sky130_fd_pr/corner.sym} 320 -140 0 0 {name=CORNER only_toplevel=false corner=tt}
 C {devices/vsource.sym} 160 10 0 0 {name=V2 value=1.8}
 C {devices/gnd.sym} 160 60 0 0 {name=l1 lab=GND}
@@ -58,22 +52,26 @@ C {devices/code_shown.sym} 460 -560 0 0 {name="Measure capacitance and parallel 
     set results = $curplot
     let vtune_scale = vtune_step*vector(len)
     settype voltage vtune_scale
-    let fres = unitvec(len)
-    settype frequency fres
+    let Q = unitvec(len)
+    let fq = unitvec(len)
+    settype frequency fq
     let c_varicap = unitvec(len)
-    settype voltage c_varicap
+    settype capacitance c_varicap
 
     *doing the sweep
     while i < len
         alter v2 vtune_step*i
-        ac dec 10000 1G 10G 
+        ac dec 100 2.9G 4.1G 
         save v(outp) v(outn) v1#branch
-        let Z = (v(outp)-v(outn))/v1#branch
-        settype impedance Z
-        let magZ=mag(Z)
-        meas ac fres MAX_AT magZ
-        let \\\{$results\\\}.fres[i] = fres
-        let \\\{$results\\\}.c_varicap[i] = 1/(4*PI^2*fres^2*10n)
+        let Y = v1#branch/(v(outp)-v(outn))
+        settype admittance Y
+        let Q = imag(Y)/real(Y)
+        let minq = minimum(Q)
+        meas ac fq min_at Q
+        let c_var = abs(imag(Y)/(2*pi*frequency))
+        let \\\{$results\\\}.Q[i] = minq
+        let \\\{$results\\\}.fq[i] = fq
+        let \\\{$results\\\}.c_varicap[i] = mean(real(c_var))        
         let i = i + 1
    end
    

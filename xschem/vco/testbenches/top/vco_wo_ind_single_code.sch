@@ -5,33 +5,35 @@ V {}
 S {}
 E {}
 B 2 -680 -930 120 -530 {flags=graph
-y1=-0.53
-y2=0.53
+y1=-0.54
+y2=1.1
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=2e-08
+x1=6.6074e-09
+x2=7.20345e-09
 divx=5
 subdivx=1
-node="bufout
-vcoout"
-color="7 4"
+node="vcoout
+outp
+outn
+bufout"
+color="7 4 6 10"
 dataset=0
 unitx=n
 }
 B 2 180 -930 980 -530 {flags=graph
-y1=0.004
-y2=0.0055
+y1=0.0041
+y2=0.0068
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=m
-x1=0
-x2=2e-08
+x1=6.6074e-09
+x2=7.20345e-09
 divx=5
 subdivx=1
 
@@ -119,8 +121,10 @@ footprint=1206
 device=inductor}
 C {devices/code_shown.sym} 407.5 -440 0 0 {name="Trans plots" only_toplevel=false value="
 .control
-    save BUFOUT VCOOUT x1.x3.vmeas#branch Vmeas#branch x1.tail
-    tran 10p 20n
+    save BUFOUT outp outn VCOOUT x1.x3.vmeas#branch Vmeas#branch x1.tail
+    tran 10p 10n
+    meas tran period trig vcoout val=0 rise=20 targ vcoout val=0 rise=21
+    print 1/period 
     write vco_wo_ind_single_code.raw
 .endc
 "}

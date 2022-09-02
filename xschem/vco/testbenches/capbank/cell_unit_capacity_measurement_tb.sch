@@ -4,72 +4,60 @@ K {}
 V {}
 S {}
 E {}
+T {Unit cap has nonlinear capacinance over frequency when off
+But behaves very well as a capacitor when on} -170 -540 0 0 0.4 0.4 {}
 N 340 -370 490 -370 {
 lab=#net1}
 N 560 -50 560 70 {
 lab=outp}
 N 110 -50 110 70 {
 lab=outn}
-N 370 160 560 160 {
+N 370 120 560 120 {
 lab=outp}
-N 560 70 560 160 {
-lab=outp}
-N 110 160 310 160 {
+N 110 120 310 120 {
 lab=outn}
-N 110 70 110 140 {
+N 110 100 110 120 {
 lab=outn}
-N 110 140 110 160 {
-lab=outn}
-N 110 70 310 70 {
-lab=outn}
-N 370 70 560 70 {
-lab=outp}
-N 30 -10 30 70 {
+N -50 120 20 120 {
 lab=outp_r}
-N -40 160 30 160 {
+N 20 30 20 120 {
 lab=outp_r}
-N 30 70 30 160 {
-lab=outp_r}
-N -170 160 -100 160 {
+N -180 120 -110 120 {
 lab=outn_r}
-N -170 70 -170 140 {
+N -180 100 -180 120 {
 lab=outn_r}
-N -170 140 -170 160 {
+N -170 30 -160 30 {
 lab=outn_r}
-N -170 70 -100 70 {
+N -180 30 -170 30 {
 lab=outn_r}
-N -40 70 30 70 {
-lab=outp_r}
-N -160 -10 -150 -10 {
-lab=outn_r}
-N -170 -10 -160 -10 {
-lab=outn_r}
-N -90 -10 -50 -10 {
+N -100 30 -60 30 {
 lab=GND}
-N 10 -10 30 -10 {
+N 0 30 20 30 {
 lab=outp_r}
-N -70 -10 -70 10 {
+N -80 30 -80 50 {
 lab=GND}
-N -170 -100 -100 -100 {
+N -180 -60 -110 -60 {
 lab=outn_r}
-N -170 -70 -170 0 {
-lab=outn_r}
-N -40 -100 30 -100 {
+N -50 -60 20 -60 {
 lab=outp_r}
-N 30 -70 30 -10 {
+N 20 -30 20 30 {
 lab=outp_r}
-N -170 0 -170 70 {
+N -180 -60 -180 -30 {
 lab=outn_r}
-N -170 -100 -170 -70 {
-lab=outn_r}
-N 30 -100 30 -80 {
+N 20 -60 20 -40 {
 lab=outp_r}
-N 30 -80 30 -70 {
+N 20 -40 20 -30 {
 lab=outp_r}
 N 260 -370 260 -340 {
 lab=#net2}
 N 340 -370 340 -340 {
 lab=#net1}
+N 110 70 110 100 {
+lab=outn}
+N 560 70 560 120 {
+lab=outp}
+N -180 -30 -180 100 {
+lab=outn_r}
 C {vco/parts/cell_unit.sym} 100 -50 0 0 {name=X1}
 C {vco/parts/inv.sym} 360 -370 0 1 {name=X2}
 C {devices/vsource.sym} 490 -340 0 0 {name=V3 value=0
@@ -79,32 +67,22 @@ C {devices/gnd.sym} 340 30 0 0 {name=l2 lab=GND}
 C {devices/gnd.sym} 305 -340 0 0 {name=l3 lab=GND}
 C {devices/vdd.sym} 305 -400 0 0 {name=l4 lab=VDD}
 C {sky130_fd_pr/corner.sym} -110 -280 0 0 {name=CORNER only_toplevel=false corner=tt}
-C {devices/vsource.sym} 340 160 1 0 {name=V1 value="dc 0 ac 1 portnum 1 z0 50"
+C {devices/vsource.sym} 340 120 1 0 {name=V1 value="dc 0 ac 1"
 }
-C {devices/ind.sym} 340 70 3 1 {name=L1
-m=1
-value=10n
-footprint=1206
-device=inductor}
-C {devices/gnd.sym} -70 10 0 0 {name=l8 lab=GND}
-C {devices/vsource.sym} -70 160 1 0 {name=V2 value="dc 0 ac 1 portnum 2 z0 50"
+C {devices/gnd.sym} -80 50 0 0 {name=l8 lab=GND}
+C {devices/vsource.sym} -80 120 1 0 {name=V2 value="dc 0 ac 1"
 }
-C {devices/ind.sym} -70 70 3 1 {name=L2
-m=1
-value=10n
-footprint=1206
-device=inductor}
-C {devices/capa.sym} -20 -10 1 0 {name=C1
+C {devices/capa.sym} -30 30 1 0 {name=C1
 m=1
 value=1.8735714f
 footprint=1206
 device="ceramic capacitor"}
-C {devices/capa.sym} -120 -10 1 0 {name=C2
+C {devices/capa.sym} -130 30 1 0 {name=C2
 m=1
 value=1.8735714f
 footprint=1206
 device="ceramic capacitor"}
-C {devices/res.sym} -70 -100 1 0 {name=R1
+C {devices/res.sym} -80 -60 1 0 {name=R1
 value=21.38596k
 footprint=1206
 device=resistor
@@ -112,10 +90,10 @@ m=1}
 C {devices/code_shown.sym} 590 -530 0 0 {name="Measure capacitance and parallel resistance" only_toplevel=false value="
 .control
     *saving already measured results to compare
-    let c_off = 0.9367857f
-    let c_on =  11.90256f
-    let rp_off = 21.38596k
-    let rp_on = 4.458238k
+    let c_off = 1.343566f
+    let c_on =  11.95093f
+    let rp_off = 25.23373k  
+    let rp_on = 54.72601k
     let l = 10n
 
     *measuring off capacitance
@@ -123,51 +101,47 @@ C {devices/code_shown.sym} 590 -530 0 0 {name="Measure capacitance and parallel 
     alter c2=2*c_off
     alter r1=rp_off
     alter v3 0
-    ac dec 1000 10G 1000G 
+    ac dec 1000 2.9G 4.1G 
     let out = outp-outn
     settype voltage out
     let out_r = outp_r-outn_r
     settype voltage out_r
-    let z1 = out/v1#branch 
-    settype impedance z1
-    let z2 = out_r/v2#branch 
-    settype impedance z2
-    let rp_off = maximum(mag(z1))
-    settype impedance rp_off
-    print rp_off
-    let magz1 = mag(z1)
-    meas ac fres max_at magz1
-    let c_off = 1/(4*pi^2*fres^2*l)
+    let y1 = v1#branch/out 
+    settype admittance y1
+    let y2 = v2#branch/out_r 
+    settype admittance y2
+    let c_off = mean(real(abs(imag(y1)/(2*pi*frequency))))
     settype capacitance c_off
     print c_off
-    plot mag(z1) mag(z2)
+    let Q_off = minimum(real(imag(y1)/real(y1)))
+    let rp_off = Q_off/(2*pi*2.9G*c_off)
+    print rp_off
+    plot mag(1/y1) mag(1/y2)
 
     *measuring on capacitance
     alter c1=2*c_on
     alter c2=2*c_on
     alter r1=rp_on
     alter v3 1.8
-    ac dec 1000 1G 100G 
+    ac dec 1000 2.9G 4.1G 
     let out = outp-outn
     settype voltage out
     let out_r = outp_r-outn_r
     settype voltage out_r
-    let z1 = out/v1#branch 
-    settype impedance z1
-    let z2 = out_r/v2#branch 
-    settype impedance z2
-    let rp = maximum(mag(z1))
-    settype impedance rp_on
-    print rp_on
-    let magz1 = mag(z1)
-    meas ac fres max_at magz1
-    let c_on = 1/(4*pi^2*fres^2*l)
+    let y1 = v1#branch/out 
+    settype admittance y1
+    let y2 = v2#branch/out_r 
+    settype admittance y2
+    let c_on = mean(real(abs(imag(y1)/(2*pi*frequency))))
     settype capacitance c_on
     print c_on
-    plot mag(z1) mag(z2)
+    let Q_on = minimum(real(imag(y1)/real(y1)))
+    let rp_on = Q_on/(2*pi*4.1G*c_on)
+    print rp_on
+    plot mag(1/y1) mag(1/y2)
 .endc
 "}
 C {devices/lab_wire.sym} 560 50 0 0 {name=l5 sig_type=std_logic lab=outp}
 C {devices/lab_wire.sym} 110 50 0 1 {name=l6 sig_type=std_logic lab=outn}
-C {devices/lab_wire.sym} 30 50 0 1 {name=l7 sig_type=std_logic lab=outp_r}
-C {devices/lab_wire.sym} -170 50 0 0 {name=l9 sig_type=std_logic lab=outn_r}
+C {devices/lab_wire.sym} 20 90 0 1 {name=l7 sig_type=std_logic lab=outp_r}
+C {devices/lab_wire.sym} -180 90 0 0 {name=l9 sig_type=std_logic lab=outn_r}

@@ -4,20 +4,11 @@ K {}
 V {}
 S {}
 E {}
-T {This simulation can be rather slow because the ac analysis is done with high percision over a circuit which seems to be slow. 
-Decrease points per decade to decrease simtime. } -530 -660 0 0 0.4 0.4 {}
+T {Off capacitance variation with frequency might be a problem } 670 -290 0 0 0.4 0.4 {}
 N -40 -40 -0 -40 {
 lab=outn}
-N -40 -130 40 -130 {
-lab=outn}
-N 110 -130 200 -130 {
-lab=outp}
 N 160 -40 200 -40 {
 lab=outp}
-N 105 -130 110 -130 {
-lab=outp}
-N 40 -130 45 -130 {
-lab=outn}
 N 80 -0 80 10 {
 lab=freq[5:0] bus=true}
 N -95 50 -95 70 {
@@ -36,20 +27,15 @@ N 80 10 80 40 {
 lab=freq[5:0] bus=true}
 N -85 40 245 40 {
 lab=freq[5:0] bus=true}
-N 105 -200 200 -200 {
+N 105 -140 200 -140 {
 lab=outp}
-N -40 -200 45 -200 {
+N -40 -140 45 -140 {
 lab=outn}
-N -40 -200 -40 -40 {
+N -40 -140 -40 -40 {
 lab=outn}
-N 200 -200 200 -40 {
+N 200 -140 200 -40 {
 lab=outp}
 C {vco/parts/capbank.sym} -10 10 0 0 {name=X1}
-C {devices/ind.sym} 75 -130 3 1 {name=L1
-m=1
-value=10n
-footprint=1206
-device=inductor}
 C {devices/vdd.sym} 120 -80 0 0 {name=l4 lab=VDD}
 C {devices/gnd.sym} 40 -80 2 0 {name=l3 lab=GND}
 C {devices/gnd.sym} -95 130 0 0 {name=l1 lab=GND}
@@ -79,12 +65,12 @@ C {devices/bus_connect_nolab.sym} 115 50 0 1 {name=r4}
 C {devices/bus_connect_nolab.sym} 185 50 0 1 {name=r5}
 C {devices/bus_connect_nolab.sym} 255 50 0 1 {name=r6}
 C {devices/lab_wire.sym} 80 30 0 0 {name=l15 sig_type=std_logic lab=freq[5:0]}
-C {devices/vsource.sym} 75 -200 1 1 {name=V1 value="dc 0 ac 1 portnum 1 z0 50"
+C {devices/vsource.sym} 75 -140 1 1 {name=V1 value="dc 0 ac 1"
 }
-C {devices/gnd.sym} -133.75 -45 0 0 {name=l10 lab=GND}
-C {devices/vdd.sym} -133.75 -105 0 0 {name=l11 lab=VDD}
-C {devices/vsource.sym} -133.75 -75 0 0 {name=V2 value=1.8}
-C {sky130_fd_pr/corner.sym} -190 -280 0 0 {name=CORNER only_toplevel=false corner=tt}
+C {devices/gnd.sym} -183.75 -25 0 0 {name=l10 lab=GND}
+C {devices/vdd.sym} -183.75 -85 0 0 {name=l11 lab=VDD}
+C {devices/vsource.sym} -183.75 -55 0 0 {name=V2 value=1.8}
+C {sky130_fd_pr/corner.sym} -240 -260 0 0 {name=CORNER only_toplevel=false corner=tt}
 C {devices/code_shown.sym} 300 -470 0 0 {name="Measure capacitance and parallel resistance" only_toplevel=false value="
 .control
     save outp outn v1#branch freq[5:0]
@@ -100,6 +86,7 @@ C {devices/code_shown.sym} 300 -470 0 0 {name="Measure capacitance and parallel 
     let codes = vector(64)
     let c_bank = unitvec(64)
     settype capacitance c_bank
+    let Q = unitvec(64)
 
     *setting printing data
     set wr_singlescale
@@ -121,20 +108,21 @@ C {devices/code_shown.sym} 300 -470 0 0 {name="Measure capacitance and parallel 
         alter vbit3 1.8*code_bits[3]
         alter vbit4 1.8*code_bits[4]
         alter vbit5 1.8*code_bits[5]
-        ac dec 100000 1G 10G
+        ac dec 1000 2.9G 4.1G
         let out = outp-outn
         settype voltage out
-        let z = out/v1#branch 
-        settype impedance z
-        let magz = mag(z)
-        meas ac fres max_at magz
-        let c_bank = 1/(4*pi^2*fres^2*l)
-        let \\\{$scratch\\\}.c_bank[code] = c_bank
+        let y = v1#branch/out 
+        settype admittance y
+        let c_bank = real(abs(imag(y)/(2*pi*frequency)))
+        let Q = imag(y)/real(y)
+        let \\\{$scratch\\\}.c_bank[code] = mean(c_bank)
+        let \\\{$scratch\\\}.Q[code] = minimum(Q)
         let code = code + 1
+	wrdata capdata.txt c_bank
     end 
     setplot $scratch
     wrdata capbank.txt c_bank
 .endc
 "}
-C {devices/lab_wire.sym} 200 -160 0 1 {name=l12 sig_type=std_logic lab=outp}
-C {devices/lab_wire.sym} -40 -160 0 0 {name=l13 sig_type=std_logic lab=outn}
+C {devices/lab_wire.sym} 200 -110 0 1 {name=l12 sig_type=std_logic lab=outp}
+C {devices/lab_wire.sym} -40 -110 0 0 {name=l13 sig_type=std_logic lab=outn}

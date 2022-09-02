@@ -12,14 +12,14 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-2.5e-09
-x2=4.75e-08
+x1=0
+x2=1e-08
 divx=5
 subdivx=1
 
 
 dataset=0
-unitx=u
+unitx=n
 
 color=4
 node=out}
@@ -94,10 +94,10 @@ C {devices/vdd.sym} 20 -250 0 0 {name=l7 lab=VDD}
 C {devices/code_shown.sym} 400 -400 0 0 {name="Trans plots" only_toplevel=false value="
 .save ctap outp outn
 .control
-    tran 10p 50n
+    tran 10p 10n
     let out = outp-outn
     settype voltage out
-    meas tran period trig out val=0 rise=40 targ out val=0 rise=41
+    meas tran period trig out val=0 rise=10 targ out val=0 rise=11    
     settype time period
     print 1/period
     write vco_pair_tb.raw
