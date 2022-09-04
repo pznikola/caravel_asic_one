@@ -57,7 +57,7 @@ C {devices/code_shown.sym} 170 -830 0 0 {name="Code Sweep" only_toplevel=false v
 .control
     *intial value of code sweeps
     let code = 0
-    let code_end = 2
+    let code_end = 64
     let code_bits = vector(6)
     let bit_count = 0
     let i = 0
