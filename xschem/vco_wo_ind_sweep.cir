@@ -32,7 +32,7 @@ Vmeas net8 net9 0
 
 
 .control
-    save: BUFOUT Vbit0 Vbit1 Vbit2 Vbit3 Vbit4 Vbit5
+    save BUFOUT Vbit0 Vbit1 Vbit2 Vbit3 Vbit4 Vbit5
     *intial value of code sweeps
     let code = 0 
     let j = 0

@@ -63,7 +63,6 @@ C {devices/code_shown.sym} 170 -830 0 0 {name="Code Sweep" only_toplevel=false v
     let i = 0
     let vtune_step = 0.1
     let len = 19
-    echo \\"init done\\"
     
     *creating plot to store amplitude and freq data
     setplot new
@@ -72,17 +71,20 @@ C {devices/code_shown.sym} 170 -830 0 0 {name="Code Sweep" only_toplevel=false v
     let vtune_scale = vtune_step*vector(len)
     settype voltage vtune_scale
     let freq = unitvec(code_end*len)
-    reshape freq [2][19]
+    reshape freq [64][19]
     settype frequency freq
     let amplitude = unitvec(code_end*len)
-    reshape amplitude [2][19]
+    reshape amplitude [64][19]
     settype voltage amplitude
-    echo \\"plot done\\"
 
     *setting printing data
     set wr_singlescale
     set wr_vecnames
 
+    echo \\"===========================\\"
+    echo \\"SIMULATION STARTED AT TIME:\\"
+    shell date +"%H:%M"   
+    echo \\"===========================\\"
     while code < code_end
     * setting the cap bank code
         let tmp = code
@@ -118,6 +120,10 @@ C {devices/code_shown.sym} 170 -830 0 0 {name="Code Sweep" only_toplevel=false v
     setplot \{$scratch\}
     wrdata data.txt freq amplitude
     plot freq
+    echo \\"===========================\\"
+    echo \\"SIMULATION ENDED AT TIME:\\"
+    shell date +"%H:%M"   
+    echo \\"===========================\\"
 .endc
 "}
 C {devices/gnd.sym} -278.75 -165 0 0 {name=l1 lab=GND}

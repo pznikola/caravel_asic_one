@@ -1,111 +1,110 @@
-v {xschem version=3.0.0 file_version=1.2 }
+v {xschem version=3.1.0 file_version=1.2 }
 G {}
 K {}
 V {}
 S {}
 E {}
+N 90 -4780 90 -4680 {
+lab=bit[5:0] bus = true}
+N 80 -4740 90 -4740 {
+lab=bit[5:0] bus = true}
 C {devices/iopin.sym} 130 -4650 2 0 {name=p1 lab=VDD}
 C {devices/iopin.sym} 130 -4600 2 0 {name=p2 lab=GND}
-C {devices/ipin.sym} 130 -4700 0 0 {name=p3 lab=bit0}
-C {devices/ipin.sym} 130 -4740 0 0 {name=p4 lab=bit1}
-C {devices/ipin.sym} 130 -4780 0 0 {name=p5 lab=bit2}
-C {devices/ipin.sym} 130 -4820 0 0 {name=p6 lab=bit3}
-C {devices/ipin.sym} 130 -4860 0 0 {name=p7 lab=bit4}
-C {devices/ipin.sym} 130 -4900 0 0 {name=p8 lab=bit5}
+C {devices/ipin.sym} 80 -4740 0 0 {name=p8 lab=bit[5:0]}
 C {devices/iopin.sym} 130 -4550 2 0 {name=p9 lab=OUT_P}
 C {devices/iopin.sym} 130 -4510 2 0 {name=p10 lab=OUT_N}
 C {devices/code.sym} 220 -4760 0 0 {name="PEX MODEL" only_toplevel=false value="
-X0 a_22576_45486.t1 bit4.t0 a_22866_45562.t2 GND.t96 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X0 a_22576_45486.t1 bit[4].t0 a_22866_45562.t2 GND.t96 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X1 OUT_P.t0 a_59376_45486.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
-X2 a_50176_5966.t2 bit5.t0 a_50466_6042.t1 GND.t161 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X2 a_50176_5966.t2 bit[5].t0 a_50466_6042.t1 GND.t161 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X3 a_4176_94886.t0 a_n436_94366.t0 GND.t0 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X4 OUT_P.t1 a_4176_55366.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
-X5 a_13666_15922.t2 bit5.t1 a_13376_15846.t1 GND.t208 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X5 a_13666_15922.t2 bit[5].t1 a_13376_15846.t1 GND.t208 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X6 a_4176_15846.t0 a_n436_5446.t8 GND.t15 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X7 a_31776_25726.t3 a_n436_5446.t43 GND.t154 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X8 OUT_P.t2 a_4176_94886.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X9 a_68866_45562.t3 a_n436_44966.t33 GND.t256 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X10 a_50176_45486.t1 bit4.t1 a_50466_45562.t1 GND.t95 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X10 a_50176_45486.t1 bit[4].t1 a_50466_45562.t1 GND.t95 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X11 OUT_P.t3 a_50176_55366.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X12 OUT_N.t0 a_68866_35682.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X13 OUT_P.t4 a_31776_45486.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X14 OUT_N.t1 a_59666_55442.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X15 a_13376_35606.t3 a_n436_5446.t65 GND.t263 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X16 a_41266_15922.t2 bit5.t2 a_40976_15846.t1 GND.t156 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X17 a_31776_55366.t1 bit4.t2 a_32066_55442.t1 GND.t94 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X16 a_41266_15922.t2 bit[5].t2 a_40976_15846.t1 GND.t156 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X17 a_31776_55366.t1 bit[4].t2 a_32066_55442.t1 GND.t94 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X18 a_4466_65322.t1 a_n436_64726.t5 GND.t51 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X19 OUT_P.t5 a_22576_55366.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X20 OUT_N.t2 a_50466_65322.t1 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X21 OUT_N.t3 a_4466_55442.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X22 a_13666_15922.t0 a_n436_5446.t9 GND.t26 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X23 a_4176_35606.t1 bit5.t3 a_4466_35682.t1 GND.t163 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X24 a_22866_25802.t2 bit5.t4 a_22576_25726.t1 GND.t216 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X25 a_4466_75202.t1 bit2.t0 a_4176_75126.t1 GND.t16 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X23 a_4176_35606.t1 bit[5].t3 a_4466_35682.t1 GND.t163 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X24 a_22866_25802.t2 bit[5].t4 a_22576_25726.t1 GND.t216 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X25 a_4466_75202.t1 bit[2].t0 a_4176_75126.t1 GND.t16 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X26 OUT_N.t4 a_4466_94962.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X27 OUT_P.t6 a_13376_65246.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X28 OUT_N.t5 a_32066_45562.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
-X29 a_13376_55366.t1 bit4.t3 a_13666_55442.t1 GND.t93 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X29 a_13376_55366.t1 bit[4].t3 a_13666_55442.t1 GND.t93 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X30 a_4466_6042.t0 a_n436_5446.t10 GND.t27 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X31 a_40976_25726.t0 a_n436_5446.t11 GND.t28 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X32 a_68866_35682.t0 bit5.t5 a_68576_35606.t2 GND.t231 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X32 a_68866_35682.t0 bit[5].t5 a_68576_35606.t2 GND.t231 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X33 OUT_P.t7 a_40976_25726.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X34 a_32066_6042.t2 a_n436_5446.t26 GND.t62 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X35 OUT_N.t6 a_22866_55442.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X36 a_22576_35606.t2 a_n436_5446.t27 GND.t97 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X37 a_40976_55366.t1 bit4.t4 a_41266_55442.t0 GND.t92 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X38 a_50466_15922.t1 bit5.t6 a_50176_15846.t1 GND.t162 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X37 a_40976_55366.t1 bit[4].t4 a_41266_55442.t0 GND.t92 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X38 a_50466_15922.t1 bit[5].t6 a_50176_15846.t1 GND.t162 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X39 a_13376_45486.t2 a_n436_44966.t14 GND.t106 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X40 a_22866_6042.t1 bit5.t7 a_22576_5966.t1 GND.t141 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X40 a_22866_6042.t1 bit[5].t7 a_22576_5966.t1 GND.t141 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X41 OUT_N.t7 a_13666_65322.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X42 a_22866_15922.t2 a_n436_5446.t31 GND.t107 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X43 a_32066_25802.t1 bit5.t8 a_31776_25726.t1 GND.t209 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X43 a_32066_25802.t1 bit[5].t8 a_31776_25726.t1 GND.t209 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X44 a_50176_35606.t3 a_n436_5446.t57 GND.t185 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X45 a_59376_15846.t1 bit5.t9 a_59666_15922.t2 GND.t155 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X45 a_59376_15846.t1 bit[5].t9 a_59666_15922.t2 GND.t155 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X46 a_59376_55366.t3 a_n436_44966.t29 GND.t177 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X47 a_22576_55366.t1 bit4.t5 a_22866_55442.t2 GND.t91 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X47 a_22576_55366.t1 bit[4].t5 a_22866_55442.t2 GND.t91 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X48 OUT_N.t8 a_50466_15922.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
-X49 a_13666_25802.t1 bit5.t10 a_13376_25726.t1 GND.t40 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X49 a_13666_25802.t1 bit[5].t10 a_13376_25726.t1 GND.t40 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X50 a_4176_25726.t3 a_n436_5446.t54 GND.t178 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X51 a_31776_35606.t3 a_n436_5446.t42 GND.t152 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X52 OUT_N.t9 a_68866_6042.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
-X53 a_50176_55366.t1 bit4.t6 a_50466_55442.t1 GND.t90 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X53 a_50176_55366.t1 bit[4].t6 a_50466_55442.t1 GND.t90 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X54 OUT_P.t8 a_13376_15846.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X55 OUT_N.t10 a_41266_25802.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X56 a_22576_45486.t3 a_n436_44966.t26 GND.t153 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X57 a_32066_15922.t0 a_n436_5446.t17 GND.t52 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X58 GND.t124 bit3.t0 a_n436_64726.t9 GND.t123 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=150000u
-X59 a_31776_65246.t1 bit3.t1 a_32066_65322.t1 GND.t125 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X60 a_41266_25802.t1 bit5.t11 a_40976_25726.t2 GND.t214 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X61 a_59666_35682.t2 bit5.t12 a_59376_35606.t2 GND.t215 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X62 a_68576_15846.t1 bit5.t13 a_68866_15922.t0 GND.t225 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X58 GND.t124 bit[3].t0 a_n436_64726.t9 GND.t123 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=150000u
+X59 a_31776_65246.t1 bit[3].t1 a_32066_65322.t1 GND.t125 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X60 a_41266_25802.t1 bit[5].t11 a_40976_25726.t2 GND.t214 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X61 a_59666_35682.t2 bit[5].t12 a_59376_35606.t2 GND.t215 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X62 a_68576_15846.t1 bit[5].t13 a_68866_15922.t0 GND.t225 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X63 a_4466_75202.t3 a_n436_74606.t9 GND.t179 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X64 a_50176_45486.t3 a_n436_44966.t30 GND.t180 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X65 a_13666_25802.t3 a_n436_5446.t55 GND.t181 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X66 a_4176_45486.t1 bit4.t7 a_4466_45562.t1 GND.t89 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X66 a_4176_45486.t1 bit[4].t7 a_4466_45562.t1 GND.t89 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X67 a_68576_55366.t3 a_n436_44966.t31 GND.t182 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X68 a_68576_5966.t0 a_n436_5446.t18 GND.t53 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X69 a_59666_15922.t0 a_n436_5446.t19 GND.t54 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X70 OUT_N.t11 a_13666_15922.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X71 OUT_P.t9 a_4176_85006.t0 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X72 a_59666_6042.t0 a_n436_5446.t20 GND.t55 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X73 a_13376_65246.t3 bit3.t2 a_13666_65322.t3 GND.t126 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X74 a_13666_6042.t1 bit5.t14 a_13376_5966.t1 GND.t226 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X73 a_13376_65246.t3 bit[3].t2 a_13666_65322.t3 GND.t126 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X74 a_13666_6042.t1 bit[5].t14 a_13376_5966.t1 GND.t226 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X75 a_40976_35606.t0 a_n436_5446.t21 GND.t56 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X76 a_68866_45562.t1 bit4.t8 a_68576_45486.t1 GND.t88 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X76 a_68866_45562.t1 bit[4].t8 a_68576_45486.t1 GND.t88 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X77 a_31776_45486.t0 a_n436_44966.t3 GND.t29 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X78 OUT_P.t10 a_50176_5966.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X79 a_41266_15922.t0 a_n436_5446.t12 GND.t30 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X80 a_50466_25802.t1 bit5.t15 a_50176_25726.t1 GND.t229 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X81 a_40976_65246.t1 bit3.t3 a_41266_65322.t2 GND.t127 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X80 a_50466_25802.t1 bit[5].t15 a_50176_25726.t1 GND.t229 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X81 a_40976_65246.t1 bit[3].t3 a_41266_65322.t2 GND.t127 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X82 OUT_P.t11 a_68576_65246.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X83 OUT_N.t12 a_4466_85082.t0 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X84 a_22866_25802.t0 a_n436_5446.t13 GND.t31 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X85 a_59376_25726.t1 bit5.t16 a_59666_25802.t0 GND.t230 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X86 a_13666_85082.t2 bit1.t0 a_13376_85006.t3 GND.t257 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X85 a_59376_25726.t1 bit[5].t16 a_59666_25802.t0 GND.t230 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X86 a_13666_85082.t2 bit[1].t0 a_13376_85006.t3 GND.t257 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X87 a_59376_65246.t3 a_n436_64726.t16 GND.t183 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X88 a_13376_5966.t3 a_n436_5446.t56 GND.t184 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X89 a_4466_15922.t2 bit5.t17 a_4176_15846.t2 GND.t212 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X90 a_22576_65246.t1 bit3.t4 a_22866_65322.t1 GND.t128 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X89 a_4466_15922.t2 bit[5].t17 a_4176_15846.t2 GND.t212 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X90 a_22576_65246.t1 bit[3].t4 a_22866_65322.t1 GND.t128 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X91 OUT_P.t12 a_40976_55366.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X92 OUT_N.t13 a_68866_65322.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X93 a_40976_45486.t3 a_n436_44966.t27 GND.t157 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
@@ -113,72 +112,72 @@ X94 OUT_P.t13 a_59376_5966.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X95 a_4176_35606.t3 a_n436_5446.t44 GND.t158 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X96 OUT_P.t14 a_31776_75126.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X97 a_50466_15922.t3 a_n436_5446.t45 GND.t159 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X98 a_50176_65246.t1 bit3.t5 a_50466_65322.t2 GND.t129 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X98 a_50176_65246.t1 bit[3].t5 a_50466_65322.t2 GND.t129 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X99 OUT_P.t15 a_4176_35606.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X100 OUT_P.t16 a_50176_35606.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X101 a_32066_25802.t3 a_n436_5446.t46 GND.t160 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X102 OUT_N.t14 a_59666_35682.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
-X103 GND.t18 bit2.t1 a_n436_74606.t3 GND.t17 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=150000u
-X104 a_31776_75126.t2 bit2.t2 a_32066_75202.t1 GND.t19 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X103 GND.t18 bit[2].t1 a_n436_74606.t3 GND.t17 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=150000u
+X104 a_31776_75126.t2 bit[2].t2 a_32066_75202.t1 GND.t19 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X105 a_50466_6042.t3 a_n436_5446.t58 GND.t186 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X106 a_59666_45562.t1 bit4.t9 a_59376_45486.t1 GND.t87 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X107 a_68576_25726.t2 bit5.t18 a_68866_25802.t2 GND.t213 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X106 a_59666_45562.t1 bit[4].t9 a_59376_45486.t1 GND.t87 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X107 a_68576_25726.t2 bit[5].t18 a_68866_25802.t2 GND.t213 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X108 a_4466_85082.t1 a_n436_84486.t4 GND.t187 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X109 OUT_P.t17 a_40976_5966.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X110 a_68576_65246.t3 a_n436_64726.t17 GND.t188 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X111 a_13666_35682.t3 a_n436_5446.t59 GND.t189 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X112 a_4176_55366.t1 bit4.t10 a_4466_55442.t1 GND.t86 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X112 a_4176_55366.t1 bit[4].t10 a_4466_55442.t1 GND.t86 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X113 OUT_P.t18 a_22576_35606.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X114 OUT_P.t19 a_68576_15846.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X115 OUT_N.t15 a_32066_75202.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
-X116 a_41266_6042.t2 bit5.t19 a_40976_5966.t1 GND.t227 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X116 a_41266_6042.t2 bit[5].t19 a_40976_5966.t1 GND.t227 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X117 OUT_N.t16 a_50466_45562.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X118 OUT_N.t17 a_4466_35682.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X119 a_59666_25802.t2 a_n436_5446.t29 GND.t103 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X120 a_13376_75126.t1 bit2.t3 a_13666_75202.t2 GND.t20 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X120 a_13376_75126.t1 bit[2].t3 a_13666_75202.t2 GND.t20 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X121 OUT_P.t20 a_68576_5966.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X122 OUT_P.t21 a_13376_45486.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X123 OUT_P.t22 a_59376_25726.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X124 OUT_N.t18 a_41266_55442.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X125 a_4176_45486.t2 a_n436_44966.t13 GND.t104 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X126 a_68866_55442.t2 bit4.t11 a_68576_55366.t1 GND.t85 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X126 a_68866_55442.t2 bit[4].t11 a_68576_55366.t1 GND.t85 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X127 OUT_N.t19 a_68866_15922.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X128 a_41266_25802.t2 a_n436_5446.t30 GND.t105 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X129 OUT_N.t20 a_22866_35682.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X130 OUT_P.t23 a_31776_25726.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
-X131 a_68576_5966.t2 bit5.t20 a_68866_6042.t2 GND.t228 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X131 a_68576_5966.t2 bit[5].t20 a_68866_6042.t2 GND.t228 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X132 a_22866_35682.t3 a_n436_5446.t51 GND.t172 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X133 OUT_N.t21 a_13666_45562.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X134 a_13666_45562.t3 a_n436_44966.t28 GND.t173 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X135 a_4466_25802.t1 bit5.t21 a_4176_25726.t0 GND.t210 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X136 a_22576_75126.t2 bit2.t4 a_22866_75202.t1 GND.t21 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X135 a_4466_25802.t1 bit[5].t21 a_4176_25726.t0 GND.t210 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X136 a_22576_75126.t2 bit[2].t4 a_22866_75202.t1 GND.t21 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X137 OUT_N.t22 a_32066_25802.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X138 a_50466_25802.t3 a_n436_5446.t52 GND.t174 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X139 VDD.t9 bit0.t0 a_n436_94366.t1 VDD.t8 sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=3e+06u l=150000u
+X139 VDD.t9 bit[0].t0 a_n436_94366.t1 VDD.t8 sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=3e+06u l=150000u
 X140 a_32066_35682.t3 a_n436_5446.t53 GND.t175 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X141 a_59666_55442.t2 bit4.t12 a_59376_55366.t1 GND.t84 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X141 a_59666_55442.t2 bit[4].t12 a_59376_55366.t1 GND.t84 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X142 a_4466_94962.t3 a_n436_94366.t3 GND.t176 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X143 a_13376_5966.t0 bit5.t22 a_13666_6042.t0 GND.t211 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X143 a_13376_5966.t0 bit[5].t22 a_13666_6042.t0 GND.t211 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X144 a_22866_45562.t0 a_n436_44966.t0 GND.t8 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X145 GND.t222 bit5.t23 a_n436_5446.t24 GND.t221 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=150000u
+X145 GND.t222 bit[5].t23 a_n436_5446.t24 GND.t221 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=150000u
 X146 a_4466_15922.t0 a_n436_5446.t4 GND.t9 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X147 a_4176_65246.t2 bit3.t6 a_4466_65322.t3 GND.t130 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X147 a_4176_65246.t2 bit[3].t6 a_4466_65322.t3 GND.t130 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X148 a_59666_35682.t0 a_n436_5446.t5 GND.t10 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X149 a_68866_55442.t0 a_n436_44966.t1 GND.t11 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X150 a_31776_5966.t0 a_n436_5446.t6 GND.t12 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X151 a_68866_65322.t1 bit3.t7 a_68576_65246.t1 GND.t131 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X151 a_68866_65322.t1 bit[3].t7 a_68576_65246.t1 GND.t131 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X152 a_41266_35682.t0 a_n436_5446.t7 GND.t13 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X153 a_32066_45562.t0 a_n436_44966.t2 GND.t14 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X154 a_22866_35682.t1 bit5.t24 a_22576_35606.t0 GND.t223 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X155 a_4466_85082.t2 bit1.t1 a_4176_85006.t2 GND.t258 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X154 a_22866_35682.t1 bit[5].t24 a_22576_35606.t0 GND.t223 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X155 a_4466_85082.t2 bit[1].t1 a_4176_85006.t2 GND.t258 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X156 OUT_P.t24 a_68576_45486.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
-X157 a_31776_15846.t1 bit5.t25 a_32066_15922.t2 GND.t224 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X157 a_31776_15846.t1 bit[5].t25 a_32066_15922.t2 GND.t224 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X158 OUT_N.t23 a_13666_6042.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X159 a_59666_45562.t2 a_n436_44966.t10 GND.t98 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X160 OUT_P.t25 a_59376_55366.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X161 OUT_P.t26 a_4176_65246.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X162 OUT_N.t24 a_41266_6042.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
-X163 a_13376_15846.t0 bit5.t26 a_13666_15922.t1 GND.t217 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X163 a_13376_15846.t0 bit[5].t26 a_13666_15922.t1 GND.t217 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X164 OUT_N.t25 a_68866_45562.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X165 OUT_P.t27 a_40976_35606.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X166 OUT_P.t28 a_50176_65246.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
@@ -186,38 +185,38 @@ X167 a_50466_35682.t2 a_n436_5446.t28 GND.t99 sky130_fd_pr__res_xhigh_po_0p35 l=
 X168 a_13376_55366.t2 a_n436_44966.t11 GND.t100 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X169 OUT_P.t29 a_31776_55366.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X170 OUT_N.t26 a_59666_65322.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
-X171 a_40976_5966.t0 bit5.t27 a_41266_6042.t1 GND.t218 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X171 a_40976_5966.t0 bit[5].t27 a_41266_6042.t1 GND.t218 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X172 a_41266_45562.t2 a_n436_44966.t12 GND.t101 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X173 a_32066_35682.t1 bit5.t28 a_31776_35606.t1 GND.t219 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X174 a_40976_15846.t0 bit5.t29 a_41266_15922.t1 GND.t220 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X175 a_4466_94962.t0 bit0.t1 a_4176_94886.t1 GND.t102 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X176 a_59666_65322.t2 bit3.t8 a_59376_65246.t1 GND.t132 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X173 a_32066_35682.t1 bit[5].t28 a_31776_35606.t1 GND.t219 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X174 a_40976_15846.t0 bit[5].t29 a_41266_15922.t1 GND.t220 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X175 a_4466_94962.t0 bit[0].t1 a_4176_94886.t1 GND.t102 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X176 a_59666_65322.t2 bit[3].t8 a_59376_65246.t1 GND.t132 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X177 OUT_N.t27 a_22866_6042.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X178 OUT_P.t30 a_22576_65246.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X179 OUT_N.t28 a_4466_65322.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X180 a_4466_25802.t2 a_n436_5446.t32 GND.t108 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X181 a_68866_6042.t1 bit5.t30 a_68576_5966.t1 GND.t232 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X182 a_4176_75126.t0 bit2.t5 a_4466_75202.t0 GND.t22 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X181 a_68866_6042.t1 bit[5].t30 a_68576_5966.t1 GND.t232 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X182 a_4176_75126.t0 bit[2].t5 a_4466_75202.t0 GND.t22 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X183 OUT_N.t29 a_32066_55442.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X184 OUT_P.t31 a_13376_75126.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
-X185 a_13666_35682.t1 bit5.t31 a_13376_35606.t1 GND.t233 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X185 a_13666_35682.t1 bit[5].t31 a_13376_35606.t1 GND.t233 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X186 OUT_N.t30 a_50466_6042.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
-X187 a_22576_15846.t2 bit5.t32 a_22866_15922.t1 GND.t234 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X187 a_22576_15846.t2 bit[5].t32 a_22866_15922.t1 GND.t234 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X188 a_68866_65322.t2 a_n436_64726.t7 GND.t109 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X189 a_22576_55366.t2 a_n436_44966.t15 GND.t110 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X190 OUT_N.t31 a_22866_65322.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X191 OUT_N.t32 a_41266_35682.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X192 a_50466_45562.t2 a_n436_44966.t16 GND.t111 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X193 a_41266_35682.t2 bit5.t33 a_40976_35606.t2 GND.t235 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X193 a_41266_35682.t2 bit[5].t33 a_40976_35606.t2 GND.t235 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X194 OUT_P.t32 a_4176_15846.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
-X195 a_50176_15846.t0 bit5.t34 a_50466_15922.t0 GND.t236 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X195 a_50176_15846.t0 bit[5].t34 a_50466_15922.t0 GND.t236 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X196 OUT_N.t33 a_32066_6042.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X197 OUT_P.t33 a_50176_15846.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X198 OUT_N.t34 a_13666_75202.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X199 a_50176_55366.t2 a_n436_44966.t17 GND.t112 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X200 a_22866_6042.t2 a_n436_5446.t33 GND.t113 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X201 a_22866_45562.t1 bit4.t13 a_22576_45486.t0 GND.t83 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X202 a_31776_25726.t0 bit5.t35 a_32066_25802.t0 GND.t237 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X201 a_22866_45562.t1 bit[4].t13 a_22576_45486.t0 GND.t83 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X202 a_31776_25726.t0 bit[5].t35 a_32066_25802.t0 GND.t237 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X203 OUT_N.t35 a_59666_15922.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X204 OUT_N.t36 a_59666_6042.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X205 OUT_N.t37 a_50466_25802.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
@@ -225,107 +224,107 @@ X206 OUT_P.t34 a_22576_15846.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X207 OUT_N.t38 a_4466_15922.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X208 a_59376_15846.t2 a_n436_5446.t34 GND.t117 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X209 a_31776_55366.t2 a_n436_44966.t18 GND.t118 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X210 a_13376_25726.t0 bit5.t36 a_13666_25802.t0 GND.t190 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X210 a_13376_25726.t0 bit[5].t36 a_13666_25802.t0 GND.t190 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X211 OUT_P.t35 a_13376_25726.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
-X212 a_50466_35682.t1 bit5.t37 a_50176_35606.t1 GND.t191 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X212 a_50466_35682.t1 bit[5].t37 a_50176_35606.t1 GND.t191 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X213 a_13376_65246.t1 a_n436_64726.t8 GND.t119 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X214 a_59666_6042.t2 bit5.t38 a_59376_5966.t1 GND.t192 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X215 a_32066_45562.t2 bit4.t14 a_31776_45486.t2 GND.t82 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X214 a_59666_6042.t2 bit[5].t38 a_59376_5966.t1 GND.t192 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X215 a_32066_45562.t2 bit[4].t14 a_31776_45486.t2 GND.t82 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X216 OUT_N.t39 a_22866_15922.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
-X217 a_40976_25726.t1 bit5.t39 a_41266_25802.t0 GND.t193 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X218 a_59376_35606.t1 bit5.t40 a_59666_35682.t1 GND.t194 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X217 a_40976_25726.t1 bit[5].t39 a_41266_25802.t0 GND.t193 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X218 a_59376_35606.t1 bit[5].t40 a_59666_35682.t1 GND.t194 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X219 OUT_P.t36 a_13376_5966.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X220 a_4466_35682.t2 a_n436_5446.t35 GND.t120 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X221 OUT_N.t40 a_13666_25802.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X222 a_68576_15846.t2 a_n436_5446.t36 GND.t121 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X223 a_40976_55366.t2 a_n436_44966.t19 GND.t122 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X224 a_13666_45562.t1 bit4.t15 a_13376_45486.t1 GND.t81 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X225 a_22576_25726.t0 bit5.t41 a_22866_25802.t1 GND.t195 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X224 a_13666_45562.t1 bit[4].t15 a_13376_45486.t1 GND.t81 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X225 a_22576_25726.t0 bit[5].t41 a_22866_25802.t1 GND.t195 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X226 a_22576_65246.t3 a_n436_64726.t10 GND.t133 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X227 a_59376_5966.t3 a_n436_5446.t37 GND.t134 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X228 GND.t260 bit1.t2 a_n436_84486.t2 GND.t259 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=150000u
-X229 a_41266_45562.t1 bit4.t16 a_40976_45486.t1 GND.t80 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X230 a_50176_25726.t0 bit5.t42 a_50466_25802.t0 GND.t196 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X231 a_68576_35606.t1 bit5.t43 a_68866_35682.t1 GND.t197 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X228 GND.t260 bit[1].t2 a_n436_84486.t2 GND.t259 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=150000u
+X229 a_41266_45562.t1 bit[4].t16 a_40976_45486.t1 GND.t80 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X230 a_50176_25726.t0 bit[5].t42 a_50466_25802.t0 GND.t196 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X231 a_68576_35606.t1 bit[5].t43 a_68866_35682.t1 GND.t197 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X232 OUT_N.t41 a_4466_6042.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X233 OUT_P.t37 a_22576_5966.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X234 a_50176_65246.t3 a_n436_64726.t11 GND.t135 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X235 a_22866_55442.t1 bit4.t17 a_22576_55366.t0 GND.t79 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X235 a_22866_55442.t1 bit[4].t17 a_22576_55366.t0 GND.t79 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X236 a_4466_45562.t3 a_n436_44966.t20 GND.t136 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X237 a_13376_85006.t2 bit1.t3 a_13666_85082.t1 GND.t261 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X238 a_4176_15846.t1 bit5.t44 a_4466_15922.t1 GND.t198 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X237 a_13376_85006.t2 bit[1].t3 a_13666_85082.t1 GND.t261 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X238 a_4176_15846.t1 bit[5].t44 a_4466_15922.t1 GND.t198 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X239 OUT_P.t38 a_40976_65246.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X240 a_59376_25726.t3 a_n436_5446.t38 GND.t137 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X241 OUT_P.t39 a_59376_35606.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X242 a_4176_55366.t3 a_n436_44966.t21 GND.t138 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X243 a_31776_65246.t3 a_n436_64726.t12 GND.t139 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X244 OUT_P.t40 a_4176_45486.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
-X245 a_50466_45562.t0 bit4.t18 a_50176_45486.t0 GND.t78 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X245 a_50466_45562.t0 bit[4].t18 a_50176_45486.t0 GND.t78 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X246 a_13376_75126.t3 a_n436_74606.t5 GND.t140 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X247 OUT_P.t41 a_50176_45486.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X248 OUT_P.t42 a_31776_5966.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
-X249 a_68866_15922.t1 bit5.t45 a_68576_15846.t0 GND.t199 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X249 a_68866_15922.t1 bit[5].t45 a_68576_15846.t0 GND.t199 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X250 OUT_P.t43 a_31776_35606.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X251 OUT_N.t42 a_59666_45562.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
-X252 VDD.t5 bit4.t19 a_n436_44966.t9 VDD.t4 sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=3e+06u l=150000u
-X253 a_32066_55442.t2 bit4.t20 a_31776_55366.t0 GND.t77 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X254 a_59376_45486.t0 bit4.t21 a_59666_45562.t0 GND.t76 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X252 VDD.t5 bit[4].t19 a_n436_44966.t9 VDD.t4 sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=3e+06u l=150000u
+X253 a_32066_55442.t2 bit[4].t20 a_31776_55366.t0 GND.t77 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X254 a_59376_45486.t0 bit[4].t21 a_59666_45562.t0 GND.t76 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X255 a_13666_55442.t0 a_n436_44966.t7 GND.t57 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X256 OUT_P.t44 a_68576_25726.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
-X257 a_4466_35682.t0 bit5.t46 a_4176_35606.t0 GND.t200 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X257 a_4466_35682.t0 bit[5].t46 a_4176_35606.t0 GND.t200 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X258 OUT_N.t43 a_50466_55442.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X259 OUT_P.t45 a_22576_45486.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X260 OUT_N.t44 a_4466_45562.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X261 a_68576_25726.t0 a_n436_5446.t22 GND.t58 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X262 a_41266_6042.t0 a_n436_5446.t23 GND.t59 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X263 a_4466_6042.t2 bit5.t47 a_4176_5966.t2 GND.t238 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X263 a_4466_6042.t2 bit[5].t47 a_4176_5966.t2 GND.t238 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X264 a_40976_65246.t2 a_n436_64726.t6 GND.t60 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X265 a_13666_55442.t2 bit4.t22 a_13376_55366.t0 GND.t75 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X265 a_13666_55442.t2 bit[4].t22 a_13376_55366.t0 GND.t75 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X266 OUT_P.t46 a_13376_55366.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X267 OUT_N.t45 a_32066_35682.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X268 OUT_N.t46 a_41266_65322.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
-X269 a_32066_6042.t1 bit5.t48 a_31776_5966.t2 GND.t239 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X269 a_32066_6042.t1 bit[5].t48 a_31776_5966.t2 GND.t239 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X270 a_22576_75126.t0 a_n436_74606.t2 GND.t61 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X271 OUT_P.t47 a_40976_15846.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
-X272 GND.t115 bit0.t2 a_n436_94366.t2 GND.t114 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=150000u
+X272 GND.t115 bit[0].t2 a_n436_94366.t2 GND.t114 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=150000u
 X273 OUT_N.t47 a_22866_45562.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X274 OUT_N.t48 a_68866_25802.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
-X275 a_41266_55442.t1 bit4.t23 a_40976_55366.t0 GND.t74 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X276 a_68576_45486.t0 bit4.t24 a_68866_45562.t0 GND.t73 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X275 a_41266_55442.t1 bit[4].t23 a_40976_55366.t0 GND.t74 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X276 a_68576_45486.t0 bit[4].t24 a_68866_45562.t0 GND.t73 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X277 a_22866_55442.t0 a_n436_44966.t4 GND.t41 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X278 a_22866_65322.t0 bit3.t9 a_22576_65246.t0 GND.t32 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X278 a_22866_65322.t0 bit[3].t9 a_22576_65246.t0 GND.t32 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X279 OUT_N.t49 a_13666_55442.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
-X280 a_59666_15922.t1 bit5.t49 a_59376_15846.t0 GND.t240 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X280 a_59666_15922.t1 bit[5].t49 a_59376_15846.t0 GND.t240 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X281 a_4176_5966.t0 a_n436_5446.t14 GND.t42 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X282 a_4176_25726.t1 bit5.t50 a_4466_25802.t0 GND.t241 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X283 a_59376_5966.t0 bit5.t51 a_59666_6042.t1 GND.t242 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X282 a_4176_25726.t1 bit[5].t50 a_4466_25802.t0 GND.t241 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X283 a_59376_5966.t0 bit[5].t51 a_59666_6042.t1 GND.t242 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X284 a_59376_35606.t0 a_n436_5446.t15 GND.t43 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X285 a_4176_65246.t0 a_n436_64726.t3 GND.t44 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X286 a_31776_75126.t0 a_n436_74606.t1 GND.t45 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X287 a_50466_55442.t0 bit4.t25 a_50176_55366.t0 GND.t72 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X287 a_50466_55442.t0 bit[4].t25 a_50176_55366.t0 GND.t72 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X288 a_13376_85006.t0 a_n436_84486.t0 GND.t46 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X289 OUT_P.t48 a_4176_5966.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X290 a_32066_55442.t0 a_n436_44966.t5 GND.t47 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X291 OUT_N.t50 a_41266_15922.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
-X292 a_68866_25802.t1 bit5.t52 a_68576_25726.t1 GND.t243 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X293 a_32066_65322.t0 bit3.t10 a_31776_65246.t0 GND.t33 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X294 a_59376_55366.t0 bit4.t26 a_59666_55442.t1 GND.t71 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X292 a_68866_25802.t1 bit[5].t52 a_68576_25726.t1 GND.t243 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X293 a_32066_65322.t0 bit[3].t10 a_31776_65246.t0 GND.t33 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X294 a_59376_55366.t0 bit[4].t26 a_59666_55442.t1 GND.t71 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X295 a_13666_65322.t1 a_n436_64726.t4 GND.t48 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X296 a_4466_45562.t0 bit4.t27 a_4176_45486.t0 GND.t70 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X296 a_4466_45562.t0 bit[4].t27 a_4176_45486.t0 GND.t70 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X297 a_59666_55442.t0 a_n436_44966.t6 GND.t49 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X298 a_68576_35606.t0 a_n436_5446.t16 GND.t50 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X299 a_13666_65322.t0 bit3.t11 a_13376_65246.t0 GND.t34 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X299 a_13666_65322.t0 bit[3].t11 a_13376_65246.t0 GND.t34 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X300 a_59376_45486.t3 a_n436_44966.t22 GND.t142 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X301 a_68866_15922.t3 a_n436_5446.t39 GND.t143 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X302 a_41266_55442.t3 a_n436_44966.t23 GND.t144 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X303 a_41266_65322.t1 bit3.t12 a_40976_65246.t0 GND.t35 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X304 a_68576_55366.t0 bit4.t28 a_68866_55442.t1 GND.t69 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X303 a_41266_65322.t1 bit[3].t12 a_40976_65246.t0 GND.t35 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X304 a_68576_55366.t0 bit[4].t28 a_68866_55442.t1 GND.t69 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X305 a_22866_65322.t3 a_n436_64726.t13 GND.t145 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X306 OUT_P.t49 a_68576_55366.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X307 a_22576_5966.t3 a_n436_5446.t40 GND.t146 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X308 a_4176_85006.t3 bit1.t4 a_4466_85082.t3 GND.t262 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X309 a_22866_75202.t0 bit2.t6 a_22576_75126.t1 GND.t23 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X310 a_59666_25802.t1 bit5.t53 a_59376_25726.t0 GND.t244 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X308 a_4176_85006.t3 bit[1].t4 a_4466_85082.t3 GND.t262 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X309 a_22866_75202.t0 bit[2].t6 a_22576_75126.t1 GND.t23 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X310 a_59666_25802.t1 bit[5].t53 a_59376_25726.t0 GND.t244 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X311 OUT_P.t50 a_59376_65246.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X312 OUT_P.t51 a_13376_85006.t1 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X313 a_68576_45486.t3 a_n436_44966.t24 GND.t147 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
@@ -335,28 +334,28 @@ X316 a_50466_55442.t3 a_n436_44966.t25 GND.t149 sky130_fd_pr__res_xhigh_po_0p35 
 X317 OUT_P.t53 a_40976_45486.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X318 OUT_N.t51 a_68866_55442.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X319 OUT_P.t54 a_31776_65246.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
-X320 a_50466_65322.t0 bit3.t13 a_50176_65246.t0 GND.t36 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X320 a_50466_65322.t0 bit[3].t13 a_50176_65246.t0 GND.t36 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X321 a_32066_65322.t3 a_n436_64726.t14 GND.t150 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X322 a_13376_15846.t3 a_n436_5446.t41 GND.t151 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X323 a_50466_6042.t0 bit5.t54 a_50176_5966.t1 GND.t245 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X323 a_50466_6042.t0 bit[5].t54 a_50176_5966.t1 GND.t245 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X324 OUT_N.t52 a_13666_85082.t0 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
-X325 a_31776_35606.t0 bit5.t55 a_32066_35682.t0 GND.t246 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X326 a_4176_5966.t1 bit5.t56 a_4466_6042.t1 GND.t247 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X327 VDD.t1 bit3.t14 a_n436_64726.t2 VDD.t0 sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=3e+06u l=150000u
-X328 a_32066_75202.t0 bit2.t7 a_31776_75126.t1 GND.t24 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X325 a_31776_35606.t0 bit[5].t55 a_32066_35682.t0 GND.t246 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X326 a_4176_5966.t1 bit[5].t56 a_4466_6042.t1 GND.t247 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X327 VDD.t1 bit[3].t14 a_n436_64726.t2 VDD.t0 sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=3e+06u l=150000u
+X328 a_32066_75202.t0 bit[2].t7 a_31776_75126.t1 GND.t24 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X329 OUT_P.t55 a_22576_75126.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
-X330 a_4176_94886.t2 bit0.t3 a_4466_94962.t1 GND.t116 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X331 a_59376_65246.t0 bit3.t15 a_59666_65322.t1 GND.t37 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X330 a_4176_94886.t2 bit[0].t3 a_4466_94962.t1 GND.t116 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X331 a_59376_65246.t0 bit[3].t15 a_59666_65322.t1 GND.t37 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X332 a_13666_75202.t0 a_n436_74606.t0 GND.t1 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X333 OUT_N.t53 a_4466_75202.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
-X334 a_31776_5966.t1 bit5.t57 a_32066_6042.t0 GND.t248 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X334 a_31776_5966.t1 bit[5].t57 a_32066_6042.t0 GND.t248 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X335 a_59666_65322.t0 a_n436_64726.t0 GND.t2 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X336 a_4466_55442.t0 bit4.t29 a_4176_55366.t0 GND.t68 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X336 a_4466_55442.t0 bit[4].t29 a_4176_55366.t0 GND.t68 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X337 OUT_N.t54 a_32066_65322.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X338 OUT_N.t55 a_50466_35682.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X339 a_68866_6042.t0 a_n436_5446.t0 GND.t3 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X340 a_13376_35606.t0 bit5.t58 a_13666_35682.t0 GND.t249 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X341 a_13666_75202.t1 bit2.t8 a_13376_75126.t0 GND.t25 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X340 a_13376_35606.t0 bit[5].t58 a_13666_35682.t0 GND.t249 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X341 a_13666_75202.t1 bit[2].t8 a_13376_75126.t0 GND.t25 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X342 OUT_P.t56 a_59376_15846.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X343 OUT_N.t56 a_41266_45562.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X344 OUT_P.t57 a_13376_35606.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
@@ -366,15 +365,15 @@ X347 a_41266_65322.t0 a_n436_64726.t1 GND.t5 sky130_fd_pr__res_xhigh_po_0p35 l=1
 X348 a_50176_5966.t0 a_n436_5446.t2 GND.t6 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X349 a_22576_15846.t0 a_n436_5446.t3 GND.t7 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X350 OUT_P.t58 a_4176_25726.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
-X351 a_40976_35606.t1 bit5.t59 a_41266_35682.t1 GND.t250 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X351 a_40976_35606.t1 bit[5].t59 a_41266_35682.t1 GND.t250 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X352 OUT_P.t59 a_50176_25726.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
-X353 a_68576_65246.t0 bit3.t16 a_68866_65322.t0 GND.t38 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X353 a_68576_65246.t0 bit[3].t16 a_68866_65322.t0 GND.t38 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X354 a_22866_75202.t3 a_n436_74606.t7 GND.t164 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X355 OUT_P.t60 a_31776_15846.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X356 OUT_N.t58 a_59666_25802.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X357 a_50176_15846.t3 a_n436_5446.t47 GND.t165 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X358 OUT_N.t59 a_13666_35682.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
-X359 a_22576_35606.t1 bit5.t60 a_22866_35682.t0 GND.t251 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X359 a_22576_35606.t1 bit[5].t60 a_22866_35682.t0 GND.t251 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X360 OUT_P.t61 a_22576_25726.t2 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X361 OUT_N.t60 a_4466_25802.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
 X362 a_13666_6042.t3 a_n436_5446.t48 GND.t166 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
@@ -382,213 +381,213 @@ X363 a_4176_85006.t1 a_n436_84486.t1 GND.t167 sky130_fd_pr__res_xhigh_po_0p35 l=
 X364 a_50466_65322.t3 a_n436_64726.t15 GND.t168 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X365 a_31776_15846.t3 a_n436_5446.t49 GND.t169 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X366 OUT_N.t61 a_32066_15922.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
-X367 a_50176_35606.t0 bit5.t61 a_50466_35682.t0 GND.t252 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X368 a_22576_5966.t0 bit5.t62 a_22866_6042.t0 GND.t253 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X367 a_50176_35606.t0 bit[5].t61 a_50466_35682.t0 GND.t252 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X368 a_22576_5966.t0 bit[5].t62 a_22866_6042.t0 GND.t253 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X369 a_32066_75202.t3 a_n436_74606.t8 GND.t170 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X370 a_13376_25726.t3 a_n436_5446.t50 GND.t171 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X371 OUT_N.t62 a_22866_25802.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
-X372 GND.t67 bit4.t30 a_n436_44966.t8 GND.t66 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=150000u
-X373 a_31776_45486.t1 bit4.t31 a_32066_45562.t1 GND.t65 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X374 VDD.t7 bit2.t9 a_n436_74606.t4 VDD.t6 sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=3e+06u l=150000u
+X372 GND.t67 bit[4].t30 a_n436_44966.t8 GND.t66 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=150000u
+X373 a_31776_45486.t1 bit[4].t31 a_32066_45562.t1 GND.t65 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X374 VDD.t7 bit[2].t9 a_n436_74606.t4 VDD.t6 sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=3e+06u l=150000u
 X375 a_4466_55442.t3 a_n436_44966.t32 GND.t201 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X376 a_13666_85082.t3 a_n436_84486.t5 GND.t202 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X377 a_22866_15922.t0 bit5.t63 a_22576_15846.t1 GND.t254 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X378 a_4466_65322.t0 bit3.t17 a_4176_65246.t1 GND.t39 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X377 a_22866_15922.t0 bit[5].t63 a_22576_15846.t1 GND.t254 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X378 a_4466_65322.t0 bit[3].t17 a_4176_65246.t1 GND.t39 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X379 a_40976_5966.t3 a_n436_5446.t60 GND.t203 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X380 a_13376_45486.t0 bit4.t32 a_13666_45562.t0 GND.t64 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X380 a_13376_45486.t0 bit[4].t32 a_13666_45562.t0 GND.t64 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X381 a_40976_15846.t3 a_n436_5446.t61 GND.t204 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X382 a_68866_35682.t3 a_n436_5446.t62 GND.t205 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
 X383 a_22576_25726.t3 a_n436_5446.t63 GND.t206 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-X384 a_40976_45486.t0 bit4.t33 a_41266_45562.t0 GND.t63 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
-X385 VDD.t11 bit1.t5 a_n436_84486.t3 VDD.t10 sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=3e+06u l=150000u
-X386 a_32066_15922.t1 bit5.t64 a_31776_15846.t0 GND.t255 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X384 a_40976_45486.t0 bit[4].t33 a_41266_45562.t0 GND.t63 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
+X385 VDD.t11 bit[1].t5 a_n436_84486.t3 VDD.t10 sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=3e+06u l=150000u
+X386 a_32066_15922.t1 bit[5].t64 a_31776_15846.t0 GND.t255 sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.65e+06u l=150000u
 X387 OUT_P.t62 a_68576_35606.t3 sky130_fd_pr__cap_mim_m3_1 l=3.3e+06u w=3.3e+06u
-X388 VDD.t3 bit5.t65 a_n436_5446.t25 VDD.t2 sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=3e+06u l=150000u
+X388 VDD.t3 bit[5].t65 a_n436_5446.t25 VDD.t2 sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=3e+06u l=150000u
 X389 a_50176_25726.t3 a_n436_5446.t64 GND.t207 sky130_fd_pr__res_xhigh_po_0p35 l=1e+06u
-C0 VDD bit4 0.12fF
-C1 VDD bit5 0.12fF
+C0 VDD bit[4] 0.12fF
+C1 VDD bit[5] 0.12fF
 C2 VDD OUT_N 10.91fF
-C3 bit0 OUT_N 26.88fF
+C3 bit[0] OUT_N 26.88fF
 C4 VDD OUT_P 10.88fF
-C5 bit0 OUT_P 26.88fF
-C6 bit1 OUT_N 26.89fF
-C7 bit1 OUT_P 26.88fF
-C8 bit2 OUT_N 26.89fF
-C9 bit3 OUT_N 26.91fF
-C10 bit2 OUT_P 26.88fF
-C11 VDD bit0 0.12fF
-C12 bit4 OUT_N 53.81fF
-C13 bit3 OUT_P 26.88fF
-C14 VDD bit1 0.12fF
-C15 bit5 OUT_N 107.63fF
-C16 bit4 OUT_P 53.76fF
-C17 VDD bit2 0.12fF
-C18 bit5 OUT_P 107.52fF
-C19 VDD bit3 0.12fF
+C5 bit[0] OUT_P 26.88fF
+C6 bit[1] OUT_N 26.89fF
+C7 bit[1] OUT_P 26.88fF
+C8 bit[2] OUT_N 26.89fF
+C9 bit[3] OUT_N 26.91fF
+C10 bit[2] OUT_P 26.88fF
+C11 VDD bit[0] 0.12fF
+C12 bit[4] OUT_N 53.81fF
+C13 bit[3] OUT_P 26.88fF
+C14 VDD bit[1] 0.12fF
+C15 bit[5] OUT_N 107.63fF
+C16 bit[4] OUT_P 53.76fF
+C17 VDD bit[2] 0.12fF
+C18 bit[5] OUT_P 107.52fF
+C19 VDD bit[3] 0.12fF
 C20 OUT_N OUT_P 171.08fF
-R0 bit4.n119 bit4.t19 552.693
-R1 bit4.n2 bit4.t11 300.446
-R2 bit4.n0 bit4.t28 300.446
-R3 bit4.n9 bit4.t12 300.446
-R4 bit4.n7 bit4.t26 300.446
-R5 bit4.n16 bit4.t25 300.446
-R6 bit4.n14 bit4.t6 300.446
-R7 bit4.n23 bit4.t23 300.446
-R8 bit4.n21 bit4.t4 300.446
-R9 bit4.n30 bit4.t20 300.446
-R10 bit4.n28 bit4.t2 300.446
-R11 bit4.n37 bit4.t17 300.446
-R12 bit4.n35 bit4.t5 300.446
-R13 bit4.n44 bit4.t22 300.446
-R14 bit4.n42 bit4.t3 300.446
-R15 bit4.n53 bit4.t29 300.446
-R16 bit4.n51 bit4.t10 300.446
-R17 bit4.n65 bit4.t8 300.446
-R18 bit4.n63 bit4.t24 300.446
-R19 bit4.n72 bit4.t9 300.446
-R20 bit4.n70 bit4.t21 300.446
-R21 bit4.n79 bit4.t18 300.446
-R22 bit4.n77 bit4.t1 300.446
-R23 bit4.n86 bit4.t16 300.446
-R24 bit4.n84 bit4.t33 300.446
-R25 bit4.n93 bit4.t14 300.446
-R26 bit4.n91 bit4.t31 300.446
-R27 bit4.n100 bit4.t13 300.446
-R28 bit4.n98 bit4.t0 300.446
-R29 bit4.n107 bit4.t15 300.446
-R30 bit4.n105 bit4.t32 300.446
-R31 bit4.n114 bit4.t27 300.446
-R32 bit4.n112 bit4.t7 300.446
-R33 bit4.n119 bit4.t30 279.56
-R34 bit4.n120 bit4.n119 120.317
-R35 bit4.n52 bit4.n51 27.537
-R36 bit4.n5 bit4.n2 27.536
-R37 bit4.n12 bit4.n9 27.536
-R38 bit4.n19 bit4.n16 27.536
-R39 bit4.n26 bit4.n23 27.536
-R40 bit4.n33 bit4.n30 27.536
-R41 bit4.n40 bit4.n37 27.536
-R42 bit4.n47 bit4.n44 27.536
-R43 bit4.n68 bit4.n65 27.536
-R44 bit4.n75 bit4.n72 27.536
-R45 bit4.n82 bit4.n79 27.536
-R46 bit4.n89 bit4.n86 27.536
-R47 bit4.n96 bit4.n93 27.536
-R48 bit4.n103 bit4.n100 27.536
-R49 bit4.n110 bit4.n107 27.536
-R50 bit4.n117 bit4.n114 27.536
-R51 bit4.n1 bit4.n0 24.127
-R52 bit4.n8 bit4.n7 24.127
-R53 bit4.n15 bit4.n14 24.127
-R54 bit4.n22 bit4.n21 24.127
-R55 bit4.n29 bit4.n28 24.127
-R56 bit4.n36 bit4.n35 24.127
-R57 bit4.n43 bit4.n42 24.127
-R58 bit4.n54 bit4.n53 24.127
-R59 bit4.n64 bit4.n63 24.127
-R60 bit4.n71 bit4.n70 24.127
-R61 bit4.n78 bit4.n77 24.127
-R62 bit4.n85 bit4.n84 24.127
-R63 bit4.n92 bit4.n91 24.127
-R64 bit4.n99 bit4.n98 24.127
-R65 bit4.n106 bit4.n105 24.127
-R66 bit4.n113 bit4.n112 24.127
-R67 bit4.n4 bit4.n3 8.764
-R68 bit4.n11 bit4.n10 8.764
-R69 bit4.n18 bit4.n17 8.764
-R70 bit4.n25 bit4.n24 8.764
-R71 bit4.n32 bit4.n31 8.764
-R72 bit4.n39 bit4.n38 8.764
-R73 bit4.n46 bit4.n45 8.764
-R74 bit4.n50 bit4.n49 8.764
-R75 bit4.n67 bit4.n66 8.764
-R76 bit4.n74 bit4.n73 8.764
-R77 bit4.n81 bit4.n80 8.764
-R78 bit4.n88 bit4.n87 8.764
-R79 bit4.n95 bit4.n94 8.764
-R80 bit4.n102 bit4.n101 8.764
-R81 bit4.n109 bit4.n108 8.764
-R82 bit4.n116 bit4.n115 8.764
-R83 bit4.n6 bit4.n1 4.662
-R84 bit4.n13 bit4.n8 4.662
-R85 bit4.n20 bit4.n15 4.662
-R86 bit4.n27 bit4.n22 4.662
-R87 bit4.n34 bit4.n29 4.662
-R88 bit4.n41 bit4.n36 4.662
-R89 bit4.n48 bit4.n43 4.662
-R90 bit4.n69 bit4.n64 4.662
-R91 bit4.n76 bit4.n71 4.662
-R92 bit4.n83 bit4.n78 4.662
-R93 bit4.n90 bit4.n85 4.662
-R94 bit4.n97 bit4.n92 4.662
-R95 bit4.n104 bit4.n99 4.662
-R96 bit4.n111 bit4.n106 4.662
-R97 bit4.n118 bit4.n113 4.662
-R98 bit4.n55 bit4.n54 4.661
-R99 bit4.n5 bit4.n4 3.401
-R100 bit4.n12 bit4.n11 3.401
-R101 bit4.n19 bit4.n18 3.401
-R102 bit4.n26 bit4.n25 3.401
-R103 bit4.n33 bit4.n32 3.401
-R104 bit4.n40 bit4.n39 3.401
-R105 bit4.n47 bit4.n46 3.401
-R106 bit4.n68 bit4.n67 3.401
-R107 bit4.n75 bit4.n74 3.401
-R108 bit4.n82 bit4.n81 3.401
-R109 bit4.n89 bit4.n88 3.401
-R110 bit4.n96 bit4.n95 3.401
-R111 bit4.n103 bit4.n102 3.401
-R112 bit4.n110 bit4.n109 3.401
-R113 bit4.n117 bit4.n116 3.401
-R114 bit4.n52 bit4.n50 3.401
-R115 bit4.n128 bit4.n62 1.218
-R116 bit4.n56 bit4.n55 0.873
-R117 bit4.n128 bit4.n127 0.726
-R118 bit4.n55 bit4.n52 0.626
-R119 bit4.n6 bit4.n5 0.626
-R120 bit4.n13 bit4.n12 0.626
-R121 bit4.n20 bit4.n19 0.626
-R122 bit4.n27 bit4.n26 0.626
-R123 bit4.n34 bit4.n33 0.626
-R124 bit4.n41 bit4.n40 0.626
-R125 bit4.n48 bit4.n47 0.626
-R126 bit4.n69 bit4.n68 0.626
-R127 bit4.n76 bit4.n75 0.626
-R128 bit4.n83 bit4.n82 0.626
-R129 bit4.n90 bit4.n89 0.626
-R130 bit4.n97 bit4.n96 0.626
-R131 bit4.n104 bit4.n103 0.626
-R132 bit4.n111 bit4.n110 0.626
-R133 bit4.n118 bit4.n117 0.626
-R134 bit4.n62 bit4.n61 0.575
-R135 bit4.n61 bit4.n60 0.575
-R136 bit4.n60 bit4.n59 0.575
-R137 bit4.n59 bit4.n58 0.575
-R138 bit4.n58 bit4.n57 0.575
-R139 bit4.n57 bit4.n56 0.575
-R140 bit4.n127 bit4.n126 0.575
-R141 bit4.n126 bit4.n125 0.575
-R142 bit4.n125 bit4.n124 0.575
-R143 bit4.n124 bit4.n123 0.575
-R144 bit4.n123 bit4.n122 0.575
-R145 bit4.n122 bit4.n121 0.575
-R146 bit4.n121 bit4.n120 0.575
-R147 bit4.n62 bit4.n6 0.298
-R148 bit4.n61 bit4.n13 0.298
-R149 bit4.n60 bit4.n20 0.298
-R150 bit4.n59 bit4.n27 0.298
-R151 bit4.n58 bit4.n34 0.298
-R152 bit4.n57 bit4.n41 0.298
-R153 bit4.n56 bit4.n48 0.298
-R154 bit4.n127 bit4.n69 0.298
-R155 bit4.n126 bit4.n76 0.298
-R156 bit4.n125 bit4.n83 0.298
-R157 bit4.n124 bit4.n90 0.298
-R158 bit4.n123 bit4.n97 0.298
-R159 bit4.n122 bit4.n104 0.298
-R160 bit4.n121 bit4.n111 0.298
-R161 bit4.n120 bit4.n118 0.298
-R162 bit4 bit4.n128 0.125
+R0 bit[4].n119 bit[4].t19 552.693
+R1 bit[4].n2 bit[4].t11 300.446
+R2 bit[4].n0 bit[4].t28 300.446
+R3 bit[4].n9 bit[4].t12 300.446
+R4 bit[4].n7 bit[4].t26 300.446
+R5 bit[4].n16 bit[4].t25 300.446
+R6 bit[4].n14 bit[4].t6 300.446
+R7 bit[4].n23 bit[4].t23 300.446
+R8 bit[4].n21 bit[4].t4 300.446
+R9 bit[4].n30 bit[4].t20 300.446
+R10 bit[4].n28 bit[4].t2 300.446
+R11 bit[4].n37 bit[4].t17 300.446
+R12 bit[4].n35 bit[4].t5 300.446
+R13 bit[4].n44 bit[4].t22 300.446
+R14 bit[4].n42 bit[4].t3 300.446
+R15 bit[4].n53 bit[4].t29 300.446
+R16 bit[4].n51 bit[4].t10 300.446
+R17 bit[4].n65 bit[4].t8 300.446
+R18 bit[4].n63 bit[4].t24 300.446
+R19 bit[4].n72 bit[4].t9 300.446
+R20 bit[4].n70 bit[4].t21 300.446
+R21 bit[4].n79 bit[4].t18 300.446
+R22 bit[4].n77 bit[4].t1 300.446
+R23 bit[4].n86 bit[4].t16 300.446
+R24 bit[4].n84 bit[4].t33 300.446
+R25 bit[4].n93 bit[4].t14 300.446
+R26 bit[4].n91 bit[4].t31 300.446
+R27 bit[4].n100 bit[4].t13 300.446
+R28 bit[4].n98 bit[4].t0 300.446
+R29 bit[4].n107 bit[4].t15 300.446
+R30 bit[4].n105 bit[4].t32 300.446
+R31 bit[4].n114 bit[4].t27 300.446
+R32 bit[4].n112 bit[4].t7 300.446
+R33 bit[4].n119 bit[4].t30 279.56
+R34 bit[4].n120 bit[4].n119 120.317
+R35 bit[4].n52 bit[4].n51 27.537
+R36 bit[4].n5 bit[4].n2 27.536
+R37 bit[4].n12 bit[4].n9 27.536
+R38 bit[4].n19 bit[4].n16 27.536
+R39 bit[4].n26 bit[4].n23 27.536
+R40 bit[4].n33 bit[4].n30 27.536
+R41 bit[4].n40 bit[4].n37 27.536
+R42 bit[4].n47 bit[4].n44 27.536
+R43 bit[4].n68 bit[4].n65 27.536
+R44 bit[4].n75 bit[4].n72 27.536
+R45 bit[4].n82 bit[4].n79 27.536
+R46 bit[4].n89 bit[4].n86 27.536
+R47 bit[4].n96 bit[4].n93 27.536
+R48 bit[4].n103 bit[4].n100 27.536
+R49 bit[4].n110 bit[4].n107 27.536
+R50 bit[4].n117 bit[4].n114 27.536
+R51 bit[4].n1 bit[4].n0 24.127
+R52 bit[4].n8 bit[4].n7 24.127
+R53 bit[4].n15 bit[4].n14 24.127
+R54 bit[4].n22 bit[4].n21 24.127
+R55 bit[4].n29 bit[4].n28 24.127
+R56 bit[4].n36 bit[4].n35 24.127
+R57 bit[4].n43 bit[4].n42 24.127
+R58 bit[4].n54 bit[4].n53 24.127
+R59 bit[4].n64 bit[4].n63 24.127
+R60 bit[4].n71 bit[4].n70 24.127
+R61 bit[4].n78 bit[4].n77 24.127
+R62 bit[4].n85 bit[4].n84 24.127
+R63 bit[4].n92 bit[4].n91 24.127
+R64 bit[4].n99 bit[4].n98 24.127
+R65 bit[4].n106 bit[4].n105 24.127
+R66 bit[4].n113 bit[4].n112 24.127
+R67 bit[4].n4 bit[4].n3 8.764
+R68 bit[4].n11 bit[4].n10 8.764
+R69 bit[4].n18 bit[4].n17 8.764
+R70 bit[4].n25 bit[4].n24 8.764
+R71 bit[4].n32 bit[4].n31 8.764
+R72 bit[4].n39 bit[4].n38 8.764
+R73 bit[4].n46 bit[4].n45 8.764
+R74 bit[4].n50 bit[4].n49 8.764
+R75 bit[4].n67 bit[4].n66 8.764
+R76 bit[4].n74 bit[4].n73 8.764
+R77 bit[4].n81 bit[4].n80 8.764
+R78 bit[4].n88 bit[4].n87 8.764
+R79 bit[4].n95 bit[4].n94 8.764
+R80 bit[4].n102 bit[4].n101 8.764
+R81 bit[4].n109 bit[4].n108 8.764
+R82 bit[4].n116 bit[4].n115 8.764
+R83 bit[4].n6 bit[4].n1 4.662
+R84 bit[4].n13 bit[4].n8 4.662
+R85 bit[4].n20 bit[4].n15 4.662
+R86 bit[4].n27 bit[4].n22 4.662
+R87 bit[4].n34 bit[4].n29 4.662
+R88 bit[4].n41 bit[4].n36 4.662
+R89 bit[4].n48 bit[4].n43 4.662
+R90 bit[4].n69 bit[4].n64 4.662
+R91 bit[4].n76 bit[4].n71 4.662
+R92 bit[4].n83 bit[4].n78 4.662
+R93 bit[4].n90 bit[4].n85 4.662
+R94 bit[4].n97 bit[4].n92 4.662
+R95 bit[4].n104 bit[4].n99 4.662
+R96 bit[4].n111 bit[4].n106 4.662
+R97 bit[4].n118 bit[4].n113 4.662
+R98 bit[4].n55 bit[4].n54 4.661
+R99 bit[4].n5 bit[4].n4 3.401
+R100 bit[4].n12 bit[4].n11 3.401
+R101 bit[4].n19 bit[4].n18 3.401
+R102 bit[4].n26 bit[4].n25 3.401
+R103 bit[4].n33 bit[4].n32 3.401
+R104 bit[4].n40 bit[4].n39 3.401
+R105 bit[4].n47 bit[4].n46 3.401
+R106 bit[4].n68 bit[4].n67 3.401
+R107 bit[4].n75 bit[4].n74 3.401
+R108 bit[4].n82 bit[4].n81 3.401
+R109 bit[4].n89 bit[4].n88 3.401
+R110 bit[4].n96 bit[4].n95 3.401
+R111 bit[4].n103 bit[4].n102 3.401
+R112 bit[4].n110 bit[4].n109 3.401
+R113 bit[4].n117 bit[4].n116 3.401
+R114 bit[4].n52 bit[4].n50 3.401
+R115 bit[4].n128 bit[4].n62 1.218
+R116 bit[4].n56 bit[4].n55 0.873
+R117 bit[4].n128 bit[4].n127 0.726
+R118 bit[4].n55 bit[4].n52 0.626
+R119 bit[4].n6 bit[4].n5 0.626
+R120 bit[4].n13 bit[4].n12 0.626
+R121 bit[4].n20 bit[4].n19 0.626
+R122 bit[4].n27 bit[4].n26 0.626
+R123 bit[4].n34 bit[4].n33 0.626
+R124 bit[4].n41 bit[4].n40 0.626
+R125 bit[4].n48 bit[4].n47 0.626
+R126 bit[4].n69 bit[4].n68 0.626
+R127 bit[4].n76 bit[4].n75 0.626
+R128 bit[4].n83 bit[4].n82 0.626
+R129 bit[4].n90 bit[4].n89 0.626
+R130 bit[4].n97 bit[4].n96 0.626
+R131 bit[4].n104 bit[4].n103 0.626
+R132 bit[4].n111 bit[4].n110 0.626
+R133 bit[4].n118 bit[4].n117 0.626
+R134 bit[4].n62 bit[4].n61 0.575
+R135 bit[4].n61 bit[4].n60 0.575
+R136 bit[4].n60 bit[4].n59 0.575
+R137 bit[4].n59 bit[4].n58 0.575
+R138 bit[4].n58 bit[4].n57 0.575
+R139 bit[4].n57 bit[4].n56 0.575
+R140 bit[4].n127 bit[4].n126 0.575
+R141 bit[4].n126 bit[4].n125 0.575
+R142 bit[4].n125 bit[4].n124 0.575
+R143 bit[4].n124 bit[4].n123 0.575
+R144 bit[4].n123 bit[4].n122 0.575
+R145 bit[4].n122 bit[4].n121 0.575
+R146 bit[4].n121 bit[4].n120 0.575
+R147 bit[4].n62 bit[4].n6 0.298
+R148 bit[4].n61 bit[4].n13 0.298
+R149 bit[4].n60 bit[4].n20 0.298
+R150 bit[4].n59 bit[4].n27 0.298
+R151 bit[4].n58 bit[4].n34 0.298
+R152 bit[4].n57 bit[4].n41 0.298
+R153 bit[4].n56 bit[4].n48 0.298
+R154 bit[4].n127 bit[4].n69 0.298
+R155 bit[4].n126 bit[4].n76 0.298
+R156 bit[4].n125 bit[4].n83 0.298
+R157 bit[4].n124 bit[4].n90 0.298
+R158 bit[4].n123 bit[4].n97 0.298
+R159 bit[4].n122 bit[4].n104 0.298
+R160 bit[4].n121 bit[4].n111 0.298
+R161 bit[4].n120 bit[4].n118 0.298
+R162 bit[4] bit[4].n128 0.125
 R163 a_22866_45562.n26 a_22866_45562.t1 10.181
 R164 a_22866_45562.n18 a_22866_45562.t2 10.181
 R165 a_22866_45562.t0 a_22866_45562.n39 9.68
@@ -6296,329 +6295,329 @@ R5866 a_59376_45486.n3 a_59376_45486.n2 0.025
 R5867 a_59376_45486.n17 a_59376_45486.n16 0.021
 R5868 a_59376_45486.n9 a_59376_45486.n7 0.012
 R5869 a_59376_45486.n16 a_59376_45486.n15 0.006
-R5870 bit5.n247 bit5.t65 552.693
-R5871 bit5.n2 bit5.t5 300.446
-R5872 bit5.n0 bit5.t43 300.446
-R5873 bit5.n9 bit5.t12 300.446
-R5874 bit5.n7 bit5.t40 300.446
-R5875 bit5.n16 bit5.t37 300.446
-R5876 bit5.n14 bit5.t61 300.446
-R5877 bit5.n23 bit5.t33 300.446
-R5878 bit5.n21 bit5.t59 300.446
-R5879 bit5.n30 bit5.t28 300.446
-R5880 bit5.n28 bit5.t55 300.446
-R5881 bit5.n37 bit5.t24 300.446
-R5882 bit5.n35 bit5.t60 300.446
-R5883 bit5.n44 bit5.t31 300.446
-R5884 bit5.n42 bit5.t58 300.446
-R5885 bit5.n53 bit5.t46 300.446
-R5886 bit5.n51 bit5.t3 300.446
-R5887 bit5.n65 bit5.t52 300.446
-R5888 bit5.n63 bit5.t18 300.446
-R5889 bit5.n72 bit5.t53 300.446
-R5890 bit5.n70 bit5.t16 300.446
-R5891 bit5.n79 bit5.t15 300.446
-R5892 bit5.n77 bit5.t42 300.446
-R5893 bit5.n86 bit5.t11 300.446
-R5894 bit5.n84 bit5.t39 300.446
-R5895 bit5.n93 bit5.t8 300.446
-R5896 bit5.n91 bit5.t35 300.446
-R5897 bit5.n100 bit5.t4 300.446
-R5898 bit5.n98 bit5.t41 300.446
-R5899 bit5.n107 bit5.t10 300.446
-R5900 bit5.n105 bit5.t36 300.446
-R5901 bit5.n114 bit5.t21 300.446
-R5902 bit5.n112 bit5.t50 300.446
-R5903 bit5.n129 bit5.t45 300.446
-R5904 bit5.n127 bit5.t13 300.446
-R5905 bit5.n136 bit5.t49 300.446
-R5906 bit5.n134 bit5.t9 300.446
-R5907 bit5.n143 bit5.t6 300.446
-R5908 bit5.n141 bit5.t34 300.446
-R5909 bit5.n150 bit5.t2 300.446
-R5910 bit5.n148 bit5.t29 300.446
-R5911 bit5.n157 bit5.t64 300.446
-R5912 bit5.n155 bit5.t25 300.446
-R5913 bit5.n164 bit5.t63 300.446
-R5914 bit5.n162 bit5.t32 300.446
-R5915 bit5.n171 bit5.t1 300.446
-R5916 bit5.n169 bit5.t26 300.446
-R5917 bit5.n178 bit5.t17 300.446
-R5918 bit5.n176 bit5.t44 300.446
-R5919 bit5.n193 bit5.t30 300.446
-R5920 bit5.n191 bit5.t20 300.446
-R5921 bit5.n200 bit5.t38 300.446
-R5922 bit5.n198 bit5.t51 300.446
-R5923 bit5.n207 bit5.t54 300.446
-R5924 bit5.n205 bit5.t0 300.446
-R5925 bit5.n214 bit5.t19 300.446
-R5926 bit5.n212 bit5.t27 300.446
-R5927 bit5.n221 bit5.t48 300.446
-R5928 bit5.n219 bit5.t57 300.446
-R5929 bit5.n228 bit5.t7 300.446
-R5930 bit5.n226 bit5.t62 300.446
-R5931 bit5.n235 bit5.t14 300.446
-R5932 bit5.n233 bit5.t22 300.446
-R5933 bit5.n242 bit5.t47 300.446
-R5934 bit5.n240 bit5.t56 300.446
-R5935 bit5.n247 bit5.t23 279.56
-R5936 bit5.n248 bit5.n247 120.317
-R5937 bit5.n52 bit5.n51 27.537
-R5938 bit5.n5 bit5.n2 27.536
-R5939 bit5.n12 bit5.n9 27.536
-R5940 bit5.n19 bit5.n16 27.536
-R5941 bit5.n26 bit5.n23 27.536
-R5942 bit5.n33 bit5.n30 27.536
-R5943 bit5.n40 bit5.n37 27.536
-R5944 bit5.n47 bit5.n44 27.536
-R5945 bit5.n68 bit5.n65 27.536
-R5946 bit5.n75 bit5.n72 27.536
-R5947 bit5.n82 bit5.n79 27.536
-R5948 bit5.n89 bit5.n86 27.536
-R5949 bit5.n96 bit5.n93 27.536
-R5950 bit5.n103 bit5.n100 27.536
-R5951 bit5.n110 bit5.n107 27.536
-R5952 bit5.n117 bit5.n114 27.536
-R5953 bit5.n132 bit5.n129 27.536
-R5954 bit5.n139 bit5.n136 27.536
-R5955 bit5.n146 bit5.n143 27.536
-R5956 bit5.n153 bit5.n150 27.536
-R5957 bit5.n160 bit5.n157 27.536
-R5958 bit5.n167 bit5.n164 27.536
-R5959 bit5.n174 bit5.n171 27.536
-R5960 bit5.n181 bit5.n178 27.536
-R5961 bit5.n196 bit5.n193 27.536
-R5962 bit5.n203 bit5.n200 27.536
-R5963 bit5.n210 bit5.n207 27.536
-R5964 bit5.n217 bit5.n214 27.536
-R5965 bit5.n224 bit5.n221 27.536
-R5966 bit5.n231 bit5.n228 27.536
-R5967 bit5.n238 bit5.n235 27.536
-R5968 bit5.n245 bit5.n242 27.536
-R5969 bit5.n1 bit5.n0 24.127
-R5970 bit5.n8 bit5.n7 24.127
-R5971 bit5.n15 bit5.n14 24.127
-R5972 bit5.n22 bit5.n21 24.127
-R5973 bit5.n29 bit5.n28 24.127
-R5974 bit5.n36 bit5.n35 24.127
-R5975 bit5.n43 bit5.n42 24.127
-R5976 bit5.n54 bit5.n53 24.127
-R5977 bit5.n64 bit5.n63 24.127
-R5978 bit5.n71 bit5.n70 24.127
-R5979 bit5.n78 bit5.n77 24.127
-R5980 bit5.n85 bit5.n84 24.127
-R5981 bit5.n92 bit5.n91 24.127
-R5982 bit5.n99 bit5.n98 24.127
-R5983 bit5.n106 bit5.n105 24.127
-R5984 bit5.n113 bit5.n112 24.127
-R5985 bit5.n128 bit5.n127 24.127
-R5986 bit5.n135 bit5.n134 24.127
-R5987 bit5.n142 bit5.n141 24.127
-R5988 bit5.n149 bit5.n148 24.127
-R5989 bit5.n156 bit5.n155 24.127
-R5990 bit5.n163 bit5.n162 24.127
-R5991 bit5.n170 bit5.n169 24.127
-R5992 bit5.n177 bit5.n176 24.127
-R5993 bit5.n192 bit5.n191 24.127
-R5994 bit5.n199 bit5.n198 24.127
-R5995 bit5.n206 bit5.n205 24.127
-R5996 bit5.n213 bit5.n212 24.127
-R5997 bit5.n220 bit5.n219 24.127
-R5998 bit5.n227 bit5.n226 24.127
-R5999 bit5.n234 bit5.n233 24.127
-R6000 bit5.n241 bit5.n240 24.127
-R6001 bit5.n4 bit5.n3 8.764
-R6002 bit5.n11 bit5.n10 8.764
-R6003 bit5.n18 bit5.n17 8.764
-R6004 bit5.n25 bit5.n24 8.764
-R6005 bit5.n32 bit5.n31 8.764
-R6006 bit5.n39 bit5.n38 8.764
-R6007 bit5.n46 bit5.n45 8.764
-R6008 bit5.n50 bit5.n49 8.764
-R6009 bit5.n67 bit5.n66 8.764
-R6010 bit5.n74 bit5.n73 8.764
-R6011 bit5.n81 bit5.n80 8.764
-R6012 bit5.n88 bit5.n87 8.764
-R6013 bit5.n95 bit5.n94 8.764
-R6014 bit5.n102 bit5.n101 8.764
-R6015 bit5.n109 bit5.n108 8.764
-R6016 bit5.n116 bit5.n115 8.764
-R6017 bit5.n131 bit5.n130 8.764
-R6018 bit5.n138 bit5.n137 8.764
-R6019 bit5.n145 bit5.n144 8.764
-R6020 bit5.n152 bit5.n151 8.764
-R6021 bit5.n159 bit5.n158 8.764
-R6022 bit5.n166 bit5.n165 8.764
-R6023 bit5.n173 bit5.n172 8.764
-R6024 bit5.n180 bit5.n179 8.764
-R6025 bit5.n195 bit5.n194 8.764
-R6026 bit5.n202 bit5.n201 8.764
-R6027 bit5.n209 bit5.n208 8.764
-R6028 bit5.n216 bit5.n215 8.764
-R6029 bit5.n223 bit5.n222 8.764
-R6030 bit5.n230 bit5.n229 8.764
-R6031 bit5.n237 bit5.n236 8.764
-R6032 bit5.n244 bit5.n243 8.764
-R6033 bit5.n6 bit5.n1 4.662
-R6034 bit5.n13 bit5.n8 4.662
-R6035 bit5.n20 bit5.n15 4.662
-R6036 bit5.n27 bit5.n22 4.662
-R6037 bit5.n34 bit5.n29 4.662
-R6038 bit5.n41 bit5.n36 4.662
-R6039 bit5.n48 bit5.n43 4.662
-R6040 bit5.n69 bit5.n64 4.662
-R6041 bit5.n76 bit5.n71 4.662
-R6042 bit5.n83 bit5.n78 4.662
-R6043 bit5.n90 bit5.n85 4.662
-R6044 bit5.n97 bit5.n92 4.662
-R6045 bit5.n104 bit5.n99 4.662
-R6046 bit5.n111 bit5.n106 4.662
-R6047 bit5.n118 bit5.n113 4.662
-R6048 bit5.n133 bit5.n128 4.662
-R6049 bit5.n140 bit5.n135 4.662
-R6050 bit5.n147 bit5.n142 4.662
-R6051 bit5.n154 bit5.n149 4.662
-R6052 bit5.n161 bit5.n156 4.662
-R6053 bit5.n168 bit5.n163 4.662
-R6054 bit5.n175 bit5.n170 4.662
-R6055 bit5.n182 bit5.n177 4.662
-R6056 bit5.n197 bit5.n192 4.662
-R6057 bit5.n204 bit5.n199 4.662
-R6058 bit5.n211 bit5.n206 4.662
-R6059 bit5.n218 bit5.n213 4.662
-R6060 bit5.n225 bit5.n220 4.662
-R6061 bit5.n232 bit5.n227 4.662
-R6062 bit5.n239 bit5.n234 4.662
-R6063 bit5.n246 bit5.n241 4.662
-R6064 bit5.n55 bit5.n54 4.661
-R6065 bit5.n5 bit5.n4 3.401
-R6066 bit5.n12 bit5.n11 3.401
-R6067 bit5.n19 bit5.n18 3.401
-R6068 bit5.n26 bit5.n25 3.401
-R6069 bit5.n33 bit5.n32 3.401
-R6070 bit5.n40 bit5.n39 3.401
-R6071 bit5.n47 bit5.n46 3.401
-R6072 bit5.n68 bit5.n67 3.401
-R6073 bit5.n75 bit5.n74 3.401
-R6074 bit5.n82 bit5.n81 3.401
-R6075 bit5.n89 bit5.n88 3.401
-R6076 bit5.n96 bit5.n95 3.401
-R6077 bit5.n103 bit5.n102 3.401
-R6078 bit5.n110 bit5.n109 3.401
-R6079 bit5.n117 bit5.n116 3.401
-R6080 bit5.n132 bit5.n131 3.401
-R6081 bit5.n139 bit5.n138 3.401
-R6082 bit5.n146 bit5.n145 3.401
-R6083 bit5.n153 bit5.n152 3.401
-R6084 bit5.n160 bit5.n159 3.401
-R6085 bit5.n167 bit5.n166 3.401
-R6086 bit5.n174 bit5.n173 3.401
-R6087 bit5.n181 bit5.n180 3.401
-R6088 bit5.n196 bit5.n195 3.401
-R6089 bit5.n203 bit5.n202 3.401
-R6090 bit5.n210 bit5.n209 3.401
-R6091 bit5.n217 bit5.n216 3.401
-R6092 bit5.n224 bit5.n223 3.401
-R6093 bit5.n231 bit5.n230 3.401
-R6094 bit5.n238 bit5.n237 3.401
-R6095 bit5.n245 bit5.n244 3.401
-R6096 bit5.n52 bit5.n50 3.401
-R6097 bit5.n126 bit5.n62 1.218
-R6098 bit5.n56 bit5.n55 0.873
-R6099 bit5.n119 bit5.n118 0.873
-R6100 bit5.n183 bit5.n182 0.873
-R6101 bit5.n126 bit5.n125 0.726
-R6102 bit5.n190 bit5.n189 0.726
-R6103 bit5.n256 bit5.n255 0.726
-R6104 bit5.n55 bit5.n52 0.626
-R6105 bit5.n6 bit5.n5 0.626
-R6106 bit5.n13 bit5.n12 0.626
-R6107 bit5.n20 bit5.n19 0.626
-R6108 bit5.n27 bit5.n26 0.626
-R6109 bit5.n34 bit5.n33 0.626
-R6110 bit5.n41 bit5.n40 0.626
-R6111 bit5.n48 bit5.n47 0.626
-R6112 bit5.n69 bit5.n68 0.626
-R6113 bit5.n76 bit5.n75 0.626
-R6114 bit5.n83 bit5.n82 0.626
-R6115 bit5.n90 bit5.n89 0.626
-R6116 bit5.n97 bit5.n96 0.626
-R6117 bit5.n104 bit5.n103 0.626
-R6118 bit5.n111 bit5.n110 0.626
-R6119 bit5.n118 bit5.n117 0.626
-R6120 bit5.n133 bit5.n132 0.626
-R6121 bit5.n140 bit5.n139 0.626
-R6122 bit5.n147 bit5.n146 0.626
-R6123 bit5.n154 bit5.n153 0.626
-R6124 bit5.n161 bit5.n160 0.626
-R6125 bit5.n168 bit5.n167 0.626
-R6126 bit5.n175 bit5.n174 0.626
-R6127 bit5.n182 bit5.n181 0.626
-R6128 bit5.n197 bit5.n196 0.626
-R6129 bit5.n204 bit5.n203 0.626
-R6130 bit5.n211 bit5.n210 0.626
-R6131 bit5.n218 bit5.n217 0.626
-R6132 bit5.n225 bit5.n224 0.626
-R6133 bit5.n232 bit5.n231 0.626
-R6134 bit5.n239 bit5.n238 0.626
-R6135 bit5.n246 bit5.n245 0.626
-R6136 bit5.n62 bit5.n61 0.575
-R6137 bit5.n61 bit5.n60 0.575
-R6138 bit5.n60 bit5.n59 0.575
-R6139 bit5.n59 bit5.n58 0.575
-R6140 bit5.n58 bit5.n57 0.575
-R6141 bit5.n57 bit5.n56 0.575
-R6142 bit5.n125 bit5.n124 0.575
-R6143 bit5.n124 bit5.n123 0.575
-R6144 bit5.n123 bit5.n122 0.575
-R6145 bit5.n122 bit5.n121 0.575
-R6146 bit5.n121 bit5.n120 0.575
-R6147 bit5.n120 bit5.n119 0.575
-R6148 bit5.n189 bit5.n188 0.575
-R6149 bit5.n188 bit5.n187 0.575
-R6150 bit5.n187 bit5.n186 0.575
-R6151 bit5.n186 bit5.n185 0.575
-R6152 bit5.n185 bit5.n184 0.575
-R6153 bit5.n184 bit5.n183 0.575
-R6154 bit5.n255 bit5.n254 0.575
-R6155 bit5.n254 bit5.n253 0.575
-R6156 bit5.n253 bit5.n252 0.575
-R6157 bit5.n252 bit5.n251 0.575
-R6158 bit5.n251 bit5.n250 0.575
-R6159 bit5.n250 bit5.n249 0.575
-R6160 bit5.n249 bit5.n248 0.575
-R6161 bit5.n190 bit5.n126 0.492
-R6162 bit5.n256 bit5.n190 0.492
-R6163 bit5.n62 bit5.n6 0.298
-R6164 bit5.n61 bit5.n13 0.298
-R6165 bit5.n60 bit5.n20 0.298
-R6166 bit5.n59 bit5.n27 0.298
-R6167 bit5.n58 bit5.n34 0.298
-R6168 bit5.n57 bit5.n41 0.298
-R6169 bit5.n56 bit5.n48 0.298
-R6170 bit5.n125 bit5.n69 0.298
-R6171 bit5.n124 bit5.n76 0.298
-R6172 bit5.n123 bit5.n83 0.298
-R6173 bit5.n122 bit5.n90 0.298
-R6174 bit5.n121 bit5.n97 0.298
-R6175 bit5.n120 bit5.n104 0.298
-R6176 bit5.n119 bit5.n111 0.298
-R6177 bit5.n189 bit5.n133 0.298
-R6178 bit5.n188 bit5.n140 0.298
-R6179 bit5.n187 bit5.n147 0.298
-R6180 bit5.n186 bit5.n154 0.298
-R6181 bit5.n185 bit5.n161 0.298
-R6182 bit5.n184 bit5.n168 0.298
-R6183 bit5.n183 bit5.n175 0.298
-R6184 bit5.n255 bit5.n197 0.298
-R6185 bit5.n254 bit5.n204 0.298
-R6186 bit5.n253 bit5.n211 0.298
-R6187 bit5.n252 bit5.n218 0.298
-R6188 bit5.n251 bit5.n225 0.298
-R6189 bit5.n250 bit5.n232 0.298
-R6190 bit5.n249 bit5.n239 0.298
-R6191 bit5.n248 bit5.n246 0.298
-R6192 bit5 bit5.n256 0.125
+R5870 bit[5].n247 bit[5].t65 552.693
+R5871 bit[5].n2 bit[5].t5 300.446
+R5872 bit[5].n0 bit[5].t43 300.446
+R5873 bit[5].n9 bit[5].t12 300.446
+R5874 bit[5].n7 bit[5].t40 300.446
+R5875 bit[5].n16 bit[5].t37 300.446
+R5876 bit[5].n14 bit[5].t61 300.446
+R5877 bit[5].n23 bit[5].t33 300.446
+R5878 bit[5].n21 bit[5].t59 300.446
+R5879 bit[5].n30 bit[5].t28 300.446
+R5880 bit[5].n28 bit[5].t55 300.446
+R5881 bit[5].n37 bit[5].t24 300.446
+R5882 bit[5].n35 bit[5].t60 300.446
+R5883 bit[5].n44 bit[5].t31 300.446
+R5884 bit[5].n42 bit[5].t58 300.446
+R5885 bit[5].n53 bit[5].t46 300.446
+R5886 bit[5].n51 bit[5].t3 300.446
+R5887 bit[5].n65 bit[5].t52 300.446
+R5888 bit[5].n63 bit[5].t18 300.446
+R5889 bit[5].n72 bit[5].t53 300.446
+R5890 bit[5].n70 bit[5].t16 300.446
+R5891 bit[5].n79 bit[5].t15 300.446
+R5892 bit[5].n77 bit[5].t42 300.446
+R5893 bit[5].n86 bit[5].t11 300.446
+R5894 bit[5].n84 bit[5].t39 300.446
+R5895 bit[5].n93 bit[5].t8 300.446
+R5896 bit[5].n91 bit[5].t35 300.446
+R5897 bit[5].n100 bit[5].t4 300.446
+R5898 bit[5].n98 bit[5].t41 300.446
+R5899 bit[5].n107 bit[5].t10 300.446
+R5900 bit[5].n105 bit[5].t36 300.446
+R5901 bit[5].n114 bit[5].t21 300.446
+R5902 bit[5].n112 bit[5].t50 300.446
+R5903 bit[5].n129 bit[5].t45 300.446
+R5904 bit[5].n127 bit[5].t13 300.446
+R5905 bit[5].n136 bit[5].t49 300.446
+R5906 bit[5].n134 bit[5].t9 300.446
+R5907 bit[5].n143 bit[5].t6 300.446
+R5908 bit[5].n141 bit[5].t34 300.446
+R5909 bit[5].n150 bit[5].t2 300.446
+R5910 bit[5].n148 bit[5].t29 300.446
+R5911 bit[5].n157 bit[5].t64 300.446
+R5912 bit[5].n155 bit[5].t25 300.446
+R5913 bit[5].n164 bit[5].t63 300.446
+R5914 bit[5].n162 bit[5].t32 300.446
+R5915 bit[5].n171 bit[5].t1 300.446
+R5916 bit[5].n169 bit[5].t26 300.446
+R5917 bit[5].n178 bit[5].t17 300.446
+R5918 bit[5].n176 bit[5].t44 300.446
+R5919 bit[5].n193 bit[5].t30 300.446
+R5920 bit[5].n191 bit[5].t20 300.446
+R5921 bit[5].n200 bit[5].t38 300.446
+R5922 bit[5].n198 bit[5].t51 300.446
+R5923 bit[5].n207 bit[5].t54 300.446
+R5924 bit[5].n205 bit[5].t0 300.446
+R5925 bit[5].n214 bit[5].t19 300.446
+R5926 bit[5].n212 bit[5].t27 300.446
+R5927 bit[5].n221 bit[5].t48 300.446
+R5928 bit[5].n219 bit[5].t57 300.446
+R5929 bit[5].n228 bit[5].t7 300.446
+R5930 bit[5].n226 bit[5].t62 300.446
+R5931 bit[5].n235 bit[5].t14 300.446
+R5932 bit[5].n233 bit[5].t22 300.446
+R5933 bit[5].n242 bit[5].t47 300.446
+R5934 bit[5].n240 bit[5].t56 300.446
+R5935 bit[5].n247 bit[5].t23 279.56
+R5936 bit[5].n248 bit[5].n247 120.317
+R5937 bit[5].n52 bit[5].n51 27.537
+R5938 bit[5].n5 bit[5].n2 27.536
+R5939 bit[5].n12 bit[5].n9 27.536
+R5940 bit[5].n19 bit[5].n16 27.536
+R5941 bit[5].n26 bit[5].n23 27.536
+R5942 bit[5].n33 bit[5].n30 27.536
+R5943 bit[5].n40 bit[5].n37 27.536
+R5944 bit[5].n47 bit[5].n44 27.536
+R5945 bit[5].n68 bit[5].n65 27.536
+R5946 bit[5].n75 bit[5].n72 27.536
+R5947 bit[5].n82 bit[5].n79 27.536
+R5948 bit[5].n89 bit[5].n86 27.536
+R5949 bit[5].n96 bit[5].n93 27.536
+R5950 bit[5].n103 bit[5].n100 27.536
+R5951 bit[5].n110 bit[5].n107 27.536
+R5952 bit[5].n117 bit[5].n114 27.536
+R5953 bit[5].n132 bit[5].n129 27.536
+R5954 bit[5].n139 bit[5].n136 27.536
+R5955 bit[5].n146 bit[5].n143 27.536
+R5956 bit[5].n153 bit[5].n150 27.536
+R5957 bit[5].n160 bit[5].n157 27.536
+R5958 bit[5].n167 bit[5].n164 27.536
+R5959 bit[5].n174 bit[5].n171 27.536
+R5960 bit[5].n181 bit[5].n178 27.536
+R5961 bit[5].n196 bit[5].n193 27.536
+R5962 bit[5].n203 bit[5].n200 27.536
+R5963 bit[5].n210 bit[5].n207 27.536
+R5964 bit[5].n217 bit[5].n214 27.536
+R5965 bit[5].n224 bit[5].n221 27.536
+R5966 bit[5].n231 bit[5].n228 27.536
+R5967 bit[5].n238 bit[5].n235 27.536
+R5968 bit[5].n245 bit[5].n242 27.536
+R5969 bit[5].n1 bit[5].n0 24.127
+R5970 bit[5].n8 bit[5].n7 24.127
+R5971 bit[5].n15 bit[5].n14 24.127
+R5972 bit[5].n22 bit[5].n21 24.127
+R5973 bit[5].n29 bit[5].n28 24.127
+R5974 bit[5].n36 bit[5].n35 24.127
+R5975 bit[5].n43 bit[5].n42 24.127
+R5976 bit[5].n54 bit[5].n53 24.127
+R5977 bit[5].n64 bit[5].n63 24.127
+R5978 bit[5].n71 bit[5].n70 24.127
+R5979 bit[5].n78 bit[5].n77 24.127
+R5980 bit[5].n85 bit[5].n84 24.127
+R5981 bit[5].n92 bit[5].n91 24.127
+R5982 bit[5].n99 bit[5].n98 24.127
+R5983 bit[5].n106 bit[5].n105 24.127
+R5984 bit[5].n113 bit[5].n112 24.127
+R5985 bit[5].n128 bit[5].n127 24.127
+R5986 bit[5].n135 bit[5].n134 24.127
+R5987 bit[5].n142 bit[5].n141 24.127
+R5988 bit[5].n149 bit[5].n148 24.127
+R5989 bit[5].n156 bit[5].n155 24.127
+R5990 bit[5].n163 bit[5].n162 24.127
+R5991 bit[5].n170 bit[5].n169 24.127
+R5992 bit[5].n177 bit[5].n176 24.127
+R5993 bit[5].n192 bit[5].n191 24.127
+R5994 bit[5].n199 bit[5].n198 24.127
+R5995 bit[5].n206 bit[5].n205 24.127
+R5996 bit[5].n213 bit[5].n212 24.127
+R5997 bit[5].n220 bit[5].n219 24.127
+R5998 bit[5].n227 bit[5].n226 24.127
+R5999 bit[5].n234 bit[5].n233 24.127
+R6000 bit[5].n241 bit[5].n240 24.127
+R6001 bit[5].n4 bit[5].n3 8.764
+R6002 bit[5].n11 bit[5].n10 8.764
+R6003 bit[5].n18 bit[5].n17 8.764
+R6004 bit[5].n25 bit[5].n24 8.764
+R6005 bit[5].n32 bit[5].n31 8.764
+R6006 bit[5].n39 bit[5].n38 8.764
+R6007 bit[5].n46 bit[5].n45 8.764
+R6008 bit[5].n50 bit[5].n49 8.764
+R6009 bit[5].n67 bit[5].n66 8.764
+R6010 bit[5].n74 bit[5].n73 8.764
+R6011 bit[5].n81 bit[5].n80 8.764
+R6012 bit[5].n88 bit[5].n87 8.764
+R6013 bit[5].n95 bit[5].n94 8.764
+R6014 bit[5].n102 bit[5].n101 8.764
+R6015 bit[5].n109 bit[5].n108 8.764
+R6016 bit[5].n116 bit[5].n115 8.764
+R6017 bit[5].n131 bit[5].n130 8.764
+R6018 bit[5].n138 bit[5].n137 8.764
+R6019 bit[5].n145 bit[5].n144 8.764
+R6020 bit[5].n152 bit[5].n151 8.764
+R6021 bit[5].n159 bit[5].n158 8.764
+R6022 bit[5].n166 bit[5].n165 8.764
+R6023 bit[5].n173 bit[5].n172 8.764
+R6024 bit[5].n180 bit[5].n179 8.764
+R6025 bit[5].n195 bit[5].n194 8.764
+R6026 bit[5].n202 bit[5].n201 8.764
+R6027 bit[5].n209 bit[5].n208 8.764
+R6028 bit[5].n216 bit[5].n215 8.764
+R6029 bit[5].n223 bit[5].n222 8.764
+R6030 bit[5].n230 bit[5].n229 8.764
+R6031 bit[5].n237 bit[5].n236 8.764
+R6032 bit[5].n244 bit[5].n243 8.764
+R6033 bit[5].n6 bit[5].n1 4.662
+R6034 bit[5].n13 bit[5].n8 4.662
+R6035 bit[5].n20 bit[5].n15 4.662
+R6036 bit[5].n27 bit[5].n22 4.662
+R6037 bit[5].n34 bit[5].n29 4.662
+R6038 bit[5].n41 bit[5].n36 4.662
+R6039 bit[5].n48 bit[5].n43 4.662
+R6040 bit[5].n69 bit[5].n64 4.662
+R6041 bit[5].n76 bit[5].n71 4.662
+R6042 bit[5].n83 bit[5].n78 4.662
+R6043 bit[5].n90 bit[5].n85 4.662
+R6044 bit[5].n97 bit[5].n92 4.662
+R6045 bit[5].n104 bit[5].n99 4.662
+R6046 bit[5].n111 bit[5].n106 4.662
+R6047 bit[5].n118 bit[5].n113 4.662
+R6048 bit[5].n133 bit[5].n128 4.662
+R6049 bit[5].n140 bit[5].n135 4.662
+R6050 bit[5].n147 bit[5].n142 4.662
+R6051 bit[5].n154 bit[5].n149 4.662
+R6052 bit[5].n161 bit[5].n156 4.662
+R6053 bit[5].n168 bit[5].n163 4.662
+R6054 bit[5].n175 bit[5].n170 4.662
+R6055 bit[5].n182 bit[5].n177 4.662
+R6056 bit[5].n197 bit[5].n192 4.662
+R6057 bit[5].n204 bit[5].n199 4.662
+R6058 bit[5].n211 bit[5].n206 4.662
+R6059 bit[5].n218 bit[5].n213 4.662
+R6060 bit[5].n225 bit[5].n220 4.662
+R6061 bit[5].n232 bit[5].n227 4.662
+R6062 bit[5].n239 bit[5].n234 4.662
+R6063 bit[5].n246 bit[5].n241 4.662
+R6064 bit[5].n55 bit[5].n54 4.661
+R6065 bit[5].n5 bit[5].n4 3.401
+R6066 bit[5].n12 bit[5].n11 3.401
+R6067 bit[5].n19 bit[5].n18 3.401
+R6068 bit[5].n26 bit[5].n25 3.401
+R6069 bit[5].n33 bit[5].n32 3.401
+R6070 bit[5].n40 bit[5].n39 3.401
+R6071 bit[5].n47 bit[5].n46 3.401
+R6072 bit[5].n68 bit[5].n67 3.401
+R6073 bit[5].n75 bit[5].n74 3.401
+R6074 bit[5].n82 bit[5].n81 3.401
+R6075 bit[5].n89 bit[5].n88 3.401
+R6076 bit[5].n96 bit[5].n95 3.401
+R6077 bit[5].n103 bit[5].n102 3.401
+R6078 bit[5].n110 bit[5].n109 3.401
+R6079 bit[5].n117 bit[5].n116 3.401
+R6080 bit[5].n132 bit[5].n131 3.401
+R6081 bit[5].n139 bit[5].n138 3.401
+R6082 bit[5].n146 bit[5].n145 3.401
+R6083 bit[5].n153 bit[5].n152 3.401
+R6084 bit[5].n160 bit[5].n159 3.401
+R6085 bit[5].n167 bit[5].n166 3.401
+R6086 bit[5].n174 bit[5].n173 3.401
+R6087 bit[5].n181 bit[5].n180 3.401
+R6088 bit[5].n196 bit[5].n195 3.401
+R6089 bit[5].n203 bit[5].n202 3.401
+R6090 bit[5].n210 bit[5].n209 3.401
+R6091 bit[5].n217 bit[5].n216 3.401
+R6092 bit[5].n224 bit[5].n223 3.401
+R6093 bit[5].n231 bit[5].n230 3.401
+R6094 bit[5].n238 bit[5].n237 3.401
+R6095 bit[5].n245 bit[5].n244 3.401
+R6096 bit[5].n52 bit[5].n50 3.401
+R6097 bit[5].n126 bit[5].n62 1.218
+R6098 bit[5].n56 bit[5].n55 0.873
+R6099 bit[5].n119 bit[5].n118 0.873
+R6100 bit[5].n183 bit[5].n182 0.873
+R6101 bit[5].n126 bit[5].n125 0.726
+R6102 bit[5].n190 bit[5].n189 0.726
+R6103 bit[5].n256 bit[5].n255 0.726
+R6104 bit[5].n55 bit[5].n52 0.626
+R6105 bit[5].n6 bit[5].n5 0.626
+R6106 bit[5].n13 bit[5].n12 0.626
+R6107 bit[5].n20 bit[5].n19 0.626
+R6108 bit[5].n27 bit[5].n26 0.626
+R6109 bit[5].n34 bit[5].n33 0.626
+R6110 bit[5].n41 bit[5].n40 0.626
+R6111 bit[5].n48 bit[5].n47 0.626
+R6112 bit[5].n69 bit[5].n68 0.626
+R6113 bit[5].n76 bit[5].n75 0.626
+R6114 bit[5].n83 bit[5].n82 0.626
+R6115 bit[5].n90 bit[5].n89 0.626
+R6116 bit[5].n97 bit[5].n96 0.626
+R6117 bit[5].n104 bit[5].n103 0.626
+R6118 bit[5].n111 bit[5].n110 0.626
+R6119 bit[5].n118 bit[5].n117 0.626
+R6120 bit[5].n133 bit[5].n132 0.626
+R6121 bit[5].n140 bit[5].n139 0.626
+R6122 bit[5].n147 bit[5].n146 0.626
+R6123 bit[5].n154 bit[5].n153 0.626
+R6124 bit[5].n161 bit[5].n160 0.626
+R6125 bit[5].n168 bit[5].n167 0.626
+R6126 bit[5].n175 bit[5].n174 0.626
+R6127 bit[5].n182 bit[5].n181 0.626
+R6128 bit[5].n197 bit[5].n196 0.626
+R6129 bit[5].n204 bit[5].n203 0.626
+R6130 bit[5].n211 bit[5].n210 0.626
+R6131 bit[5].n218 bit[5].n217 0.626
+R6132 bit[5].n225 bit[5].n224 0.626
+R6133 bit[5].n232 bit[5].n231 0.626
+R6134 bit[5].n239 bit[5].n238 0.626
+R6135 bit[5].n246 bit[5].n245 0.626
+R6136 bit[5].n62 bit[5].n61 0.575
+R6137 bit[5].n61 bit[5].n60 0.575
+R6138 bit[5].n60 bit[5].n59 0.575
+R6139 bit[5].n59 bit[5].n58 0.575
+R6140 bit[5].n58 bit[5].n57 0.575
+R6141 bit[5].n57 bit[5].n56 0.575
+R6142 bit[5].n125 bit[5].n124 0.575
+R6143 bit[5].n124 bit[5].n123 0.575
+R6144 bit[5].n123 bit[5].n122 0.575
+R6145 bit[5].n122 bit[5].n121 0.575
+R6146 bit[5].n121 bit[5].n120 0.575
+R6147 bit[5].n120 bit[5].n119 0.575
+R6148 bit[5].n189 bit[5].n188 0.575
+R6149 bit[5].n188 bit[5].n187 0.575
+R6150 bit[5].n187 bit[5].n186 0.575
+R6151 bit[5].n186 bit[5].n185 0.575
+R6152 bit[5].n185 bit[5].n184 0.575
+R6153 bit[5].n184 bit[5].n183 0.575
+R6154 bit[5].n255 bit[5].n254 0.575
+R6155 bit[5].n254 bit[5].n253 0.575
+R6156 bit[5].n253 bit[5].n252 0.575
+R6157 bit[5].n252 bit[5].n251 0.575
+R6158 bit[5].n251 bit[5].n250 0.575
+R6159 bit[5].n250 bit[5].n249 0.575
+R6160 bit[5].n249 bit[5].n248 0.575
+R6161 bit[5].n190 bit[5].n126 0.492
+R6162 bit[5].n256 bit[5].n190 0.492
+R6163 bit[5].n62 bit[5].n6 0.298
+R6164 bit[5].n61 bit[5].n13 0.298
+R6165 bit[5].n60 bit[5].n20 0.298
+R6166 bit[5].n59 bit[5].n27 0.298
+R6167 bit[5].n58 bit[5].n34 0.298
+R6168 bit[5].n57 bit[5].n41 0.298
+R6169 bit[5].n56 bit[5].n48 0.298
+R6170 bit[5].n125 bit[5].n69 0.298
+R6171 bit[5].n124 bit[5].n76 0.298
+R6172 bit[5].n123 bit[5].n83 0.298
+R6173 bit[5].n122 bit[5].n90 0.298
+R6174 bit[5].n121 bit[5].n97 0.298
+R6175 bit[5].n120 bit[5].n104 0.298
+R6176 bit[5].n119 bit[5].n111 0.298
+R6177 bit[5].n189 bit[5].n133 0.298
+R6178 bit[5].n188 bit[5].n140 0.298
+R6179 bit[5].n187 bit[5].n147 0.298
+R6180 bit[5].n186 bit[5].n154 0.298
+R6181 bit[5].n185 bit[5].n161 0.298
+R6182 bit[5].n184 bit[5].n168 0.298
+R6183 bit[5].n183 bit[5].n175 0.298
+R6184 bit[5].n255 bit[5].n197 0.298
+R6185 bit[5].n254 bit[5].n204 0.298
+R6186 bit[5].n253 bit[5].n211 0.298
+R6187 bit[5].n252 bit[5].n218 0.298
+R6188 bit[5].n251 bit[5].n225 0.298
+R6189 bit[5].n250 bit[5].n232 0.298
+R6190 bit[5].n249 bit[5].n239 0.298
+R6191 bit[5].n248 bit[5].n246 0.298
+R6192 bit[5] bit[5].n256 0.125
 R6193 a_50466_6042.n26 a_50466_6042.t0 10.181
 R6194 a_50466_6042.n18 a_50466_6042.t1 10.181
 R6195 a_50466_6042.t3 a_50466_6042.n39 9.68
@@ -7865,49 +7864,49 @@ R7435 a_22866_25802.n38 a_22866_25802.n37 0.01
 R7436 a_22866_25802.n22 a_22866_25802.n21 0.01
 R7437 a_22866_25802.n21 a_22866_25802.n14 0.01
 R7438 a_22866_25802.n37 a_22866_25802.n30 0.01
-R7439 bit2.n28 bit2.t9 552.693
-R7440 bit2.n2 bit2.t7 300.446
-R7441 bit2.n0 bit2.t2 300.446
-R7442 bit2.n9 bit2.t6 300.446
-R7443 bit2.n7 bit2.t4 300.446
-R7444 bit2.n16 bit2.t8 300.446
-R7445 bit2.n14 bit2.t3 300.446
-R7446 bit2.n25 bit2.t0 300.446
-R7447 bit2.n23 bit2.t5 300.446
-R7448 bit2.n28 bit2.t1 279.56
-R7449 bit2.n29 bit2.n28 120.317
-R7450 bit2.n24 bit2.n23 27.537
-R7451 bit2.n5 bit2.n2 27.536
-R7452 bit2.n12 bit2.n9 27.536
-R7453 bit2.n19 bit2.n16 27.536
-R7454 bit2.n1 bit2.n0 24.127
-R7455 bit2.n8 bit2.n7 24.127
-R7456 bit2.n15 bit2.n14 24.127
-R7457 bit2.n26 bit2.n25 24.127
-R7458 bit2.n4 bit2.n3 8.764
-R7459 bit2.n11 bit2.n10 8.764
-R7460 bit2.n18 bit2.n17 8.764
-R7461 bit2.n22 bit2.n21 8.764
-R7462 bit2.n6 bit2.n1 4.662
-R7463 bit2.n13 bit2.n8 4.662
-R7464 bit2.n20 bit2.n15 4.662
-R7465 bit2.n27 bit2.n26 4.661
-R7466 bit2.n5 bit2.n4 3.401
-R7467 bit2.n12 bit2.n11 3.401
-R7468 bit2.n19 bit2.n18 3.401
-R7469 bit2.n24 bit2.n22 3.401
-R7470 bit2 bit2.n32 3.151
-R7471 bit2.n27 bit2.n24 0.626
-R7472 bit2.n6 bit2.n5 0.626
-R7473 bit2.n13 bit2.n12 0.626
-R7474 bit2.n20 bit2.n19 0.626
-R7475 bit2.n32 bit2.n31 0.575
-R7476 bit2.n31 bit2.n30 0.575
-R7477 bit2.n30 bit2.n29 0.575
-R7478 bit2.n32 bit2.n6 0.298
-R7479 bit2.n31 bit2.n13 0.298
-R7480 bit2.n30 bit2.n20 0.298
-R7481 bit2.n29 bit2.n27 0.298
+R7439 bit[2].n28 bit[2].t9 552.693
+R7440 bit[2].n2 bit[2].t7 300.446
+R7441 bit[2].n0 bit[2].t2 300.446
+R7442 bit[2].n9 bit[2].t6 300.446
+R7443 bit[2].n7 bit[2].t4 300.446
+R7444 bit[2].n16 bit[2].t8 300.446
+R7445 bit[2].n14 bit[2].t3 300.446
+R7446 bit[2].n25 bit[2].t0 300.446
+R7447 bit[2].n23 bit[2].t5 300.446
+R7448 bit[2].n28 bit[2].t1 279.56
+R7449 bit[2].n29 bit[2].n28 120.317
+R7450 bit[2].n24 bit[2].n23 27.537
+R7451 bit[2].n5 bit[2].n2 27.536
+R7452 bit[2].n12 bit[2].n9 27.536
+R7453 bit[2].n19 bit[2].n16 27.536
+R7454 bit[2].n1 bit[2].n0 24.127
+R7455 bit[2].n8 bit[2].n7 24.127
+R7456 bit[2].n15 bit[2].n14 24.127
+R7457 bit[2].n26 bit[2].n25 24.127
+R7458 bit[2].n4 bit[2].n3 8.764
+R7459 bit[2].n11 bit[2].n10 8.764
+R7460 bit[2].n18 bit[2].n17 8.764
+R7461 bit[2].n22 bit[2].n21 8.764
+R7462 bit[2].n6 bit[2].n1 4.662
+R7463 bit[2].n13 bit[2].n8 4.662
+R7464 bit[2].n20 bit[2].n15 4.662
+R7465 bit[2].n27 bit[2].n26 4.661
+R7466 bit[2].n5 bit[2].n4 3.401
+R7467 bit[2].n12 bit[2].n11 3.401
+R7468 bit[2].n19 bit[2].n18 3.401
+R7469 bit[2].n24 bit[2].n22 3.401
+R7470 bit[2] bit[2].n32 3.151
+R7471 bit[2].n27 bit[2].n24 0.626
+R7472 bit[2].n6 bit[2].n5 0.626
+R7473 bit[2].n13 bit[2].n12 0.626
+R7474 bit[2].n20 bit[2].n19 0.626
+R7475 bit[2].n32 bit[2].n31 0.575
+R7476 bit[2].n31 bit[2].n30 0.575
+R7477 bit[2].n30 bit[2].n29 0.575
+R7478 bit[2].n32 bit[2].n6 0.298
+R7479 bit[2].n31 bit[2].n13 0.298
+R7480 bit[2].n30 bit[2].n20 0.298
+R7481 bit[2].n29 bit[2].n27 0.298
 R7482 a_4176_75126.n10 a_4176_75126.t1 10.181
 R7483 a_4176_75126.n10 a_4176_75126.t0 10.181
 R7484 a_4176_75126.t3 a_4176_75126.n18 9.68
@@ -9077,89 +9076,89 @@ R8647 a_32066_15922.n38 a_32066_15922.n37 0.01
 R8648 a_32066_15922.n22 a_32066_15922.n21 0.01
 R8649 a_32066_15922.n21 a_32066_15922.n14 0.01
 R8650 a_32066_15922.n37 a_32066_15922.n30 0.01
-R8651 bit3.n56 bit3.t14 552.693
-R8652 bit3.n2 bit3.t7 300.446
-R8653 bit3.n0 bit3.t16 300.446
-R8654 bit3.n9 bit3.t8 300.446
-R8655 bit3.n7 bit3.t15 300.446
-R8656 bit3.n16 bit3.t13 300.446
-R8657 bit3.n14 bit3.t5 300.446
-R8658 bit3.n23 bit3.t12 300.446
-R8659 bit3.n21 bit3.t3 300.446
-R8660 bit3.n30 bit3.t10 300.446
-R8661 bit3.n28 bit3.t1 300.446
-R8662 bit3.n37 bit3.t9 300.446
-R8663 bit3.n35 bit3.t4 300.446
-R8664 bit3.n44 bit3.t11 300.446
-R8665 bit3.n42 bit3.t2 300.446
-R8666 bit3.n53 bit3.t17 300.446
-R8667 bit3.n51 bit3.t6 300.446
-R8668 bit3.n56 bit3.t0 279.56
-R8669 bit3.n57 bit3.n56 120.317
-R8670 bit3.n52 bit3.n51 27.537
-R8671 bit3.n5 bit3.n2 27.536
-R8672 bit3.n12 bit3.n9 27.536
-R8673 bit3.n19 bit3.n16 27.536
-R8674 bit3.n26 bit3.n23 27.536
-R8675 bit3.n33 bit3.n30 27.536
-R8676 bit3.n40 bit3.n37 27.536
-R8677 bit3.n47 bit3.n44 27.536
-R8678 bit3.n1 bit3.n0 24.127
-R8679 bit3.n8 bit3.n7 24.127
-R8680 bit3.n15 bit3.n14 24.127
-R8681 bit3.n22 bit3.n21 24.127
-R8682 bit3.n29 bit3.n28 24.127
-R8683 bit3.n36 bit3.n35 24.127
-R8684 bit3.n43 bit3.n42 24.127
-R8685 bit3.n54 bit3.n53 24.127
-R8686 bit3.n4 bit3.n3 8.764
-R8687 bit3.n11 bit3.n10 8.764
-R8688 bit3.n18 bit3.n17 8.764
-R8689 bit3.n25 bit3.n24 8.764
-R8690 bit3.n32 bit3.n31 8.764
-R8691 bit3.n39 bit3.n38 8.764
-R8692 bit3.n46 bit3.n45 8.764
-R8693 bit3.n50 bit3.n49 8.764
-R8694 bit3.n6 bit3.n1 4.662
-R8695 bit3.n13 bit3.n8 4.662
-R8696 bit3.n20 bit3.n15 4.662
-R8697 bit3.n27 bit3.n22 4.662
-R8698 bit3.n34 bit3.n29 4.662
-R8699 bit3.n41 bit3.n36 4.662
-R8700 bit3.n48 bit3.n43 4.662
-R8701 bit3.n55 bit3.n54 4.661
-R8702 bit3.n5 bit3.n4 3.401
-R8703 bit3.n12 bit3.n11 3.401
-R8704 bit3.n19 bit3.n18 3.401
-R8705 bit3.n26 bit3.n25 3.401
-R8706 bit3.n33 bit3.n32 3.401
-R8707 bit3.n40 bit3.n39 3.401
-R8708 bit3.n47 bit3.n46 3.401
-R8709 bit3.n52 bit3.n50 3.401
-R8710 bit3 bit3.n64 0.851
-R8711 bit3.n55 bit3.n52 0.626
-R8712 bit3.n6 bit3.n5 0.626
-R8713 bit3.n13 bit3.n12 0.626
-R8714 bit3.n20 bit3.n19 0.626
-R8715 bit3.n27 bit3.n26 0.626
-R8716 bit3.n34 bit3.n33 0.626
-R8717 bit3.n41 bit3.n40 0.626
-R8718 bit3.n48 bit3.n47 0.626
-R8719 bit3.n64 bit3.n63 0.575
-R8720 bit3.n63 bit3.n62 0.575
-R8721 bit3.n62 bit3.n61 0.575
-R8722 bit3.n61 bit3.n60 0.575
-R8723 bit3.n60 bit3.n59 0.575
-R8724 bit3.n59 bit3.n58 0.575
-R8725 bit3.n58 bit3.n57 0.575
-R8726 bit3.n64 bit3.n6 0.298
-R8727 bit3.n63 bit3.n13 0.298
-R8728 bit3.n62 bit3.n20 0.298
-R8729 bit3.n61 bit3.n27 0.298
-R8730 bit3.n60 bit3.n34 0.298
-R8731 bit3.n59 bit3.n41 0.298
-R8732 bit3.n58 bit3.n48 0.298
-R8733 bit3.n57 bit3.n55 0.298
+R8651 bit[3].n56 bit[3].t14 552.693
+R8652 bit[3].n2 bit[3].t7 300.446
+R8653 bit[3].n0 bit[3].t16 300.446
+R8654 bit[3].n9 bit[3].t8 300.446
+R8655 bit[3].n7 bit[3].t15 300.446
+R8656 bit[3].n16 bit[3].t13 300.446
+R8657 bit[3].n14 bit[3].t5 300.446
+R8658 bit[3].n23 bit[3].t12 300.446
+R8659 bit[3].n21 bit[3].t3 300.446
+R8660 bit[3].n30 bit[3].t10 300.446
+R8661 bit[3].n28 bit[3].t1 300.446
+R8662 bit[3].n37 bit[3].t9 300.446
+R8663 bit[3].n35 bit[3].t4 300.446
+R8664 bit[3].n44 bit[3].t11 300.446
+R8665 bit[3].n42 bit[3].t2 300.446
+R8666 bit[3].n53 bit[3].t17 300.446
+R8667 bit[3].n51 bit[3].t6 300.446
+R8668 bit[3].n56 bit[3].t0 279.56
+R8669 bit[3].n57 bit[3].n56 120.317
+R8670 bit[3].n52 bit[3].n51 27.537
+R8671 bit[3].n5 bit[3].n2 27.536
+R8672 bit[3].n12 bit[3].n9 27.536
+R8673 bit[3].n19 bit[3].n16 27.536
+R8674 bit[3].n26 bit[3].n23 27.536
+R8675 bit[3].n33 bit[3].n30 27.536
+R8676 bit[3].n40 bit[3].n37 27.536
+R8677 bit[3].n47 bit[3].n44 27.536
+R8678 bit[3].n1 bit[3].n0 24.127
+R8679 bit[3].n8 bit[3].n7 24.127
+R8680 bit[3].n15 bit[3].n14 24.127
+R8681 bit[3].n22 bit[3].n21 24.127
+R8682 bit[3].n29 bit[3].n28 24.127
+R8683 bit[3].n36 bit[3].n35 24.127
+R8684 bit[3].n43 bit[3].n42 24.127
+R8685 bit[3].n54 bit[3].n53 24.127
+R8686 bit[3].n4 bit[3].n3 8.764
+R8687 bit[3].n11 bit[3].n10 8.764
+R8688 bit[3].n18 bit[3].n17 8.764
+R8689 bit[3].n25 bit[3].n24 8.764
+R8690 bit[3].n32 bit[3].n31 8.764
+R8691 bit[3].n39 bit[3].n38 8.764
+R8692 bit[3].n46 bit[3].n45 8.764
+R8693 bit[3].n50 bit[3].n49 8.764
+R8694 bit[3].n6 bit[3].n1 4.662
+R8695 bit[3].n13 bit[3].n8 4.662
+R8696 bit[3].n20 bit[3].n15 4.662
+R8697 bit[3].n27 bit[3].n22 4.662
+R8698 bit[3].n34 bit[3].n29 4.662
+R8699 bit[3].n41 bit[3].n36 4.662
+R8700 bit[3].n48 bit[3].n43 4.662
+R8701 bit[3].n55 bit[3].n54 4.661
+R8702 bit[3].n5 bit[3].n4 3.401
+R8703 bit[3].n12 bit[3].n11 3.401
+R8704 bit[3].n19 bit[3].n18 3.401
+R8705 bit[3].n26 bit[3].n25 3.401
+R8706 bit[3].n33 bit[3].n32 3.401
+R8707 bit[3].n40 bit[3].n39 3.401
+R8708 bit[3].n47 bit[3].n46 3.401
+R8709 bit[3].n52 bit[3].n50 3.401
+R8710 bit[3] bit[3].n64 0.851
+R8711 bit[3].n55 bit[3].n52 0.626
+R8712 bit[3].n6 bit[3].n5 0.626
+R8713 bit[3].n13 bit[3].n12 0.626
+R8714 bit[3].n20 bit[3].n19 0.626
+R8715 bit[3].n27 bit[3].n26 0.626
+R8716 bit[3].n34 bit[3].n33 0.626
+R8717 bit[3].n41 bit[3].n40 0.626
+R8718 bit[3].n48 bit[3].n47 0.626
+R8719 bit[3].n64 bit[3].n63 0.575
+R8720 bit[3].n63 bit[3].n62 0.575
+R8721 bit[3].n62 bit[3].n61 0.575
+R8722 bit[3].n61 bit[3].n60 0.575
+R8723 bit[3].n60 bit[3].n59 0.575
+R8724 bit[3].n59 bit[3].n58 0.575
+R8725 bit[3].n58 bit[3].n57 0.575
+R8726 bit[3].n64 bit[3].n6 0.298
+R8727 bit[3].n63 bit[3].n13 0.298
+R8728 bit[3].n62 bit[3].n20 0.298
+R8729 bit[3].n61 bit[3].n27 0.298
+R8730 bit[3].n60 bit[3].n34 0.298
+R8731 bit[3].n59 bit[3].n41 0.298
+R8732 bit[3].n58 bit[3].n48 0.298
+R8733 bit[3].n57 bit[3].n55 0.298
 R8734 a_32066_65322.n26 a_32066_65322.t0 10.181
 R8735 a_32066_65322.n18 a_32066_65322.t1 10.181
 R8736 a_32066_65322.t3 a_32066_65322.n39 9.68
@@ -9915,29 +9914,29 @@ R9485 a_59376_25726.n3 a_59376_25726.n2 0.025
 R9486 a_59376_25726.n17 a_59376_25726.n16 0.021
 R9487 a_59376_25726.n9 a_59376_25726.n7 0.012
 R9488 a_59376_25726.n16 a_59376_25726.n15 0.006
-R9489 bit1.n14 bit1.t5 552.693
-R9490 bit1.n2 bit1.t0 300.446
-R9491 bit1.n0 bit1.t3 300.446
-R9492 bit1.n11 bit1.t1 300.446
-R9493 bit1.n9 bit1.t4 300.446
-R9494 bit1.n14 bit1.t2 279.56
-R9495 bit1.n15 bit1.n14 120.317
-R9496 bit1.n10 bit1.n9 27.537
-R9497 bit1.n5 bit1.n2 27.536
-R9498 bit1.n1 bit1.n0 24.127
-R9499 bit1.n12 bit1.n11 24.127
-R9500 bit1.n4 bit1.n3 8.764
-R9501 bit1.n8 bit1.n7 8.764
-R9502 bit1.n6 bit1.n1 4.662
-R9503 bit1.n13 bit1.n12 4.661
-R9504 bit1 bit1.n16 4.301
-R9505 bit1.n5 bit1.n4 3.401
-R9506 bit1.n10 bit1.n8 3.401
-R9507 bit1.n13 bit1.n10 0.626
-R9508 bit1.n6 bit1.n5 0.626
-R9509 bit1.n16 bit1.n15 0.575
-R9510 bit1.n16 bit1.n6 0.298
-R9511 bit1.n15 bit1.n13 0.298
+R9489 bit[1].n14 bit[1].t5 552.693
+R9490 bit[1].n2 bit[1].t0 300.446
+R9491 bit[1].n0 bit[1].t3 300.446
+R9492 bit[1].n11 bit[1].t1 300.446
+R9493 bit[1].n9 bit[1].t4 300.446
+R9494 bit[1].n14 bit[1].t2 279.56
+R9495 bit[1].n15 bit[1].n14 120.317
+R9496 bit[1].n10 bit[1].n9 27.537
+R9497 bit[1].n5 bit[1].n2 27.536
+R9498 bit[1].n1 bit[1].n0 24.127
+R9499 bit[1].n12 bit[1].n11 24.127
+R9500 bit[1].n4 bit[1].n3 8.764
+R9501 bit[1].n8 bit[1].n7 8.764
+R9502 bit[1].n6 bit[1].n1 4.662
+R9503 bit[1].n13 bit[1].n12 4.661
+R9504 bit[1] bit[1].n16 4.301
+R9505 bit[1].n5 bit[1].n4 3.401
+R9506 bit[1].n10 bit[1].n8 3.401
+R9507 bit[1].n13 bit[1].n10 0.626
+R9508 bit[1].n6 bit[1].n5 0.626
+R9509 bit[1].n16 bit[1].n15 0.575
+R9510 bit[1].n16 bit[1].n6 0.298
+R9511 bit[1].n15 bit[1].n13 0.298
 R9512 a_13376_85006.n10 a_13376_85006.t3 10.181
 R9513 a_13376_85006.n10 a_13376_85006.t2 10.181
 R9514 a_13376_85006.t0 a_13376_85006.n18 9.68
@@ -10834,19 +10833,19 @@ R10404 a_22576_75126.n3 a_22576_75126.n2 0.025
 R10405 a_22576_75126.n17 a_22576_75126.n16 0.021
 R10406 a_22576_75126.n9 a_22576_75126.n7 0.012
 R10407 a_22576_75126.n16 a_22576_75126.n15 0.006
-R10408 bit0.n7 bit0.t0 552.693
-R10409 bit0.n4 bit0.t1 300.446
-R10410 bit0.n2 bit0.t3 300.446
-R10411 bit0.n7 bit0.t2 279.56
-R10412 bit0.n8 bit0.n7 120.317
-R10413 bit0.n3 bit0.n2 27.537
-R10414 bit0.n5 bit0.n4 24.127
-R10415 bit0.n1 bit0.n0 8.764
-R10416 bit0 bit0.n8 4.876
-R10417 bit0.n6 bit0.n5 4.661
-R10418 bit0.n3 bit0.n1 3.401
-R10419 bit0.n6 bit0.n3 0.626
-R10420 bit0.n8 bit0.n6 0.298
+R10408 bit[0].n7 bit[0].t0 552.693
+R10409 bit[0].n4 bit[0].t1 300.446
+R10410 bit[0].n2 bit[0].t3 300.446
+R10411 bit[0].n7 bit[0].t2 279.56
+R10412 bit[0].n8 bit[0].n7 120.317
+R10413 bit[0].n3 bit[0].n2 27.537
+R10414 bit[0].n5 bit[0].n4 24.127
+R10415 bit[0].n1 bit[0].n0 8.764
+R10416 bit[0] bit[0].n8 4.876
+R10417 bit[0].n6 bit[0].n5 4.661
+R10418 bit[0].n3 bit[0].n1 3.401
+R10419 bit[0].n6 bit[0].n3 0.626
+R10420 bit[0].n8 bit[0].n6 0.298
 R10421 VDD.n5 VDD.t8 1362.76
 R10422 VDD.n24 VDD.t10 1362.76
 R10423 VDD.n43 VDD.t6 1362.76
@@ -11305,12 +11304,12 @@ R10875 a_4176_5966.n9 a_4176_5966.n7 0.012
 R10876 a_4176_5966.n16 a_4176_5966.n15 0.006
 C21 OUT_P GND 575.40fF
 C22 OUT_N GND 576.12fF
-C23 bit5 GND 460.90fF
-C24 bit4 GND 229.48fF
-C25 bit3 GND 125.29fF
-C26 bit2 GND 148.13fF
-C27 bit1 GND 157.90fF
-C28 bit0 GND 162.36fF
+C23 bit[5] GND 460.90fF
+C24 bit[4] GND 229.48fF
+C25 bit[3] GND 125.29fF
+C26 bit[2] GND 148.13fF
+C27 bit[1] GND 157.90fF
+C28 bit[0] GND 162.36fF
 C29 VDD GND 146.97fF
 C30 a_4176_5966.n0 GND 0.01fF
 C31 a_4176_5966.n1 GND 0.01fF
@@ -11757,19 +11756,19 @@ C471 VDD.n115 GND 20.84fF
 C472 VDD.n116 GND 13.94fF
 C473 VDD.n117 GND 13.94fF
 C474 VDD.n118 GND 17.70fF
-C475 bit0.n0 GND 0.00fF
-C476 bit0.n1 GND 0.00fF
-C477 bit0.t3 GND 0.02fF $ **FLOATING
-C478 bit0.n2 GND 0.01fF
-C479 bit0.n3 GND 0.00fF
-C480 bit0.t1 GND 0.02fF $ **FLOATING
-C481 bit0.n4 GND 0.01fF
-C482 bit0.n5 GND 0.00fF
-C483 bit0.n6 GND 0.06fF
-C484 bit0.t0 GND 0.01fF $ **FLOATING
-C485 bit0.t2 GND 0.01fF $ **FLOATING
-C486 bit0.n7 GND 0.02fF
-C487 bit0.n8 GND 77.65fF
+C475 bit[0].n0 GND 0.00fF
+C476 bit[0].n1 GND 0.00fF
+C477 bit[0].t3 GND 0.02fF $ **FLOATING
+C478 bit[0].n2 GND 0.01fF
+C479 bit[0].n3 GND 0.00fF
+C480 bit[0].t1 GND 0.02fF $ **FLOATING
+C481 bit[0].n4 GND 0.01fF
+C482 bit[0].n5 GND 0.00fF
+C483 bit[0].n6 GND 0.06fF
+C484 bit[0].t0 GND 0.01fF $ **FLOATING
+C485 bit[0].t2 GND 0.01fF $ **FLOATING
+C486 bit[0].n7 GND 0.02fF
+C487 bit[0].n8 GND 77.65fF
 C488 a_22576_75126.n0 GND 0.01fF
 C489 a_22576_75126.n1 GND 0.01fF
 C490 a_22576_75126.n2 GND 0.00fF
@@ -12648,29 +12647,29 @@ C1362 a_13376_85006.n17 GND 0.12fF
 C1363 a_13376_85006.t1 GND 3.87fF $ **FLOATING
 C1364 a_13376_85006.n18 GND 0.52fF
 C1365 a_13376_85006.t0 GND 0.24fF $ **FLOATING
-C1366 bit1.t3 GND 0.02fF $ **FLOATING
-C1367 bit1.n0 GND 0.01fF
-C1368 bit1.n1 GND 0.00fF
-C1369 bit1.t0 GND 0.02fF $ **FLOATING
-C1370 bit1.n2 GND 0.01fF
-C1371 bit1.n3 GND 0.00fF
-C1372 bit1.n4 GND 0.00fF
-C1373 bit1.n5 GND 0.00fF
-C1374 bit1.n6 GND 0.07fF
-C1375 bit1.n7 GND 0.00fF
-C1376 bit1.n8 GND 0.00fF
-C1377 bit1.t4 GND 0.02fF $ **FLOATING
-C1378 bit1.n9 GND 0.01fF
-C1379 bit1.n10 GND 0.00fF
-C1380 bit1.t1 GND 0.02fF $ **FLOATING
-C1381 bit1.n11 GND 0.01fF
-C1382 bit1.n12 GND 0.00fF
-C1383 bit1.n13 GND 0.07fF
-C1384 bit1.t5 GND 0.01fF $ **FLOATING
-C1385 bit1.t2 GND 0.01fF $ **FLOATING
-C1386 bit1.n14 GND 0.02fF
-C1387 bit1.n15 GND 16.94fF
-C1388 bit1.n16 GND 70.36fF
+C1366 bit[1].t3 GND 0.02fF $ **FLOATING
+C1367 bit[1].n0 GND 0.01fF
+C1368 bit[1].n1 GND 0.00fF
+C1369 bit[1].t0 GND 0.02fF $ **FLOATING
+C1370 bit[1].n2 GND 0.01fF
+C1371 bit[1].n3 GND 0.00fF
+C1372 bit[1].n4 GND 0.00fF
+C1373 bit[1].n5 GND 0.00fF
+C1374 bit[1].n6 GND 0.07fF
+C1375 bit[1].n7 GND 0.00fF
+C1376 bit[1].n8 GND 0.00fF
+C1377 bit[1].t4 GND 0.02fF $ **FLOATING
+C1378 bit[1].n9 GND 0.01fF
+C1379 bit[1].n10 GND 0.00fF
+C1380 bit[1].t1 GND 0.02fF $ **FLOATING
+C1381 bit[1].n11 GND 0.01fF
+C1382 bit[1].n12 GND 0.00fF
+C1383 bit[1].n13 GND 0.07fF
+C1384 bit[1].t5 GND 0.01fF $ **FLOATING
+C1385 bit[1].t2 GND 0.01fF $ **FLOATING
+C1386 bit[1].n14 GND 0.02fF
+C1387 bit[1].n15 GND 16.94fF
+C1388 bit[1].n16 GND 70.36fF
 C1389 a_59376_25726.n0 GND 0.01fF
 C1390 a_59376_25726.n1 GND 0.01fF
 C1391 a_59376_25726.n2 GND 0.00fF
@@ -13421,89 +13420,89 @@ C2135 a_32066_65322.n38 GND 0.08fF
 C2136 a_32066_65322.t2 GND 4.19fF $ **FLOATING
 C2137 a_32066_65322.n39 GND 0.61fF
 C2138 a_32066_65322.t3 GND 0.26fF $ **FLOATING
-C2139 bit3.t16 GND 0.03fF $ **FLOATING
-C2140 bit3.n0 GND 0.01fF
-C2141 bit3.n1 GND 0.00fF
-C2142 bit3.t7 GND 0.03fF $ **FLOATING
-C2143 bit3.n2 GND 0.01fF
-C2144 bit3.n3 GND 0.00fF
-C2145 bit3.n4 GND 0.00fF
-C2146 bit3.n5 GND 0.00fF
-C2147 bit3.n6 GND 0.07fF
-C2148 bit3.t15 GND 0.03fF $ **FLOATING
-C2149 bit3.n7 GND 0.01fF
-C2150 bit3.n8 GND 0.00fF
-C2151 bit3.t8 GND 0.03fF $ **FLOATING
-C2152 bit3.n9 GND 0.01fF
-C2153 bit3.n10 GND 0.00fF
-C2154 bit3.n11 GND 0.00fF
-C2155 bit3.n12 GND 0.00fF
-C2156 bit3.n13 GND 0.07fF
-C2157 bit3.t5 GND 0.03fF $ **FLOATING
-C2158 bit3.n14 GND 0.01fF
-C2159 bit3.n15 GND 0.00fF
-C2160 bit3.t13 GND 0.03fF $ **FLOATING
-C2161 bit3.n16 GND 0.01fF
-C2162 bit3.n17 GND 0.00fF
-C2163 bit3.n18 GND 0.00fF
-C2164 bit3.n19 GND 0.00fF
-C2165 bit3.n20 GND 0.07fF
-C2166 bit3.t3 GND 0.03fF $ **FLOATING
-C2167 bit3.n21 GND 0.01fF
-C2168 bit3.n22 GND 0.00fF
-C2169 bit3.t12 GND 0.03fF $ **FLOATING
-C2170 bit3.n23 GND 0.01fF
-C2171 bit3.n24 GND 0.00fF
-C2172 bit3.n25 GND 0.00fF
-C2173 bit3.n26 GND 0.00fF
-C2174 bit3.n27 GND 0.07fF
-C2175 bit3.t1 GND 0.03fF $ **FLOATING
-C2176 bit3.n28 GND 0.01fF
-C2177 bit3.n29 GND 0.00fF
-C2178 bit3.t10 GND 0.03fF $ **FLOATING
-C2179 bit3.n30 GND 0.01fF
-C2180 bit3.n31 GND 0.00fF
-C2181 bit3.n32 GND 0.00fF
-C2182 bit3.n33 GND 0.00fF
-C2183 bit3.n34 GND 0.07fF
-C2184 bit3.t4 GND 0.03fF $ **FLOATING
-C2185 bit3.n35 GND 0.01fF
-C2186 bit3.n36 GND 0.00fF
-C2187 bit3.t9 GND 0.03fF $ **FLOATING
-C2188 bit3.n37 GND 0.01fF
-C2189 bit3.n38 GND 0.00fF
-C2190 bit3.n39 GND 0.00fF
-C2191 bit3.n40 GND 0.00fF
-C2192 bit3.n41 GND 0.07fF
-C2193 bit3.t2 GND 0.03fF $ **FLOATING
-C2194 bit3.n42 GND 0.01fF
-C2195 bit3.n43 GND 0.00fF
-C2196 bit3.t11 GND 0.03fF $ **FLOATING
-C2197 bit3.n44 GND 0.01fF
-C2198 bit3.n45 GND 0.00fF
-C2199 bit3.n46 GND 0.00fF
-C2200 bit3.n47 GND 0.00fF
-C2201 bit3.n48 GND 0.07fF
-C2202 bit3.n49 GND 0.00fF
-C2203 bit3.n50 GND 0.00fF
-C2204 bit3.t6 GND 0.03fF $ **FLOATING
-C2205 bit3.n51 GND 0.01fF
-C2206 bit3.n52 GND 0.00fF
-C2207 bit3.t17 GND 0.03fF $ **FLOATING
-C2208 bit3.n53 GND 0.01fF
-C2209 bit3.n54 GND 0.00fF
-C2210 bit3.n55 GND 0.07fF
-C2211 bit3.t14 GND 0.01fF $ **FLOATING
-C2212 bit3.t0 GND 0.01fF $ **FLOATING
-C2213 bit3.n56 GND 0.03fF
-C2214 bit3.n57 GND 18.62fF
-C2215 bit3.n58 GND 18.27fF
-C2216 bit3.n59 GND 18.27fF
-C2217 bit3.n60 GND 18.27fF
-C2218 bit3.n61 GND 18.27fF
-C2219 bit3.n62 GND 18.27fF
-C2220 bit3.n63 GND 18.27fF
-C2221 bit3.n64 GND 22.65fF
+C2139 bit[3].t16 GND 0.03fF $ **FLOATING
+C2140 bit[3].n0 GND 0.01fF
+C2141 bit[3].n1 GND 0.00fF
+C2142 bit[3].t7 GND 0.03fF $ **FLOATING
+C2143 bit[3].n2 GND 0.01fF
+C2144 bit[3].n3 GND 0.00fF
+C2145 bit[3].n4 GND 0.00fF
+C2146 bit[3].n5 GND 0.00fF
+C2147 bit[3].n6 GND 0.07fF
+C2148 bit[3].t15 GND 0.03fF $ **FLOATING
+C2149 bit[3].n7 GND 0.01fF
+C2150 bit[3].n8 GND 0.00fF
+C2151 bit[3].t8 GND 0.03fF $ **FLOATING
+C2152 bit[3].n9 GND 0.01fF
+C2153 bit[3].n10 GND 0.00fF
+C2154 bit[3].n11 GND 0.00fF
+C2155 bit[3].n12 GND 0.00fF
+C2156 bit[3].n13 GND 0.07fF
+C2157 bit[3].t5 GND 0.03fF $ **FLOATING
+C2158 bit[3].n14 GND 0.01fF
+C2159 bit[3].n15 GND 0.00fF
+C2160 bit[3].t13 GND 0.03fF $ **FLOATING
+C2161 bit[3].n16 GND 0.01fF
+C2162 bit[3].n17 GND 0.00fF
+C2163 bit[3].n18 GND 0.00fF
+C2164 bit[3].n19 GND 0.00fF
+C2165 bit[3].n20 GND 0.07fF
+C2166 bit[3].t3 GND 0.03fF $ **FLOATING
+C2167 bit[3].n21 GND 0.01fF
+C2168 bit[3].n22 GND 0.00fF
+C2169 bit[3].t12 GND 0.03fF $ **FLOATING
+C2170 bit[3].n23 GND 0.01fF
+C2171 bit[3].n24 GND 0.00fF
+C2172 bit[3].n25 GND 0.00fF
+C2173 bit[3].n26 GND 0.00fF
+C2174 bit[3].n27 GND 0.07fF
+C2175 bit[3].t1 GND 0.03fF $ **FLOATING
+C2176 bit[3].n28 GND 0.01fF
+C2177 bit[3].n29 GND 0.00fF
+C2178 bit[3].t10 GND 0.03fF $ **FLOATING
+C2179 bit[3].n30 GND 0.01fF
+C2180 bit[3].n31 GND 0.00fF
+C2181 bit[3].n32 GND 0.00fF
+C2182 bit[3].n33 GND 0.00fF
+C2183 bit[3].n34 GND 0.07fF
+C2184 bit[3].t4 GND 0.03fF $ **FLOATING
+C2185 bit[3].n35 GND 0.01fF
+C2186 bit[3].n36 GND 0.00fF
+C2187 bit[3].t9 GND 0.03fF $ **FLOATING
+C2188 bit[3].n37 GND 0.01fF
+C2189 bit[3].n38 GND 0.00fF
+C2190 bit[3].n39 GND 0.00fF
+C2191 bit[3].n40 GND 0.00fF
+C2192 bit[3].n41 GND 0.07fF
+C2193 bit[3].t2 GND 0.03fF $ **FLOATING
+C2194 bit[3].n42 GND 0.01fF
+C2195 bit[3].n43 GND 0.00fF
+C2196 bit[3].t11 GND 0.03fF $ **FLOATING
+C2197 bit[3].n44 GND 0.01fF
+C2198 bit[3].n45 GND 0.00fF
+C2199 bit[3].n46 GND 0.00fF
+C2200 bit[3].n47 GND 0.00fF
+C2201 bit[3].n48 GND 0.07fF
+C2202 bit[3].n49 GND 0.00fF
+C2203 bit[3].n50 GND 0.00fF
+C2204 bit[3].t6 GND 0.03fF $ **FLOATING
+C2205 bit[3].n51 GND 0.01fF
+C2206 bit[3].n52 GND 0.00fF
+C2207 bit[3].t17 GND 0.03fF $ **FLOATING
+C2208 bit[3].n53 GND 0.01fF
+C2209 bit[3].n54 GND 0.00fF
+C2210 bit[3].n55 GND 0.07fF
+C2211 bit[3].t14 GND 0.01fF $ **FLOATING
+C2212 bit[3].t0 GND 0.01fF $ **FLOATING
+C2213 bit[3].n56 GND 0.03fF
+C2214 bit[3].n57 GND 18.62fF
+C2215 bit[3].n58 GND 18.27fF
+C2216 bit[3].n59 GND 18.27fF
+C2217 bit[3].n60 GND 18.27fF
+C2218 bit[3].n61 GND 18.27fF
+C2219 bit[3].n62 GND 18.27fF
+C2220 bit[3].n63 GND 18.27fF
+C2221 bit[3].n64 GND 22.65fF
 C2222 a_32066_15922.n0 GND 0.00fF
 C2223 a_32066_15922.n1 GND 0.00fF
 C2224 a_32066_15922.n2 GND 0.01fF
@@ -14651,49 +14650,49 @@ C3365 a_4176_75126.n17 GND 0.12fF
 C3366 a_4176_75126.t2 GND 3.87fF $ **FLOATING
 C3367 a_4176_75126.n18 GND 0.52fF
 C3368 a_4176_75126.t3 GND 0.24fF $ **FLOATING
-C3369 bit2.t2 GND 0.02fF $ **FLOATING
-C3370 bit2.n0 GND 0.01fF
-C3371 bit2.n1 GND 0.00fF
-C3372 bit2.t7 GND 0.02fF $ **FLOATING
-C3373 bit2.n2 GND 0.01fF
-C3374 bit2.n3 GND 0.00fF
-C3375 bit2.n4 GND 0.00fF
-C3376 bit2.n5 GND 0.00fF
-C3377 bit2.n6 GND 0.07fF
-C3378 bit2.t4 GND 0.02fF $ **FLOATING
-C3379 bit2.n7 GND 0.01fF
-C3380 bit2.n8 GND 0.00fF
-C3381 bit2.t6 GND 0.02fF $ **FLOATING
-C3382 bit2.n9 GND 0.01fF
-C3383 bit2.n10 GND 0.00fF
-C3384 bit2.n11 GND 0.00fF
-C3385 bit2.n12 GND 0.00fF
-C3386 bit2.n13 GND 0.07fF
-C3387 bit2.t3 GND 0.02fF $ **FLOATING
-C3388 bit2.n14 GND 0.01fF
-C3389 bit2.n15 GND 0.00fF
-C3390 bit2.t8 GND 0.02fF $ **FLOATING
-C3391 bit2.n16 GND 0.01fF
-C3392 bit2.n17 GND 0.00fF
-C3393 bit2.n18 GND 0.00fF
-C3394 bit2.n19 GND 0.00fF
-C3395 bit2.n20 GND 0.07fF
-C3396 bit2.n21 GND 0.00fF
-C3397 bit2.n22 GND 0.00fF
-C3398 bit2.t5 GND 0.02fF $ **FLOATING
-C3399 bit2.n23 GND 0.01fF
-C3400 bit2.n24 GND 0.00fF
-C3401 bit2.t0 GND 0.02fF $ **FLOATING
-C3402 bit2.n25 GND 0.01fF
-C3403 bit2.n26 GND 0.00fF
-C3404 bit2.n27 GND 0.07fF
-C3405 bit2.t9 GND 0.01fF $ **FLOATING
-C3406 bit2.t1 GND 0.01fF $ **FLOATING
-C3407 bit2.n28 GND 0.02fF
-C3408 bit2.n29 GND 17.50fF
-C3409 bit2.n30 GND 17.17fF
-C3410 bit2.n31 GND 17.17fF
-C3411 bit2.n32 GND 55.56fF
+C3369 bit[2].t2 GND 0.02fF $ **FLOATING
+C3370 bit[2].n0 GND 0.01fF
+C3371 bit[2].n1 GND 0.00fF
+C3372 bit[2].t7 GND 0.02fF $ **FLOATING
+C3373 bit[2].n2 GND 0.01fF
+C3374 bit[2].n3 GND 0.00fF
+C3375 bit[2].n4 GND 0.00fF
+C3376 bit[2].n5 GND 0.00fF
+C3377 bit[2].n6 GND 0.07fF
+C3378 bit[2].t4 GND 0.02fF $ **FLOATING
+C3379 bit[2].n7 GND 0.01fF
+C3380 bit[2].n8 GND 0.00fF
+C3381 bit[2].t6 GND 0.02fF $ **FLOATING
+C3382 bit[2].n9 GND 0.01fF
+C3383 bit[2].n10 GND 0.00fF
+C3384 bit[2].n11 GND 0.00fF
+C3385 bit[2].n12 GND 0.00fF
+C3386 bit[2].n13 GND 0.07fF
+C3387 bit[2].t3 GND 0.02fF $ **FLOATING
+C3388 bit[2].n14 GND 0.01fF
+C3389 bit[2].n15 GND 0.00fF
+C3390 bit[2].t8 GND 0.02fF $ **FLOATING
+C3391 bit[2].n16 GND 0.01fF
+C3392 bit[2].n17 GND 0.00fF
+C3393 bit[2].n18 GND 0.00fF
+C3394 bit[2].n19 GND 0.00fF
+C3395 bit[2].n20 GND 0.07fF
+C3396 bit[2].n21 GND 0.00fF
+C3397 bit[2].n22 GND 0.00fF
+C3398 bit[2].t5 GND 0.02fF $ **FLOATING
+C3399 bit[2].n23 GND 0.01fF
+C3400 bit[2].n24 GND 0.00fF
+C3401 bit[2].t0 GND 0.02fF $ **FLOATING
+C3402 bit[2].n25 GND 0.01fF
+C3403 bit[2].n26 GND 0.00fF
+C3404 bit[2].n27 GND 0.07fF
+C3405 bit[2].t9 GND 0.01fF $ **FLOATING
+C3406 bit[2].t1 GND 0.01fF $ **FLOATING
+C3407 bit[2].n28 GND 0.02fF
+C3408 bit[2].n29 GND 17.50fF
+C3409 bit[2].n30 GND 17.17fF
+C3410 bit[2].n31 GND 17.17fF
+C3411 bit[2].n32 GND 55.56fF
 C3412 a_22866_25802.n0 GND 0.00fF
 C3413 a_22866_25802.n1 GND 0.00fF
 C3414 a_22866_25802.n2 GND 0.01fF
@@ -15933,329 +15932,329 @@ C4647 a_50466_6042.n38 GND 0.08fF
 C4648 a_50466_6042.t2 GND 4.19fF $ **FLOATING
 C4649 a_50466_6042.n39 GND 0.61fF
 C4650 a_50466_6042.t3 GND 0.26fF $ **FLOATING
-C4651 bit5.t43 GND 0.03fF $ **FLOATING
-C4652 bit5.n0 GND 0.01fF
-C4653 bit5.n1 GND 0.00fF
-C4654 bit5.t5 GND 0.03fF $ **FLOATING
-C4655 bit5.n2 GND 0.01fF
-C4656 bit5.n3 GND 0.00fF
-C4657 bit5.n4 GND 0.00fF
-C4658 bit5.n5 GND 0.00fF
-C4659 bit5.n6 GND 0.07fF
-C4660 bit5.t40 GND 0.03fF $ **FLOATING
-C4661 bit5.n7 GND 0.01fF
-C4662 bit5.n8 GND 0.00fF
-C4663 bit5.t12 GND 0.03fF $ **FLOATING
-C4664 bit5.n9 GND 0.01fF
-C4665 bit5.n10 GND 0.00fF
-C4666 bit5.n11 GND 0.00fF
-C4667 bit5.n12 GND 0.00fF
-C4668 bit5.n13 GND 0.07fF
-C4669 bit5.t61 GND 0.03fF $ **FLOATING
-C4670 bit5.n14 GND 0.01fF
-C4671 bit5.n15 GND 0.00fF
-C4672 bit5.t37 GND 0.03fF $ **FLOATING
-C4673 bit5.n16 GND 0.01fF
-C4674 bit5.n17 GND 0.00fF
-C4675 bit5.n18 GND 0.00fF
-C4676 bit5.n19 GND 0.00fF
-C4677 bit5.n20 GND 0.07fF
-C4678 bit5.t59 GND 0.03fF $ **FLOATING
-C4679 bit5.n21 GND 0.01fF
-C4680 bit5.n22 GND 0.00fF
-C4681 bit5.t33 GND 0.03fF $ **FLOATING
-C4682 bit5.n23 GND 0.01fF
-C4683 bit5.n24 GND 0.00fF
-C4684 bit5.n25 GND 0.00fF
-C4685 bit5.n26 GND 0.00fF
-C4686 bit5.n27 GND 0.07fF
-C4687 bit5.t55 GND 0.03fF $ **FLOATING
-C4688 bit5.n28 GND 0.01fF
-C4689 bit5.n29 GND 0.00fF
-C4690 bit5.t28 GND 0.03fF $ **FLOATING
-C4691 bit5.n30 GND 0.01fF
-C4692 bit5.n31 GND 0.00fF
-C4693 bit5.n32 GND 0.00fF
-C4694 bit5.n33 GND 0.00fF
-C4695 bit5.n34 GND 0.07fF
-C4696 bit5.t60 GND 0.03fF $ **FLOATING
-C4697 bit5.n35 GND 0.01fF
-C4698 bit5.n36 GND 0.00fF
-C4699 bit5.t24 GND 0.03fF $ **FLOATING
-C4700 bit5.n37 GND 0.01fF
-C4701 bit5.n38 GND 0.00fF
-C4702 bit5.n39 GND 0.00fF
-C4703 bit5.n40 GND 0.00fF
-C4704 bit5.n41 GND 0.07fF
-C4705 bit5.t58 GND 0.03fF $ **FLOATING
-C4706 bit5.n42 GND 0.01fF
-C4707 bit5.n43 GND 0.00fF
-C4708 bit5.t31 GND 0.03fF $ **FLOATING
-C4709 bit5.n44 GND 0.01fF
-C4710 bit5.n45 GND 0.00fF
-C4711 bit5.n46 GND 0.00fF
-C4712 bit5.n47 GND 0.00fF
-C4713 bit5.n48 GND 0.07fF
-C4714 bit5.n49 GND 0.00fF
-C4715 bit5.n50 GND 0.00fF
-C4716 bit5.t3 GND 0.03fF $ **FLOATING
-C4717 bit5.n51 GND 0.01fF
-C4718 bit5.n52 GND 0.00fF
-C4719 bit5.t46 GND 0.03fF $ **FLOATING
-C4720 bit5.n53 GND 0.01fF
-C4721 bit5.n54 GND 0.00fF
-C4722 bit5.n55 GND 11.99fF
-C4723 bit5.n56 GND 24.30fF
-C4724 bit5.n57 GND 18.13fF
-C4725 bit5.n58 GND 18.13fF
-C4726 bit5.n59 GND 18.13fF
-C4727 bit5.n60 GND 18.13fF
-C4728 bit5.n61 GND 18.13fF
-C4729 bit5.n62 GND 29.05fF
-C4730 bit5.t18 GND 0.03fF $ **FLOATING
-C4731 bit5.n63 GND 0.01fF
-C4732 bit5.n64 GND 0.00fF
-C4733 bit5.t52 GND 0.03fF $ **FLOATING
-C4734 bit5.n65 GND 0.01fF
-C4735 bit5.n66 GND 0.00fF
-C4736 bit5.n67 GND 0.00fF
-C4737 bit5.n68 GND 0.00fF
-C4738 bit5.n69 GND 0.07fF
-C4739 bit5.t16 GND 0.03fF $ **FLOATING
-C4740 bit5.n70 GND 0.01fF
-C4741 bit5.n71 GND 0.00fF
-C4742 bit5.t53 GND 0.03fF $ **FLOATING
-C4743 bit5.n72 GND 0.01fF
-C4744 bit5.n73 GND 0.00fF
-C4745 bit5.n74 GND 0.00fF
-C4746 bit5.n75 GND 0.00fF
-C4747 bit5.n76 GND 0.07fF
-C4748 bit5.t42 GND 0.03fF $ **FLOATING
-C4749 bit5.n77 GND 0.01fF
-C4750 bit5.n78 GND 0.00fF
-C4751 bit5.t15 GND 0.03fF $ **FLOATING
-C4752 bit5.n79 GND 0.01fF
-C4753 bit5.n80 GND 0.00fF
-C4754 bit5.n81 GND 0.00fF
-C4755 bit5.n82 GND 0.00fF
-C4756 bit5.n83 GND 0.07fF
-C4757 bit5.t39 GND 0.03fF $ **FLOATING
-C4758 bit5.n84 GND 0.01fF
-C4759 bit5.n85 GND 0.00fF
-C4760 bit5.t11 GND 0.03fF $ **FLOATING
-C4761 bit5.n86 GND 0.01fF
-C4762 bit5.n87 GND 0.00fF
-C4763 bit5.n88 GND 0.00fF
-C4764 bit5.n89 GND 0.00fF
-C4765 bit5.n90 GND 0.07fF
-C4766 bit5.t35 GND 0.03fF $ **FLOATING
-C4767 bit5.n91 GND 0.01fF
-C4768 bit5.n92 GND 0.00fF
-C4769 bit5.t8 GND 0.03fF $ **FLOATING
-C4770 bit5.n93 GND 0.01fF
-C4771 bit5.n94 GND 0.00fF
-C4772 bit5.n95 GND 0.00fF
-C4773 bit5.n96 GND 0.00fF
-C4774 bit5.n97 GND 0.07fF
-C4775 bit5.t41 GND 0.03fF $ **FLOATING
-C4776 bit5.n98 GND 0.01fF
-C4777 bit5.n99 GND 0.00fF
-C4778 bit5.t4 GND 0.03fF $ **FLOATING
-C4779 bit5.n100 GND 0.01fF
-C4780 bit5.n101 GND 0.00fF
-C4781 bit5.n102 GND 0.00fF
-C4782 bit5.n103 GND 0.00fF
-C4783 bit5.n104 GND 0.07fF
-C4784 bit5.t36 GND 0.03fF $ **FLOATING
-C4785 bit5.n105 GND 0.01fF
-C4786 bit5.n106 GND 0.00fF
-C4787 bit5.t10 GND 0.03fF $ **FLOATING
-C4788 bit5.n107 GND 0.01fF
-C4789 bit5.n108 GND 0.00fF
-C4790 bit5.n109 GND 0.00fF
-C4791 bit5.n110 GND 0.00fF
-C4792 bit5.n111 GND 0.07fF
-C4793 bit5.t50 GND 0.03fF $ **FLOATING
-C4794 bit5.n112 GND 0.01fF
-C4795 bit5.n113 GND 0.00fF
-C4796 bit5.t21 GND 0.03fF $ **FLOATING
-C4797 bit5.n114 GND 0.01fF
-C4798 bit5.n115 GND 0.00fF
-C4799 bit5.n116 GND 0.00fF
-C4800 bit5.n117 GND 0.00fF
-C4801 bit5.n118 GND 11.99fF
-C4802 bit5.n119 GND 24.30fF
-C4803 bit5.n120 GND 18.13fF
-C4804 bit5.n121 GND 18.13fF
-C4805 bit5.n122 GND 18.13fF
-C4806 bit5.n123 GND 18.13fF
-C4807 bit5.n124 GND 18.13fF
-C4808 bit5.n125 GND 20.51fF
-C4809 bit5.n126 GND 41.49fF
-C4810 bit5.t13 GND 0.03fF $ **FLOATING
-C4811 bit5.n127 GND 0.01fF
-C4812 bit5.n128 GND 0.00fF
-C4813 bit5.t45 GND 0.03fF $ **FLOATING
-C4814 bit5.n129 GND 0.01fF
-C4815 bit5.n130 GND 0.00fF
-C4816 bit5.n131 GND 0.00fF
-C4817 bit5.n132 GND 0.00fF
-C4818 bit5.n133 GND 0.07fF
-C4819 bit5.t9 GND 0.03fF $ **FLOATING
-C4820 bit5.n134 GND 0.01fF
-C4821 bit5.n135 GND 0.00fF
-C4822 bit5.t49 GND 0.03fF $ **FLOATING
-C4823 bit5.n136 GND 0.01fF
-C4824 bit5.n137 GND 0.00fF
-C4825 bit5.n138 GND 0.00fF
-C4826 bit5.n139 GND 0.00fF
-C4827 bit5.n140 GND 0.07fF
-C4828 bit5.t34 GND 0.03fF $ **FLOATING
-C4829 bit5.n141 GND 0.01fF
-C4830 bit5.n142 GND 0.00fF
-C4831 bit5.t6 GND 0.03fF $ **FLOATING
-C4832 bit5.n143 GND 0.01fF
-C4833 bit5.n144 GND 0.00fF
-C4834 bit5.n145 GND 0.00fF
-C4835 bit5.n146 GND 0.00fF
-C4836 bit5.n147 GND 0.07fF
-C4837 bit5.t29 GND 0.03fF $ **FLOATING
-C4838 bit5.n148 GND 0.01fF
-C4839 bit5.n149 GND 0.00fF
-C4840 bit5.t2 GND 0.03fF $ **FLOATING
-C4841 bit5.n150 GND 0.01fF
-C4842 bit5.n151 GND 0.00fF
-C4843 bit5.n152 GND 0.00fF
-C4844 bit5.n153 GND 0.00fF
-C4845 bit5.n154 GND 0.07fF
-C4846 bit5.t25 GND 0.03fF $ **FLOATING
-C4847 bit5.n155 GND 0.01fF
-C4848 bit5.n156 GND 0.00fF
-C4849 bit5.t64 GND 0.03fF $ **FLOATING
-C4850 bit5.n157 GND 0.01fF
-C4851 bit5.n158 GND 0.00fF
-C4852 bit5.n159 GND 0.00fF
-C4853 bit5.n160 GND 0.00fF
-C4854 bit5.n161 GND 0.07fF
-C4855 bit5.t32 GND 0.03fF $ **FLOATING
-C4856 bit5.n162 GND 0.01fF
-C4857 bit5.n163 GND 0.00fF
-C4858 bit5.t63 GND 0.03fF $ **FLOATING
-C4859 bit5.n164 GND 0.01fF
-C4860 bit5.n165 GND 0.00fF
-C4861 bit5.n166 GND 0.00fF
-C4862 bit5.n167 GND 0.00fF
-C4863 bit5.n168 GND 0.07fF
-C4864 bit5.t26 GND 0.03fF $ **FLOATING
-C4865 bit5.n169 GND 0.01fF
-C4866 bit5.n170 GND 0.00fF
-C4867 bit5.t1 GND 0.03fF $ **FLOATING
-C4868 bit5.n171 GND 0.01fF
-C4869 bit5.n172 GND 0.00fF
-C4870 bit5.n173 GND 0.00fF
-C4871 bit5.n174 GND 0.00fF
-C4872 bit5.n175 GND 0.07fF
-C4873 bit5.t44 GND 0.03fF $ **FLOATING
-C4874 bit5.n176 GND 0.01fF
-C4875 bit5.n177 GND 0.00fF
-C4876 bit5.t17 GND 0.03fF $ **FLOATING
-C4877 bit5.n178 GND 0.01fF
-C4878 bit5.n179 GND 0.00fF
-C4879 bit5.n180 GND 0.00fF
-C4880 bit5.n181 GND 0.00fF
-C4881 bit5.n182 GND 11.99fF
-C4882 bit5.n183 GND 24.30fF
-C4883 bit5.n184 GND 18.13fF
-C4884 bit5.n185 GND 18.13fF
-C4885 bit5.n186 GND 18.13fF
-C4886 bit5.n187 GND 18.13fF
-C4887 bit5.n188 GND 18.13fF
-C4888 bit5.n189 GND 20.51fF
-C4889 bit5.n190 GND 28.89fF
-C4890 bit5.t20 GND 0.03fF $ **FLOATING
-C4891 bit5.n191 GND 0.01fF
-C4892 bit5.n192 GND 0.00fF
-C4893 bit5.t30 GND 0.03fF $ **FLOATING
-C4894 bit5.n193 GND 0.01fF
-C4895 bit5.n194 GND 0.00fF
-C4896 bit5.n195 GND 0.00fF
-C4897 bit5.n196 GND 0.00fF
-C4898 bit5.n197 GND 0.07fF
-C4899 bit5.t51 GND 0.03fF $ **FLOATING
-C4900 bit5.n198 GND 0.01fF
-C4901 bit5.n199 GND 0.00fF
-C4902 bit5.t38 GND 0.03fF $ **FLOATING
-C4903 bit5.n200 GND 0.01fF
-C4904 bit5.n201 GND 0.00fF
-C4905 bit5.n202 GND 0.00fF
-C4906 bit5.n203 GND 0.00fF
-C4907 bit5.n204 GND 0.07fF
-C4908 bit5.t0 GND 0.03fF $ **FLOATING
-C4909 bit5.n205 GND 0.01fF
-C4910 bit5.n206 GND 0.00fF
-C4911 bit5.t54 GND 0.03fF $ **FLOATING
-C4912 bit5.n207 GND 0.01fF
-C4913 bit5.n208 GND 0.00fF
-C4914 bit5.n209 GND 0.00fF
-C4915 bit5.n210 GND 0.00fF
-C4916 bit5.n211 GND 0.07fF
-C4917 bit5.t27 GND 0.03fF $ **FLOATING
-C4918 bit5.n212 GND 0.01fF
-C4919 bit5.n213 GND 0.00fF
-C4920 bit5.t19 GND 0.03fF $ **FLOATING
-C4921 bit5.n214 GND 0.01fF
-C4922 bit5.n215 GND 0.00fF
-C4923 bit5.n216 GND 0.00fF
-C4924 bit5.n217 GND 0.00fF
-C4925 bit5.n218 GND 0.07fF
-C4926 bit5.t57 GND 0.03fF $ **FLOATING
-C4927 bit5.n219 GND 0.01fF
-C4928 bit5.n220 GND 0.00fF
-C4929 bit5.t48 GND 0.03fF $ **FLOATING
-C4930 bit5.n221 GND 0.01fF
-C4931 bit5.n222 GND 0.00fF
-C4932 bit5.n223 GND 0.00fF
-C4933 bit5.n224 GND 0.00fF
-C4934 bit5.n225 GND 0.07fF
-C4935 bit5.t62 GND 0.03fF $ **FLOATING
-C4936 bit5.n226 GND 0.01fF
-C4937 bit5.n227 GND 0.00fF
-C4938 bit5.t7 GND 0.03fF $ **FLOATING
-C4939 bit5.n228 GND 0.01fF
-C4940 bit5.n229 GND 0.00fF
-C4941 bit5.n230 GND 0.00fF
-C4942 bit5.n231 GND 0.00fF
-C4943 bit5.n232 GND 0.07fF
-C4944 bit5.t22 GND 0.03fF $ **FLOATING
-C4945 bit5.n233 GND 0.01fF
-C4946 bit5.n234 GND 0.00fF
-C4947 bit5.t14 GND 0.03fF $ **FLOATING
-C4948 bit5.n235 GND 0.01fF
-C4949 bit5.n236 GND 0.00fF
-C4950 bit5.n237 GND 0.00fF
-C4951 bit5.n238 GND 0.00fF
-C4952 bit5.n239 GND 0.07fF
-C4953 bit5.t56 GND 0.03fF $ **FLOATING
-C4954 bit5.n240 GND 0.01fF
-C4955 bit5.n241 GND 0.00fF
-C4956 bit5.t47 GND 0.03fF $ **FLOATING
-C4957 bit5.n242 GND 0.01fF
-C4958 bit5.n243 GND 0.00fF
-C4959 bit5.n244 GND 0.00fF
-C4960 bit5.n245 GND 0.00fF
-C4961 bit5.n246 GND 0.07fF
-C4962 bit5.t65 GND 0.01fF $ **FLOATING
-C4963 bit5.t23 GND 0.01fF $ **FLOATING
-C4964 bit5.n247 GND 0.03fF
-C4965 bit5.n248 GND 18.47fF
-C4966 bit5.n249 GND 18.13fF
-C4967 bit5.n250 GND 18.13fF
-C4968 bit5.n251 GND 18.13fF
-C4969 bit5.n252 GND 18.13fF
-C4970 bit5.n253 GND 18.13fF
-C4971 bit5.n254 GND 18.13fF
-C4972 bit5.n255 GND 20.51fF
-C4973 bit5.n256 GND 21.14fF
+C4651 bit[5].t43 GND 0.03fF $ **FLOATING
+C4652 bit[5].n0 GND 0.01fF
+C4653 bit[5].n1 GND 0.00fF
+C4654 bit[5].t5 GND 0.03fF $ **FLOATING
+C4655 bit[5].n2 GND 0.01fF
+C4656 bit[5].n3 GND 0.00fF
+C4657 bit[5].n4 GND 0.00fF
+C4658 bit[5].n5 GND 0.00fF
+C4659 bit[5].n6 GND 0.07fF
+C4660 bit[5].t40 GND 0.03fF $ **FLOATING
+C4661 bit[5].n7 GND 0.01fF
+C4662 bit[5].n8 GND 0.00fF
+C4663 bit[5].t12 GND 0.03fF $ **FLOATING
+C4664 bit[5].n9 GND 0.01fF
+C4665 bit[5].n10 GND 0.00fF
+C4666 bit[5].n11 GND 0.00fF
+C4667 bit[5].n12 GND 0.00fF
+C4668 bit[5].n13 GND 0.07fF
+C4669 bit[5].t61 GND 0.03fF $ **FLOATING
+C4670 bit[5].n14 GND 0.01fF
+C4671 bit[5].n15 GND 0.00fF
+C4672 bit[5].t37 GND 0.03fF $ **FLOATING
+C4673 bit[5].n16 GND 0.01fF
+C4674 bit[5].n17 GND 0.00fF
+C4675 bit[5].n18 GND 0.00fF
+C4676 bit[5].n19 GND 0.00fF
+C4677 bit[5].n20 GND 0.07fF
+C4678 bit[5].t59 GND 0.03fF $ **FLOATING
+C4679 bit[5].n21 GND 0.01fF
+C4680 bit[5].n22 GND 0.00fF
+C4681 bit[5].t33 GND 0.03fF $ **FLOATING
+C4682 bit[5].n23 GND 0.01fF
+C4683 bit[5].n24 GND 0.00fF
+C4684 bit[5].n25 GND 0.00fF
+C4685 bit[5].n26 GND 0.00fF
+C4686 bit[5].n27 GND 0.07fF
+C4687 bit[5].t55 GND 0.03fF $ **FLOATING
+C4688 bit[5].n28 GND 0.01fF
+C4689 bit[5].n29 GND 0.00fF
+C4690 bit[5].t28 GND 0.03fF $ **FLOATING
+C4691 bit[5].n30 GND 0.01fF
+C4692 bit[5].n31 GND 0.00fF
+C4693 bit[5].n32 GND 0.00fF
+C4694 bit[5].n33 GND 0.00fF
+C4695 bit[5].n34 GND 0.07fF
+C4696 bit[5].t60 GND 0.03fF $ **FLOATING
+C4697 bit[5].n35 GND 0.01fF
+C4698 bit[5].n36 GND 0.00fF
+C4699 bit[5].t24 GND 0.03fF $ **FLOATING
+C4700 bit[5].n37 GND 0.01fF
+C4701 bit[5].n38 GND 0.00fF
+C4702 bit[5].n39 GND 0.00fF
+C4703 bit[5].n40 GND 0.00fF
+C4704 bit[5].n41 GND 0.07fF
+C4705 bit[5].t58 GND 0.03fF $ **FLOATING
+C4706 bit[5].n42 GND 0.01fF
+C4707 bit[5].n43 GND 0.00fF
+C4708 bit[5].t31 GND 0.03fF $ **FLOATING
+C4709 bit[5].n44 GND 0.01fF
+C4710 bit[5].n45 GND 0.00fF
+C4711 bit[5].n46 GND 0.00fF
+C4712 bit[5].n47 GND 0.00fF
+C4713 bit[5].n48 GND 0.07fF
+C4714 bit[5].n49 GND 0.00fF
+C4715 bit[5].n50 GND 0.00fF
+C4716 bit[5].t3 GND 0.03fF $ **FLOATING
+C4717 bit[5].n51 GND 0.01fF
+C4718 bit[5].n52 GND 0.00fF
+C4719 bit[5].t46 GND 0.03fF $ **FLOATING
+C4720 bit[5].n53 GND 0.01fF
+C4721 bit[5].n54 GND 0.00fF
+C4722 bit[5].n55 GND 11.99fF
+C4723 bit[5].n56 GND 24.30fF
+C4724 bit[5].n57 GND 18.13fF
+C4725 bit[5].n58 GND 18.13fF
+C4726 bit[5].n59 GND 18.13fF
+C4727 bit[5].n60 GND 18.13fF
+C4728 bit[5].n61 GND 18.13fF
+C4729 bit[5].n62 GND 29.05fF
+C4730 bit[5].t18 GND 0.03fF $ **FLOATING
+C4731 bit[5].n63 GND 0.01fF
+C4732 bit[5].n64 GND 0.00fF
+C4733 bit[5].t52 GND 0.03fF $ **FLOATING
+C4734 bit[5].n65 GND 0.01fF
+C4735 bit[5].n66 GND 0.00fF
+C4736 bit[5].n67 GND 0.00fF
+C4737 bit[5].n68 GND 0.00fF
+C4738 bit[5].n69 GND 0.07fF
+C4739 bit[5].t16 GND 0.03fF $ **FLOATING
+C4740 bit[5].n70 GND 0.01fF
+C4741 bit[5].n71 GND 0.00fF
+C4742 bit[5].t53 GND 0.03fF $ **FLOATING
+C4743 bit[5].n72 GND 0.01fF
+C4744 bit[5].n73 GND 0.00fF
+C4745 bit[5].n74 GND 0.00fF
+C4746 bit[5].n75 GND 0.00fF
+C4747 bit[5].n76 GND 0.07fF
+C4748 bit[5].t42 GND 0.03fF $ **FLOATING
+C4749 bit[5].n77 GND 0.01fF
+C4750 bit[5].n78 GND 0.00fF
+C4751 bit[5].t15 GND 0.03fF $ **FLOATING
+C4752 bit[5].n79 GND 0.01fF
+C4753 bit[5].n80 GND 0.00fF
+C4754 bit[5].n81 GND 0.00fF
+C4755 bit[5].n82 GND 0.00fF
+C4756 bit[5].n83 GND 0.07fF
+C4757 bit[5].t39 GND 0.03fF $ **FLOATING
+C4758 bit[5].n84 GND 0.01fF
+C4759 bit[5].n85 GND 0.00fF
+C4760 bit[5].t11 GND 0.03fF $ **FLOATING
+C4761 bit[5].n86 GND 0.01fF
+C4762 bit[5].n87 GND 0.00fF
+C4763 bit[5].n88 GND 0.00fF
+C4764 bit[5].n89 GND 0.00fF
+C4765 bit[5].n90 GND 0.07fF
+C4766 bit[5].t35 GND 0.03fF $ **FLOATING
+C4767 bit[5].n91 GND 0.01fF
+C4768 bit[5].n92 GND 0.00fF
+C4769 bit[5].t8 GND 0.03fF $ **FLOATING
+C4770 bit[5].n93 GND 0.01fF
+C4771 bit[5].n94 GND 0.00fF
+C4772 bit[5].n95 GND 0.00fF
+C4773 bit[5].n96 GND 0.00fF
+C4774 bit[5].n97 GND 0.07fF
+C4775 bit[5].t41 GND 0.03fF $ **FLOATING
+C4776 bit[5].n98 GND 0.01fF
+C4777 bit[5].n99 GND 0.00fF
+C4778 bit[5].t4 GND 0.03fF $ **FLOATING
+C4779 bit[5].n100 GND 0.01fF
+C4780 bit[5].n101 GND 0.00fF
+C4781 bit[5].n102 GND 0.00fF
+C4782 bit[5].n103 GND 0.00fF
+C4783 bit[5].n104 GND 0.07fF
+C4784 bit[5].t36 GND 0.03fF $ **FLOATING
+C4785 bit[5].n105 GND 0.01fF
+C4786 bit[5].n106 GND 0.00fF
+C4787 bit[5].t10 GND 0.03fF $ **FLOATING
+C4788 bit[5].n107 GND 0.01fF
+C4789 bit[5].n108 GND 0.00fF
+C4790 bit[5].n109 GND 0.00fF
+C4791 bit[5].n110 GND 0.00fF
+C4792 bit[5].n111 GND 0.07fF
+C4793 bit[5].t50 GND 0.03fF $ **FLOATING
+C4794 bit[5].n112 GND 0.01fF
+C4795 bit[5].n113 GND 0.00fF
+C4796 bit[5].t21 GND 0.03fF $ **FLOATING
+C4797 bit[5].n114 GND 0.01fF
+C4798 bit[5].n115 GND 0.00fF
+C4799 bit[5].n116 GND 0.00fF
+C4800 bit[5].n117 GND 0.00fF
+C4801 bit[5].n118 GND 11.99fF
+C4802 bit[5].n119 GND 24.30fF
+C4803 bit[5].n120 GND 18.13fF
+C4804 bit[5].n121 GND 18.13fF
+C4805 bit[5].n122 GND 18.13fF
+C4806 bit[5].n123 GND 18.13fF
+C4807 bit[5].n124 GND 18.13fF
+C4808 bit[5].n125 GND 20.51fF
+C4809 bit[5].n126 GND 41.49fF
+C4810 bit[5].t13 GND 0.03fF $ **FLOATING
+C4811 bit[5].n127 GND 0.01fF
+C4812 bit[5].n128 GND 0.00fF
+C4813 bit[5].t45 GND 0.03fF $ **FLOATING
+C4814 bit[5].n129 GND 0.01fF
+C4815 bit[5].n130 GND 0.00fF
+C4816 bit[5].n131 GND 0.00fF
+C4817 bit[5].n132 GND 0.00fF
+C4818 bit[5].n133 GND 0.07fF
+C4819 bit[5].t9 GND 0.03fF $ **FLOATING
+C4820 bit[5].n134 GND 0.01fF
+C4821 bit[5].n135 GND 0.00fF
+C4822 bit[5].t49 GND 0.03fF $ **FLOATING
+C4823 bit[5].n136 GND 0.01fF
+C4824 bit[5].n137 GND 0.00fF
+C4825 bit[5].n138 GND 0.00fF
+C4826 bit[5].n139 GND 0.00fF
+C4827 bit[5].n140 GND 0.07fF
+C4828 bit[5].t34 GND 0.03fF $ **FLOATING
+C4829 bit[5].n141 GND 0.01fF
+C4830 bit[5].n142 GND 0.00fF
+C4831 bit[5].t6 GND 0.03fF $ **FLOATING
+C4832 bit[5].n143 GND 0.01fF
+C4833 bit[5].n144 GND 0.00fF
+C4834 bit[5].n145 GND 0.00fF
+C4835 bit[5].n146 GND 0.00fF
+C4836 bit[5].n147 GND 0.07fF
+C4837 bit[5].t29 GND 0.03fF $ **FLOATING
+C4838 bit[5].n148 GND 0.01fF
+C4839 bit[5].n149 GND 0.00fF
+C4840 bit[5].t2 GND 0.03fF $ **FLOATING
+C4841 bit[5].n150 GND 0.01fF
+C4842 bit[5].n151 GND 0.00fF
+C4843 bit[5].n152 GND 0.00fF
+C4844 bit[5].n153 GND 0.00fF
+C4845 bit[5].n154 GND 0.07fF
+C4846 bit[5].t25 GND 0.03fF $ **FLOATING
+C4847 bit[5].n155 GND 0.01fF
+C4848 bit[5].n156 GND 0.00fF
+C4849 bit[5].t64 GND 0.03fF $ **FLOATING
+C4850 bit[5].n157 GND 0.01fF
+C4851 bit[5].n158 GND 0.00fF
+C4852 bit[5].n159 GND 0.00fF
+C4853 bit[5].n160 GND 0.00fF
+C4854 bit[5].n161 GND 0.07fF
+C4855 bit[5].t32 GND 0.03fF $ **FLOATING
+C4856 bit[5].n162 GND 0.01fF
+C4857 bit[5].n163 GND 0.00fF
+C4858 bit[5].t63 GND 0.03fF $ **FLOATING
+C4859 bit[5].n164 GND 0.01fF
+C4860 bit[5].n165 GND 0.00fF
+C4861 bit[5].n166 GND 0.00fF
+C4862 bit[5].n167 GND 0.00fF
+C4863 bit[5].n168 GND 0.07fF
+C4864 bit[5].t26 GND 0.03fF $ **FLOATING
+C4865 bit[5].n169 GND 0.01fF
+C4866 bit[5].n170 GND 0.00fF
+C4867 bit[5].t1 GND 0.03fF $ **FLOATING
+C4868 bit[5].n171 GND 0.01fF
+C4869 bit[5].n172 GND 0.00fF
+C4870 bit[5].n173 GND 0.00fF
+C4871 bit[5].n174 GND 0.00fF
+C4872 bit[5].n175 GND 0.07fF
+C4873 bit[5].t44 GND 0.03fF $ **FLOATING
+C4874 bit[5].n176 GND 0.01fF
+C4875 bit[5].n177 GND 0.00fF
+C4876 bit[5].t17 GND 0.03fF $ **FLOATING
+C4877 bit[5].n178 GND 0.01fF
+C4878 bit[5].n179 GND 0.00fF
+C4879 bit[5].n180 GND 0.00fF
+C4880 bit[5].n181 GND 0.00fF
+C4881 bit[5].n182 GND 11.99fF
+C4882 bit[5].n183 GND 24.30fF
+C4883 bit[5].n184 GND 18.13fF
+C4884 bit[5].n185 GND 18.13fF
+C4885 bit[5].n186 GND 18.13fF
+C4886 bit[5].n187 GND 18.13fF
+C4887 bit[5].n188 GND 18.13fF
+C4888 bit[5].n189 GND 20.51fF
+C4889 bit[5].n190 GND 28.89fF
+C4890 bit[5].t20 GND 0.03fF $ **FLOATING
+C4891 bit[5].n191 GND 0.01fF
+C4892 bit[5].n192 GND 0.00fF
+C4893 bit[5].t30 GND 0.03fF $ **FLOATING
+C4894 bit[5].n193 GND 0.01fF
+C4895 bit[5].n194 GND 0.00fF
+C4896 bit[5].n195 GND 0.00fF
+C4897 bit[5].n196 GND 0.00fF
+C4898 bit[5].n197 GND 0.07fF
+C4899 bit[5].t51 GND 0.03fF $ **FLOATING
+C4900 bit[5].n198 GND 0.01fF
+C4901 bit[5].n199 GND 0.00fF
+C4902 bit[5].t38 GND 0.03fF $ **FLOATING
+C4903 bit[5].n200 GND 0.01fF
+C4904 bit[5].n201 GND 0.00fF
+C4905 bit[5].n202 GND 0.00fF
+C4906 bit[5].n203 GND 0.00fF
+C4907 bit[5].n204 GND 0.07fF
+C4908 bit[5].t0 GND 0.03fF $ **FLOATING
+C4909 bit[5].n205 GND 0.01fF
+C4910 bit[5].n206 GND 0.00fF
+C4911 bit[5].t54 GND 0.03fF $ **FLOATING
+C4912 bit[5].n207 GND 0.01fF
+C4913 bit[5].n208 GND 0.00fF
+C4914 bit[5].n209 GND 0.00fF
+C4915 bit[5].n210 GND 0.00fF
+C4916 bit[5].n211 GND 0.07fF
+C4917 bit[5].t27 GND 0.03fF $ **FLOATING
+C4918 bit[5].n212 GND 0.01fF
+C4919 bit[5].n213 GND 0.00fF
+C4920 bit[5].t19 GND 0.03fF $ **FLOATING
+C4921 bit[5].n214 GND 0.01fF
+C4922 bit[5].n215 GND 0.00fF
+C4923 bit[5].n216 GND 0.00fF
+C4924 bit[5].n217 GND 0.00fF
+C4925 bit[5].n218 GND 0.07fF
+C4926 bit[5].t57 GND 0.03fF $ **FLOATING
+C4927 bit[5].n219 GND 0.01fF
+C4928 bit[5].n220 GND 0.00fF
+C4929 bit[5].t48 GND 0.03fF $ **FLOATING
+C4930 bit[5].n221 GND 0.01fF
+C4931 bit[5].n222 GND 0.00fF
+C4932 bit[5].n223 GND 0.00fF
+C4933 bit[5].n224 GND 0.00fF
+C4934 bit[5].n225 GND 0.07fF
+C4935 bit[5].t62 GND 0.03fF $ **FLOATING
+C4936 bit[5].n226 GND 0.01fF
+C4937 bit[5].n227 GND 0.00fF
+C4938 bit[5].t7 GND 0.03fF $ **FLOATING
+C4939 bit[5].n228 GND 0.01fF
+C4940 bit[5].n229 GND 0.00fF
+C4941 bit[5].n230 GND 0.00fF
+C4942 bit[5].n231 GND 0.00fF
+C4943 bit[5].n232 GND 0.07fF
+C4944 bit[5].t22 GND 0.03fF $ **FLOATING
+C4945 bit[5].n233 GND 0.01fF
+C4946 bit[5].n234 GND 0.00fF
+C4947 bit[5].t14 GND 0.03fF $ **FLOATING
+C4948 bit[5].n235 GND 0.01fF
+C4949 bit[5].n236 GND 0.00fF
+C4950 bit[5].n237 GND 0.00fF
+C4951 bit[5].n238 GND 0.00fF
+C4952 bit[5].n239 GND 0.07fF
+C4953 bit[5].t56 GND 0.03fF $ **FLOATING
+C4954 bit[5].n240 GND 0.01fF
+C4955 bit[5].n241 GND 0.00fF
+C4956 bit[5].t47 GND 0.03fF $ **FLOATING
+C4957 bit[5].n242 GND 0.01fF
+C4958 bit[5].n243 GND 0.00fF
+C4959 bit[5].n244 GND 0.00fF
+C4960 bit[5].n245 GND 0.00fF
+C4961 bit[5].n246 GND 0.07fF
+C4962 bit[5].t65 GND 0.01fF $ **FLOATING
+C4963 bit[5].t23 GND 0.01fF $ **FLOATING
+C4964 bit[5].n247 GND 0.03fF
+C4965 bit[5].n248 GND 18.47fF
+C4966 bit[5].n249 GND 18.13fF
+C4967 bit[5].n250 GND 18.13fF
+C4968 bit[5].n251 GND 18.13fF
+C4969 bit[5].n252 GND 18.13fF
+C4970 bit[5].n253 GND 18.13fF
+C4971 bit[5].n254 GND 18.13fF
+C4972 bit[5].n255 GND 20.51fF
+C4973 bit[5].n256 GND 21.14fF
 C4974 a_59376_45486.n0 GND 0.01fF
 C4975 a_59376_45486.n1 GND 0.01fF
 C4976 a_59376_45486.n2 GND 0.00fF
@@ -16468,167 +16467,179 @@ C5182 a_22866_45562.n38 GND 0.08fF
 C5183 a_22866_45562.t3 GND 4.19fF $ **FLOATING
 C5184 a_22866_45562.n39 GND 0.61fF
 C5185 a_22866_45562.t0 GND 0.26fF $ **FLOATING
-C5186 bit4.t28 GND 0.03fF $ **FLOATING
-C5187 bit4.n0 GND 0.01fF
-C5188 bit4.n1 GND 0.00fF
-C5189 bit4.t11 GND 0.03fF $ **FLOATING
-C5190 bit4.n2 GND 0.01fF
-C5191 bit4.n3 GND 0.00fF
-C5192 bit4.n4 GND 0.00fF
-C5193 bit4.n5 GND 0.00fF
-C5194 bit4.n6 GND 0.07fF
-C5195 bit4.t26 GND 0.03fF $ **FLOATING
-C5196 bit4.n7 GND 0.01fF
-C5197 bit4.n8 GND 0.00fF
-C5198 bit4.t12 GND 0.03fF $ **FLOATING
-C5199 bit4.n9 GND 0.01fF
-C5200 bit4.n10 GND 0.00fF
-C5201 bit4.n11 GND 0.00fF
-C5202 bit4.n12 GND 0.00fF
-C5203 bit4.n13 GND 0.07fF
-C5204 bit4.t6 GND 0.03fF $ **FLOATING
-C5205 bit4.n14 GND 0.01fF
-C5206 bit4.n15 GND 0.00fF
-C5207 bit4.t25 GND 0.03fF $ **FLOATING
-C5208 bit4.n16 GND 0.01fF
-C5209 bit4.n17 GND 0.00fF
-C5210 bit4.n18 GND 0.00fF
-C5211 bit4.n19 GND 0.00fF
-C5212 bit4.n20 GND 0.07fF
-C5213 bit4.t4 GND 0.03fF $ **FLOATING
-C5214 bit4.n21 GND 0.01fF
-C5215 bit4.n22 GND 0.00fF
-C5216 bit4.t23 GND 0.03fF $ **FLOATING
-C5217 bit4.n23 GND 0.01fF
-C5218 bit4.n24 GND 0.00fF
-C5219 bit4.n25 GND 0.00fF
-C5220 bit4.n26 GND 0.00fF
-C5221 bit4.n27 GND 0.07fF
-C5222 bit4.t2 GND 0.03fF $ **FLOATING
-C5223 bit4.n28 GND 0.01fF
-C5224 bit4.n29 GND 0.00fF
-C5225 bit4.t20 GND 0.03fF $ **FLOATING
-C5226 bit4.n30 GND 0.01fF
-C5227 bit4.n31 GND 0.00fF
-C5228 bit4.n32 GND 0.00fF
-C5229 bit4.n33 GND 0.00fF
-C5230 bit4.n34 GND 0.07fF
-C5231 bit4.t5 GND 0.03fF $ **FLOATING
-C5232 bit4.n35 GND 0.01fF
-C5233 bit4.n36 GND 0.00fF
-C5234 bit4.t17 GND 0.03fF $ **FLOATING
-C5235 bit4.n37 GND 0.01fF
-C5236 bit4.n38 GND 0.00fF
-C5237 bit4.n39 GND 0.00fF
-C5238 bit4.n40 GND 0.00fF
-C5239 bit4.n41 GND 0.07fF
-C5240 bit4.t3 GND 0.03fF $ **FLOATING
-C5241 bit4.n42 GND 0.01fF
-C5242 bit4.n43 GND 0.00fF
-C5243 bit4.t22 GND 0.03fF $ **FLOATING
-C5244 bit4.n44 GND 0.01fF
-C5245 bit4.n45 GND 0.00fF
-C5246 bit4.n46 GND 0.00fF
-C5247 bit4.n47 GND 0.00fF
-C5248 bit4.n48 GND 0.07fF
-C5249 bit4.n49 GND 0.00fF
-C5250 bit4.n50 GND 0.00fF
-C5251 bit4.t10 GND 0.03fF $ **FLOATING
-C5252 bit4.n51 GND 0.01fF
-C5253 bit4.n52 GND 0.00fF
-C5254 bit4.t29 GND 0.03fF $ **FLOATING
-C5255 bit4.n53 GND 0.01fF
-C5256 bit4.n54 GND 0.00fF
-C5257 bit4.n55 GND 12.02fF
-C5258 bit4.n56 GND 24.36fF
-C5259 bit4.n57 GND 18.17fF
-C5260 bit4.n58 GND 18.17fF
-C5261 bit4.n59 GND 18.17fF
-C5262 bit4.n60 GND 18.17fF
-C5263 bit4.n61 GND 18.17fF
-C5264 bit4.n62 GND 29.12fF
-C5265 bit4.t24 GND 0.03fF $ **FLOATING
-C5266 bit4.n63 GND 0.01fF
-C5267 bit4.n64 GND 0.00fF
-C5268 bit4.t8 GND 0.03fF $ **FLOATING
-C5269 bit4.n65 GND 0.01fF
-C5270 bit4.n66 GND 0.00fF
-C5271 bit4.n67 GND 0.00fF
-C5272 bit4.n68 GND 0.00fF
-C5273 bit4.n69 GND 0.07fF
-C5274 bit4.t21 GND 0.03fF $ **FLOATING
-C5275 bit4.n70 GND 0.01fF
-C5276 bit4.n71 GND 0.00fF
-C5277 bit4.t9 GND 0.03fF $ **FLOATING
-C5278 bit4.n72 GND 0.01fF
-C5279 bit4.n73 GND 0.00fF
-C5280 bit4.n74 GND 0.00fF
-C5281 bit4.n75 GND 0.00fF
-C5282 bit4.n76 GND 0.07fF
-C5283 bit4.t1 GND 0.03fF $ **FLOATING
-C5284 bit4.n77 GND 0.01fF
-C5285 bit4.n78 GND 0.00fF
-C5286 bit4.t18 GND 0.03fF $ **FLOATING
-C5287 bit4.n79 GND 0.01fF
-C5288 bit4.n80 GND 0.00fF
-C5289 bit4.n81 GND 0.00fF
-C5290 bit4.n82 GND 0.00fF
-C5291 bit4.n83 GND 0.07fF
-C5292 bit4.t33 GND 0.03fF $ **FLOATING
-C5293 bit4.n84 GND 0.01fF
-C5294 bit4.n85 GND 0.00fF
-C5295 bit4.t16 GND 0.03fF $ **FLOATING
-C5296 bit4.n86 GND 0.01fF
-C5297 bit4.n87 GND 0.00fF
-C5298 bit4.n88 GND 0.00fF
-C5299 bit4.n89 GND 0.00fF
-C5300 bit4.n90 GND 0.07fF
-C5301 bit4.t31 GND 0.03fF $ **FLOATING
-C5302 bit4.n91 GND 0.01fF
-C5303 bit4.n92 GND 0.00fF
-C5304 bit4.t14 GND 0.03fF $ **FLOATING
-C5305 bit4.n93 GND 0.01fF
-C5306 bit4.n94 GND 0.00fF
-C5307 bit4.n95 GND 0.00fF
-C5308 bit4.n96 GND 0.00fF
-C5309 bit4.n97 GND 0.07fF
-C5310 bit4.t0 GND 0.03fF $ **FLOATING
-C5311 bit4.n98 GND 0.01fF
-C5312 bit4.n99 GND 0.00fF
-C5313 bit4.t13 GND 0.03fF $ **FLOATING
-C5314 bit4.n100 GND 0.01fF
-C5315 bit4.n101 GND 0.00fF
-C5316 bit4.n102 GND 0.00fF
-C5317 bit4.n103 GND 0.00fF
-C5318 bit4.n104 GND 0.07fF
-C5319 bit4.t32 GND 0.03fF $ **FLOATING
-C5320 bit4.n105 GND 0.01fF
-C5321 bit4.n106 GND 0.00fF
-C5322 bit4.t15 GND 0.03fF $ **FLOATING
-C5323 bit4.n107 GND 0.01fF
-C5324 bit4.n108 GND 0.00fF
-C5325 bit4.n109 GND 0.00fF
-C5326 bit4.n110 GND 0.00fF
-C5327 bit4.n111 GND 0.07fF
-C5328 bit4.t7 GND 0.03fF $ **FLOATING
-C5329 bit4.n112 GND 0.01fF
-C5330 bit4.n113 GND 0.00fF
-C5331 bit4.t27 GND 0.03fF $ **FLOATING
-C5332 bit4.n114 GND 0.01fF
-C5333 bit4.n115 GND 0.00fF
-C5334 bit4.n116 GND 0.00fF
-C5335 bit4.n117 GND 0.00fF
-C5336 bit4.n118 GND 0.07fF
-C5337 bit4.t19 GND 0.01fF $ **FLOATING
-C5338 bit4.t30 GND 0.01fF $ **FLOATING
-C5339 bit4.n119 GND 0.03fF
-C5340 bit4.n120 GND 18.52fF
-C5341 bit4.n121 GND 18.17fF
-C5342 bit4.n122 GND 18.17fF
-C5343 bit4.n123 GND 18.17fF
-C5344 bit4.n124 GND 18.17fF
-C5345 bit4.n125 GND 18.17fF
-C5346 bit4.n126 GND 18.17fF
-C5347 bit4.n127 GND 20.56fF
-C5348 bit4.n128 GND 33.82fF
+C5186 bit[4].t28 GND 0.03fF $ **FLOATING
+C5187 bit[4].n0 GND 0.01fF
+C5188 bit[4].n1 GND 0.00fF
+C5189 bit[4].t11 GND 0.03fF $ **FLOATING
+C5190 bit[4].n2 GND 0.01fF
+C5191 bit[4].n3 GND 0.00fF
+C5192 bit[4].n4 GND 0.00fF
+C5193 bit[4].n5 GND 0.00fF
+C5194 bit[4].n6 GND 0.07fF
+C5195 bit[4].t26 GND 0.03fF $ **FLOATING
+C5196 bit[4].n7 GND 0.01fF
+C5197 bit[4].n8 GND 0.00fF
+C5198 bit[4].t12 GND 0.03fF $ **FLOATING
+C5199 bit[4].n9 GND 0.01fF
+C5200 bit[4].n10 GND 0.00fF
+C5201 bit[4].n11 GND 0.00fF
+C5202 bit[4].n12 GND 0.00fF
+C5203 bit[4].n13 GND 0.07fF
+C5204 bit[4].t6 GND 0.03fF $ **FLOATING
+C5205 bit[4].n14 GND 0.01fF
+C5206 bit[4].n15 GND 0.00fF
+C5207 bit[4].t25 GND 0.03fF $ **FLOATING
+C5208 bit[4].n16 GND 0.01fF
+C5209 bit[4].n17 GND 0.00fF
+C5210 bit[4].n18 GND 0.00fF
+C5211 bit[4].n19 GND 0.00fF
+C5212 bit[4].n20 GND 0.07fF
+C5213 bit[4].t4 GND 0.03fF $ **FLOATING
+C5214 bit[4].n21 GND 0.01fF
+C5215 bit[4].n22 GND 0.00fF
+C5216 bit[4].t23 GND 0.03fF $ **FLOATING
+C5217 bit[4].n23 GND 0.01fF
+C5218 bit[4].n24 GND 0.00fF
+C5219 bit[4].n25 GND 0.00fF
+C5220 bit[4].n26 GND 0.00fF
+C5221 bit[4].n27 GND 0.07fF
+C5222 bit[4].t2 GND 0.03fF $ **FLOATING
+C5223 bit[4].n28 GND 0.01fF
+C5224 bit[4].n29 GND 0.00fF
+C5225 bit[4].t20 GND 0.03fF $ **FLOATING
+C5226 bit[4].n30 GND 0.01fF
+C5227 bit[4].n31 GND 0.00fF
+C5228 bit[4].n32 GND 0.00fF
+C5229 bit[4].n33 GND 0.00fF
+C5230 bit[4].n34 GND 0.07fF
+C5231 bit[4].t5 GND 0.03fF $ **FLOATING
+C5232 bit[4].n35 GND 0.01fF
+C5233 bit[4].n36 GND 0.00fF
+C5234 bit[4].t17 GND 0.03fF $ **FLOATING
+C5235 bit[4].n37 GND 0.01fF
+C5236 bit[4].n38 GND 0.00fF
+C5237 bit[4].n39 GND 0.00fF
+C5238 bit[4].n40 GND 0.00fF
+C5239 bit[4].n41 GND 0.07fF
+C5240 bit[4].t3 GND 0.03fF $ **FLOATING
+C5241 bit[4].n42 GND 0.01fF
+C5242 bit[4].n43 GND 0.00fF
+C5243 bit[4].t22 GND 0.03fF $ **FLOATING
+C5244 bit[4].n44 GND 0.01fF
+C5245 bit[4].n45 GND 0.00fF
+C5246 bit[4].n46 GND 0.00fF
+C5247 bit[4].n47 GND 0.00fF
+C5248 bit[4].n48 GND 0.07fF
+C5249 bit[4].n49 GND 0.00fF
+C5250 bit[4].n50 GND 0.00fF
+C5251 bit[4].t10 GND 0.03fF $ **FLOATING
+C5252 bit[4].n51 GND 0.01fF
+C5253 bit[4].n52 GND 0.00fF
+C5254 bit[4].t29 GND 0.03fF $ **FLOATING
+C5255 bit[4].n53 GND 0.01fF
+C5256 bit[4].n54 GND 0.00fF
+C5257 bit[4].n55 GND 12.02fF
+C5258 bit[4].n56 GND 24.36fF
+C5259 bit[4].n57 GND 18.17fF
+C5260 bit[4].n58 GND 18.17fF
+C5261 bit[4].n59 GND 18.17fF
+C5262 bit[4].n60 GND 18.17fF
+C5263 bit[4].n61 GND 18.17fF
+C5264 bit[4].n62 GND 29.12fF
+C5265 bit[4].t24 GND 0.03fF $ **FLOATING
+C5266 bit[4].n63 GND 0.01fF
+C5267 bit[4].n64 GND 0.00fF
+C5268 bit[4].t8 GND 0.03fF $ **FLOATING
+C5269 bit[4].n65 GND 0.01fF
+C5270 bit[4].n66 GND 0.00fF
+C5271 bit[4].n67 GND 0.00fF
+C5272 bit[4].n68 GND 0.00fF
+C5273 bit[4].n69 GND 0.07fF
+C5274 bit[4].t21 GND 0.03fF $ **FLOATING
+C5275 bit[4].n70 GND 0.01fF
+C5276 bit[4].n71 GND 0.00fF
+C5277 bit[4].t9 GND 0.03fF $ **FLOATING
+C5278 bit[4].n72 GND 0.01fF
+C5279 bit[4].n73 GND 0.00fF
+C5280 bit[4].n74 GND 0.00fF
+C5281 bit[4].n75 GND 0.00fF
+C5282 bit[4].n76 GND 0.07fF
+C5283 bit[4].t1 GND 0.03fF $ **FLOATING
+C5284 bit[4].n77 GND 0.01fF
+C5285 bit[4].n78 GND 0.00fF
+C5286 bit[4].t18 GND 0.03fF $ **FLOATING
+C5287 bit[4].n79 GND 0.01fF
+C5288 bit[4].n80 GND 0.00fF
+C5289 bit[4].n81 GND 0.00fF
+C5290 bit[4].n82 GND 0.00fF
+C5291 bit[4].n83 GND 0.07fF
+C5292 bit[4].t33 GND 0.03fF $ **FLOATING
+C5293 bit[4].n84 GND 0.01fF
+C5294 bit[4].n85 GND 0.00fF
+C5295 bit[4].t16 GND 0.03fF $ **FLOATING
+C5296 bit[4].n86 GND 0.01fF
+C5297 bit[4].n87 GND 0.00fF
+C5298 bit[4].n88 GND 0.00fF
+C5299 bit[4].n89 GND 0.00fF
+C5300 bit[4].n90 GND 0.07fF
+C5301 bit[4].t31 GND 0.03fF $ **FLOATING
+C5302 bit[4].n91 GND 0.01fF
+C5303 bit[4].n92 GND 0.00fF
+C5304 bit[4].t14 GND 0.03fF $ **FLOATING
+C5305 bit[4].n93 GND 0.01fF
+C5306 bit[4].n94 GND 0.00fF
+C5307 bit[4].n95 GND 0.00fF
+C5308 bit[4].n96 GND 0.00fF
+C5309 bit[4].n97 GND 0.07fF
+C5310 bit[4].t0 GND 0.03fF $ **FLOATING
+C5311 bit[4].n98 GND 0.01fF
+C5312 bit[4].n99 GND 0.00fF
+C5313 bit[4].t13 GND 0.03fF $ **FLOATING
+C5314 bit[4].n100 GND 0.01fF
+C5315 bit[4].n101 GND 0.00fF
+C5316 bit[4].n102 GND 0.00fF
+C5317 bit[4].n103 GND 0.00fF
+C5318 bit[4].n104 GND 0.07fF
+C5319 bit[4].t32 GND 0.03fF $ **FLOATING
+C5320 bit[4].n105 GND 0.01fF
+C5321 bit[4].n106 GND 0.00fF
+C5322 bit[4].t15 GND 0.03fF $ **FLOATING
+C5323 bit[4].n107 GND 0.01fF
+C5324 bit[4].n108 GND 0.00fF
+C5325 bit[4].n109 GND 0.00fF
+C5326 bit[4].n110 GND 0.00fF
+C5327 bit[4].n111 GND 0.07fF
+C5328 bit[4].t7 GND 0.03fF $ **FLOATING
+C5329 bit[4].n112 GND 0.01fF
+C5330 bit[4].n113 GND 0.00fF
+C5331 bit[4].t27 GND 0.03fF $ **FLOATING
+C5332 bit[4].n114 GND 0.01fF
+C5333 bit[4].n115 GND 0.00fF
+C5334 bit[4].n116 GND 0.00fF
+C5335 bit[4].n117 GND 0.00fF
+C5336 bit[4].n118 GND 0.07fF
+C5337 bit[4].t19 GND 0.01fF $ **FLOATING
+C5338 bit[4].t30 GND 0.01fF $ **FLOATING
+C5339 bit[4].n119 GND 0.03fF
+C5340 bit[4].n120 GND 18.52fF
+C5341 bit[4].n121 GND 18.17fF
+C5342 bit[4].n122 GND 18.17fF
+C5343 bit[4].n123 GND 18.17fF
+C5344 bit[4].n124 GND 18.17fF
+C5345 bit[4].n125 GND 18.17fF
+C5346 bit[4].n126 GND 18.17fF
+C5347 bit[4].n127 GND 20.56fF
+C5348 bit[4].n128 GND 33.82fF
 "}
+C {devices/lab_wire.sym} 100 -4790 0 1 {name=l3 sig_type=std_logic lab=bit[0]}
+C {devices/lab_wire.sym} 100 -4770 0 1 {name=l1 sig_type=std_logic lab=bit[1]}
+C {devices/lab_wire.sym} 100 -4750 0 1 {name=l2 sig_type=std_logic lab=bit[2]}
+C {devices/lab_wire.sym} 100 -4730 0 1 {name=l4 sig_type=std_logic lab=bit[3]}
+C {devices/lab_wire.sym} 100 -4710 0 1 {name=l5 sig_type=std_logic lab=bit[4]}
+C {devices/lab_wire.sym} 100 -4690 0 1 {name=l6 sig_type=std_logic lab=bit[5]}
+C {devices/bus_connect_nolab.sym} 90 -4780 0 0 {name=r1}
+C {devices/bus_connect_nolab.sym} 90 -4760 0 0 {name=r2}
+C {devices/bus_connect_nolab.sym} 90 -4740 0 0 {name=r3}
+C {devices/bus_connect_nolab.sym} 100 -4730 3 1 {name=r4}
+C {devices/bus_connect_nolab.sym} 100 -4710 3 1 {name=r5}
+C {devices/bus_connect_nolab.sym} 100 -4690 3 1 {name=r6}

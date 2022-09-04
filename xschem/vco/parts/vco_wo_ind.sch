@@ -70,7 +70,6 @@ lab=tail}
 N 840 -400 840 -340 {
 lab=tail}
 C {cap_var.sym} 330 -360 0 0 {name=X1}
-C {capbank.sym} 340 -180 0 0 {name=X2}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 430 -680 3 0 {name=C1 model=cap_mim_m3_1 W=13.3 L=13.3 MF=1 spiceprefix=X}
 C {devices/iopin.sym} 290 -750 3 0 {name=p1 lab=OUT_P}
 C {devices/lab_pin.sym} 430 -510 0 0 {name=l1 sig_type=std_logic lab=GND}
@@ -109,3 +108,4 @@ C {devices/lab_pin.sym} 300 -975 0 0 {name=l5 sig_type=std_logic lab=GND}
 C {devices/ammeter.sym} 840 -300 0 0 {name=Vmeas}
 C {devices/lab_pin.sym} 840 -360 0 0 {name=l2 sig_type=std_logic lab=tail}
 C {vco/parts/buff_nmirr.sym} 530 310 0 0 {name=x3}
+C {vco/parts/capbank.sym} 350 -190 0 0 {name=X2}

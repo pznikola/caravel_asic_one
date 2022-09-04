@@ -35,7 +35,6 @@ N -40 -140 -40 -40 {
 lab=outn}
 N 200 -140 200 -40 {
 lab=outp}
-C {vco/parts/capbank.sym} 0 0 0 0 {name=X1}
 C {devices/vdd.sym} 120 -80 0 0 {name=l4 lab=VDD}
 C {devices/gnd.sym} 40 -80 2 0 {name=l3 lab=GND}
 C {devices/gnd.sym} -95 130 0 0 {name=l1 lab=GND}
@@ -119,8 +118,9 @@ C {devices/code_shown.sym} 300 -470 0 0 {name="Measure capacitance and parallel 
         let code = code + 1
     end 
     setplot $scratch
-    wrdata capbank.txt c_bank
+    wrdata capbank_pex.txt c_bank
 .endc
 "}
 C {devices/lab_wire.sym} 200 -110 0 1 {name=l12 sig_type=std_logic lab=outp}
 C {devices/lab_wire.sym} -40 -110 0 0 {name=l13 sig_type=std_logic lab=outn}
+C {vco/parts/pex/capbank_pex.sym} 0 0 0 0 {name=X1}

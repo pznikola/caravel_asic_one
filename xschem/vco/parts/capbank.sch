@@ -151,7 +151,7 @@ C {devices/ipin.sym} 1250 -2575 0 1 {name=p3 lab=bit[5:0]
 }
 C {devices/iopin.sym} 230 -2020 2 0 {name=p9 lab=OUT_P}
 C {devices/iopin.sym} 990 -2040 2 1 {name=p10 lab=OUT_N}
-C {devices/lab_pin.sym} 565 -3990 3 0 {name=l1 sig_type=std_logic lab=GND}
+C {devices/lab_pin.sym} 565 -3990 3 0 {name=lf1 sig_type=std_logic lab=GND}
 C {inv.sym} 620 -3350 0 1 {name=X8
 }
 C {devices/lab_pin.sym} 565 -3310 3 0 {name=l2 sig_type=std_logic lab=GND}
